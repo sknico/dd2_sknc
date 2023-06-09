@@ -1,0 +1,15 @@
+---
+title: "Working with data"
+---
+
+How to work with data. 
+
+- Uploads
+
+- macros
+
+- "take home"
+  - KEA SOP
+
+- folder structure 
+

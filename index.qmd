@@ -1,13 +1,10 @@
 ---
-title: "DD2 documentation"
+title: "DD2"
+bibliography: references.bib
 ---
 
-This is a Quarto website.
+This website includes details about **The Danish Center for Strategic Research in Type 2 Diabetes** (The **DD2** Study). The intention of this website is to document the data sources used for research and to ease the day-to-day work with DD2.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+To learn more about DD2 please see: <https://dd2.dk/>
 
-```{r}
-1 + 1
-```
-
-SKNC: change just to check github SKNC: second change just to check github
+An extensive list of [scientific publications](https://dd2.dk/nyheder/categories/videnskabelige-publikationer) based on data from DD2 is available on the website. That said, a good place to start is the 2018 baseline paper [@Christensen_BMJOpen_2018].

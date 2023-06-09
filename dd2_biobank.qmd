@@ -1,0 +1,11 @@
+---
+title: "DD2 biobank data"
+---
+
+
+DENNE SIDE SKAL BESKRIVE 
+
+- DD2 BIOBANK (BIOMARKER)
+
+Der må gerne både være information om kvaliteten af data (biobank) samt info om den enkelte biomarkører. 
+

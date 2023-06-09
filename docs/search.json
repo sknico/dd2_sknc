@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "DD2 documentation",
+    "title": "DD2",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2\n\n\nSKNC: change just to check github SKNC: second change just to check github"
+    "text": "This website includes details about The Danish Center for Strategic Research in Type 2 Diabetes (The DD2 Study). The intention of this website is to document the data sources used for research and to ease the day-to-day work with DD2.\nTo learn more about DD2 please see: https://dd2.dk/\nAn extensive list of scientific publications based on data from DD2 is available on the website. That said, a good place to start is the 2018 baseline paper (Christensen et al. 2018).\n\n\n\n\nReferences\n\nChristensen, D. H., S. K. Nicolaisen, K. Berencsi, H. Beck-Nielsen, J. Rungby, S. Friborg, I. Brandslund, et al. 2018. “Danish Centre for Strategic Research in Type 2 Diabetes (DD2) Project Cohort of Newly Diagnosed Patients with Type 2 Diabetes: A Cohort Profile.” Journal Article. BMJ Open 8 (4): e017273. https://doi.org/10.1136/bmjopen-2017-017273."
   },
   {
     "objectID": "about.html",
@@ -16,8 +16,36 @@
   {
     "objectID": "data sources.html",
     "href": "data sources.html",
-    "title": "Data sources",
+    "title": "Data structure",
     "section": "",
-    "text": "Her skal der være en oversigt over de forskellige datakilder\n\nDD2 core\nSpørgeskema Biobank\n\n\nEgne datasæt\nFod Idnc DDDA\n\n\nRegister\nSDS/DST"
+    "text": "DENNE SIDE SKAL GIVE ET OVERBLIK OVER DE FORSKELLIGE DATAKILDER. DER SKAL INKLUDERES NOGLE FIGURER.\nDD2 is based on data from multiple sources:\n(vi skal have nogle gode navne til de forskellige datakilder)\n\nDD2 core data, i.e., data that makes the foundation of DD2\n\nDD2 questionnaire data\nBiomarker data (analysis results based on the blood and urine samples from time of enrollment)\n\nAdditional DD2 data, e.g., from additional questionnaires and/or substudies\n\nIDNC\nFødselsdata\n\nData extracts from external data sources\n\nDDDA\nFødselsdata (her eller ovenfor?)\n\nDanish medical registry data\n\nSDS\nDST\n\n\n\n\n\nOverview in DD2"
+  },
+  {
+    "objectID": "dd2_core_data.html",
+    "href": "dd2_core_data.html",
+    "title": "DD2 core data",
+    "section": "",
+    "text": "DENNE SIDE SKAL BESKRIVE\n\nDD2 QUESTIONNAIRE\nBIOBANK"
+  },
+  {
+    "objectID": "dd2_biobank.html",
+    "href": "dd2_biobank.html",
+    "title": "DD2 biobank data",
+    "section": "",
+    "text": "DENNE SIDE SKAL BESKRIVE\n\nDD2 BIOBANK (BIOMARKER)\n\nDer må gerne både være information om kvaliteten af data (biobank) samt info om den enkelte biomarkører."
+  },
+  {
+    "objectID": "dd2_questionnaire.html",
+    "href": "dd2_questionnaire.html",
+    "title": "DD2 questionnaire",
+    "section": "",
+    "text": "DENNE SIDE SKAL BESKRIVE\n\nDD2 QUESTIONNAIRE\n\nDet ville være fint med en oversigt over de tilgængelige variable (metadata til seedcase)"
+  },
+  {
+    "objectID": "working.html",
+    "href": "working.html",
+    "title": "Working with data",
+    "section": "",
+    "text": "How to work with data.\n\nUploads\nmacros\n“take home”\n\nKEA SOP\n\nfolder structure"
   }
 ]

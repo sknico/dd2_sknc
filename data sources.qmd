@@ -1,18 +1,33 @@
 ---
-title: "Data sources"
+title: "Data structure"
 ---
 
-Her skal der være en oversigt over de forskellige datakilder 
+DD2 is based on data from multiple sources:
 
+(vi skal have nogle gode navne til dde forskellgie datakilder)
 
-# DD2 core
-Spørgeskema
-Biobank
+-   DD2 core data, i.e., data that makes the foundation of DD2
 
-# Egne datasæt
-Fod
-Idnc
-DDDA
+    -   DD2 questionnaire data
 
-# Register
-SDS/DST
+    -   Biomarker data (analysis results based on the blood and urine samples from time of enrollment)
+
+-   Additional DD2 data, e.g., from additional questionnaires and/or substudies
+
+    -   IDNC
+
+    -   Fødselsdata
+
+-   Data extracts from external data sources
+
+    -   DDDA
+
+    -   Fødselsdata (her eller ovenfor?)
+
+-   Danish medical registry data
+
+    -   SDS
+
+    -   DST
+
+# 

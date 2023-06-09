@@ -4,6 +4,8 @@ project:
 
 website:
   title: "DD2"
+  page-navigation: true
+  page-footer: "SKNC" 
   #navbar:
   #  left:
   #    - href: index.qmd
@@ -14,14 +16,32 @@ website:
     style: "docked"
     search: true
     contents:
-      - section: "Basics"
-        contents:
-          - index.qmd
-          - about.qmd
-      - section: "DD2"
-        contents:
-        - data sources.qmd  
-
+  #        - index.qmd #index er inkluderet i "home" men jeg har fjernet den fra sidebar
+      #- section: "Data sources"
+      #  contents:
+      - data sources.qmd 
+      
+      - text: "---"
+        
+      - section: "DD2 core data "
+        contents: 
+        - dd2_questionnaire.qmd
+        - dd2_biobank.qmd
+      - section: "Additional DD2 data"
+        #contents: 
+        
+      - section: "External DD2 data"
+        #contents: 
+        
+      - section: "Registry data"
+        #contents: 
+        
+      - text: "---"
+        
+      - section: "How to work"
+        contents: 
+        - working.qmd
+        
 format:
   html:
     #theme: cosmo

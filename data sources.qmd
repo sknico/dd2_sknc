@@ -1,0 +1,18 @@
+---
+title: "Data sources"
+---
+
+Her skal der være en oversigt over de forskellige datakilder 
+
+
+# DD2 core
+Spørgeskema
+Biobank
+
+# Egne datasæt
+Fod
+Idnc
+DDDA
+
+# Register
+SDS/DST

@@ -1,5 +1,5 @@
 ---
-title: "DD2_sknc"
+title: "DD2 documentation"
 ---
 
 This is a Quarto website.

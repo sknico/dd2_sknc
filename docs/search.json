@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "DD2_sknc",
+    "title": "DD2 documentation",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2\n\n\nSKNC: change just to check github SKNC: second change just to check github"
   },
   {
     "objectID": "about.html",
@@ -12,5 +12,12 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "data sources.html",
+    "href": "data sources.html",
+    "title": "Data sources",
+    "section": "",
+    "text": "Her skal der være en oversigt over de forskellige datakilder\n\nDD2 core\nSpørgeskema Biobank\n\n\nEgne datasæt\nFod Idnc DDDA\n\n\nRegister\nSDS/DST"
   }
 ]

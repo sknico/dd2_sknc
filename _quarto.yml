@@ -3,16 +3,29 @@ project:
   output-dir: docs
 
 website:
-  title: "DD2_sknc"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+  title: "DD2"
+  #navbar:
+  #  left:
+  #    - href: index.qmd
+  #      text: Home
+  #    - about.qmd
+  #    - data sources.qmd
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - section: "Basics"
+        contents:
+          - index.qmd
+          - about.qmd
+      - section: "DD2"
+        contents:
+        - data sources.qmd  
 
 format:
   html:
-    theme: cosmo
+    #theme: cosmo
+    theme: flatly
     css: styles.css
     toc: true
 

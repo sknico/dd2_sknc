@@ -10,6 +10,4 @@ To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 1 + 1
 ```
 
-
-SKNC: change just to check github
-SKNC: second change just to check github
+SKNC: change just to check github SKNC: second change just to check github

@@ -18,7 +18,7 @@
     "href": "data sources.html",
     "title": "Data structure",
     "section": "",
-    "text": "DENNE SIDE SKAL GIVE ET OVERBLIK OVER DE FORSKELLIGE DATAKILDER. DER SKAL INKLUDERES NOGLE FIGURER.\nDD2 is based on data from multiple sources:\n(vi skal have nogle gode navne til de forskellige datakilder)\n\nDD2 core data, i.e., data that makes the foundation of DD2\n\nDD2 questionnaire data\nBiomarker data (analysis results based on the blood and urine samples from time of enrollment)\n\nAdditional DD2 data, e.g., from additional questionnaires and/or substudies\n\nIDNC\nFødselsdata\n\nData extracts from external data sources\n\nDDDA\nFødselsdata (her eller ovenfor?)\n\nDanish medical registry data\n\nSDS\nDST\n\n\n\n\n\nOverview in DD2"
+    "text": "DENNE SIDE SKAL GIVE ET OVERBLIK OVER DE FORSKELLIGE DATAKILDER. DER SKAL INKLUDERES NOGLE FIGURER.\nDD2 is based on data from multiple sources:\n(vi skal have nogle gode navne til de forskellige datakilder)\n\nDD2 core data, i.e., data that makes the foundation of DD2\n\nDD2 questionnaire data\nBiomarker data (analysis results based on the blood and urine samples from time of enrollment)\n\nAdditional DD2 data, e.g., from additional questionnaires and/or substudies\n\nIDNC\nFødselsdata\n\nData extracts from external data sources\n\nDDDA\nFødselsdata (her eller ovenfor?)\n\nDanish medical registry data\n\nSDS\nDST\n\n\n(jeg ved ikke hvorfor figuren ikke printes - det gør den ved local)\n\n\n\nOverview in DD2"
   },
   {
     "objectID": "dd2_core_data.html",

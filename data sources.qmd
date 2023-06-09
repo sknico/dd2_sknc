@@ -35,4 +35,4 @@ DD2 is based on data from multiple sources:
 (jeg ved ikke hvorfor figuren ikke printes - det gør den ved local)
 
 
-![Overview in DD2](figures\overblik.png){width=100%} 
+![Overview in DD2](/figures/overblik.png){width=100%} 

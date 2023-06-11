@@ -1,5 +1,5 @@
 ---
-title: "DD2"
+title: "The Danish Center for Strategic Research in Type 2 Diabetes"
 bibliography: references.bib
 ---
 

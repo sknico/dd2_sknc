@@ -1,5 +1,9 @@
 ---
 title: "Data structure"
+#title: revealjs lists
+#date: last-modified
+#footer: "{{< meta date >}}"
+#format: revealjs
 ---
 DENNE SIDE SKAL GIVE ET OVERBLIK OVER DE FORSKELLIGE DATAKILDER. DER SKAL INKLUDERES NOGLE FIGURER. 
 
@@ -14,7 +18,7 @@ DD2 is based on data from multiple sources:
 
     -   Biomarker data (analysis results based on the blood and urine samples from time of enrollment)
 
--   Additional DD2 data, e.g., from additional questionnaires and/or substudies
+-   Additional DD2 data, e.g., from additional questionnaires and/or substudies. This includes data only available     through DD2, but it was not collected as part of the initial enrollment process.  
 
     -   IDNC
 
@@ -22,9 +26,12 @@ DD2 is based on data from multiple sources:
 
 -   Data extracts from external data sources
 
-    -   DDDA
-
-    -   Fødselsdata (her eller ovenfor?)
+    -   DDDA (udgår)
+    
+    -   Fodstatus
+    
+    -   Diabase (øjenkompl.)
+    
 
 -   Danish medical registry data
 
@@ -32,7 +39,6 @@ DD2 is based on data from multiple sources:
 
     -   DST
 
-(jeg ved ikke hvorfor figuren ikke printes - det gør den ved local)
 
 
 ![Overview in DD2](/figures/overblik.png){width=100%} 

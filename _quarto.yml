@@ -28,13 +28,21 @@ website:
         - dd2_questionnaire.qmd
         - dd2_biobank.qmd
       - section: "Additional DD2 data"
-        #contents: 
+        contents: 
+        - idnc.qmd
+        - foedsel.qmd
+
         
       - section: "External DD2 data"
-        #contents: 
+        contents: 
+        - ddda.qmd
+        - fodstatus.qmd
         
+         
       - section: "Registry data"
-        #contents: 
+        contents: 
+        - SDS.qmd
+        - DST.qmd
         
       - text: "---"
         

@@ -201,7 +201,14 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#population" id="toc-population" class="nav-link active" data-scroll-target="#population">Population</a></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -224,8 +231,21 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <p>Sundhedsdatastyrelsen</p>
+<section id="population" class="level2">
+<h2 class="anchored" data-anchor-id="population">Population</h2>
+<p>The DD2 data is uploaded to SDS, and they check the validity of the CPR-numbers before encrypting them. The data set <code>DS_EXT_DD2_POP</code> includes individuals with a valid CPR-number. Individuals with a non-valid CPR-number are still included in the uploaded data, e.g.&nbsp;in <code>DS_EXT_DD2CORE</code>, but they will have a missing encrypted CPR-number (<code>CPR_ENCRYPTED</code>) and can thus not be linked across data sources. Previously (when we had local data), we would notify DD2 (Odense) about non-valid CPR-numbers, but this is no longer possible as we are not allowed to identify the individuals based on individual-level data on the servers.</p>
+</section>
+<section id="data" class="level2">
+<h2 class="anchored" data-anchor-id="data">Data</h2>
+<p>forskellige datakilder –&gt; dataspecifikation</p>
+<ul>
+<li><p>LMS</p></li>
+<li><p>LPR</p></li>
+<li><p>…</p></li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

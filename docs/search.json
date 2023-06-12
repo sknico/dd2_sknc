@@ -89,5 +89,19 @@
     "title": "SDS",
     "section": "",
     "text": "Sundhedsdatastyrelsen"
+  },
+  {
+    "objectID": "SDS.html#population",
+    "href": "SDS.html#population",
+    "title": "SDS",
+    "section": "Population",
+    "text": "Population\nThe DD2 data is uploaded to SDS, and they check the validity of the CPR-numbers before encrypting them. The data set DS_EXT_DD2_POP includes individuals with a valid CPR-number. Individuals with a non-valid CPR-number are still included in the uploaded data, e.g. in DS_EXT_DD2CORE, but they will have a missing encrypted CPR-number (CPR_ENCRYPTED) and can thus not be linked across data sources. Previously (when we had local data), we would notify DD2 (Odense) about non-valid CPR-numbers, but this is no longer possible as we are not allowed to identify the individuals based on individual-level data on the servers."
+  },
+  {
+    "objectID": "SDS.html#data",
+    "href": "SDS.html#data",
+    "title": "SDS",
+    "section": "Data",
+    "text": "Data\nforskellige datakilder –> dataspecifikation\n\nLMS\nLPR\n…"
   }
 ]

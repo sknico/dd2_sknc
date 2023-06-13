@@ -2,7 +2,7 @@
 title: "SDS"
 ---
 
-Sundhedsdatastyrelsen
+Sundhedsdatastyrelsen - FSEID-00006014
 
 ## Population
 
@@ -10,6 +10,7 @@ The DD2 data is uploaded to SDS, and they check the validity of the CPR-numbers 
 Previously (when we had local data), we would notify DD2 (Odense) about non-valid CPR-numbers, but this is no longer possible as we are not allowed to identify the individuals based on individual-level data on the servers. 
 
 ## Data 
+VIEWS
 
 forskellige datakilder --\> dataspecifikation
 
@@ -18,3 +19,5 @@ forskellige datakilder --\> dataspecifikation
 -   LPR
 
 -   ...
+
+

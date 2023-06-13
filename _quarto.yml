@@ -19,36 +19,38 @@ website:
   #        - index.qmd #index er inkluderet i "home" men jeg har fjernet den fra sidebar
       #- section: "Data sources"
       #  contents:
-      - data sources.qmd 
+      - sites/data sources.qmd 
       
       - text: "---"
         
       - section: "DD2 core data "
         contents: 
-        - dd2_questionnaire.qmd
-        - dd2_biobank.qmd
+        - sites/data sources/dd2_questionnaire.qmd
+        - sites/data sources/dd2_biobank.qmd
+        
       - section: "Additional DD2 data"
         contents: 
-        - idnc.qmd
-        - foedsel.qmd
+        - sites/data sources/idnc.qmd
+        - sites/data sources/foedsel.qmd
 
-        
       - section: "External DD2 data"
         contents: 
-        - ddda.qmd
-        - fodstatus.qmd
+        - sites/data sources/ddda.qmd
+        - sites/data sources/ddid.qmd
+        - sites/data sources/diabase.qmd
+        - sites/data sources/fodstatus.qmd
         
          
       - section: "Registry data"
         contents: 
-        - SDS.qmd
-        - DST.qmd
+        - sites/registry/SDS.qmd
+        - sites/registry/DST.qmd
         
       - text: "---"
         
       - section: "How to work"
         contents: 
-        - working.qmd
+        - sites/working.qmd
         
 format:
   html:

@@ -1,0 +1,19 @@
+---
+title: "DDDA"
+---
+
+**Danish Diabetes Database for Adults** (DDDA) (Dansk Voksen Diabates Database, DVDD) is a no longer active database from regionernes kliniske kvalitetsudviklingsprogram (RKKP). It was closed by 30/6 2022. It has now been replaced by Dansk Diabetes Database (DDD/DDiD), which has been active since 1/7 2022.  
+
+
+We currently have data from DDDA in the period from May 2005 to June 2022. 
+
+
+
+DENNE SIDE SKAL BESKRIVE 
+
+- DDDA - data findes kun frem til Juni 2022
+DDDA udgår og bliver fremover til Dansk Diabetes Database (DDD/DDiD), som gik i drift pr. 1/7 2022.
+
+
+
+

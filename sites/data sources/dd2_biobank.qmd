@@ -1,0 +1,33 @@
+---
+title: "DD2 biobank data"
+---
+
+DENNE SIDE SKAL BESKRIVE
+
+-   DD2 BIOBANK: infodata om prøverne og kvaliteten af data (IKKE resultater)
+
+    -   cpr/projectid (link mellem cpr og projectid)
+
+    -   urinprøve, ja/nej
+
+    -   blodprøve, ja/nej
+
+    -   faste ja/nej
+
+    -   vejledato
+
+    -   nye data fra biobanken/vejle: antal prøver, glas, osv.
+
+-   Biomarker: resultater fra de enkelte analyser (long format)
+
+    -   projectid
+
+    -   biomarker (e.g. c-pep, glucose, il6, ...)
+
+    -   results (resultatet af analysen)
+
+    -   unit
+
+    -   study (hvorfor er målingen lavet?)
+
+    -   date (f.eks. ved c-pep er der forskel på om analysen er lavet på en ny eller gammel prøve, så det kan være relevant at kende datoen for analysen så man kan sammenligne den med datoen for blodprøven).

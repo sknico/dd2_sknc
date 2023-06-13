@@ -1,0 +1,15 @@
+---
+title: "DD2 questionnaire"
+#date: last-modified
+#date-format: long
+#footer: "{{< meta date >}}"
+---
+
+DENNE SIDE SKAL BESKRIVE
+
+-   DD2 QUESTIONNAIRE
+
+Det ville være fint med en oversigt over de tilgængelige variable (metadata til seedcase)
+
+This
+

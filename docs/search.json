@@ -39,7 +39,7 @@
     "href": "dd2_questionnaire.html",
     "title": "DD2 questionnaire",
     "section": "",
-    "text": "DENNE SIDE SKAL BESKRIVE\n\nDD2 QUESTIONNAIRE\n\nDet ville være fint med en oversigt over de tilgængelige variable (metadata til seedcase)"
+    "text": "DENNE SIDE SKAL BESKRIVE\n\nDD2 QUESTIONNAIRE\n\nDet ville være fint med en oversigt over de tilgængelige variable (metadata til seedcase)\nThis"
   },
   {
     "objectID": "working.html",
@@ -103,5 +103,103 @@
     "title": "SDS",
     "section": "Data",
     "text": "Data\nforskellige datakilder –> dataspecifikation\n\nLMS\nLPR\n…"
+  },
+  {
+    "objectID": "sites/data sources/dd2_biobank.html",
+    "href": "sites/data sources/dd2_biobank.html",
+    "title": "DD2 biobank data",
+    "section": "",
+    "text": "DENNE SIDE SKAL BESKRIVE\n\nDD2 BIOBANK: infodata om prøverne og kvaliteten af data (IKKE resultater)\n\ncpr/projectid (link mellem cpr og projectid)\nurinprøve, ja/nej\nblodprøve, ja/nej\nfaste ja/nej\nvejledato\nnye data fra biobanken/vejle: antal prøver, glas, osv.\n\nBiomarker: resultater fra de enkelte analyser (long format)\n\nprojectid\nbiomarker (e.g. c-pep, glucose, il6, …)\nresults (resultatet af analysen)\nunit\nstudy (hvorfor er målingen lavet?)\ndate (f.eks. ved c-pep er der forskel på om analysen er lavet på en ny eller gammel prøve, så det kan være relevant at kende datoen for analysen så man kan sammenligne den med datoen for blodprøven)."
+  },
+  {
+    "objectID": "sites/data sources/dd2_questionnaire.html",
+    "href": "sites/data sources/dd2_questionnaire.html",
+    "title": "DD2 questionnaire",
+    "section": "",
+    "text": "DENNE SIDE SKAL BESKRIVE\n\nDD2 QUESTIONNAIRE\n\nDet ville være fint med en oversigt over de tilgængelige variable (metadata til seedcase)\nThis"
+  },
+  {
+    "objectID": "sites/data sources/ddda.html",
+    "href": "sites/data sources/ddda.html",
+    "title": "DDDA",
+    "section": "",
+    "text": "Danish Diabetes Database for Adults (DDDA) (Dansk Voksen Diabates Database, DVDD) is a no longer active database from regionernes kliniske kvalitetsudviklingsprogram (RKKP). It was closed by 30/6 2022. It has now been replaced by Dansk Diabetes Database (DDD/DDiD), which has been active since 1/7 2022.\nWe currently have data from DDDA in the period from May 2005 to June 2022.\nDENNE SIDE SKAL BESKRIVE\n\nDDDA - data findes kun frem til Juni 2022 DDDA udgår og bliver fremover til Dansk Diabetes Database (DDD/DDiD), som gik i drift pr. 1/7 2022."
+  },
+  {
+    "objectID": "sites/data sources/fodstatus.html",
+    "href": "sites/data sources/fodstatus.html",
+    "title": "Fodstatus",
+    "section": "",
+    "text": "DENNE SIDE SKAL BESKRIVE\n\nfodstatus"
+  },
+  {
+    "objectID": "sites/data sources/foedsel.html",
+    "href": "sites/data sources/foedsel.html",
+    "title": "Fødselsdata",
+    "section": "",
+    "text": "DENNE SIDE SKAL BESKRIVE\n\nFødseslsdata/rigsarkivet"
+  },
+  {
+    "objectID": "sites/data sources/idnc.html",
+    "href": "sites/data sources/idnc.html",
+    "title": "IDNC",
+    "section": "",
+    "text": "DENNE SIDE SKAL BESKRIVE\n\nIDNC"
+  },
+  {
+    "objectID": "sites/data sources.html",
+    "href": "sites/data sources.html",
+    "title": "Data structure",
+    "section": "",
+    "text": "DENNE SIDE SKAL GIVE ET OVERBLIK OVER DE FORSKELLIGE DATAKILDER. DER SKAL INKLUDERES NOGLE FIGURER.\nDD2 is based on data from multiple sources:\n(vi skal have nogle gode navne til de forskellige datakilder)\n\nDD2 core data, i.e., data that makes the foundation of DD2\n\nDD2 questionnaire data\nBiomarker data (analysis results based on the blood and urine samples from time of enrollment)\n\nAdditional DD2 data, e.g., from additional questionnaires and/or substudies. This includes data only available through DD2, but it was not collected as part of the initial enrollment process.\n\nIDNC\nFødselsdata\n\nData extracts from external data sources\n\nDDDA (udgår)\nFodstatus\nDiabase (øjenkompl.)\n\nDanish medical registry data\n\nSDS\nDST\n\n\n\n\n\nOverview in DD2"
+  },
+  {
+    "objectID": "sites/registry/DST.html",
+    "href": "sites/registry/DST.html",
+    "title": "DST",
+    "section": "",
+    "text": "Danmarks statistik"
+  },
+  {
+    "objectID": "sites/registry/SDS.html",
+    "href": "sites/registry/SDS.html",
+    "title": "SDS",
+    "section": "",
+    "text": "Sundhedsdatastyrelsen - FSEID-00006014"
+  },
+  {
+    "objectID": "sites/registry/SDS.html#population",
+    "href": "sites/registry/SDS.html#population",
+    "title": "SDS",
+    "section": "Population",
+    "text": "Population\nThe DD2 data is uploaded to SDS, and they check the validity of the CPR-numbers before encrypting them. The data set DS_EXT_DD2_POP includes individuals with a valid CPR-number. Individuals with a non-valid CPR-number are still included in the uploaded data, e.g. in DS_EXT_DD2CORE, but they will have a missing encrypted CPR-number (CPR_ENCRYPTED) and can thus not be linked across data sources. Previously (when we had local data), we would notify DD2 (Odense) about non-valid CPR-numbers, but this is no longer possible as we are not allowed to identify the individuals based on individual-level data on the servers."
+  },
+  {
+    "objectID": "sites/registry/SDS.html#data",
+    "href": "sites/registry/SDS.html#data",
+    "title": "SDS",
+    "section": "Data",
+    "text": "Data\nVIEWS\nforskellige datakilder –> dataspecifikation\n\nLMS\nLPR\n…"
+  },
+  {
+    "objectID": "sites/working.html",
+    "href": "sites/working.html",
+    "title": "Working with data",
+    "section": "",
+    "text": "How to work with data.\n\nUploads\nmacros\n“take home”\n\nKEA SOP\n\nfolder structure"
+  },
+  {
+    "objectID": "sites/data sources/diabase.html",
+    "href": "sites/data sources/diabase.html",
+    "title": "DiaBase",
+    "section": "",
+    "text": "DENNE SIDE SKAL BESKRIVE\nØjendata - Diabase (RKKP)"
+  },
+  {
+    "objectID": "sites/data sources/ddid.html",
+    "href": "sites/data sources/ddid.html",
+    "title": "DDiD",
+    "section": "",
+    "text": "Dansk Diabetes Database (DDD/DDiD), which has been active since 1/7 2022."
   }
 ]

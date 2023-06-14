@@ -2,6 +2,21 @@
 title: "DD2 biobank data"
 ---
 
+N = 1053 er indlæst fra txt.
+
+ProjektID - hvordan er den lavet?
+
+-   Data vi har modtaget på KEA (gammelt setup=:
+    -   First1053Patients, n=1053 med resultater fra blodprøver
+    -   UrinResultatermedRatio2013Nov, n=1052 med resultater fra urinprøver
+    -   DataTilDD2medFastende, n=5966 med resultater på GAD, glucose og cpeptid, samt en variabel med faste.
+    -   WrongCpeptidmeas, n=105 med cpeptid og ny cpeptid, men jeg har en note om en mail fra Jens om at disse ikke skal bruges til noget. 
+
+
+
+Derudover har vi i 2022-2023 modtaget flere filer med måle/plade.
+
+
 DENNE SIDE SKAL BESKRIVE
 
 -   DD2 BIOBANK: infodata om prøverne og kvaliteten af data (IKKE resultater)

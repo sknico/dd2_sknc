@@ -155,6 +155,16 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../sites/data sources/ddid.html" class="sidebar-item-text sidebar-link">DDiD</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sites/data sources/diabase.html" class="sidebar-item-text sidebar-link">DiaBase</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../sites/data sources/fodstatus.html" class="sidebar-item-text sidebar-link">Fodstatus</a>
   </div>
 </li>
@@ -230,7 +240,7 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Sundhedsdatastyrelsen - FSEID-00006014</p>
+<p>Sundhedsdatastyrelsen - FSEID-00006014 jeg har snakket med Lars, og han siger jeg gerne må lægge udtræksbeskrivelserne op.</p>
 <section id="population" class="level2">
 <h2 class="anchored" data-anchor-id="population">Population</h2>
 <p>The DD2 data is uploaded to SDS, and they check the validity of the CPR-numbers before encrypting them. The data set <code>DS_EXT_DD2_POP</code> includes individuals with a valid CPR-number. Individuals with a non-valid CPR-number are still included in the uploaded data, e.g.&nbsp;in <code>DS_EXT_DD2CORE</code>, but they will have a missing encrypted CPR-number (<code>CPR_ENCRYPTED</code>) and can thus not be linked across data sources. Previously (when we had local data), we would notify DD2 (Odense) about non-valid CPR-numbers, but this is no longer possible as we are not allowed to identify the individuals based on individual-level data on the servers.</p>

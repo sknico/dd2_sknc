@@ -17,3 +17,4 @@ DDDA udgår og bliver fremover til Dansk Diabetes Database (DDD/DDiD), som gik i
 
 
 
+Husk man skal overveje hvordan man angiver % i en tabel (hvad er 100%)

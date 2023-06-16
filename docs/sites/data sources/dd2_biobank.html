@@ -20,6 +20,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -211,7 +230,18 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overblik-over-nuværende-datakilder" id="toc-overblik-over-nuværende-datakilder" class="nav-link active" data-scroll-target="#overblik-over-nuværende-datakilder">Overblik over nuværende datakilder</a>
+  <ul class="collapse">
+  <li><a href="#gamle-datasæt" id="toc-gamle-datasæt" class="nav-link" data-scroll-target="#gamle-datasæt">Gamle datasæt</a></li>
+  <li><a href="#nye-datasæt" id="toc-nye-datasæt" class="nav-link" data-scroll-target="#nye-datasæt">Nye datasæt</a></li>
+  </ul></li>
+  <li><a href="#ny-struktur---data-delt-i-to" id="toc-ny-struktur---data-delt-i-to" class="nav-link" data-scroll-target="#ny-struktur---data-delt-i-to">Ny struktur - data delt i to</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -233,17 +263,32 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p>Generel beskrivelse: <span class="citation" data-cites="Christensen_ClinEpi_2012">(<a href="#ref-Christensen_ClinEpi_2012" role="doc-biblioref">Christensen et al. 2012</a>)</span></p>
+<section id="overblik-over-nuværende-datakilder" class="level1">
+<h1>Overblik over nuværende datakilder</h1>
+<section id="gamle-datasæt" class="level2">
+<h2 class="anchored" data-anchor-id="gamle-datasæt">Gamle datasæt</h2>
 <p>N = 1053 er indlæst fra txt.</p>
 <p>ProjektID - hvordan er den lavet?</p>
 <ul>
-<li>Data vi har modtaget på KEA:
+<li>Data vi har modtaget på KEA (gammelt setup):
 <ul>
 <li>First1053Patients, n=1053 med resultater fra blodprøver</li>
 <li>UrinResultatermedRatio2013Nov, n=1052 med resultater fra urinprøver</li>
 <li>DataTilDD2medFastende, n=5966 med resultater på GAD, glucose og cpeptid, samt en variabel med faste.</li>
 <li>WrongCpeptidmeas, n=105 med cpeptid og ny cpeptid, men jeg har en note om en mail fra Jens om at disse ikke skal bruges til noget.</li>
+<li>Data fra AG (MBL+GENO)</li>
 </ul></li>
 </ul>
+<p>MBL: <span class="citation" data-cites="Gedebjerg_DiabCare_2020">(<a href="#ref-Gedebjerg_DiabCare_2020" role="doc-biblioref">Gedebjerg et al. 2020</a>)</span> C-pep. CRP: <span class="citation" data-cites="Gedebjerg_DiabCare_2023">(<a href="#ref-Gedebjerg_DiabCare_2023" role="doc-biblioref">Gedebjerg et al. 2023</a>)</span></p>
+</section>
+<section id="nye-datasæt" class="level2">
+<h2 class="anchored" data-anchor-id="nye-datasæt">Nye datasæt</h2>
+<p>Derudover har vi i 2022-2023 modtaget flere filer med måle/plade.</p>
+</section>
+</section>
+<section id="ny-struktur---data-delt-i-to" class="level1">
+<h1>Ny struktur - data delt i to</h1>
 <p>DENNE SIDE SKAL BESKRIVE</p>
 <ul>
 <li><p>DD2 BIOBANK: infodata om prøverne og kvaliteten af data (IKKE resultater)</p>
@@ -265,10 +310,23 @@ ul.task-list li input[type="checkbox"] {
 <li><p>date (f.eks. ved c-pep er der forskel på om analysen er lavet på en ny eller gammel prøve, så det kan være relevant at kende datoen for analysen så man kan sammenligne den med datoen for blodprøven).</p></li>
 </ul></li>
 </ul>
+<p>Det kan evt. være relevant med et meta-data med henvisning til de enkelte studier.</p>
 
 
 
-</main> <!-- /main -->
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-Christensen_ClinEpi_2012" class="csl-entry" role="doc-biblioentry">
+Christensen, H., J. S. Nielsen, K. M. Sørensen, M. Melbye, and I. Brandslund. 2012. <span>“New National Biobank of the Danish Center for Strategic Research on Type 2 Diabetes (DD2).”</span> Journal Article. <em>Clin Epidemiol</em> 4: 37–42. <a href="https://doi.org/10.2147/clep.S33042">https://doi.org/10.2147/clep.S33042</a>.
+</div>
+<div id="ref-Gedebjerg_DiabCare_2023" class="csl-entry" role="doc-biblioentry">
+Gedebjerg, A., M. Bjerre, A. D. Kjaergaard, J. S. Nielsen, J. Rungby, I. Brandslund, M. Maeng, et al. 2023. <span>“CRP, c-Peptide, and Risk of First-Time Cardiovascular Events and Mortality in Early Type 2 Diabetes: A Danish Cohort Study.”</span> Journal Article. <em>Diabetes Care</em> 46 (5): 1037–45. <a href="https://doi.org/10.2337/dc22-1353">https://doi.org/10.2337/dc22-1353</a>.
+</div>
+<div id="ref-Gedebjerg_DiabCare_2020" class="csl-entry" role="doc-biblioentry">
+Gedebjerg, A., M. Bjerre, A. D. Kjaergaard, R. Steffensen, J. S. Nielsen, J. Rungby, S. G. Friborg, et al. 2020. <span>“Mannose-Binding Lectin and Risk of Cardiovascular Events and Mortality in Type 2 Diabetes: A Danish Cohort Study.”</span> Journal Article. <em>Diabetes Care</em> 43 (9): 2190–98. <a href="https://doi.org/10.2337/dc20-0345">https://doi.org/10.2337/dc20-0345</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

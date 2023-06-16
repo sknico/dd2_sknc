@@ -109,7 +109,7 @@
     "href": "sites/data sources/dd2_biobank.html",
     "title": "DD2 biobank data",
     "section": "",
-    "text": "N = 1053 er indlæst fra txt.\nProjektID - hvordan er den lavet?\n\nData vi har modtaget på KEA:\n\nFirst1053Patients, n=1053 med resultater fra blodprøver\nUrinResultatermedRatio2013Nov, n=1052 med resultater fra urinprøver\nDataTilDD2medFastende, n=5966 med resultater på GAD, glucose og cpeptid, samt en variabel med faste.\nWrongCpeptidmeas, n=105 med cpeptid og ny cpeptid, men jeg har en note om en mail fra Jens om at disse ikke skal bruges til noget.\n\n\nDENNE SIDE SKAL BESKRIVE\n\nDD2 BIOBANK: infodata om prøverne og kvaliteten af data (IKKE resultater)\n\ncpr/projectid (link mellem cpr og projectid)\nurinprøve, ja/nej\nblodprøve, ja/nej\nfaste ja/nej\nvejledato\nnye data fra biobanken/vejle: antal prøver, glas, osv.\n\nBiomarker: resultater fra de enkelte analyser (long format)\n\nprojectid\nbiomarker (e.g. c-pep, glucose, il6, …)\nresults (resultatet af analysen)\nunit\nstudy (hvorfor er målingen lavet?)\ndate (f.eks. ved c-pep er der forskel på om analysen er lavet på en ny eller gammel prøve, så det kan være relevant at kende datoen for analysen så man kan sammenligne den med datoen for blodprøven)."
+    "text": "Generel beskrivelse: (Christensen et al. 2012)"
   },
   {
     "objectID": "sites/data sources/dd2_questionnaire.html",
@@ -186,7 +186,7 @@
     "href": "sites/working.html",
     "title": "Working with data",
     "section": "",
-    "text": "How to work with data.\n\nUploads\nmacros\n“take home”\n\nKEA SOP\n\nfolder structure"
+    "text": "How to work with data.\n\nUploads\nmacros\n“take home”\n\nKEA SOP\n\nfolder structure\n\n\nKEA\nThis only makes sense to KEA employees with access to the common drive.\n\nS-drev\nO-drev\nHvor ligger filerne/data\n\n\n\nUpload\n\nHvordan tjekker man at data er klar til upload\nHvordan uploader man"
   },
   {
     "objectID": "sites/data sources/diabase.html",
@@ -201,5 +201,19 @@
     "title": "DDiD",
     "section": "",
     "text": "Dansk Diabetes Database (DDD/DDiD), which has been active since 1/7 2022."
+  },
+  {
+    "objectID": "sites/data sources/dd2_biobank.html#gamle-datasæt",
+    "href": "sites/data sources/dd2_biobank.html#gamle-datasæt",
+    "title": "DD2 biobank data",
+    "section": "Gamle datasæt",
+    "text": "Gamle datasæt\nN = 1053 er indlæst fra txt.\nProjektID - hvordan er den lavet?\n\nData vi har modtaget på KEA (gammelt setup):\n\nFirst1053Patients, n=1053 med resultater fra blodprøver\nUrinResultatermedRatio2013Nov, n=1052 med resultater fra urinprøver\nDataTilDD2medFastende, n=5966 med resultater på GAD, glucose og cpeptid, samt en variabel med faste.\nWrongCpeptidmeas, n=105 med cpeptid og ny cpeptid, men jeg har en note om en mail fra Jens om at disse ikke skal bruges til noget.\nData fra AG (MBL+GENO)\n\n\nMBL: (Gedebjerg et al. 2020) C-pep. CRP: (Gedebjerg et al. 2023)"
+  },
+  {
+    "objectID": "sites/data sources/dd2_biobank.html#nye-datasæt",
+    "href": "sites/data sources/dd2_biobank.html#nye-datasæt",
+    "title": "DD2 biobank data",
+    "section": "Nye datasæt",
+    "text": "Nye datasæt\nDerudover har vi i 2022-2023 modtaget flere filer med måle/plade."
   }
 ]

@@ -1,21 +1,35 @@
 ---
 title: "DD2 biobank data"
+bibliography: 
+- "`r system('kpsewhich ../../references.bib', intern = TRUE)`"
 ---
+
+ 
+Generel beskrivelse: [@Christensen_ClinEpi_2012]
+
+# Overblik over nuværende datakilder
+
+## Gamle datasæt
 
 N = 1053 er indlæst fra txt.
 
 ProjektID - hvordan er den lavet?
 
--   Data vi har modtaget på KEA (gammelt setup=:
+-   Data vi har modtaget på KEA (gammelt setup):
     -   First1053Patients, n=1053 med resultater fra blodprøver
     -   UrinResultatermedRatio2013Nov, n=1052 med resultater fra urinprøver
     -   DataTilDD2medFastende, n=5966 med resultater på GAD, glucose og cpeptid, samt en variabel med faste.
-    -   WrongCpeptidmeas, n=105 med cpeptid og ny cpeptid, men jeg har en note om en mail fra Jens om at disse ikke skal bruges til noget. 
+    -   WrongCpeptidmeas, n=105 med cpeptid og ny cpeptid, men jeg har en note om en mail fra Jens om at disse ikke skal bruges til noget.
+    - Data fra AG (MBL+GENO)
+    
+MBL: [@Gedebjerg_DiabCare_2020]
+C-pep. CRP: [@Gedebjerg_DiabCare_2023]
 
-
+## Nye datasæt
 
 Derudover har vi i 2022-2023 modtaget flere filer med måle/plade.
 
+# Ny struktur - data delt i to
 
 DENNE SIDE SKAL BESKRIVE
 
@@ -46,3 +60,5 @@ DENNE SIDE SKAL BESKRIVE
     -   study (hvorfor er målingen lavet?)
 
     -   date (f.eks. ved c-pep er der forskel på om analysen er lavet på en ny eller gammel prøve, så det kan være relevant at kende datoen for analysen så man kan sammenligne den med datoen for blodprøven).
+
+Det kan evt. være relevant med et meta-data med henvisning til de enkelte studier.

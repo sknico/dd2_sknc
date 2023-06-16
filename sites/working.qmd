@@ -13,3 +13,18 @@ How to work with data.
 
 - folder structure 
 
+
+
+
+# KEA
+This only makes sense to KEA employees with access to the common drive. 
+
+- S-drev
+- O-drev
+- Hvor ligger filerne/data 
+
+
+# Upload 
+- Hvordan tjekker man at data er klar til upload
+- Hvordan uploader man 
+

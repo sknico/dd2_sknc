@@ -4,33 +4,78 @@ bibliography:
 - "`r system('kpsewhich ../../references.bib', intern = TRUE)`"
 ---
 
-When patients are enrolled in the DD2, blood and a urine samples are collected and stored in the biobank in Vejle. The samples are from DD2 baseline, and future projects can have the samples analyzed if additional analyses are needed - the timing will always be baseline DD2. 
+When patients are enrolled in the DD2, blood and a urine samples are collected and stored in the biobank in Vejle. The samples are from DD2 baseline, and future projects can have the samples analyzed if additional analyses are needed - the timing will always be baseline DD2.
 
-Further information about the initial idea about the biobank: [@Christensen_ClinEpi_2012].
-The documentation for the biobank can be downloaded here (Danish):{{< downloadthis ../../files/20210809-vejledning-i-dd2-proevehaandtering_kba_hjemmeside.pdf  
-dname="20210809-vejledning-i-dd2-proevehaandtering_kba_hjemmeside" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}}
+Further information about the initial idea about the biobank: [@Christensen_ClinEpi_2012]. The documentation for the biobank can be downloaded here (Danish):{{\< downloadthis ../../files/20210809-vejledning-i-dd2-proevehaandtering_kba_hjemmeside.pdf\
+dname="20210809-vejledning-i-dd2-proevehaandtering_kba_hjemmeside" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}}
 
 # Data sources
-The data in the biobank are joined from multiple studies and data sets. The individual identifier in the biobank is `ProjektID` and it is unique per CPR number. 
 
-## Original data 
-In the first phase of DD2, a lot of biomarker were analysed. This was initially done for the first 1.053 individuals enrolled in DD2 (some have later opted out), and these individuals are marked by the variable `BlodProve1053patients`. 
+The data in the biobank are joined from multiple studies and data sets. The individual identifier in the biobank is `ProjektID` and it is unique per CPR number. The Project ID should end with the digits -00 (individual). A comparable variable is `Barcode` which is similar to the project id, but it end with a number (e.g. -19 as in `UrinResultatermedRatio2013Nov`) and denotes the specific sample for the individual. Currently,the biomarker data includes ProjektID and individual-level biomarker results stored in wide format, but we are currently working on a new setup where data will be stored in long format.
 
-N = 1053 er indlæst fra txt.
+Locally at KEA, the data files are stored in the folder: O:\\HE_KEA-DATA-RAW0050\\Main Part\\data\\Input Data Sets\\BioBank.
 
-ProjektID - hvordan er den lavet?
+## Original data
 
--   Data vi har modtaget på KEA (gammelt setup):
-    -   First1053Patients, n=1053 med resultater fra blodprøver
-    -   UrinResultatermedRatio2013Nov, n=1052 med resultater fra urinprøver
-    -   DataTilDD2medFastende, n=5966 med resultater på GAD, glucose og cpeptid, samt en variabel med faste.
-    -   WrongCpeptidmeas, n=105 med cpeptid og ny cpeptid, men jeg har en note om en mail fra Jens om at disse ikke skal bruges til noget.
-    - Data fra AG (MBL+GENO)
-    
-MBL: [@Gedebjerg_DiabCare_2020]
-C-pep. CRP: [@Gedebjerg_DiabCare_2023]
+In the first phase of DD2, a lot of biomarkers were analysed for the first 1.053 individuals enrolled in DD2 (some have later opted out). These individuals are marked by the variable `BlodProve1053patients` (based on the CPR numbers in data files `First1053Patients` (same as in `UrinResultatermedRatio2013Nov`)) and are predominantly enrolled in 2011-2012.
 
-## Nye datasæt
+These are the data files stored at KEA (files read in locally). File names might have changed since we initially received them.
+
+-   `First1053Patients.txt`: We have probably received the data file in November 2012. It includes n=1.053 CPR numbers and they are most likely everyone in the database at that time. The file includes results from the initial blood samples. There are no dates in the data. The data set includes the variables:
+
+    -   CPR
+    -   ProjektID
+    -   C-peptid (pmol/L)
+    -   GAD (kU/l)
+    -   Glucose (n=1.050, mmol/L)
+    -   ALAT (n=1.030, U/L)
+    -   Hæmolyse (n=1.030)
+    -   Icteri (n=1.030)
+    -   Lipæmi (n=1.030)
+    -   AMYLP (n=1.041, U/L)
+    -   CRP (n=1.041, mg/L)
+
+-   `UrinResultatermedRatio2013Nov.txt`: We have probably received the data file in December 2013. It includes n=1.053 CPR numbers (same as in `First1053Patients`) with results from the initial urine samples. The data set includes the variables:
+
+    -   CPR
+    -   Barkode (ends with 19)
+    -   ALBu_mg_L\_ (n=1.041, mg/L, dated November 19, 20, and 23, 2012)
+    -   KREA_mmol_L\_ (n=1.041, mmol/L, dated November 19, 20, and 23, 2012)
+    -   UPROT_g\_L\_ (n=1.041, g/L, dated November 19, 20, and 23, 2012)
+    -   Albumin_Kreatinin_ratio (n=1.041)
+    -   Kommentar (n=473, \<5 with "*PROT-U \> 2.5 g/l*" and the rest with "*ALB-U \<3 mg/L*")
+
+-   `DataTilDD2medFastende.txt`: We have probably received the file in September 2015. It includes n=5.966 CPR numbers with character results on GAD, glucose, and cpeptid, along with a variable about faste. The majority of the individuals in the file are enrolled before 2015, but it only includes around 80-85% of the individuals enrolled before 2016. There are no dates in the data. The data set includes the variables:
+
+    -   Id (ProjectID, ends with -00)
+    -   GAD (numeric values for n=131 ID numbers, the value "*\<0,000*" for n=5.797 ID numbers, "*\>525,000*" for n=51 ID numbers, and "*?????*" or "*NA*" for the remaining n=20 ID numbers)
+    -   Glucose (numeric values for n=4.457 and "*NA*" for the remaining n=1.539 ID numbers)
+    -   Cpeptid (numeric values for n=5.964 and "*NA*" for the remaining n=32 ID numbers)
+    -   Fastende ("*Ja*" for n=2.891, "*Nej*" for n=397, and "*Ved ikke*" for the remaining n=2.708 ID numbers)
+
+-   `WrongCPeptideMeasurements.txt`: We have probably received the file in November 2015. It includes n=105 ID numbers (end with -00) and the variables cpeptid and NyCpeptid. The values are quite different. We have noted in the syntax that DD2/Jens has told us not to use this file (May 2018).
+
+## Results from Anne Gedebjerg
+
+-   `DD2 resultater.xlsx` (and `DD2 resultater_10_0095`, which is the version where \<10 is replaced by 10 and \<0,095 by 0,095): We have received the file in September 2017 (from Anne Gedebjerg). It includes n=7.519 barcodes (end with -99) in sheets of 100 or 101 rows, and should include CRP and mannose-binding lectin (MBL) on everyone enrolled by December 2016. See [@Gedebjerg_DiabCare_2023] for more information.
+    -   CRP (n=7.510, mg/L)
+    -   MBL (n=7.514, µg/L)
+-   `Resultater den 250917 Anne Gedebjerg.xlsx`: We have received the file in September 2017 (from Anne Gedebjerg). It includes n=3.116 barcodes (end with -99) and variables regarding MBL expression genotyping (six SNPs in the MBL2 gene). The genotyping was done for the first \~3.000 individuals enrolled in DD2. See [@Gedebjerg_DiabCare_2020] for more information. The data set includes the variables:
+    -   barkode (ends with -99)
+    -   HL
+    -   XY
+    -   PQ
+    -   52
+    -   54
+    -   57
+    -   HAPLOTYPE
+
+## New data
+During 2022-2023, we have received new data from biomarker analyses. The majority of the new biomarkers are so-called "pladebiomarkører" (as opposed to the current ones which are called "målebiomarkører") because of the way the analyses are performed. 
+
+
+
+
 
 Derudover har vi i 2022-2023 modtaget flere filer med måle/plade.
 
@@ -67,6 +112,5 @@ DENNE SIDE SKAL BESKRIVE
     -   date (f.eks. ved c-pep er der forskel på om analysen er lavet på en ny eller gammel prøve, så det kan være relevant at kende datoen for analysen så man kan sammenligne den med datoen for blodprøven).
 
 Det kan evt. være relevant med et meta-data med henvisning til de enkelte studier.
-
 
 ## Faste

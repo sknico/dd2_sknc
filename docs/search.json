@@ -109,7 +109,7 @@
     "href": "sites/data sources/dd2_biobank.html",
     "title": "DD2 biobank data",
     "section": "",
-    "text": "Generel beskrivelse: (Christensen et al. 2012)"
+    "text": "When patients are enrolled in the DD2, blood and a urine samples are collected and stored in the biobank in Vejle. The samples are from DD2 baseline, and future projects can have the samples analyzed if additional analyses are needed - the timing will always be baseline DD2.\nFurther information about the initial idea about the biobank: (Christensen et al. 2012). The documentation for the biobank can be downloaded here (Danish): Download"
   },
   {
     "objectID": "sites/data sources/dd2_questionnaire.html",
@@ -123,7 +123,7 @@
     "href": "sites/data sources/ddda.html",
     "title": "DDDA",
     "section": "",
-    "text": "Danish Diabetes Database for Adults (DDDA) (Dansk Voksen Diabates Database, DVDD) is a no longer active database from regionernes kliniske kvalitetsudviklingsprogram (RKKP). It was closed by 30/6 2022. It has now been replaced by Dansk Diabetes Database (DDD/DDiD), which has been active since 1/7 2022.\nWe currently have data from DDDA in the period from May 2005 to June 2022.\nDENNE SIDE SKAL BESKRIVE\n\nDDDA - data findes kun frem til Juni 2022 DDDA udgår og bliver fremover til Dansk Diabetes Database (DDD/DDiD), som gik i drift pr. 1/7 2022."
+    "text": "Danish Diabetes Database for Adults (DDDA) (Dansk Voksen Diabates Database, DVDD) is a no longer active database from regionernes kliniske kvalitetsudviklingsprogram (RKKP). It was closed by 30/6 2022. It has now been replaced by Dansk Diabetes Database (DDD/DDiD), which has been active since 1/7 2022.\nWe currently have data from DDDA in the period from May 2005 to June 2022.\nDENNE SIDE SKAL BESKRIVE\n\nDDDA - data findes kun frem til Juni 2022 DDDA udgår og bliver fremover til Dansk Diabetes Database (DDD/DDiD), som gik i drift pr. 1/7 2022.\n\nHusk man skal overveje hvordan man angiver % i en tabel (hvad er 100%)"
   },
   {
     "objectID": "sites/data sources/fodstatus.html",
@@ -215,5 +215,33 @@
     "title": "DD2 biobank data",
     "section": "Nye datasæt",
     "text": "Nye datasæt\nDerudover har vi i 2022-2023 modtaget flere filer med måle/plade."
+  },
+  {
+    "objectID": "sites/data sources/dd2_biobank.html#original-data",
+    "href": "sites/data sources/dd2_biobank.html#original-data",
+    "title": "DD2 biobank data",
+    "section": "Original data",
+    "text": "Original data\nIn the first phase of DD2, a lot of biomarker were analysed. This was initially done for the first 1.053 individuals enrolled in DD2 (some have later opted out), and these individuals are marked by the variable BlodProve1053patients.\nN = 1053 er indlæst fra txt.\nProjektID - hvordan er den lavet?\n\nData vi har modtaget på KEA (gammelt setup):\n\nFirst1053Patients, n=1053 med resultater fra blodprøver\nUrinResultatermedRatio2013Nov, n=1052 med resultater fra urinprøver\nDataTilDD2medFastende, n=5966 med resultater på GAD, glucose og cpeptid, samt en variabel med faste.\nWrongCpeptidmeas, n=105 med cpeptid og ny cpeptid, men jeg har en note om en mail fra Jens om at disse ikke skal bruges til noget.\nData fra AG (MBL+GENO)\n\n\nMBL: (Gedebjerg et al. 2020) C-pep. CRP: (Gedebjerg et al. 2023)"
+  },
+  {
+    "objectID": "diverse/download_example.html",
+    "href": "diverse/download_example.html",
+    "title": "Downloadthis Example",
+    "section": "",
+    "text": "Using {{< downloadthis files/quarto.png >}}, you can create the following download buttons that downloads the logo of quarto embedded within this rendered html document,\nAnd it is also possible to specify,\n\nthe downloaded file name with dname argument,\nbutton label with label argument,\nbutton icon name with icon argument.\nbutton type with type argument."
+  },
+  {
+    "objectID": "diverse/download_example.html#downloading-csv-file",
+    "href": "diverse/download_example.html#downloading-csv-file",
+    "title": "Downloadthis Example",
+    "section": "Downloading csv file",
+    "text": "Downloading csv file\n{{< downloadthis files/mtcars.csv dname=Mtcars label=\"Download the mtcars data\" icon=database-fill-down type=info class=data-button id=mtcars >}}\nWriting the shortcode as above creates the following button,"
+  },
+  {
+    "objectID": "diverse/download_example.html#downloading-pdf-file",
+    "href": "diverse/download_example.html#downloading-pdf-file",
+    "title": "Downloadthis Example",
+    "section": "Downloading pdf file",
+    "text": "Downloading pdf file\n{{< downloadthis files/pdf_example.pdf dname= label=\"Download the pdf\" icon=file-earmark-pdf type=success >}}\nSimilarly, the above shortcode creates the following button,\n Download the pdf \nHer indsættes et link til download  Download  af SOP\n\n\n\n\n\n\n\n\n\n\n\ndownloadthis::download_file(\n  path = \"../files/SOP.pdf\",\n  output_name = \"CSS file from downloadthis\",\n  button_label = \"Download pdf\",\n  button_type = \"default\",\n  has_icon = FALSE,\n  icon = \"fa fa-save\",\n  self_contained = FALSE\n)\n\n\n Download pdf"
   }
 ]

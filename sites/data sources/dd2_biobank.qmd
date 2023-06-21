@@ -4,12 +4,17 @@ bibliography:
 - "`r system('kpsewhich ../../references.bib', intern = TRUE)`"
 ---
 
- 
-Generel beskrivelse: [@Christensen_ClinEpi_2012]
+When patients are enrolled in the DD2, blood and a urine samples are collected and stored in the biobank in Vejle. The samples are from DD2 baseline, and future projects can have the samples analyzed if additional analyses are needed - the timing will always be baseline DD2. 
 
-# Overblik over nuværende datakilder
+Further information about the initial idea about the biobank: [@Christensen_ClinEpi_2012].
+The documentation for the biobank can be downloaded here (Danish):{{< downloadthis ../../files/20210809-vejledning-i-dd2-proevehaandtering_kba_hjemmeside.pdf  
+dname="20210809-vejledning-i-dd2-proevehaandtering_kba_hjemmeside" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}}
 
-## Gamle datasæt
+# Data sources
+The data in the biobank are joined from multiple studies and data sets. The individual identifier in the biobank is `ProjektID` and it is unique per CPR number. 
+
+## Original data 
+In the first phase of DD2, a lot of biomarker were analysed. This was initially done for the first 1.053 individuals enrolled in DD2 (some have later opted out), and these individuals are marked by the variable `BlodProve1053patients`. 
 
 N = 1053 er indlæst fra txt.
 
@@ -62,3 +67,6 @@ DENNE SIDE SKAL BESKRIVE
     -   date (f.eks. ved c-pep er der forskel på om analysen er lavet på en ny eller gammel prøve, så det kan være relevant at kende datoen for analysen så man kan sammenligne den med datoen for blodprøven).
 
 Det kan evt. være relevant med et meta-data med henvisning til de enkelte studier.
+
+
+## Faste

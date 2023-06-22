@@ -5,7 +5,7 @@ project:
 website:
   title: "DD2"
   page-navigation: true
-  page-footer: "SKNC" 
+  page-footer: "SKNC"  
   #navbar:
   #  left:
   #    - href: index.qmd

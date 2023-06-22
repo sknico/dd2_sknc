@@ -11,7 +11,7 @@ dname="20210809-vejledning-i-dd2-proevehaandtering_kba_hjemmeside" icon="file-ea
 
 # Data sources
 
-The data in the biobank are joined from multiple studies and data sets. The individual identifier in the biobank is `ProjektID` and it is unique per CPR number. The Project ID should end with the digits -00 (individual). A comparable variable is `Barcode` which is similar to the project id, but it end with a number (e.g. -19 as in `UrinResultatermedRatio2013Nov`) and denotes the specific sample for the individual. Currently,the biomarker data includes ProjektID and individual-level biomarker results stored in wide format, but we are currently working on a new setup where data will be stored in long format.
+The data in the biobank are joined from multiple studies and data sets. The individual identifier in the biobank is `ProjektID` and it is unique per CPR number. The project ID should end with the digits -00 (individual). Another variable is `Barcode` which is similar to the project id, but it end with a number (e.g. -12, -19, or -99) and denotes the specific sample for the individual (see documentation above). Currently, the biomarker data includes ProjektID and individual-level biomarker results stored in wide format, but we are currently working on a new setup where data will be stored in long format.
 
 Locally at KEA, the data files are stored in the folder: O:\\HE_KEA-DATA-RAW0050\\Main Part\\data\\Input Data Sets\\BioBank.
 
@@ -38,7 +38,7 @@ These are the data files stored at KEA (files read in locally). File names might
 -   `UrinResultatermedRatio2013Nov.txt`: We have probably received the data file in December 2013. It includes n=1.053 CPR numbers (same as in `First1053Patients`) with results from the initial urine samples. The data set includes the variables:
 
     -   CPR
-    -   Barkode (ends with 19)
+    -   Barkode (ends with -19)
     -   ALBu_mg_L\_ (n=1.041, mg/L, dated November 19, 20, and 23, 2012)
     -   KREA_mmol_L\_ (n=1.041, mmol/L, dated November 19, 20, and 23, 2012)
     -   UPROT_g\_L\_ (n=1.041, g/L, dated November 19, 20, and 23, 2012)
@@ -57,15 +57,13 @@ These are the data files stored at KEA (files read in locally). File names might
 
 ## Results from Anne Gedebjerg
 
--   `DD2 resultater.xlsx` (and `DD2 resultater_10_0095`, which is the version where \<10 is replaced by 10 and \<0,095 by 0,095): We have received the file in September 2017 (from Anne Gedebjerg). It includes n=7.519 barcodes (end with -99) in sheets of 100 or 101 rows, and should include CRP and mannose-binding lectin (MBL) on everyone enrolled by December 2016. See [@Gedebjerg_DiabCare_2023] for more information.
-The data set includes the variables:
+-   `DD2 resultater.xlsx` (and `DD2 resultater_10_0095`, which is the version where \<10 is replaced by 10 and \<0,095 by 0,095): We have received the file in September 2017 (from Anne Gedebjerg). It includes n=7.519 barcodes (end with -99) in sheets of 100 or 101 rows, and should include CRP and mannose-binding lectin (MBL) on everyone enrolled by December 2016. See [@Gedebjerg_DiabCare_2023] for more information. The data set includes the variables:
 
     -   barkode (ends with -99)
     -   CRP (n=7.510, mg/L)
     -   MBL (n=7.514, µg/L)
 
--   `Resultater den 250917 Anne Gedebjerg.xlsx`: We have received the file in September 2017 (from Anne Gedebjerg). It includes n=3.116 barcodes (end with -99) and variables regarding MBL expression genotyping (six SNPs in the MBL2 gene). The genotyping was done for the first \~3.000 individuals enrolled in DD2. See [@Gedebjerg_DiabCare_2020] for more information. 
-The data set includes the variables:
+-   `Resultater den 250917 Anne Gedebjerg.xlsx`: We have received the file in September 2017 (from Anne Gedebjerg). It includes n=3.116 barcodes (end with -99) and variables regarding MBL expression genotyping (six SNPs in the MBL2 gene). The genotyping was done for the first \~3.000 individuals enrolled in DD2. See [@Gedebjerg_DiabCare_2020] for more information. The data set includes the variables:
 
     -   barkode (ends with -99)
     -   HL
@@ -83,8 +81,8 @@ During 2022-2023, we have received new data from biomarker analyses. The majorit
 Derudover har vi i 2022-2023 modtaget flere filer med måle/plade.
 
 # Faste
-Er patienten fastende? 
 
+Er patienten fastende?
 
 # Ny struktur - data delt i to
 
@@ -119,5 +117,3 @@ DENNE SIDE SKAL BESKRIVE
     -   date (f.eks. ved c-pep er der forskel på om analysen er lavet på en ny eller gammel prøve, så det kan være relevant at kende datoen for analysen så man kan sammenligne den med datoen for blodprøven).
 
 Det kan evt. være relevant med et meta-data med henvisning til de enkelte studier.
-
-

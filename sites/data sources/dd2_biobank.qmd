@@ -3,6 +3,9 @@ title: "DD2 biobank data"
 bibliography: 
 - "`r system('kpsewhich ../../references.bib', intern = TRUE)`"
 ---
+{{\< downloadthis ../../files/variable_documentation/DD2_questionnaire.csv
+dname="DD2_questionnaire" icon="file-earmark-text" label="Variable documentation" type="button" class="btn btn-light"\>}}
+<!-- Linket skal ændres til excel-filen til seedcase -->
 
 When patients are enrolled in the DD2, blood and a urine samples are collected and stored in the biobank in Vejle. The samples are from DD2 baseline, and future projects can have the samples analyzed if additional analyses are needed - the timing will always be baseline DD2.
 

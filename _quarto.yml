@@ -66,5 +66,9 @@ format:
     #   body-width: 800px
     #   margin-width: 200px
     #   gutter-width: 1.5rem
+    
+    
+bibliography: "references.bib"
+csl: "vancouver-author-date.csl"
 
 

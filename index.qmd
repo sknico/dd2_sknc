@@ -1,12 +1,13 @@
 ---
 title: "The Danish Center for Strategic Research in Type 2 Diabetes"
 author: Sia K. Nicolaisen
-date: last-modified
-bibliography: references.bib
+#date: last-modified
+#bibliography: references.bib
 ---
 
 This website includes details about **The Danish Center for Strategic Research in Type 2 Diabetes** (The **DD2** Study). The intention of this website is to document the data sources used for research and to ease the day-to-day work with DD2. It is intended for employees at Department of Clinical Epidemiology (DCE/KEA), Aarhus University and Aarhus University Hospital, as it is mainly describing the setup used at DCE. Other institutions can also gain access to DD2 data but their setup might be different. 
 
 To learn more about DD2 please see: <https://dd2.dk/>
 
-An extensive list of [scientific publications](https://dd2.dk/nyheder/categories/videnskabelige-publikationer) based on data from DD2 is available on the website. That said, a good place to start is the 2018 baseline paper [@Christensen_BMJOpen_2018]. We are currently working on an update of this paper. 
+An extensive list of [scientific publications](https://dd2.dk/nyheder/categories/videnskabelige-publikationer) based on data from DD2 is available on the website. That said, a good place to start is the 2018 baseline paper @Christensen_BMJOpen_2018. We are currently working on an update of this paper. 
+

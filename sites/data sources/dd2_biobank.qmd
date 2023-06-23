@@ -1,15 +1,19 @@
 ---
 title: "DD2 biobank data"
-bibliography: 
-- "`r system('kpsewhich ../../references.bib', intern = TRUE)`"
+#bibliography: 
+#- "`r system('kpsewhich ../../references.bib', intern = TRUE)`"
 ---
 {{\< downloadthis ../../files/variable_documentation/DD2_questionnaire.csv
-dname="DD2_questionnaire" icon="file-earmark-text" label="Variable documentation" type="button" class="btn btn-light"\>}}
-<!-- Linket skal ændres til excel-filen til seedcase -->
+dname="DD2_questionnaire" 
+icon="file-earmark-text" 
+label="Variable documentation" 
+type="button" 
+class="btn btn-light"\>}}
+<!-- Linket skal ændres til bibank excel-filen til seedcase -->
 
 When patients are enrolled in the DD2, blood and a urine samples are collected and stored in the biobank in Vejle. The samples are from DD2 baseline, and future projects can have the samples analyzed if additional analyses are needed - the timing will always be baseline DD2.
 
-Further information about the initial idea about the biobank: [@Christensen_ClinEpi_2012]. The documentation for the biobank can be downloaded here (Danish):{{\< downloadthis ../../files/20210809-vejledning-i-dd2-proevehaandtering_kba_hjemmeside.pdf\
+Further information about the initial idea about the biobank: @Christensen_ClinEpi_2012. The documentation for the biobank can be downloaded here (Danish):{{\< downloadthis ../../files/20210809-vejledning-i-dd2-proevehaandtering_kba_hjemmeside.pdf\
 dname="20210809-vejledning-i-dd2-proevehaandtering_kba_hjemmeside" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}}
 
 # Data sources
@@ -60,13 +64,13 @@ These are the data files stored at KEA (files read in locally). File names might
 
 ## Results from Anne Gedebjerg
 
--   `DD2 resultater.xlsx` (and `DD2 resultater_10_0095`, which is the version where \<10 is replaced by 10 and \<0,095 by 0,095): We have received the file in September 2017 (from Anne Gedebjerg). It includes n=7.519 barcodes (end with -99) in sheets of 100 or 101 rows, and should include CRP and mannose-binding lectin (MBL) on everyone enrolled by December 2016. See [@Gedebjerg_DiabCare_2023] for more information. The data set includes the variables:
+-   `DD2 resultater.xlsx` (and `DD2 resultater_10_0095`, which is the version where \<10 is replaced by 10 and \<0,095 by 0,095): We have received the file in September 2017 (from Anne Gedebjerg). It includes n=7.519 barcodes (end with -99) in sheets of 100 or 101 rows, and should include CRP and mannose-binding lectin (MBL) on everyone enrolled by December 2016. See @Gedebjerg_DiabCare_2023 for more information. The data set includes the variables:
 
     -   barkode (ends with -99)
     -   CRP (n=7.510, mg/L)
     -   MBL (n=7.514, µg/L)
 
--   `Resultater den 250917 Anne Gedebjerg.xlsx`: We have received the file in September 2017 (from Anne Gedebjerg). It includes n=3.116 barcodes (end with -99) and variables regarding MBL expression genotyping (six SNPs in the MBL2 gene). The genotyping was done for the first \~3.000 individuals enrolled in DD2. See [@Gedebjerg_DiabCare_2020] for more information. The data set includes the variables:
+-   `Resultater den 250917 Anne Gedebjerg.xlsx`: We have received the file in September 2017 (from Anne Gedebjerg). It includes n=3.116 barcodes (end with -99) and variables regarding MBL expression genotyping (six SNPs in the MBL2 gene). The genotyping was done for the first \~3.000 individuals enrolled in DD2. See @Gedebjerg_DiabCare_2020 for more information. The data set includes the variables:
 
     -   barkode (ends with -99)
     -   HL
@@ -77,15 +81,50 @@ These are the data files stored at KEA (files read in locally). File names might
     -   57
     -   HAPLOTYPE
 
+
+## Data from April 2022 (upload JAN2023)
+During 2022 we received additional data on CRP, c-peptid, and glucose. We had a file with CRP in October 2022, but it is fully included in a file from January 2023 which also include c-peptide and glucose. The October file is therefore not used during uploads. 
+
+
 ## New data
 
-During 2022-2023, we have received new data from biomarker analyses. The majority of the new biomarkers are so-called "pladebiomarkører" (as opposed to the current ones which are called "målebiomarkører") because of the way the analyses are performed.
+During 2022-2023, we have received new data from additional biomarker analyses. The majority of the new biomarkers are so-called "pladebiomarkører" (as opposed to the current ones which are called "målebiomarkører") because of the way the analyses are performed.
 
 Derudover har vi i 2022-2023 modtaget flere filer med måle/plade.
 
 # Faste
 
 Er patienten fastende?
+
+
+
+
+
+
+
+
+
+
+--- 
+
+Få quarto til at markere koden (som når man laver R-koder) - overspringshandling? 
+Koden virker, og jeg har ændret baggrundsfarven (men udkommenteret for at slippe for SAS)
+
+<!-- ```{r, class.source="sas_sknc", engine="sas", engine.path="C:/Program Files/SASHome/SASFoundation/9.4/sas.exe"}  -->
+<!-- /* brug library(SASmarkdown) fra R */ -->
+<!-- proc means data=sashelp.class; -->
+<!-- run; -->
+<!-- ``` -->
+
+
+```{r}
+# tekst
+c(1:3)
+```
+
+
+
+---
 
 # Ny struktur - data delt i to
 

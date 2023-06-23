@@ -21,3 +21,15 @@ svg {
   width: auto !important;
 }
 */
+
+/* et forsøg på at lave en style tit sas */
+/*.sas_sknc {
+  background-color: lightpink;
+  border: 3px solid red;
+  font-weight: bold;
+}*/
+
+.sas_sknc {
+  background-color: #397d7f; /*#e5e5e5e5;*/
+  font-weight: bold;
+}

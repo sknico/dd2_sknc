@@ -5,7 +5,9 @@ project:
 website:
   title: "DD2"
   page-navigation: true
-  page-footer: "SKNC"  
+  page-footer:
+    center: 
+      - text: "SKNC"
   #navbar:
   #  left:
   #    - href: index.qmd
@@ -58,6 +60,11 @@ format:
     theme: flatly
     css: styles.css
     toc: true
-
+    # For at styre størrelsen skal man vist bruge en nyere version - se i stedet filen styles.css
+    # grid:
+    #   sidebar-width: 500px
+    #   body-width: 800px
+    #   margin-width: 200px
+    #   gutter-width: 1.5rem
 
 

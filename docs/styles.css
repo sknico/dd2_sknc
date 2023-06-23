@@ -1,1 +1,23 @@
 /* css styles */
+
+/* Størrelsen på siden (i nyere versioner kan man gøer det i yml-filen) */
+/* css styles */
+#quarto-document-content {
+  width: 1000px;
+}
+
+#quarto-margin-sidebar {
+  margin-right: -600px;
+  margin-left: 200px;
+}
+
+
+/*
+svg {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  height: auto !important;
+  width: auto !important;
+}
+*/

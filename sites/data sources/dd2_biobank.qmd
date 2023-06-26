@@ -10,8 +10,7 @@ When patients are enrolled in the DD2, blood and a urine samples are collected a
 
 Further information about the initial idea about the biobank: @Christensen_ClinEpi_2012.\
 The documentation for the biobank can be downloaded here (Danish):{{\< downloadthis ../../files/biobank/DD2_dummy.pdf\
-dname="20210809-vejledning-i-dd2-proevehaandtering_kba_hjemmeside" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}} 
-<!-- {{\< downloadthis ../../files/biobank/20210809-vejledning-i-dd2-proevehaandtering_kba_hjemmeside.pdf\ --> <!-- dname="20210809-vejledning-i-dd2-proevehaandtering_kba_hjemmeside" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}} -->
+dname="20210809-vejledning-i-dd2-proevehaandtering_kba_hjemmeside" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}} <!-- {{\< downloadthis ../../files/biobank/20210809-vejledning-i-dd2-proevehaandtering_kba_hjemmeside.pdf\ --> <!-- dname="20210809-vejledning-i-dd2-proevehaandtering_kba_hjemmeside" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}} -->
 
 # Data sources
 
@@ -108,37 +107,57 @@ During 2022-2023, we have received new data from additional biomarker analyses. 
     -   Sheet 1, `Vplex sample results_final`. It includes the variables: Sample (id, ends with -12), Sample_Group (=Sample in all rows), Assay (either TNF-a or IL-6), Assay (either TNF-a or IL-6), Calc\_\_Conc\_\_Mean (results), RANGE (value 1 or 2), Plate_Name (each Plate_Name is used 78 times).
         -   TNF-a (n=9.202, pg/ml)
         -   IL-6,(n=9.195, pg/ml)
-        
     -   Sheet 2, `Vplex complete final`. Includes background information about the sample from the sample_groups *Sample* (n=9.024), *Standards* (n=1.888), and *Internal Control* (n=236). The sheet includes the variables Plate_Name, Sample_Group, Sample, Assay, Well, Signal, Mean, CV Calc\_\_Concentration, Calc\_\_Conc\_\_Mean, Calc\_\_Conc\_\_CV, \_\_Recovery, \_\_Recovery_Mean, Detection_Limits\_\_Calc\_\_Low, Detection_Limits\_\_Calc\_\_High, Detection_Range, Detection_Range_yesno, Quantification_range, Quantification_range_yesno, RANGE
 
-An additional quality log can be downloaded here: {{\< downloadthis ../../files/biobank/DD2_dummy.pdf\
-dname="220215_Overview_Vplex_panel_DD2_sknc" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}} <!-- {{\< downloadthis ../../files/biobank/220215_Overview_Vplex_panel_DD2_sknc.pdf\ --> <!-- dname="220215_Overview_Vplex_panel_DD2_sknc" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}} --> <!-- I versionen _sknc har jeg fjernet en linje der omhandler et enkelt id-nummer -->
+    An additional quality log can be downloaded here: {{\< downloadthis ../../files/biobank/DD2_dummy.pdf\
+    dname="220215_Overview_Vplex_panel_DD2_sknc" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}} <!-- {{\< downloadthis ../../files/biobank/220215_Overview_Vplex_panel_DD2_sknc.pdf\ --> <!-- dname="220215_Overview_Vplex_panel_DD2_sknc" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}} --> <!-- I versionen _sknc har jeg fjernet en linje der omhandler et enkelt id-nummer -->
 
-We also received the data file `DD2 quality log_panel 1 edited_TNF IL6.xlsx` but is has not been used. 
+    We also received the data file `DD2 quality log_panel 1 edited_TNF IL6.xlsx` but is has not been used.
 
--   November 2022, `8plex data final.xlsx` with 9 sheets (overview + 8 biomarkers). We received the data file in November 2022. There are no date stamps indicating when the analyses were performed. The data file include information on n=9.204 individuals (based on sample ID ending with -12). For each assay, the data file inlcludes the variables sample (ID), assay, calc__conc__mean (result), RANGE, and plate_name. 
-        - Ang-Like4 (n=9.200, pg/ml)
-        - FGF-21 (n=9.200, pg/ml)
-        - FGF-23 (Hu FGF-23, n=9.200, pg/ml)
-        - IL1-RA (n=9.200, pg/ml)
-        - Leptin (n=9.196, pg/ml)
-        - RAGE (soluble, n=9.200, pg/ml)
-        - Sclerostin (n=9.200, pg/ml)
-        - U-PAR (n=9.200, pg/ml)
-        
-        
-The overview sheet can be downloaded here: {{\< downloadthis ../../files/biobank/DD2_dummy.pdf\
-dname="8plex_data_final_overview" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}} 
+-   November 2022, `8plex data final.xlsx` with 9 sheets (overview + 8 biomarkers). We received the data file in November 2022. There are no date stamps indicating when the analyses were performed. The data file include information on n=9.204 individuals (based on sample ID ending with -12). For each assay, the data file includes the variables sample (ID), assay, calc\_\_conc\_\_mean (result), RANGE, and plate_name. In an e-mail, we have been told the unit is pg/ml for all assays.
 
-We also received data files `eight biomarkers with CPR.xlsx` and `seven biomarkers with CPR.xls` but these have not been used. 
+    -   Ang-Like4 (n=9.200, pg/ml)
+    -   FGF-21 (n=9.200, pg/ml)
+    -   FGF-23 (Hu FGF-23, n=9.200, pg/ml)
+    -   IL1-RA (n=9.200, pg/ml)
+    -   Leptin (n=9.196, pg/ml)
+    -   RAGE (soluble, n=9.200, pg/ml)
+    -   Sclerostin (n=9.200, pg/ml)
+    -   U-PAR (n=9.200, pg/ml)
+
+    The overview sheet can be downloaded here: {{\< downloadthis ../../files/biobank/DD2_dummy.pdf\
+    dname="8plex_data_final_overview" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}}
+
+    We also received data files `eight biomarkers with CPR.xlsx` and `seven biomarkers with CPR.xls` but these have not been used.
+
+-   February 2023, `DD2 osteocalcin final.xlsx` with 3 sheets (overview, results, and *rådata*). We received the file in February 2023, but we have no indication of when the analyses were performed. The file includes n=9.204 individuals (sample, ends with -12). The data file includes the variables sample (ID), assay, calc\_\_conc\_\_mean (result), RANGE, and plate_name.
+
+    -   Osteocalcin-1 (n=9.203)
+
+    The sheet *rådata* includes detailed information about each of the plates. The overview sheet (and additional information from e-mail) can be downloaded here: {{\< downloadthis ../../files/biobank/DD2_dummy.pdf\
+    dname="DD2_osteocalcin_final_sknc" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}}
+
+-   April 2023, `DD2_7plex_data_final.xlsx` with 9 sheets (overview + 7 biomarkers + additional sheet with sample names). We received the data file in April 2023. There are no date stamps indicating when the analyses were performed. The data file include information on n=9.048 individuals (based on sample ID ending with -12). For each assay, the data file includes the variables sample (ID), assay, calc\_conc\_mean (result), RANGE, and plate_name. In an e-mail, we have been told the unit is pg/ml for all assays. 
+    
+    -   CD163 (n=9.047, pg/ml)
+    -   Galectin-3 (n=9.008, pg/ml)
+    -   GDF-15 (n=9.046, pg/ml) 
+    -   NT-proBNP (n=9.048, pg/ml)
+    -   
 
 
+    
 
--   February 2023, `DD2 osteocalcin final.xlsx`:
 
--   April 2023, `DD2_7plex_data_final.xlsx`:
+    The overview sheet (and additional information from e-mail) can be downloaded here: {{\< downloadthis ../../files/biobank/DD2_dummy.pdf\
+    dname="DD2_7plex_data_final_sknc" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}}
+
 
 -   June 2023, `Osteopontin data final (1).xlsx`:
+
+    This data file has not yet been uploadet to the servers. 
+    
+-   "THE LAST ONE" we were told the June 2023 was "den næstsidste", hence, we expect to received another data file.
 
 # Faste
 

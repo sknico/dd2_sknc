@@ -3,24 +3,25 @@ title: "DD2 biobank data"
 #bibliography: 
 #- "`r system('kpsewhich ../../references.bib', intern = TRUE)`"
 ---
-{{\< downloadthis ../../files/variable_documentation/DD2_questionnaire.csv
-dname="DD2_questionnaire" 
-icon="file-earmark-text" 
-label="Variable documentation" 
-type="button" 
-class="btn btn-light"\>}}
-<!-- Linket skal ændres til bibank excel-filen til seedcase -->
+
+{{< downloadthis ../../files/variable_documentation/DD2_questionnaire.csv dname="DD2_questionnaire" icon="file-earmark-text" label="Variable documentation" type="button" class="btn btn-light">}}
 
 When patients are enrolled in the DD2, blood and a urine samples are collected and stored in the biobank in Vejle. The samples are from DD2 baseline, and future projects can have the samples analyzed if additional analyses are needed - the timing will always be baseline DD2.
 
-Further information about the initial idea about the biobank: @Christensen_ClinEpi_2012. The documentation for the biobank can be downloaded here (Danish):{{\< downloadthis ../../files/20210809-vejledning-i-dd2-proevehaandtering_kba_hjemmeside.pdf\
-dname="20210809-vejledning-i-dd2-proevehaandtering_kba_hjemmeside" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}}
+Further information about the initial idea about the biobank: @Christensen_ClinEpi_2012.\
+The documentation for the biobank can be downloaded here (Danish):{{\< downloadthis ../../files/biobank/DD2_dummy.pdf\
+dname="20210809-vejledning-i-dd2-proevehaandtering_kba_hjemmeside" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}} 
+<!-- {{\< downloadthis ../../files/biobank/20210809-vejledning-i-dd2-proevehaandtering_kba_hjemmeside.pdf\ --> <!-- dname="20210809-vejledning-i-dd2-proevehaandtering_kba_hjemmeside" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}} -->
 
 # Data sources
 
 The data in the biobank are joined from multiple studies and data sets. The individual identifier in the biobank is `ProjektID` and it is unique per CPR number. The project ID should end with the digits -00 (individual). Another variable is `Barcode` which is similar to the project id, but it end with a number (e.g. -12, -19, or -99) and denotes the specific sample for the individual (see documentation above). Currently, the biomarker data includes ProjektID and individual-level biomarker results stored in wide format, but we are currently working on a new setup where data will be stored in long format.
 
-Locally at KEA, the data files are stored in the folder: O:\\HE_KEA-DATA-RAW0050\\Main Part\\data\\Input Data Sets\\BioBank.
+Locally at KEA, the (original) data files are stored in the folder:\
+O:\\HE_KEA-DATA-RAW0050\\Main Part\\data\\Input Data Sets\\BioBank
+
+Data files from the 2022/2023 rounds are stored in the folder:\
+O:\\HE\\KEA-DATA-RAW0050\\Biomarkører
 
 ## Original data
 
@@ -81,81 +82,68 @@ These are the data files stored at KEA (files read in locally). File names might
     -   57
     -   HAPLOTYPE
 
+<!-- ## New data -->
 
-## Data from April 2022 (upload JAN2023)
-During 2022 we received additional data on CRP, c-peptid, and glucose. We had a file with CRP in October 2022, but it is fully included in a file from January 2023 which also include c-peptide and glucose. The October file is therefore not used during uploads. 
+## Data from April 2022 (upload January 2023)
 
+During 2022-2023 we received additional data on CRP, c-peptid, and glucose. We had a file with CRP in October 2022, but it is fully included in a file from January 2023 which also includes c-peptide and glucose. The October file is therefore not used during uploads.
 
-## New data
+-   `DD2_cRP_Glucose_Cpep_2022_resultater (1).xlsx`: The data file includes n=3.399 projekt_id. They are all enrolled after the first n=1.053 individuals, but we don't know why they were analysed (not all individuals per year). The data set includes the variables: projekt_id, Cpeptid_Barkode, Cpeptid_Resultat, Cpeptid_Måleenhed, Cpeptid_Antal_decimaler, Cpeptid_Dato, Cpeptid_Notat, CRPHS_Barkode, CRPHS_Resultat, CRPHS_Måleenhed, CRPHS_Antal_decimaler, CRPHS_Dato, CRPHS_Notat, Glukose_Barkode, Glukose_Resultat, Glukose_Måleenhed, Glukose_Antal_decimaler, Glukose_Dato, Glukose_Notat.
 
-During 2022-2023, we have received new data from additional biomarker analyses. The majority of the new biomarkers are so-called "pladebiomarkører" (as opposed to the current ones which are called "målebiomarkører") because of the way the analyses are performed.
+    -   projekt_id (n=3.339)
+    -   c-peptid (n=2.933, pmol/l, dated 30APR2022 or 01MAY2022)
+    -   CRP (n=2.478, mg/l, dated 30APR2022 or 01MAY2022)
+    -   Glucose (n=3.055, mmol/L, dated 02APR2022 or 03APR2022)
 
-Derudover har vi i 2022-2023 modtaget flere filer med måle/plade.
+## HOMA
+
+HOMA-calculations.
+
+## "Pladebiomarkører"
+
+During 2022-2023, we have received new data from additional biomarker analyses. The majority of the new biomarkers are so-called "pladebiomarkører" (as opposed to the current ones which are called "målebiomarkører") because of the way the analyses are performed. Data in these files are in long format.
+
+-   April 2022, `220211 Vplex_final.xlsx` with 2 sheets: Data received in April 2022 but probably analyzed in February 2022 (no dates in data, but based on date stamps in file names). The data file includes data from n=9.294 DD2 individuals on IL-6 and TNF-a.
+
+    -   Sheet 1, `Vplex sample results_final`. It includes the variables: Sample (id, ends with -12), Sample_Group (=Sample in all rows), Assay (either TNF-a or IL-6), Assay (either TNF-a or IL-6), Calc\_\_Conc\_\_Mean (results), RANGE (value 1 or 2), Plate_Name (each Plate_Name is used 78 times).
+        -   TNF-a (n=9.202, pg/ml)
+        -   IL-6,(n=9.195, pg/ml)
+        
+    -   Sheet 2, `Vplex complete final`. Includes background information about the sample from the sample_groups *Sample* (n=9.024), *Standards* (n=1.888), and *Internal Control* (n=236). The sheet includes the variables Plate_Name, Sample_Group, Sample, Assay, Well, Signal, Mean, CV Calc\_\_Concentration, Calc\_\_Conc\_\_Mean, Calc\_\_Conc\_\_CV, \_\_Recovery, \_\_Recovery_Mean, Detection_Limits\_\_Calc\_\_Low, Detection_Limits\_\_Calc\_\_High, Detection_Range, Detection_Range_yesno, Quantification_range, Quantification_range_yesno, RANGE
+
+An additioanl quality log can be downloaded here: {{\< downloadthis ../../files/biobank/DD2_dummy.pdf\
+dname="220215_Overview_Vplex_panel_DD2_sknc" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}} <!-- {{\< downloadthis ../../files/biobank/220215_Overview_Vplex_panel_DD2_sknc.pdf\ --> <!-- dname="220215_Overview_Vplex_panel_DD2_sknc" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}} --> <!-- I versionen _sknc har jeg fjernet en linje der omhandler et enkelt id-nummer -->
+
+-   November 2022, `8plex data final.xlsx`:
+
+-   February 2023, `DD2 osteocalcin final.xlsx`:
+
+-   April 2023, `DD2_7plex_data_final.xlsx`:
+
+-   June 2023, `Osteopontin data final (1).xlsx`:
 
 # Faste
 
-Er patienten fastende?
+Is the patient fasting? A simple question, yet, difficult to assess.
 
+<!-- ------------------------------------------------------------------------ -->
 
-
-
-
-
-
-
-
-
---- 
-
-Få quarto til at markere koden (som når man laver R-koder) - overspringshandling? 
-Koden virker, og jeg har ændret baggrundsfarven (men udkommenteret for at slippe for SAS)
+<!-- Få quarto til at markere koden (som når man laver R-koder) - overspringshandling? Koden virker, og jeg har ændret baggrundsfarven (men udkommenteret for at slippe for SAS) -->
 
 <!-- ```{r, class.source="sas_sknc", engine="sas", engine.path="C:/Program Files/SASHome/SASFoundation/9.4/sas.exe"}  -->
+
 <!-- /* brug library(SASmarkdown) fra R */ -->
+
 <!-- proc means data=sashelp.class; -->
+
 <!-- run; -->
+
 <!-- ``` -->
 
+<!-- ```{r} -->
 
-```{r}
-# tekst
-c(1:3)
-```
+<!-- # tekst -->
 
+<!-- c(1:3) -->
 
-
----
-
-# Ny struktur - data delt i to
-
-DENNE SIDE SKAL BESKRIVE
-
--   DD2 BIOBANK: infodata om prøverne og kvaliteten af data (IKKE resultater)
-
-    -   cpr/projectid (link mellem cpr og projectid)
-
-    -   urinprøve, ja/nej
-
-    -   blodprøve, ja/nej
-
-    -   faste ja/nej
-
-    -   vejledato
-
-    -   nye data fra biobanken/vejle: antal prøver, glas, osv.
-
--   Biomarker: resultater fra de enkelte analyser (long format)
-
-    -   projectid
-
-    -   biomarker (e.g. c-pep, glucose, il6, ...)
-
-    -   results (resultatet af analysen)
-
-    -   unit
-
-    -   study (hvorfor er målingen lavet?)
-
-    -   date (f.eks. ved c-pep er der forskel på om analysen er lavet på en ny eller gammel prøve, så det kan være relevant at kende datoen for analysen så man kan sammenligne den med datoen for blodprøven).
-
-Det kan evt. være relevant med et meta-data med henvisning til de enkelte studier.
+<!-- ``` -->

@@ -111,10 +111,28 @@ During 2022-2023, we have received new data from additional biomarker analyses. 
         
     -   Sheet 2, `Vplex complete final`. Includes background information about the sample from the sample_groups *Sample* (n=9.024), *Standards* (n=1.888), and *Internal Control* (n=236). The sheet includes the variables Plate_Name, Sample_Group, Sample, Assay, Well, Signal, Mean, CV Calc\_\_Concentration, Calc\_\_Conc\_\_Mean, Calc\_\_Conc\_\_CV, \_\_Recovery, \_\_Recovery_Mean, Detection_Limits\_\_Calc\_\_Low, Detection_Limits\_\_Calc\_\_High, Detection_Range, Detection_Range_yesno, Quantification_range, Quantification_range_yesno, RANGE
 
-An additioanl quality log can be downloaded here: {{\< downloadthis ../../files/biobank/DD2_dummy.pdf\
+An additional quality log can be downloaded here: {{\< downloadthis ../../files/biobank/DD2_dummy.pdf\
 dname="220215_Overview_Vplex_panel_DD2_sknc" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}} <!-- {{\< downloadthis ../../files/biobank/220215_Overview_Vplex_panel_DD2_sknc.pdf\ --> <!-- dname="220215_Overview_Vplex_panel_DD2_sknc" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}} --> <!-- I versionen _sknc har jeg fjernet en linje der omhandler et enkelt id-nummer -->
 
--   November 2022, `8plex data final.xlsx`:
+We also received the data file `DD2 quality log_panel 1 edited_TNF IL6.xlsx` but is has not been used. 
+
+-   November 2022, `8plex data final.xlsx` with 9 sheets (overview + 8 biomarkers). We received the data file in November 2022. There are no date stamps indicating when the analyses were performed. The data file include information on n=9.204 individuals (based on sample ID ending with -12). For each assay, the data file inlcludes the variables sample (ID), assay, calc__conc__mean (result), RANGE, and plate_name. 
+        - Ang-Like4 (n=9.200, pg/ml)
+        - FGF-21 (n=9.200, pg/ml)
+        - FGF-23 (Hu FGF-23, n=9.200, pg/ml)
+        - IL1-RA (n=9.200, pg/ml)
+        - Leptin (n=9.196, pg/ml)
+        - RAGE (soluble, n=9.200, pg/ml)
+        - Sclerostin (n=9.200, pg/ml)
+        - U-PAR (n=9.200, pg/ml)
+        
+        
+The overview sheet can be downloaded here: {{\< downloadthis ../../files/biobank/DD2_dummy.pdf\
+dname="8plex_data_final_overview" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}} 
+
+We also received data files `eight biomarkers with CPR.xlsx` and `seven biomarkers with CPR.xls` but these have not been used. 
+
+
 
 -   February 2023, `DD2 osteocalcin final.xlsx`:
 

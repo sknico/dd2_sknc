@@ -167,10 +167,32 @@ During 2022-2023, we have received new data from additional biomarker analyses. 
 # Fasting 
 Is the patient fasting? A simple question, yet, difficult to assess.
 
-Data from the DD2 questionnaire itself includes the variable "Er_patienten_fastende_" (wheter the patient is fasting). Currently, around 75% of the individuals have answered that they are fasting. This variable can be used on its own, but should probably be combined with the variable "Tages_der_blodproeve_i_forbindel" (whether the blood sample was taken at the same time as the questionnaire was answered). If the fasting patients are restricted to include only those whose blood sample was taken at the same time as the questionnaire was answered, then around 72% of the individuals are defined to be fasting.  
+Data from the DD2 questionnaire itself includes the variable `Er_patienten_fastende_` (whether the patient is fasting). Currently, around 75% of the individuals have answered that they are fasting. This variable can be used on its own, but should probably be combined with the variable `Tages_der_blodproeve_i_forbindel` (whether the blood sample was taken at the same time as the questionnaire was answered). If the fasting patients are restricted to include only those whose blood sample was taken at the same time as the questionnaire was answered, then around 72% of the individuals are defined to be fasting.  
 
 The data file `DataTilDD2medFastende.txt` received in September 2015 included information on fasting state for n=5.996 individuals ("*Ja*" for n=2.891, "*Nej*" for n=397, and "*Ved ikke*" for n=2.708 individuals). This file will not be updated and we therefore don't get new information on this fasting variable. We don't know how this variable was defined, but it is probably based on information on the blood sample itself. 
-By adding the information from this file to the variable "Er_patienten_fastende_", an additional 447 individuals can be defined as fasting (410 with missing information in "Er_patienten_fastende_" and 37 who replied no to being fasting).
+By adding the information from this file (variable name `NewFastende`) to the variable `Er_patienten_fastende_`, an additional 447 individuals can be defined as fasting (410 with missing information in `Er_patienten_fastende_` and 37 who replied not to be fasting).
+
+Currently, the fasting state has been defined by the following (SAS) algorithm combining all the files and stating that the patient is fasting if we have any indication that this could be the case (macro: `AdditionalVars_Faste`):
+
+```{r, eval = FALSE}
+
+	if Tages_der_blodproeve_i_forbindel in: ('Ja') then do;
+		if Er_patienten_fastende_=:'Ja' or NewFastende=:'Ja' then Faste='Ja';
+		else if Er_patienten_fastende_=:'Nej' or NewFastende=:'Nej' then Faste='Nej';
+	end;
+	else if Tages_der_blodproeve_i_forbindel in: ('Nej') then do;
+		if NewFastende=:'Ja' then Faste='Ja';
+		else if NewFastende=:'Nej' then Faste='Nej';
+	end;
+	else if Tages_der_blodproeve_i_forbindel in (' ') then do;
+		if Er_patienten_fastende_=:'Ja' or NewFastende=:'Ja' then Faste='Ja';
+		else if  Er_patienten_fastende_=:'Nej' or NewFastende=:'Nej' then Faste='Nej'; 
+	end;
+
+
+```
+
+
 
 
 <!-- ------------------------------------------------------------------------ -->

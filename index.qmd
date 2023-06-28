@@ -9,6 +9,6 @@ This website includes details about **The Danish Center for Strategic Research i
 
 To learn more about DD2 please see: <https://dd2.dk/>
 
-An extensive list of [scientific publications](https://dd2.dk/nyheder/categories/videnskabelige-publikationer) based on data from DD2 is available on the website. That said, a good place to start is the 2018 baseline paper @Christensen_BMJOpen_2018. We are currently working on an update of this paper. 
+An extensive list of [scientific publications](https://dd2.dk/nyheder/categories/videnskabelige-publikationer) based on data from DD2 is available on the website. That said, a good place to start is the 2012 paper about the DD2 enrollement @Nielsen_ClinEpi_2012 or the 2018 baseline paper @Christensen_BMJOpen_2018. We are currently working on an update of this paper. 
 
 

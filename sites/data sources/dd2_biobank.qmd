@@ -143,21 +143,25 @@ During 2022-2023, we have received new data from additional biomarker analyses. 
     -   Galectin-3 (n=9.008, pg/ml)
     -   GDF-15 (n=9.046, pg/ml) 
     -   NT-proBNP (n=9.048, pg/ml)
-    -   
+    -   Resistin (n=9.046, pg/ml) 
+    -   Serpin (n=9.047, pg/ml) 
+    -   YKL-40 (n=9.045, pg/ml) 
 
-
-    
 
 
     The overview sheet (and additional information from e-mail) can be downloaded here: {{\< downloadthis ../../files/biobank/DD2_dummy.pdf\
     dname="DD2_7plex_data_final_sknc" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}}
 
 
--   June 2023, `Osteopontin data final (1).xlsx`:
+-   June 2023, `Osteopontin data final (1).xlsx` with 3 sheets (overview + data + *rådata*). We received the file in June 2023, but we have no indication of when the analyses were performed. This data file has not yet been uploaded to the servers. It includes n=9.207 ID numbers (end with -12, plus a note that it means "EDTA plasma fraction") with data on osteopontin.
 
-    This data file has not yet been uploadet to the servers. 
+    -   Osteopontin (n=9.204, pg/ml)
+  
+      The overview sheet can be downloaded here: {{\< downloadthis ../../files/biobank/DD2_dummy.pdf\
+    dname="Osteopontin data final (1)" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}}
+  
     
--   "THE LAST ONE" we were told the June 2023 was "den næstsidste", hence, we expect to received another data file.
+-   "THE LAST ONE" we were told the June 2023 data was "det næstsidste", hence, we expect to receive another data file.
 
 # Faste
 

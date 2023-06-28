@@ -58,7 +58,7 @@ These are the data files stored at KEA (files read in locally). File names might
     -   GAD (numeric values for n=131 ID numbers, the value "*\<0,000*" for n=5.797 ID numbers, "*\>525,000*" for n=51 ID numbers, and "*?????*" or "*NA*" for the remaining n=20 ID numbers)
     -   Glucose (numeric values for n=4.457 and "*NA*" for the remaining n=1.539 ID numbers)
     -   Cpeptid (numeric values for n=5.964 and "*NA*" for the remaining n=32 ID numbers)
-    -   Fastende ("*Ja*" for n=2.891, "*Nej*" for n=397, and "*Ved ikke*" for the remaining n=2.708 ID numbers)
+    -   Fastende ("*Ja*" for n=2.891, "*Nej*" for n=397, and "*Ved ikke*" for the remaining n=2.708 ID numbers) (see below for more infomation about fasting blood samples)
 
 -   `WrongCPeptideMeasurements.txt`: We have probably received the file in November 2015. It includes n=105 ID numbers (end with -00) and the variables cpeptid and NyCpeptid. The values are quite different. We have noted in the syntax that DD2/Jens has told us not to use this file (May 2018).
 
@@ -95,8 +95,8 @@ During 2022-2023 we received additional data on CRP, c-peptid, and glucose. We h
     -   Glucose (n=3.055, mmol/L, dated 02APR2022 or 03APR2022)
 
 ## HOMA
+HOMA values are calculated based on c-peptide and glucose. We use the Oxford calculator which can be downloaded from the website: <https://www.dtu.ox.ac.uk/homacalculator/download.php>
 
-HOMA-calculations.
 
 ## "Pladebiomarkører"
 
@@ -163,9 +163,15 @@ During 2022-2023, we have received new data from additional biomarker analyses. 
     
 -   "THE LAST ONE" we were told the June 2023 data was "det næstsidste", hence, we expect to receive another data file.
 
-# Faste
 
+# Fasting 
 Is the patient fasting? A simple question, yet, difficult to assess.
+
+Data from the DD2 questionnaire itself includes the variable "Er_patienten_fastende_" (wheter the patient is fasting). Currently, around 75% of the individuals have answered that they are fasting. This variable can be used on its own, but should probably be combined with the variable "Tages_der_blodproeve_i_forbindel" (whether the blood sample was taken at the same time as the questionnaire was answered). If the fasting patients are restricted to include only those whose blood sample was taken at the same time as the questionnaire was answered, then around 72% of the individuals are defined to be fasting.  
+
+The data file `DataTilDD2medFastende.txt` received in September 2015 included information on fasting state for n=5.996 individuals ("*Ja*" for n=2.891, "*Nej*" for n=397, and "*Ved ikke*" for n=2.708 individuals). This file will not be updated and we therefore don't get new information on this fasting variable. We don't know how this variable was defined, but it is probably based on information on the blood sample itself. 
+By adding the information from this file to the variable "Er_patienten_fastende_", an additional 447 individuals can be defined as fasting (410 with missing information in "Er_patienten_fastende_" and 37 who replied no to being fasting).
+
 
 <!-- ------------------------------------------------------------------------ -->
 

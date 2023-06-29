@@ -25,20 +25,21 @@ Further documentation on the main data sources can be found here:
 -   CPR-registeret (CPR): [documentation](https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-de-nationale-sundhedsregistre/personoplysninger-og-sundhedsfaglig-beskaeftigelse/cpr-registeret) \
     References: @Schmidt_EurJEpi_2014
 
--   Landspatientregisteret (LPR2 and LPR3): [documentation](https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-de-nationale-sundhedsregistre/sygdomme-laegemidler-og-behandlinger/landspatientregisteret) \
+-   Landspatientregisteret (LPR2 and LPR3): [documentation](https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-de-nationale-sundhedsregistre/sygdomme-laegemidler-og-behandlinger/landspatientregisteret), [LPR3](https://sundhedsdatastyrelsen.dk/da/forskerservice/om-forskerservice/nyheder_forskerservice/helbredsforloeb_lpr3f070422), 
+[LPR3 vejledning](https://sundhedsdatastyrelsen.dk/-/media/sds/filer/Forskerservice/Vejledning%20til%20LPR3_F) \
     References: @Schmidt_ClinEpi_2015
 
 -   Lægemiddelstatistikregisteret (LRS/LMS): [documentation](https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-de-nationale-sundhedsregistre/sygdomme-laegemidler-og-behandlinger/laegemiddelstatistikregisteret)\
-    References: @Kildemoes_ScamJPubHeal_2011, @Johannesdottir_ClinEpi_2012, @Pottegard_IntJEpi_2017, @Ehrenstein_ClinEpi_2010
+    References: @Kildemoes_ScanJPubHeal_2011, @Johannesdottir_ClinEpi_2012, @Pottegard_IntJEpi_2017, @Ehrenstein_ClinEpi_2010
 
 -   Laboratoriedatabasen (LAB-F/RLRR): [documentation](https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-de-nationale-sundhedsregistre/doedsaarsager-og-biologisk-materiale/laboratoriedatabasen) \
     References: @Grann_ClinEpi_2011, @Arendt_ClinEpi_2020
 
 ### Access to data
 
-All DD2-researchers with access to FSEID-00006014 can work with all the data sets. As these data sets are considered rawdata, they are cannot be edited/changed/moved/renamed/etc.. To access data, please do the following:
+All DD2-researchers with access to FSEID-00006014 can work with all the data sets. As these data sets are considered rawdata, they are cannot be edited/changed/moved/renamed/etc. To access data, please do the following:
 
--   **SAS**: The data are already available in the libraries `In06014` and `metadata`
+-   **SAS**: The data are already available in the libraries `in06014` and `metadata`
 
 -   **STATA**: Run the (relevant parts of the) DO file located at `F:\Projekter\FSEID00006014\DB Connections FSED00006014.do`
 

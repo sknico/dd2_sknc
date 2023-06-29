@@ -165,7 +165,7 @@
     "href": "sites/registry/SDS.html",
     "title": "Sundhedsdatastyrelsen, SDS",
     "section": "",
-    "text": "Sundhedsdatastyrelsen (SDS) - FSEID-00006014.\nDownload the “udtræksbeskrivelse” Bilag B (dataspecifikation) and Bilag C (dataoversigt) here:  Bilag B   Bilag C"
+    "text": "Sundhedsdatastyrelsen - FSEID-00006014.\nDownload the “udtræksbeskrivelse” Bilag B (dataspecifikation) and Bilag C (dataoversigt) here:  Bilag B   Bilag C"
   },
   {
     "objectID": "sites/registry/SDS.html#population",
@@ -298,7 +298,7 @@
     "href": "sites/registry/SDS.html#rawdata-available-on-sds",
     "title": "Sundhedsdatastyrelsen, SDS",
     "section": "Rawdata available on SDS",
-    "text": "Rawdata available on SDS\nData on SDS are based on data views, i.e., we have access to data updated (almost) on a day-to-day basis. The update file (SAS IN06014.OpdateringsOversigt) contains the time of the current update for each data set in the library. The metadata file (SAS metadata.metadata_allcolumns) contains information about variables in the data. For research projects, in order to be able to reproduce results, remember to save a copy of the research data in a suitable project folder on SDS.\nFurther documentation on the main data sources can be found here:\n\nCPR-registeret: https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-de-nationale-sundhedsregistre/personoplysninger-og-sundhedsfaglig-beskaeftigelse/cpr-registeret\nLandspatientregisteret (LPR2 and LPR3): https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-de-nationale-sundhedsregistre/sygdomme-laegemidler-og-behandlinger/landspatientregisteret\nLægemiddelstatistikregisteret (LRS/LMS): https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-de-nationale-sundhedsregistre/sygdomme-laegemidler-og-behandlinger/laegemiddelstatistikregisteret\nLaboratoriedatabasen (LAB-F): https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-de-nationale-sundhedsregistre/doedsaarsager-og-biologisk-materiale/laboratoriedatabasen\n\nAll DD2-researchers with access to FSEID-00006014 can work with all the data sets in the library. As these data sets are considered rawdata, they are cannot be edited/changed/moved/renamed/etc.."
+    "text": "Rawdata available on SDS\nData on SDS are based on data views, i.e., we have access to data updated (almost) on a day-to-day basis. The update file (SAS IN06014.OpdateringsOversigt) contains the time of the current update for each data set in the library. The metadata file (SAS metadata.metadata_allcolumns) contains information about variables in the data. For research projects, in order to be able to reproduce results, remember to save a copy of the research data in a suitable project folder on SDS.\nFurther documentation on the main data sources can be found here:\n\nCPR-registeret (CPR): documentation\nReferences: Schmidt et al. (2014)\nLandspatientregisteret (LPR2 and LPR3): documentation\nReferences: Schmidt et al. (2015)\nLægemiddelstatistikregisteret (LRS/LMS): documentation\nReferences: Kildemoes et al. (2011), Johannesdottir et al. (2012), Pottegård et al. (2017), Ehrenstein et al. (2010)\nLaboratoriedatabasen (LAB-F/RLRR): documentation\nReferences: Grann et al. (2011), Arendt et al. (2020)\n\n\nAccess to data\nAll DD2-researchers with access to FSEID-00006014 can work with all the data sets. As these data sets are considered rawdata, they are cannot be edited/changed/moved/renamed/etc.. To access data, please do the following:\n\nSAS: The data are already available in the libraries In06014 and metadata\nSTATA: Run the (relevant parts of the) DO file located at F:\\Projekter\\FSEID00006014\\DB Connections FSED00006014.do\nR: Run the (relevant parts of the) R file located at F:\\Projekter\\FSEID00006014\\DB Connections FSED00006014.R"
   },
   {
     "objectID": "sites/registry/SDS.html#simple-versions-of-data",
@@ -313,5 +313,12 @@
     "title": "DD2 biobank data",
     "section": "April 2022 data",
     "text": "April 2022 data\nDuring 2022-2023 we received additional data on CRP, c-peptid, and glucose. We had a file with CRP in October 2022, but it is fully included in a file from January 2023 which also includes c-peptide and glucose. The October file is therefore not used during uploads, whereas the January 2023 file has been uploadet to the servers.\n\nDD2_cRP_Glucose_Cpep_2022_resultater (1).xlsx: The data file includes n=3.399 projekt_id. They are all enrolled after the first n=1.053 individuals, but we don’t know why they were analysed (not all individuals per year). The data set includes the variables: projekt_id, Cpeptid_Barkode, Cpeptid_Resultat, Cpeptid_Måleenhed, Cpeptid_Antal_decimaler, Cpeptid_Dato, Cpeptid_Notat, CRPHS_Barkode, CRPHS_Resultat, CRPHS_Måleenhed, CRPHS_Antal_decimaler, CRPHS_Dato, CRPHS_Notat, Glukose_Barkode, Glukose_Resultat, Glukose_Måleenhed, Glukose_Antal_decimaler, Glukose_Dato, Glukose_Notat.\n\nprojekt_id (n=3.339)\nc-peptid (n=2.933, pmol/l, dated 30APR2022 or 01MAY2022)\nCRP (n=2.478, mg/l, dated 30APR2022 or 01MAY2022)\nGlucose (n=3.055, mmol/L, dated 02APR2022 or 03APR2022)\n\n\n\nHOMA\nHOMA values are calculated based on c-peptide and glucose. We use the Oxford calculator which can be downloaded from the website: https://www.dtu.ox.ac.uk/homacalculator/download.php"
+  },
+  {
+    "objectID": "sites/registry/SDS.html#simple-versions-of-data-macro",
+    "href": "sites/registry/SDS.html#simple-versions-of-data-macro",
+    "title": "Sundhedsdatastyrelsen, SDS",
+    "section": "Simple versions of data (macro)",
+    "text": "Simple versions of data (macro)\nmulig gennemgang af simple udtræk + macroer"
   }
 ]

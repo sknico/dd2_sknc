@@ -2,7 +2,7 @@
 title: "Sundhedsdatastyrelsen, SDS"
 ---
 
-Sundhedsdatastyrelsen (SDS) - FSEID-00006014.
+Sundhedsdatastyrelsen - FSEID-00006014.
 
 Download the "udtræksbeskrivelse" Bilag B (dataspecifikation) and Bilag C (dataoversigt) here: {{\< downloadthis documents/2023-02-15-Bilag_B.docx\
 dname="Bilag_B" icon="file-earmark-text" label="Bilag B" type="button" class="btn btn-link"\>}} {{\< downloadthis documents/2023-02-15-Bilag_C.xlsx\
@@ -22,23 +22,28 @@ Data on SDS are based on data views, i.e., we have access to data updated (almos
 
 Further documentation on the main data sources can be found here:
 
--   CPR-registeret (CPR): <https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-de-nationale-sundhedsregistre/personoplysninger-og-sundhedsfaglig-beskaeftigelse/cpr-registeret>
+-   CPR-registeret (CPR): [documentation](https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-de-nationale-sundhedsregistre/personoplysninger-og-sundhedsfaglig-beskaeftigelse/cpr-registeret) \
+    References: @Schmidt_EurJEpi_2014
 
--   Landspatientregisteret (LPR2 and LPR3): <https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-de-nationale-sundhedsregistre/sygdomme-laegemidler-og-behandlinger/landspatientregisteret>
+-   Landspatientregisteret (LPR2 and LPR3): [documentation](https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-de-nationale-sundhedsregistre/sygdomme-laegemidler-og-behandlinger/landspatientregisteret) \
+    References: @Schmidt_ClinEpi_2015
 
--   Lægemiddelstatistikregisteret (LRS/LMS): <https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-de-nationale-sundhedsregistre/sygdomme-laegemidler-og-behandlinger/laegemiddelstatistikregisteret>
+-   Lægemiddelstatistikregisteret (LRS/LMS): [documentation](https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-de-nationale-sundhedsregistre/sygdomme-laegemidler-og-behandlinger/laegemiddelstatistikregisteret)\
+    References: @Kildemoes_ScamJPubHeal_2011, @Johannesdottir_ClinEpi_2012, @Pottegard_IntJEpi_2017, @Ehrenstein_ClinEpi_2010
 
--   Laboratoriedatabasen (LAB-F): <https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-de-nationale-sundhedsregistre/doedsaarsager-og-biologisk-materiale/laboratoriedatabasen>
+-   Laboratoriedatabasen (LAB-F/RLRR): [documentation](https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-de-nationale-sundhedsregistre/doedsaarsager-og-biologisk-materiale/laboratoriedatabasen) \
+    References: @Grann_ClinEpi_2011, @Arendt_ClinEpi_2020
 
 ### Access to data
 
 All DD2-researchers with access to FSEID-00006014 can work with all the data sets. As these data sets are considered rawdata, they are cannot be edited/changed/moved/renamed/etc.. To access data, please do the following:
 
--   SAS: The data are already available in the libraries `In06014` and `metadata`
+-   **SAS**: The data are already available in the libraries `In06014` and `metadata`
 
--   STATA: Run the (relevant parts of the) DO file located at `F:\Projekter\FSEID00006014\DB       Connections FSED00006014.do`
+-   **STATA**: Run the (relevant parts of the) DO file located at `F:\Projekter\FSEID00006014\DB Connections FSED00006014.do`
 
--   R: Run the (relevant parts of the) R file located at `F:\Projekter\FSEID00006014\DB Connections FSED00006014.R`
+-   **R**: Run the (relevant parts of the) R file located at `F:\Projekter\FSEID00006014\DB Connections FSED00006014.R`
 
 ## Simple versions of data (macro)
+
 mulig gennemgang af simple udtræk + macroer

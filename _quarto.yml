@@ -70,6 +70,6 @@ format:
     
     
 bibliography: "references.bib"
-#csl: "vancouver-author-date.csl"
+csl: "vancouver-author-date.csl"
 
 

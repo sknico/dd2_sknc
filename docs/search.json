@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "The Danish Center for Strategic Research in Type 2 Diabetes",
     "section": "",
-    "text": "This website includes details about The Danish Center for Strategic Research in Type 2 Diabetes (The DD2 Study). The intention of this website is to document the data sources used for research and to ease the day-to-day work with DD2. It is intended for employees at Department of Clinical Epidemiology (DCE/KEA), Aarhus University and Aarhus University Hospital, as it is mainly describing the setup used at DCE. Other institutions can also gain access to DD2 data but their setup might be different.\nTo learn more about DD2 please see: https://dd2.dk/\nAn extensive list of scientific publications based on data from DD2 is available on the website. That said, a good place to start is the 2012 paper about the DD2 enrollment Nielsen et al. (2012) or the 2018 baseline paper Christensen et al. (2018). We are currently working on an update of this paper.\n\n\n\n\nReferences\n\nChristensen, D. H., S. K. Nicolaisen, K. Berencsi, H. Beck-Nielsen, J. Rungby, S. Friborg, I. Brandslund, et al. 2018. “Danish Centre for Strategic Research in Type 2 Diabetes (DD2) Project Cohort of Newly Diagnosed Patients with Type 2 Diabetes: A Cohort Profile.” Journal Article. BMJ Open 8 (4): e017273. https://doi.org/10.1136/bmjopen-2017-017273.\n\n\nNielsen, J. S., R. W. Thomsen, C. Steffensen, and J. S. Christiansen. 2012. “The Danish Centre for Strategic Research in Type 2 Diabetes (DD2) Study: Implementation of a Nationwide Patient Enrollment System.” Journal Article. Clin Epidemiol 4 (Suppl 1): 27–36. https://doi.org/10.2147/clep.S30838."
+    "text": "This website includes details about The Danish Center for Strategic Research in Type 2 Diabetes (The DD2 Study). The intention of this website is to document the data sources used for research and to ease the day-to-day work with DD2. It is intended for employees at Department of Clinical Epidemiology (DCE/KEA), Aarhus University and Aarhus University Hospital, as it is mainly describing the setup used at DCE. Other institutions can also gain access to DD2 data but their setup might be different.\nTo learn more about DD2 please see: https://dd2.dk/\nAn extensive list of scientific publications based on data from DD2 is available on the website. That said, a good place to start is the 2012 paper about the DD2 enrollment Nielsen et al. (2012) process or the 2018 baseline paper Christensen et al. (2018). We are currently working on an update of this paper.\n\n\n\n\nReferences\n\nChristensen, D. H., S. K. Nicolaisen, K. Berencsi, H. Beck-Nielsen, J. Rungby, S. Friborg, I. Brandslund, et al. 2018. “Danish Centre for Strategic Research in Type 2 Diabetes (DD2) Project Cohort of Newly Diagnosed Patients with Type 2 Diabetes: A Cohort Profile.” Journal Article. BMJ Open 8 (4): e017273. https://doi.org/10.1136/bmjopen-2017-017273.\n\n\nNielsen, J. S., R. W. Thomsen, C. Steffensen, and J. S. Christiansen. 2012. “The Danish Centre for Strategic Research in Type 2 Diabetes (DD2) Study: Implementation of a Nationwide Patient Enrollment System.” Journal Article. Clin Epidemiol 4 (Suppl 1): 27–36. https://doi.org/10.2147/clep.S30838."
   },
   {
     "objectID": "about.html",
@@ -163,16 +163,16 @@
   {
     "objectID": "sites/registry/SDS.html",
     "href": "sites/registry/SDS.html",
-    "title": "SDS",
+    "title": "Sundhedsdatastyrelsen, SDS",
     "section": "",
-    "text": "Sundhedsdatastyrelsen - FSEID-00006014 jeg har snakket med Lars, og han siger jeg gerne må lægge udtræksbeskrivelserne op."
+    "text": "Sundhedsdatastyrelsen (SDS) - FSEID-00006014.\nDownload the “udtræksbeskrivelse” Bilag B (dataspecifikation) and Bilag C (dataoversigt) here:  Bilag B   Bilag C"
   },
   {
     "objectID": "sites/registry/SDS.html#population",
     "href": "sites/registry/SDS.html#population",
-    "title": "SDS",
+    "title": "Sundhedsdatastyrelsen, SDS",
     "section": "Population",
-    "text": "Population\nThe DD2 data is uploaded to SDS, and they check the validity of the CPR-numbers before encrypting them. The data set DS_EXT_DD2_POP includes individuals with a valid CPR-number. Individuals with a non-valid CPR-number are still included in the uploaded data, e.g. in DS_EXT_DD2CORE, but they will have a missing encrypted CPR-number (CPR_ENCRYPTED) and can thus not be linked across data sources. Previously (when we had local data), we would notify DD2 (Odense) about non-valid CPR-numbers, but this is no longer possible as we are not allowed to identify the individuals based on individual-level data on the servers."
+    "text": "Population\nThe DD2 data is uploaded to SDS, and they check the validity of the CPR-numbers before encrypting them. The data set DS_EXT_DD2_POP includes individuals with a valid CPR-number. Individuals with a non-valid CPR-number are still included in the uploaded data, e.g. in DS_EXT_DD2CORE, but they will have a missing encrypted CPR-number (CPR_ENCRYPTED) and can thus not be linked across data sources. Previously (when we had local data), we would notify DD2 (Odense) about non-valid CPR-numbers, but this is no longer possible as we are not allowed to identify the individuals based on individual-level data on the servers.\nThe data files uploaded by us have the prefix DS_EXT_. Currently, data are uploadet in 2 versions; the initial upload version (without suffix) and the current version (with suffix _230601). The registry data are based on the population in the current version of data. We are planning to make a new structure where the library will only contain the current version of out own data plus the registry data based on the current version. Previous verions of our own data will be stored in a separate file and will be given a suffix when it is moved."
   },
   {
     "objectID": "sites/registry/SDS.html#data",
@@ -270,7 +270,7 @@
     "href": "sites/data sources/dd2_biobank.html#data-from-april-2022-upload-january-2023",
     "title": "DD2 biobank data",
     "section": "Data from April 2022 (upload January 2023)",
-    "text": "Data from April 2022 (upload January 2023)\nDuring 2022-2023 we received additional data on CRP, c-peptid, and glucose. We had a file with CRP in October 2022, but it is fully included in a file from January 2023 which also includes c-peptide and glucose. The October file is therefore not used during uploads.\n\nDD2_cRP_Glucose_Cpep_2022_resultater (1).xlsx: The data file includes n=3.399 projekt_id. They are all enrolled after the first n=1.053 individuals, but we don’t know why they were analysed (not all individuals per year). The data set includes the variables: projekt_id, Cpeptid_Barkode, Cpeptid_Resultat, Cpeptid_Måleenhed, Cpeptid_Antal_decimaler, Cpeptid_Dato, Cpeptid_Notat, CRPHS_Barkode, CRPHS_Resultat, CRPHS_Måleenhed, CRPHS_Antal_decimaler, CRPHS_Dato, CRPHS_Notat, Glukose_Barkode, Glukose_Resultat, Glukose_Måleenhed, Glukose_Antal_decimaler, Glukose_Dato, Glukose_Notat.\n\nprojekt_id (n=3.339)\nc-peptid (n=2.933, pmol/l, dated 30APR2022 or 01MAY2022)\nCRP (n=2.478, mg/l, dated 30APR2022 or 01MAY2022)\nGlucose (n=3.055, mmol/L, dated 02APR2022 or 03APR2022)"
+    "text": "Data from April 2022 (upload January 2023)\nDuring 2022-2023 we received additional data on CRP, c-peptid, and glucose. We had a file with CRP in October 2022, but it is fully included in a file from January 2023 which also includes c-peptide and glucose. The October file is therefore not used during uploads.\n\nDD2_cRP_Glucose_Cpep_2022_resultater (1).xlsx: The data file includes n=3.399 projekt_id. They are all enrolled after the first n=1.053 individuals, but we don’t know why they were analysed (not all individuals per year). The data set includes the variables: projekt_id, Cpeptid_Barkode, Cpeptid_Resultat, Cpeptid_Måleenhed, Cpeptid_Antal_decimaler, Cpeptid_Dato, Cpeptid_Notat, CRPHS_Barkode, CRPHS_Resultat, CRPHS_Måleenhed, CRPHS_Antal_decimaler, CRPHS_Dato, CRPHS_Notat, Glukose_Barkode, Glukose_Resultat, Glukose_Måleenhed, Glukose_Antal_decimaler, Glukose_Dato, Glukose_Notat.\n\nprojekt_id (n=3.339)\nc-peptid (n=2.933, pmol/l, dated 30APR2022 or 01MAY2022)\nCRP (n=2.478, mg/l, dated 30APR2022 or 01MAY2022)\nGlucose (n=3.055, mmol/L, dated 02APR2022 or 03APR2022)\n\n\n\nHOMA\nHOMA values are calculated based on c-peptide and glucose. We use the Oxford calculator which can be downloaded from the website: https://www.dtu.ox.ac.uk/homacalculator/download.php"
   },
   {
     "objectID": "sites/data sources/dd2_biobank.html#pladebiomarkører",
@@ -292,5 +292,26 @@
     "title": "DD2 biobank data",
     "section": "HOMA",
     "text": "HOMA\nHOMA values are calculated based on c-peptide and glucose. We use the Oxford calculator which can be downloaded from the website: https://www.dtu.ox.ac.uk/homacalculator/download.php"
+  },
+  {
+    "objectID": "sites/registry/SDS.html#rawdata-available-on-sds",
+    "href": "sites/registry/SDS.html#rawdata-available-on-sds",
+    "title": "Sundhedsdatastyrelsen, SDS",
+    "section": "Rawdata available on SDS",
+    "text": "Rawdata available on SDS\nData on SDS are based on data views, i.e., we have access to data updated (almost) on a day-to-day basis. The update file (SAS IN06014.OpdateringsOversigt) contains the time of the current update for each data set in the library. The metadata file (SAS metadata.metadata_allcolumns) contains information about variables in the data. For research projects, in order to be able to reproduce results, remember to save a copy of the research data in a suitable project folder on SDS.\nFurther documentation on the main data sources can be found here:\n\nCPR-registeret: https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-de-nationale-sundhedsregistre/personoplysninger-og-sundhedsfaglig-beskaeftigelse/cpr-registeret\nLandspatientregisteret (LPR2 and LPR3): https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-de-nationale-sundhedsregistre/sygdomme-laegemidler-og-behandlinger/landspatientregisteret\nLægemiddelstatistikregisteret (LRS/LMS): https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-de-nationale-sundhedsregistre/sygdomme-laegemidler-og-behandlinger/laegemiddelstatistikregisteret\nLaboratoriedatabasen (LAB-F): https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-de-nationale-sundhedsregistre/doedsaarsager-og-biologisk-materiale/laboratoriedatabasen\n\nAll DD2-researchers with access to FSEID-00006014 can work with all the data sets in the library. As these data sets are considered rawdata, they are cannot be edited/changed/moved/renamed/etc.."
+  },
+  {
+    "objectID": "sites/registry/SDS.html#simple-versions-of-data",
+    "href": "sites/registry/SDS.html#simple-versions-of-data",
+    "title": "Sundhedsdatastyrelsen, SDS",
+    "section": "Simple versions of data",
+    "text": "Simple versions of data"
+  },
+  {
+    "objectID": "sites/data sources/dd2_biobank.html#april-2022-data",
+    "href": "sites/data sources/dd2_biobank.html#april-2022-data",
+    "title": "DD2 biobank data",
+    "section": "April 2022 data",
+    "text": "April 2022 data\nDuring 2022-2023 we received additional data on CRP, c-peptid, and glucose. We had a file with CRP in October 2022, but it is fully included in a file from January 2023 which also includes c-peptide and glucose. The October file is therefore not used during uploads, whereas the January 2023 file has been uploadet to the servers.\n\nDD2_cRP_Glucose_Cpep_2022_resultater (1).xlsx: The data file includes n=3.399 projekt_id. They are all enrolled after the first n=1.053 individuals, but we don’t know why they were analysed (not all individuals per year). The data set includes the variables: projekt_id, Cpeptid_Barkode, Cpeptid_Resultat, Cpeptid_Måleenhed, Cpeptid_Antal_decimaler, Cpeptid_Dato, Cpeptid_Notat, CRPHS_Barkode, CRPHS_Resultat, CRPHS_Måleenhed, CRPHS_Antal_decimaler, CRPHS_Dato, CRPHS_Notat, Glukose_Barkode, Glukose_Resultat, Glukose_Måleenhed, Glukose_Antal_decimaler, Glukose_Dato, Glukose_Notat.\n\nprojekt_id (n=3.339)\nc-peptid (n=2.933, pmol/l, dated 30APR2022 or 01MAY2022)\nCRP (n=2.478, mg/l, dated 30APR2022 or 01MAY2022)\nGlucose (n=3.055, mmol/L, dated 02APR2022 or 03APR2022)\n\n\n\nHOMA\nHOMA values are calculated based on c-peptide and glucose. We use the Oxford calculator which can be downloaded from the website: https://www.dtu.ox.ac.uk/homacalculator/download.php"
   }
 ]

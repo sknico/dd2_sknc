@@ -4,9 +4,16 @@ title: "Sundhedsdatastyrelsen, SDS"
 
 Sundhedsdatastyrelsen - FSEID-00006014.
 
-Download the "udtræksbeskrivelse" Bilag B (dataspecifikation) and Bilag C (dataoversigt) here: {{\< downloadthis documents/2023-02-15-Bilag_B.docx\
-dname="Bilag_B" icon="file-earmark-text" label="Bilag B" type="button" class="btn btn-link"\>}} {{\< downloadthis documents/2023-02-15-Bilag_C.xlsx\
+Download the "udtræksbeskrivelse" here: \
+Dataspecifikation {{\< downloadthis documents/2023-02-15-Bilag_B.docx\
+dname="Bilag_B" icon="file-earmark-text" label="Bilag B" type="button" class="btn btn-link"\>}} \
+Dataoversigt {{\< downloadthis documents/2023-02-15-Bilag_C.xlsx\
 dname="Bilag_C" icon="file-earmark-text" label="Bilag C" type="button" class="btn btn-link"\>}}
+
+
+
+
+
 
 <!-- jeg har snakket med Lars, og han siger jeg gerne må lægge udtræksbeskrivelserne op.  -->
 

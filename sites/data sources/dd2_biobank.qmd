@@ -22,7 +22,8 @@ O:\\HE_KEA-DATA-RAW0050\\Main Part\\data\\Input Data Sets\\BioBank
 Data files from the 2022/2023 rounds are stored in the folder:\
 O:\\HE\\KEA-DATA-RAW0050\\Biomarkører
 
-## Original data 
+## Original data
+
 In the first phase of DD2, a lot of biomarkers were analysed for the first 1.053 individuals enrolled in DD2 (some have later opted out). These individuals are marked by the variable `BlodProve1053patients` (based on the CPR numbers in data files `First1053Patients` (same as in `UrinResultatermedRatio2013Nov`)) and are predominantly enrolled in 2011-2012.
 
 These are the data files stored at KEA (files read in locally). File names might have changed since we initially received them.
@@ -82,9 +83,9 @@ These are the data files stored at KEA (files read in locally). File names might
 
 <!-- ## New data -->
 
-## April 2022 data 
+## April 2022 data
 
-During 2022-2023 we received additional data on CRP, c-peptid, and glucose. We had a file with CRP in October 2022, but it is fully included in a file from January 2023 which also includes c-peptide and glucose. The October file is therefore not used during uploads, whereas the January 2023 file has been uploadet to the servers. 
+During 2022-2023 we received additional data on CRP, c-peptid, and glucose. We had a file with CRP in October 2022, but it is fully included in a file from January 2023 which also includes c-peptide and glucose. The October file is therefore not used during uploads, whereas the January 2023 file has been uploadet to the servers.
 
 -   `DD2_cRP_Glucose_Cpep_2022_resultater (1).xlsx`: The data file includes n=3.399 projekt_id. They are all enrolled after the first n=1.053 individuals, but we don't know why they were analysed (not all individuals per year). The data set includes the variables: projekt_id, Cpeptid_Barkode, Cpeptid_Resultat, Cpeptid_Måleenhed, Cpeptid_Antal_decimaler, Cpeptid_Dato, Cpeptid_Notat, CRPHS_Barkode, CRPHS_Resultat, CRPHS_Måleenhed, CRPHS_Antal_decimaler, CRPHS_Dato, CRPHS_Notat, Glukose_Barkode, Glukose_Resultat, Glukose_Måleenhed, Glukose_Antal_decimaler, Glukose_Dato, Glukose_Notat.
 
@@ -94,18 +95,70 @@ During 2022-2023 we received additional data on CRP, c-peptid, and glucose. We h
     -   Glucose (n=3.055, mmol/L, dated 02APR2022 or 03APR2022)
 
 ### HOMA
-HOMA values are calculated based on c-peptide and glucose. We use the Oxford calculator which can be downloaded from the website: <https://www.dtu.ox.ac.uk/homacalculator/download.php>
 
+HOMA values are calculated based on c-peptide and glucose. We use the Oxford calculator which can be downloaded from the website: <https://www.dtu.ox.ac.uk/homacalculator/download.php>
 
 ## "Pladebiomarkører"
 
-During 2022-2023, we have received new data from additional biomarker analyses. The majority of the new biomarkers are so-called "pladebiomarkører" (as opposed to the current ones which are called "målebiomarkører") because of the way the analyses are performed. Data in these files are in long format.
+During 2022-2023, we have received new data from additional biomarker analyses (Allan Vaag grant). The majority of the new biomarkers are so-called "pladebiomarkører" (as opposed to the current ones which are called "målebiomarkører") because of the way the analyses are performed. Data in these files are in long format and include the following 22 biomarkers:
 
--   April 2022, `220211 Vplex_final.xlsx` with 2 sheets: Data received in April 2022 but probably analyzed in February 2022 (no dates in data, but based on date stamps in file names). The data file includes data from n=9.294 DD2 individuals on IL-6 and TNF-a.
+-   TNF-a (April 2022, n=9.202, pg/ml)
+
+-   IL-6 (April 2022, n=9.195, pg/ml)
+
+-   Ang-Like4 (November 2022, n=9.200, pg/ml)
+
+-   FGF-21 (November 2022, n=9.200, pg/ml)
+
+-   FGF-23 (November 2022, Hu FGF-23, n=9.200, pg/ml)
+
+-   IL1-RA (November 2022, n=9.200, pg/ml)
+
+-   Leptin (November 2022, n=9.196, pg/ml)
+
+-   RAGE (November 2022, soluble, n=9.200, pg/ml)
+
+-   Sclerostin (November 2022, n=9.200, pg/ml)
+
+-   U-PAR (November 2022, n=9.200, pg/ml)
+
+-   Osteocalcin-1 (February 2023, n=9.203)
+
+-   CD163 (April 2023, n=9.047, pg/ml)
+
+-   Galectin-3 (April 2023, n=9.008, pg/ml)
+
+-   GDF-15 (April 2023, n=9.046, pg/ml)
+
+-   NT-proBNP (April 2023, n=9.048, pg/ml)
+
+-   Resistin (April 2023, n=9.046, pg/ml)
+
+-   Serpin (April 2023, n=9.047, pg/ml)
+
+-   YKL-40 (April 2023, n=9.045, pg/ml)
+
+-   Osteopontin (June 2023, n=9.204, pg/ml)
+
+-   Adiponectin (July 2023, n=9.204, pg/ml)
+
+-   Follistatin (July 2023, n=9.204, pg/ml)
+
+-   MPO (July 2023, n=9.204, pg/ml)
+
+
+
+    ### Data files
+
+    In the following section we will go through the data files we have received.
+
+-   April 2022, `220211 Vplex_final.xlsx` with 2 sheets (data and background information). Data received in April 2022 but probably analyzed in February 2022 (no dates in data, but based on date stamps in file names). The data file includes data from n=9.294 DD2 individuals on IL-6 and TNF-a.
 
     -   Sheet 1, `Vplex sample results_final`. It includes the variables: Sample (id, ends with -12), Sample_Group (=Sample in all rows), Assay (either TNF-a or IL-6), Assay (either TNF-a or IL-6), Calc\_\_Conc\_\_Mean (results), RANGE (value 1 or 2), Plate_Name (each Plate_Name is used 78 times).
+
         -   TNF-a (n=9.202, pg/ml)
-        -   IL-6,(n=9.195, pg/ml)
+        -   IL-6 (n=9.195, pg/ml)
+
     -   Sheet 2, `Vplex complete final`. Includes background information about the sample from the sample_groups *Sample* (n=9.024), *Standards* (n=1.888), and *Internal Control* (n=236). The sheet includes the variables Plate_Name, Sample_Group, Sample, Assay, Well, Signal, Mean, CV Calc\_\_Concentration, Calc\_\_Conc\_\_Mean, Calc\_\_Conc\_\_CV, \_\_Recovery, \_\_Recovery_Mean, Detection_Limits\_\_Calc\_\_Low, Detection_Limits\_\_Calc\_\_High, Detection_Range, Detection_Range_yesno, Quantification_range, Quantification_range_yesno, RANGE
 
     An additional quality log can be downloaded here: {{\< downloadthis ../../files/biobank/DD2_dummy.pdf\
@@ -136,40 +189,57 @@ During 2022-2023, we have received new data from additional biomarker analyses. 
     The sheet *rådata* includes detailed information about each of the plates. The overview sheet (and additional information from e-mail) can be downloaded here: {{\< downloadthis ../../files/biobank/DD2_dummy.pdf\
     dname="DD2_osteocalcin_final_sknc" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}}
 
--   April 2023, `DD2_7plex_data_final.xlsx` with 9 sheets (overview + 7 biomarkers + additional sheet with sample names). We received the data file in April 2023. There are no date stamps indicating when the analyses were performed. The data file include information on n=9.048 individuals (based on sample ID ending with -12). For each assay, the data file includes the variables sample (ID), assay, calc\_conc\_mean (result), RANGE, and plate_name. In an e-mail, we have been told the unit is pg/ml for all assays. 
-    
+-   April 2023, `DD2_7plex_data_final.xlsx` with 9 sheets (overview + 7 biomarkers + additional sheet with sample names). We received the data file in April 2023. There are no date stamps indicating when the analyses were performed. The data file include information on n=9.048 individuals (based on sample ID ending with -12). For each assay, the data file includes the variables sample (ID), assay, calc_conc_mean (result), RANGE, and plate_name. In an e-mail, we have been told the unit is pg/ml for all assays.
+
     -   CD163 (n=9.047, pg/ml)
     -   Galectin-3 (n=9.008, pg/ml)
-    -   GDF-15 (n=9.046, pg/ml) 
+    -   GDF-15 (n=9.046, pg/ml)
     -   NT-proBNP (n=9.048, pg/ml)
-    -   Resistin (n=9.046, pg/ml) 
-    -   Serpin (n=9.047, pg/ml) 
-    -   YKL-40 (n=9.045, pg/ml) 
-
-
+    -   Resistin (n=9.046, pg/ml)
+    -   Serpin (n=9.047, pg/ml)
+    -   YKL-40 (n=9.045, pg/ml)
 
     The overview sheet (and additional information from e-mail) can be downloaded here: {{\< downloadthis ../../files/biobank/DD2_dummy.pdf\
     dname="DD2_7plex_data_final_sknc" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}}
 
-
 -   June 2023, `Osteopontin data final (1).xlsx` with 3 sheets (overview + data + *rådata*). We received the file in June 2023, but we have no indication of when the analyses were performed. This data file has not yet been uploaded to the servers. It includes n=9.207 ID numbers (end with -12, plus a note that it means "EDTA plasma fraction") with data on osteopontin.
 
     -   Osteopontin (n=9.204, pg/ml)
-  
-      The overview sheet can be downloaded here: {{\< downloadthis ../../files/biobank/DD2_dummy.pdf\
+
+    The overview sheet can be downloaded here: {{\< downloadthis ../../files/biobank/DD2_dummy.pdf\
     dname="Osteopontin data final (1)" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}}
-  
-    
--   "THE LAST ONE" we were told the June 2023 data was "det næstsidste", hence, we expect to receive another data file.
 
+    An additional quality log can be downloaded here: {{\< downloadthis ../../files/biobank/DD2_dummy.pdf\
+    dname="OSTEOPONTIN - MSD method description Adiponectin" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}}
 
-# Fasting 
+-   July 2023 (1), `DD2_adiponectin_blue panel_final (1).xlsx` with 3 sheets (overview + data + *rådata*). We received the file in July 2023, but we have no indication of when the analyses were performed. This data file has not yet been uploaded to the servers. It includes n=9.204 ID numbers (sample, end with -12) with data on adiponectin.
+
+    -   Adiponectin (n=9.204, pg/ml)
+
+    The sheet *rådata* includes detailed information about each of the plates. The overview sheet can be downloaded here: {{\< downloadthis ../../files/biobank/DD2_dummy.pdf\
+    dname="DD2_adiponectin_blue panel_final (1)" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}}
+
+    An additional quality log can be downloaded here: {{\< downloadthis ../../files/biobank/DD2_dummy.pdf\
+    dname="MSD method description Adiponectin" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}}
+
+-   July 2023 (2), `DD2 red panel_final.xlsx` with 4 sheets (overview + data (Follistatin + MPO) + *rådata*). We received the file in July 2023, but we have no indication of when the analyses were performed. This data file has not yet been uploaded to the servers. It includes n=9.204 ID numbers (sample, end with -12) with data on follistatin and MPO
+
+    -   Follistatin (n=9.204, pg/ml)
+    -   MPO (n=9.204, pg/ml)
+
+    The sheet *rådata* includes detailed information about each of the plates. The overview sheet can be downloaded here: {{\< downloadthis ../../files/biobank/DD2_dummy.pdf\
+    dname="DD2 red panel_final" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}}
+
+    An additional quality log can be downloaded here: {{\< downloadthis ../../files/biobank/DD2_dummy.pdf\
+    dname="MSD method red panel" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}}
+
+# Fasting
+
 Is the patient fasting? A simple question, yet, difficult to assess.
 
-Data from the DD2 questionnaire itself includes the variable `Er_patienten_fastende_` (whether the patient is fasting). Currently, around 75% of the individuals have answered that they are fasting. This variable can be used on its own, but should probably be combined with the variable `Tages_der_blodproeve_i_forbindel` (whether the blood sample was taken at the same time as the questionnaire was answered). If the fasting patients are restricted to include only those whose blood sample was taken at the same time as the questionnaire was answered, then around 72% of the individuals are defined to be fasting.  
+Data from the DD2 questionnaire itself includes the variable `Er_patienten_fastende_` (whether the patient is fasting). Currently, around 75% of the individuals have answered that they are fasting. This variable can be used on its own, but should probably be combined with the variable `Tages_der_blodproeve_i_forbindel` (whether the blood sample was taken at the same time as the questionnaire was answered). If the fasting patients are restricted to include only those whose blood sample was taken at the same time as the questionnaire was answered, then around 72% of the individuals are defined to be fasting.
 
-The data file `DataTilDD2medFastende.txt` received in September 2015 included information on fasting state for n=5.996 individuals ("*Ja*" for n=2.891, "*Nej*" for n=397, and "*Ved ikke*" for n=2.708 individuals). This file will not be updated and we therefore don't get new information on this fasting variable. We don't know how this variable was defined, but it is probably based on information on the blood sample itself. 
-By adding the information from this file (variable name `NewFastende`) to the variable `Er_patienten_fastende_`, an additional 447 individuals can be defined as fasting (410 with missing information in `Er_patienten_fastende_` and 37 who replied not to be fasting).
+The data file `DataTilDD2medFastende.txt` received in September 2015 included information on fasting state for n=5.996 individuals ("*Ja*" for n=2.891, "*Nej*" for n=397, and "*Ved ikke*" for n=2.708 individuals). This file will not be updated and we therefore don't get new information on this fasting variable. We don't know how this variable was defined, but it is probably based on information on the blood sample itself. By adding the information from this file (variable name `NewFastende`) to the variable `Er_patienten_fastende_`, an additional 447 individuals can be defined as fasting (410 with missing information in `Er_patienten_fastende_` and 37 who replied not to be fasting).
 
 Currently, the fasting state has been defined by the following (SAS) algorithm combining all the files and stating that the patient is fasting if we have any indication that this could be the case (macro: `AdditionalVars_Faste`):
 
@@ -190,9 +260,6 @@ Currently, the fasting state has been defined by the following (SAS) algorithm c
 
 
 ```
-
-
-
 
 <!-- ------------------------------------------------------------------------ -->
 

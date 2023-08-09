@@ -133,11 +133,11 @@ During 2022-2023, we have received new data from additional biomarker analyses (
 
 An overview of the biomarkers (table from the Allan Vaag grant application) can be found here: {{< downloadthis ../../files/biobank/Pladebiomarkorer.pdf dname="Pladebiomarkorer" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}}
 
-```         
+
+
 ### Data files
 
 In the following section we will go through the data files we have received.
-```
 
 -   April 2022, `220211 Vplex_final.xlsx` with 2 sheets (data and background information). Data received in April 2022 but probably analyzed in February 2022 (no dates in data, but based on date stamps in file names). The data file includes data from n=9.294 DD2 individuals on IL-6 and TNF-a. The first sheet, `Vplex sample results_final`, includes the variables: Sample (id, ends with -12), Sample_Group (=Sample in all rows), Assay (either TNF-a or IL-6), Calc\_\_Conc\_\_Mean (results), RANGE (value 1 or 2), Plate_Name (each Plate_Name is used 78 times).
 

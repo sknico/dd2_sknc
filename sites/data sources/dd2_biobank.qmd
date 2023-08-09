@@ -42,6 +42,8 @@ These are the data files stored at KEA (files read in locally). File names might
     -   AMYLP (n=1.041, U/L)
     -   CRP (n=1.041, mg/L)
 
+We have been told (mail from JSN 31.05.2018) not to use the c-peptide measurements from this file (old analysis kit)
+
 -   `UrinResultatermedRatio2013Nov.txt`: We have probably received the data file in December 2013. It includes n=1.053 CPR numbers (same as in `First1053Patients`) with results from the initial urine samples. The data set includes the variables:
 
     -   CPR
@@ -52,7 +54,7 @@ These are the data files stored at KEA (files read in locally). File names might
     -   Albumin_Kreatinin_ratio (n=1.041)
     -   Kommentar (n=473, \<5 with "*PROT-U \> 2.5 g/l*" and the rest with "*ALB-U \<3 mg/L*")
 
--   `DataTilDD2medFastende.txt`: We have probably received the file in September 2015. It includes n=5.966 CPR numbers with character results on GAD, glucose, and cpeptid, along with a variable about faste. The majority of the individuals in the file are enrolled before 2015, but it only includes around 80-85% of the individuals enrolled before 2016. There are no dates in the data. The data set includes the variables:
+-   `DataTilDD2medFastende.txt`: We have probably received the file in September 2015 (Anne Gedebjerg). It includes n=5.996 CPR numbers with character results on GAD, glucose, and cpeptid, along with a variable about faste. The majority of the individuals in the file are enrolled before 2015, but it only includes around 80-85% of the individuals enrolled before 2016. There are no dates in the data. The data set includes the variables:
 
     -   Id (ProjectID, ends with -00)
     -   GAD (numeric values for n=131 ID numbers, the value "*\<0,000*" for n=5.797 ID numbers, "*\>525,000*" for n=51 ID numbers, and "*?????*" or "*NA*" for the remaining n=20 ID numbers)

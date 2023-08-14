@@ -21,7 +21,7 @@ website:
   #        - index.qmd #index er inkluderet i "home" men jeg har fjernet den fra sidebar
       #- section: "Data sources"
       #  contents:
-      - sites/data sources.qmd 
+      - sites/data structure.qmd 
       
       - text: "---"
         

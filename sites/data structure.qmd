@@ -1,0 +1,52 @@
+---
+title: "Data structure"
+#title: revealjs lists
+#date: last-modified
+#footer: "{{< meta date >}}"
+#format: revealjs
+---
+
+The full DD2 research data is based on data collected/linked from multiple sources.
+The following sites include a detailed description of each of the data sources, whereas this site is intended to give an overview of the data structure, the data sources and the definitions of data types.
+
+-   **DD2 core data \
+    **DD2 core data include the data that make the foundation of DD2. This includes
+
+    -   DD2 questionnaire data
+
+    -   Biomarker data (analysis results based on the blood and urine samples from time of enrollment).
+
+    To be enrolled in DD2, the individual fills out the DD2 questionnaire and a blood/urine sample is collected. The core data only exist in DD2 and the DD2 cohort is defined to be those who enrolled in the DD2 by answering the DD2 questionnaire.
+
+-   **Additional DD2 data\
+    **Additional DD2 data include data from additional questionnaires and/or substudies. This includes data only available through DD2, meaning that it is data that had been generated only among individuals in DD2, but it was (probably) not collected as part of the initial enrollment process. This could e.g., include
+
+    -   IDNC questionnaire data (follow-up questionnaire from 2016)
+
+    -   Fødselsdata from Rigsarkivet (birth data collected from midwife journals). Data (midwife journals) exist outside DD2 and could thus be considered external data, but it has only been registered electronically for individuals in DD2. For now, we consider it additional DD2 data as it is currently only (practically) available for individuals in DD2.
+
+    -   IDA, DICTA, CsubT2D, etc., are examples of projects initiated within DD2. These projects generate their own additional data and analyses but data are still part of the overall DD2 setup.
+
+    The data sources will probably not be updated with new individuals, as they are mostly generated as part of specific research projects with closed cohorts.
+
+-   **Data extracts from external data sources\
+    **Data from external data sources were not initially generated with the intention to be included in DD2. However, as data can be considered relevant for DD2 research questions, we have linked data from these external data sources to the DD2. In practice, this means that data (or a subset of data) has been handed over from the external data source to DD2, and we thus have relevant data on (a subset) of the individuals in DD2. Currently, we have agreements with the following external data sources:
+
+    -   DDDA (udgår)
+
+    -   DDiD (nyt, endnu ingen aftale)
+
+    -   Fodstatus
+
+    -   Diabase (øjenkompl., aftale?)
+
+    The general idea is that we can get updates of data from these data sources whenever we have new individual in the DD2 cohort.
+
+-   **Danish medical registry data\
+    **DD2 research data will be uploaded to the servers hosted at Danmarks Statistik (DST, Statistics Denmark) and Sundhedsdatastyrelsen (SDS, The Danish Health Data Authority). On these servers, we have access to Danish medical registry data, such as data from the CPR registry, hospital data from LPR, laboratory data from LAB-F etc.
+
+    -   SDS
+
+    -   DST
+
+![Overview in DD2](/figures/overblik.png){width="100%"}

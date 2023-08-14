@@ -36,3 +36,5 @@ DENNE SIDE SKAL BESKRIVE
     -   date (f.eks. ved c-pep er der forskel på om analysen er lavet på en ny eller gammel prøve, så det kan være relevant at kende datoen for analysen så man kan sammenligne den med datoen for blodprøven).
 
 Det kan evt. være relevant med et meta-data med henvisning til de enkelte studier.
+
+Ideelt set vil der for enhver biomarkør være en beskrivelse af markøren/data/pitfalls/beslutninger/overvejelser etc. Et slags opslagsværk, så man har samlet information om hver markør (e.g. c-pep så man ved hvilke beslutninger der er taget). 

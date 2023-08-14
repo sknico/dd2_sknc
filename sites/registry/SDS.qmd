@@ -2,7 +2,7 @@
 title: "SDS"
 ---
 
-## Sundhedsdatastyrelsen (SDS)/The Danish Health Data Authority. 
+## Sundhedsdatastyrelsen (SDS)/The Danish Health Data Authority 
 Sundhedsdatastyrelsen - FSEID-00006014.
 
 Download the "udtræksbeskrivelse" here: \

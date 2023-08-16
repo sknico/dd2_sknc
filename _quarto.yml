@@ -25,16 +25,19 @@ website:
       
       - text: "---"
         
-      - section: "DD2 core data "
+      - section: "DD2 core data"
         contents: 
         - sites/data sources/dd2_questionnaire.qmd
         - sites/data sources/dd2_biobank.qmd
         - sites/data sources/dd2_biobank_new_structure.qmd
         
+        
       - section: "Additional DD2 data"
         contents: 
         - sites/data sources/idnc.qmd
         - sites/data sources/foedsel.qmd
+
+
 
       - section: "External DD2 data"
         contents: 

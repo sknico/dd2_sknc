@@ -2,9 +2,6 @@
 title: "IDNC"
 ---
 
+DENNE SIDE SKAL BESKRIVE
 
-DENNE SIDE SKAL BESKRIVE 
-
-- IDNC
-
-
+-   IDNC

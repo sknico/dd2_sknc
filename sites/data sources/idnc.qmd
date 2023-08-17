@@ -30,6 +30,6 @@ dname="99_formats" icon="file-earmark-code" label="Download" type="button" class
 
 
 ### Data 
-Data is stored locally at KEA and a slightly changed version had been uploaded to DST and SDS. The changes are mainly due to similar definitions of variables, variable names and labels, and to comply with the SDS/DST regulations. 
+Data are stored locally at KEA and a slightly changed version had been uploaded to DST and SDS. The changes are mainly due to similar definitions of variables, variable names and labels, and to comply with the SDS/DST regulations. 
 
 

@@ -480,7 +480,7 @@
     "href": "sites/data sources/idnc.html#variables",
     "title": "IDNC",
     "section": "Variables",
-    "text": "Variables\nThe original questionnaire data included a total of around 109 variables (including some variables from the data cleaning process added by the working group). To ease working with data and to have some pre-defined variables/definitions, an additional 78 variables were created by the working group.\nThe questions and variable definitions for the original variables can be downloaded here:  Download \n\nThe SAS syntax for the definition of the additional variables is here:  Download \n\nAnd the corresponding SAS formats for the additional variables is here:  Download \n\n(SAS syntax files can be opened using notepad if SAS is not installed)\n\nData\nData are stored locally at KEA and a slightly changed version had been uploaded to DST and SDS. The changes are mainly due to similar definitions of variables, variable names and labels, and to comply with the SDS/DST regulations."
+    "text": "Variables\nThe original questionnaire data included a total of around 109 variables (including some variables from the data cleaning process added by the working group). To ease working with data and to have some pre-defined variables/definitions, an additional 78 variables were created by the working group.\nThe questions and variable definitions for the original variables can be downloaded here:  Download \n\nThe SAS syntax for the definition of the additional variables is here:  Download \n\nAnd the corresponding SAS formats for the additional variables is here:  Download \n\n(SAS syntax files can be opened using notepad if SAS is not installed)\n\nData\nData are stored locally at KEA and a slightly changed version has been uploaded to DST and SDS. The changes are mainly due to similar definitions of variables, variable names and labels, and to comply with the SDS/DST regulations."
   },
   {
     "objectID": "sites/data sources/idnc.html#format",
@@ -488,5 +488,33 @@
     "title": "IDNC",
     "section": "format",
     "text": "format\nupload format file SAS"
+  },
+  {
+    "objectID": "sites/working/macro_syntax.html",
+    "href": "sites/working/macro_syntax.html",
+    "title": "Macros and syntaxes",
+    "section": "",
+    "text": "Macros and programs/syntaxes\nSimple versions of data:\n\nLPR: syntax to make a simple combination of data from LPR2 and LPR3 and create a simple data set including only dates and diagnoses.\n\n\nVariable definitions:\n\nGLD_classification: Classification of glucose-lowering drugs.\nFirstDiabDate: The first indication of diabetes, either as a hospitalization, glucose-lowering treatment initiation, or elevated HbA1c. In addition, enrollment in DD2 (or DDDA) is included as an indication for diabetes."
+  },
+  {
+    "objectID": "sites/working/working.html",
+    "href": "sites/working/working.html",
+    "title": "Working with data",
+    "section": "",
+    "text": "How to work with data.\n\nUploads\nmacros\n“take home”\n\nKEA SOP\n\nfolder structure\n\n\nKEA\nThis only makes sense to KEA employees with access to the common drive.\n\nS-drev\nO-drev\nHvor ligger filerne/data\n\n\n\nUpload\n\nHvordan tjekker man at data er klar til upload\nHvordan uploader man"
+  },
+  {
+    "objectID": "sites/working/macro_syntax/GLD_classification.html",
+    "href": "sites/working/macro_syntax/GLD_classification.html",
+    "title": "GLD_classification",
+    "section": "",
+    "text": "A SAS macro to classify diabetes treatment regimens. The input is a data set (SAS, STATA, csv) including a column of CPR-numbers and a column of ATC-codes (glucose-lowering drugs, i.e. A10). The output is a data set (SAS, STATA, csv) where the treatment is classified into disjoint groups, e.g., insulin based monotherapy or non-insulin based monotherapy, based on all possible ATC-codes. The output also includes a pdf table with the results.\nThe macro is uploaded to DST and SDS."
+  },
+  {
+    "objectID": "sites/working/macro_syntax/FirstDiabDate.html",
+    "href": "sites/working/macro_syntax/FirstDiabDate.html",
+    "title": "FirstDiabDate",
+    "section": "",
+    "text": "Definition of variable (date) with the first indication of diabetes."
   }
 ]

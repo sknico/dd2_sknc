@@ -1,0 +1,17 @@
+---
+title: "Macros and syntaxes"
+---
+
+Macros and programs/syntaxes
+
+**Simple versions of data:**
+
+-   [LPR](): syntax to make a simple combination of data from LPR2 and LPR3 and create a simple data set including only dates and diagnoses.
+
+-   
+
+**Variable definitions:**
+
+-   [GLD_classification](/sites/working/macro_syntax/GLD_classification.qmd): Classification of glucose-lowering drugs.
+
+-   [FirstDiabDate](/sites/working/macro_syntax/FirstDiabDate.qmd): The first indication of diabetes, either as a hospitalization, glucose-lowering treatment initiation, or elevated HbA1c. In addition, enrollment in DD2 (or DDDA) is included as an indication for diabetes.

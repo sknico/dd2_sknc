@@ -57,7 +57,8 @@ website:
         
       - section: "How to work"
         contents: 
-        - sites/working.qmd
+        - sites/working/working.qmd
+        - sites/working/macro_syntax.qmd
         
 format:
   html:

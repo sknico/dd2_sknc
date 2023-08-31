@@ -95,7 +95,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../sites/data sources.html" class="sidebar-item-text sidebar-link">Data structure</a>
+  <a href="../../sites/data structure.html" class="sidebar-item-text sidebar-link">Data structure</a>
   </div>
 </li>
         <li class="px-0"><hr class="sidebar-divider hi "></li>
@@ -113,8 +113,15 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
           <li class="sidebar-item">
-  sites/data sources/dd2_dd2_biobank.qmd
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="../../sites/data sources/dd2_biobank.html" class="sidebar-item-text sidebar-link">DD2 biobank data</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sites/data sources/dd2_biobank_new_structure.html" class="sidebar-item-text sidebar-link">New biobank structure</a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -126,11 +133,15 @@ ul.task-list li input[type="checkbox"] {
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
-  sites/data sources/dd2_idnc.qmd
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="../../sites/data sources/idnc.html" class="sidebar-item-text sidebar-link">IDNC</a>
+  </div>
+</li>
           <li class="sidebar-item">
-  sites/data sources/dd2_foedsel.qmd
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="../../sites/data sources/foedsel.html" class="sidebar-item-text sidebar-link">Fødselsdata</a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -142,11 +153,25 @@ ul.task-list li input[type="checkbox"] {
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
-  sites/data sources/dd2_ddda.qmd
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="../../sites/data sources/ddda.html" class="sidebar-item-text sidebar-link">DDDA</a>
+  </div>
+</li>
           <li class="sidebar-item">
-  sites/data sources/dd2_fodstatus.qmd
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="../../sites/data sources/ddid.html" class="sidebar-item-text sidebar-link">DDiD</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sites/data sources/diabase.html" class="sidebar-item-text sidebar-link">DiaBase</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sites/data sources/fodstatus.html" class="sidebar-item-text sidebar-link">Fodstatus</a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -180,7 +205,12 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../sites/working.html" class="sidebar-item-text sidebar-link">Working with data</a>
+  <a href="../../sites/working/working.html" class="sidebar-item-text sidebar-link">Working with data</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sites/working/macro_syntax.html" class="sidebar-item-text sidebar-link">Macros and syntaxes</a>
   </div>
 </li>
       </ul>
@@ -213,6 +243,15 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <p>Danmarks statistik</p>
+<ul>
+<li>Vi laver en DD2-population, som uploades til DST</li>
+<li>DST gør populationen klar til Lars</li>
+<li>Lars laver tilhørende registerdata (projektmaskinen)</li>
+<li>DST tjekker data og kommer med rettelser/ændringer (korrespondance frem og tilbage med Lars)</li>
+<li>Når data er godkendt lægger DST det op så vi andre kan se det</li>
+</ul>
+<p>Registerdata på forskermaskinen opdateres løbende. LPR-data kommer i løbet af Oktober/November, og indeholder som regel data til og med slutningen af det seneste år. Andre datakilder opdateres på andre tidspuntker (f.eks. bliver lægemiddelstatistikreg. opdateret hvert kvartal).</p>
+<p>Hvis jeg f.eks. laver en DD2-population i løbet af efteråret 2023 (e.g.&nbsp;November), så vil vi nok i begyndelsen af 2024 have opdateret LPR-data til og med 2022 (og lægemiddelstat. vil nok være til og med sommer 2023).</p>
 
 
 
@@ -362,7 +401,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-      <div class="nav-footer-center">SKNC</div>
+      <div class="nav-footer-center">
+        <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ SKNC
+  </li>  
+</ul>
+      </div>
   </div>
 </footer>
 

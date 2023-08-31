@@ -2,4 +2,14 @@
 title: "FirstDiabDate"
 ---
 
-Definition of variable (date) with the first indication of diabetes. 
+Definition of variable (date) with the first indication of diabetes.
+
+::: callout-info
+hej e
+:::
+
+::: callout-info
+-   og helst som liste
+-   punkt
+-   punkt
+:::

@@ -1,0 +1,29 @@
+---
+title: "Data upload"
+---
+
+1. Definér DD2-populationen: få nyt data fra DD2/Jens
+
+2. Oprens og tjek 
+
+3a. DST
+
+3b. SDS
+
+3c. Eksterne data 
+
+
+
+
+* Vi laver en DD2-population, som uploades til DST
+* DST gør populationen klar til Lars
+* Lars laver tilhørende registerdata (projektmaskinen)
+* DST tjekker data og kommer med rettelser/ændringer (korrespondance frem og tilbage med Lars) 
+* Når data er godkendt lægger DST det op så vi andre kan se det
+
+Registerdata på forskermaskinen opdateres løbende. LPR-data kommer i løbet af Oktober/November,
+og indeholder som regel data til og med slutningen af det seneste år. Andre datakilder opdateres på 
+andre tidspuntker (f.eks. bliver lægemiddelstatistikreg. opdateret hvert kvartal).
+
+Hvis jeg f.eks. laver en DD2-population i løbet af efteråret 2023 (e.g. November), så vil vi nok i begyndelsen af 
+2024 have opdateret LPR-data til og med 2022 (og lægemiddelstat. vil nok være til og med sommer 2023).

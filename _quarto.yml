@@ -58,7 +58,10 @@ website:
       - section: "How to work"
         contents: 
         - sites/working/working.qmd
+        - sites/working/data_upload.qmd
         - sites/working/macro_syntax.qmd
+        
+        
         
 format:
   html:

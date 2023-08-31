@@ -65,6 +65,7 @@ website:
         
 format:
   html:
+    page-layout: full
     #theme: cosmo
     theme: flatly
     css: styles.css

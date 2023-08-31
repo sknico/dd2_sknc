@@ -48,4 +48,4 @@ The full DD2 research data is based on data collected/linked from multiple sourc
 
     -   DST
 
-![Overview in DD2](/figures/overblik.png){width="100%"}
+![](/figures/overblik.png){width="100%"}

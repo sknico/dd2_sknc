@@ -102,7 +102,8 @@ During 2022-2023 we received additional data on CRP, c-peptide, and glucose. We 
 
 ### HOMA
 
-HOMA values are calculated based on c-peptide and glucose. We use the Oxford calculator which can be downloaded from the website: <https://www.dtu.ox.ac.uk/homacalculator/download.php>
+[HOMA](https://www.rdm.ox.ac.uk/about/our-clinical-facilities-and-mrc-units/DTU/software/homa/history) values are calculated based on c-peptide and glucose. We use the Oxford calculator which can be downloaded from the website: <https://www.dtu.ox.ac.uk/homacalculator/download.php>.
+
 
 ## "Pladebiomarkører"
 

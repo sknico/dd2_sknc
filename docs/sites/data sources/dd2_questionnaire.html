@@ -79,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
@@ -140,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../sites/data sources/foedsel.html" class="sidebar-item-text sidebar-link">Fødselsdata</a>
+  <a href="../../sites/data sources/foedsel.html" class="sidebar-item-text sidebar-link">Birth data</a>
   </div>
 </li>
       </ul>
@@ -206,7 +206,17 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../sites/working.html" class="sidebar-item-text sidebar-link">Working with data</a>
+  <a href="../../sites/working/working.html" class="sidebar-item-text sidebar-link">Working with data</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sites/working/data_upload.html" class="sidebar-item-text sidebar-link">Data upload</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sites/working/macro_syntax.html" class="sidebar-item-text sidebar-link">Macros and syntaxes</a>
   </div>
 </li>
       </ul>
@@ -215,11 +225,11 @@ ul.task-list li input[type="checkbox"] {
     </div>
 </nav>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-right" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -238,7 +248,7 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><a href="#dnldts1064" onclick="fetch('data:text/csv;base64,77u/bmFtZV9lbmc7bmFtZV9kaztkZXNjcmlwdGlvbg0KTmFtZV9FbnJvbGxpbmdfR1A7TmF2bl9JbmRydWxsZXJpbmdfUHJha3NpcztJZiBlbnJvbGxlZCBieSBHUCA9IG5hbWUgb2YgR1AgY2xpbmljIGVsc2UgYmxhbmsNCk5hbWVfRW5yb2xsaW5nX290aGVycztOYXZuX0luZHJ1bGxlcmluZ19BbmRyZTtJZiBlbnJvbGxlZCBieSBhbm90aGVyIHBsYWNlIChvdXRwYXRpZW50IGNsaW5pYywgbXVuaWNpcGFsaXR5LCBwaGFybWFjeSkgPSBuYW1lIG9mIGFub3RoZXIgcGxhY2UgZWxzZSBibGFuayANCk5hbWVfQ3VycmVudF9HUDtOYXZuX051dsOmcmVuZGVfUHJha3NpcztOYW1lIG9mIHRoZSBjdXJyZW50IEdQIG9mIHRoZSBwYXRpZW50LiBNYW51YWwgZW50cnkgb2YgY3VycmVudCBHUCBpZiBjaGFuZ2UgaW4gR1Agc2luY2UgZW5yb2xsbWVudCBlbHNlIHNhbWUgYXMgTmFtZV9FbnJvbGxpbmdfR1AuDQpOYW1lX1N1Ym1pdHRlcjtOYXZuX0luZHRhc3RlcjtJZiBub3QgZW5yb2xsZWQgYnkgV2ViUmVxID0gbmFtZSBvZiBzdWJtaXR0ZXIgKGlmIG1hbnVhbCBHUCByZWdpc3RyYXRpb24sIG91dHBhdGllbnQgY2xpbmljLCBtdW5pY2lwYWxpdHksIHBoYXJtYWN5KSAgZWxzZSBibGFuaw0KRGF0ZV9XZWJSZXFfc2VudDtEYXRvX1dlYlBhdGllbnRfc2tlbWFfYWZzZW5kdDsNCkRhdGVfQ29uc2VudDtEYXRvX1NhbXR5a2tlO0lmIFdlYlBhdGllbnQgPSBkYXRlIG9mIGNvbnNlbnQgZ2l2ZW4sIGlmIG90aGVycyA9IGRhdGUgb2Ygb25saW5lIHJlZ2lzdHJhdGlvbiBjb21wbGV0ZWQgKGRkLW1tLXl5eXkpDQpEYXRlX1BhdGllbnRfUmVnaXN0cmF0aW9uO0RhdG9fUGF0aWVudHNrZW1hX1VkZnlsZHQ7SWYgV2ViUGF0aWVudCA9IGRhdGUgb2YgcGF0aWVudCBwYXJ0IG9mIHF1ZXN0aW9ubmFpcmUgY29tcGxldGVkLCBpZiBvdGhlcnMgPSBkYXRlIG9mIG9ubGluZSByZWdpc3RyYXRpb24gY29tcGxldGVkIChkZC1tbS15eXl5KQ0KRGF0ZV9GdWxsX1JlZ2lzdHJhdGlvbjtEYXRvX0Z1bGRfUmVnaXN0cmVyaW5nO0lmIFdlYlBhdGllbnQgPSBkYXRlIG9mIGZ1bGwgcXVlc3Rpb25uYWlyZSBjb21wbGV0ZWQsIGlmIG90aGVycyA9IGRhdGUgb2Ygb25saW5lIHJlZ2lzdHJhdGlvbiBjb21wbGV0ZWQgKGRkLW1tLXl5eXkpDQpEYXRlX01hbnVhbF9FbnRyeTtEYXRvX01hbnVlbF9JbmR0YXN0bmluZztJZiBXZWJwYXRpZW50ID0gYmxhbmssIGlmIG1hbnVhbCBzdWJtaXR0aW9uID0gZGF0ZSBvZiBtYW51YWwgZW50cnkgKGRkLW1tLXl5eXkpDQpDUFI7Q1BSO1NvY2lhbCBTZWN1cml0eSBOdW1iZXIgKENSUCBudW1iZXIpIG9mIHRoZSBQYXRpZW50IChkZG1teXkteHh4eCkNCkNQUl9XaXRob3V0X0h5cGhlbjtDUFJfVWRlbl9CaW5kZXN0cmVnO1NvY2lhbCBTZWN1cml0eSBOdW1iZXIgKENQUiBudW1iZXIpIHdpdGhvdXQgaHlwaGVuIChkZG1teXl4eHh4KQ0KQmlydGhfRGF0ZTtGw7hkc2Vsc2RhdG87QmlydGggZGF0ZSAoZGQtbW0teXl5eSkNCkN1cnJlbnRfQWdlO0FsZGVyX051dsOmcmVuZGU7IkN1cnJlbnQgYWdlIChiaXJ0aCBkYXRlIHN1YnRyYWN0ZWQgdG9kYXkgaW4geWVhcnMgYW5kIG1vbnRocyAtIDEyIG1vbnRocyA9IDEgOyA2IG1vbnRocyA9IDAsNSA7IDMgbW9udGhzID0gMCwyNSkgICINCkFnZV9FbnJvbGxtZW50O0FsZGVyX0luZHJ1bGxlcmluZzsiQWdlIGF0IGVucm9sbGVtZW50IChiaXJodCBkYXRlIHN1YnN0cmFjdGVkIERhdGVfQ29uc2VudCBpbiB5ZWFycyBhbmQgbW9udGhzIC0gMTIgbW9udGhzID0gMSA7IDYgbW9udGhzID0gMCw1IDsgMyBtb250aHMgPSAwLDI1KSAgIg0KR2VuZGVyO0vDuG4gO0dlbmRlciBkaXZpZGVkIGludG8gS3ZpbmRlID0gZmVtYWxlIC8gTWFuZCA9IG1hbGUNClBhdGllbnRfRmlyc3RfTmFtZShzKTtQYXRpZW50X0Zvcm5hdm5fZTtGaXJzdCBuYW1lKHMpIG9mIHRoZSBwYXRpZW50DQpQYXRpZW50X1N1cm5hbWU7UGF0aWVudF9FZnRlcm5hdm47RmFtaWx5IG5hbWUgb2YgdGhlIHBhdGllbnQNClBhdGllbnRfRW1haWw7UGF0aWVudF9FbWFpbDtFLW1haWwgYWRyZXNzIG9mIHRoZSBwYXRpZW50DQpQYXRpZW50X1Bob25lX051bWJlcjtQYXRpZW50X1RlbGVmb25udW1tZXI7UGhvbmUgbnVtYmVyIG9mIHRoZSBwYXRpZW50IA0KSGVhbHRoY2FyZV9Qcm92aWRlcl9OdW1iZXJfQ3VycmVudDtZZGVybnJfTnV2w6ZyZW5kZTtNYW51YWwgZW50cnkgb2YgY3VycmVudCBoZWFsdGhjYXJlIHByb3ZpZGVyIG51bWJlciBpZiBjaGFuZ2UgaW4gR1Agc2luY2UgZW5yb2xsbWVudCBlbHNlIHNhbWUgYXMgSGVhbHRoY2FyZV9Qcm92aWRlcl9OdW1iZXJfRW5yb2xsbWVudA0KSGVhbHRoY2FyZV9Qcm92aWRlcl9OdW1iZXJfRW5yb2xsbWVudDtZZGVybnJfSW5kcnVsbGVyaW5nO0lmIFdlYlJlcSA9IGF1dG9tYXRpY2FsbHkgZW5yb2xsaW5nIGhlYWx0aGNhcmUgcHJvdmlkZXIgbnVtYmVyLCBvdGhlcnMgPSBtYW51YWwgZW50cnksIGVsc2UgYmxhbmsNClJlZ2lvbjtSZWdpb247UmVnaW9uDQpXZWJSZXE7V2VicmVxO0Vucm9sbG1lbnQgdmlhIFdlYlJlcSAoSmE9eWVzLCBOZWo9bm8pDQpDb21tZW50cztLb21tZW50YXJlcjtDb21tZW50cw0K').then(res => res.blob()).then(blob => {
+<p><a href="#dnldts41293" onclick="fetch('data:text/csv;base64,77u/bmFtZV9lbmc7bmFtZV9kaztkZXNjcmlwdGlvbg0KTmFtZV9FbnJvbGxpbmdfR1A7TmF2bl9JbmRydWxsZXJpbmdfUHJha3NpcztJZiBlbnJvbGxlZCBieSBHUCA9IG5hbWUgb2YgR1AgY2xpbmljIGVsc2UgYmxhbmsNCk5hbWVfRW5yb2xsaW5nX290aGVycztOYXZuX0luZHJ1bGxlcmluZ19BbmRyZTtJZiBlbnJvbGxlZCBieSBhbm90aGVyIHBsYWNlIChvdXRwYXRpZW50IGNsaW5pYywgbXVuaWNpcGFsaXR5LCBwaGFybWFjeSkgPSBuYW1lIG9mIGFub3RoZXIgcGxhY2UgZWxzZSBibGFuayANCk5hbWVfQ3VycmVudF9HUDtOYXZuX051dsOmcmVuZGVfUHJha3NpcztOYW1lIG9mIHRoZSBjdXJyZW50IEdQIG9mIHRoZSBwYXRpZW50LiBNYW51YWwgZW50cnkgb2YgY3VycmVudCBHUCBpZiBjaGFuZ2UgaW4gR1Agc2luY2UgZW5yb2xsbWVudCBlbHNlIHNhbWUgYXMgTmFtZV9FbnJvbGxpbmdfR1AuDQpOYW1lX1N1Ym1pdHRlcjtOYXZuX0luZHRhc3RlcjtJZiBub3QgZW5yb2xsZWQgYnkgV2ViUmVxID0gbmFtZSBvZiBzdWJtaXR0ZXIgKGlmIG1hbnVhbCBHUCByZWdpc3RyYXRpb24sIG91dHBhdGllbnQgY2xpbmljLCBtdW5pY2lwYWxpdHksIHBoYXJtYWN5KSAgZWxzZSBibGFuaw0KRGF0ZV9XZWJSZXFfc2VudDtEYXRvX1dlYlBhdGllbnRfc2tlbWFfYWZzZW5kdDsNCkRhdGVfQ29uc2VudDtEYXRvX1NhbXR5a2tlO0lmIFdlYlBhdGllbnQgPSBkYXRlIG9mIGNvbnNlbnQgZ2l2ZW4sIGlmIG90aGVycyA9IGRhdGUgb2Ygb25saW5lIHJlZ2lzdHJhdGlvbiBjb21wbGV0ZWQgKGRkLW1tLXl5eXkpDQpEYXRlX1BhdGllbnRfUmVnaXN0cmF0aW9uO0RhdG9fUGF0aWVudHNrZW1hX1VkZnlsZHQ7SWYgV2ViUGF0aWVudCA9IGRhdGUgb2YgcGF0aWVudCBwYXJ0IG9mIHF1ZXN0aW9ubmFpcmUgY29tcGxldGVkLCBpZiBvdGhlcnMgPSBkYXRlIG9mIG9ubGluZSByZWdpc3RyYXRpb24gY29tcGxldGVkIChkZC1tbS15eXl5KQ0KRGF0ZV9GdWxsX1JlZ2lzdHJhdGlvbjtEYXRvX0Z1bGRfUmVnaXN0cmVyaW5nO0lmIFdlYlBhdGllbnQgPSBkYXRlIG9mIGZ1bGwgcXVlc3Rpb25uYWlyZSBjb21wbGV0ZWQsIGlmIG90aGVycyA9IGRhdGUgb2Ygb25saW5lIHJlZ2lzdHJhdGlvbiBjb21wbGV0ZWQgKGRkLW1tLXl5eXkpDQpEYXRlX01hbnVhbF9FbnRyeTtEYXRvX01hbnVlbF9JbmR0YXN0bmluZztJZiBXZWJwYXRpZW50ID0gYmxhbmssIGlmIG1hbnVhbCBzdWJtaXR0aW9uID0gZGF0ZSBvZiBtYW51YWwgZW50cnkgKGRkLW1tLXl5eXkpDQpDUFI7Q1BSO1NvY2lhbCBTZWN1cml0eSBOdW1iZXIgKENSUCBudW1iZXIpIG9mIHRoZSBQYXRpZW50IChkZG1teXkteHh4eCkNCkNQUl9XaXRob3V0X0h5cGhlbjtDUFJfVWRlbl9CaW5kZXN0cmVnO1NvY2lhbCBTZWN1cml0eSBOdW1iZXIgKENQUiBudW1iZXIpIHdpdGhvdXQgaHlwaGVuIChkZG1teXl4eHh4KQ0KQmlydGhfRGF0ZTtGw7hkc2Vsc2RhdG87QmlydGggZGF0ZSAoZGQtbW0teXl5eSkNCkN1cnJlbnRfQWdlO0FsZGVyX051dsOmcmVuZGU7IkN1cnJlbnQgYWdlIChiaXJ0aCBkYXRlIHN1YnRyYWN0ZWQgdG9kYXkgaW4geWVhcnMgYW5kIG1vbnRocyAtIDEyIG1vbnRocyA9IDEgOyA2IG1vbnRocyA9IDAsNSA7IDMgbW9udGhzID0gMCwyNSkgICINCkFnZV9FbnJvbGxtZW50O0FsZGVyX0luZHJ1bGxlcmluZzsiQWdlIGF0IGVucm9sbGVtZW50IChiaXJodCBkYXRlIHN1YnN0cmFjdGVkIERhdGVfQ29uc2VudCBpbiB5ZWFycyBhbmQgbW9udGhzIC0gMTIgbW9udGhzID0gMSA7IDYgbW9udGhzID0gMCw1IDsgMyBtb250aHMgPSAwLDI1KSAgIg0KR2VuZGVyO0vDuG4gO0dlbmRlciBkaXZpZGVkIGludG8gS3ZpbmRlID0gZmVtYWxlIC8gTWFuZCA9IG1hbGUNClBhdGllbnRfRmlyc3RfTmFtZShzKTtQYXRpZW50X0Zvcm5hdm5fZTtGaXJzdCBuYW1lKHMpIG9mIHRoZSBwYXRpZW50DQpQYXRpZW50X1N1cm5hbWU7UGF0aWVudF9FZnRlcm5hdm47RmFtaWx5IG5hbWUgb2YgdGhlIHBhdGllbnQNClBhdGllbnRfRW1haWw7UGF0aWVudF9FbWFpbDtFLW1haWwgYWRyZXNzIG9mIHRoZSBwYXRpZW50DQpQYXRpZW50X1Bob25lX051bWJlcjtQYXRpZW50X1RlbGVmb25udW1tZXI7UGhvbmUgbnVtYmVyIG9mIHRoZSBwYXRpZW50IA0KSGVhbHRoY2FyZV9Qcm92aWRlcl9OdW1iZXJfQ3VycmVudDtZZGVybnJfTnV2w6ZyZW5kZTtNYW51YWwgZW50cnkgb2YgY3VycmVudCBoZWFsdGhjYXJlIHByb3ZpZGVyIG51bWJlciBpZiBjaGFuZ2UgaW4gR1Agc2luY2UgZW5yb2xsbWVudCBlbHNlIHNhbWUgYXMgSGVhbHRoY2FyZV9Qcm92aWRlcl9OdW1iZXJfRW5yb2xsbWVudA0KSGVhbHRoY2FyZV9Qcm92aWRlcl9OdW1iZXJfRW5yb2xsbWVudDtZZGVybnJfSW5kcnVsbGVyaW5nO0lmIFdlYlJlcSA9IGF1dG9tYXRpY2FsbHkgZW5yb2xsaW5nIGhlYWx0aGNhcmUgcHJvdmlkZXIgbnVtYmVyLCBvdGhlcnMgPSBtYW51YWwgZW50cnksIGVsc2UgYmxhbmsNClJlZ2lvbjtSZWdpb247UmVnaW9uDQpXZWJSZXE7V2VicmVxO0Vucm9sbG1lbnQgdmlhIFdlYlJlcSAoSmE9eWVzLCBOZWo9bm8pDQpDb21tZW50cztLb21tZW50YXJlcjtDb21tZW50cw0K').then(res => res.blob()).then(blob => {
       const downloadURL = window.URL.createObjectURL(blob);
       const a = document.createElement('a');
       document.body.appendChild(a);
@@ -246,7 +256,7 @@ ul.task-list li input[type="checkbox"] {
       a.download = 'DD2_questionnaire.csv'; a.click();
       window.URL.revokeObjectURL(downloadURL);
       document.body.removeChild(a);
-        });"><button class="btn btn-button downloadthis  btn btn-light" id="dnldts1064"><i class="bi bi-file-earmark-text"></i> Variable documentation </button></a></p>
+        });"><button class="btn btn-button downloadthis  btn btn-light" id="dnldts41293"><i class="bi bi-file-earmark-text"></i> Variable documentation </button></a></p>
 <p>DENNE SIDE SKAL BESKRIVE</p>
 <ul>
 <li>DD2 QUESTIONNAIRE</li>
@@ -390,7 +400,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
+<nav class="page-navigation column-page-right">
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">

@@ -6,13 +6,6 @@
 
 
 
-.expand-control-text {
-    $headings-font-weight:  150 !default;
-}
-
-
-
-
 #quarto-document-content {
   width: 100%;
 }

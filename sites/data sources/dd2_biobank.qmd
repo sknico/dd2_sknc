@@ -257,6 +257,12 @@ Currently, the fasting state has been defined by the following (SAS) algorithm c
 
 ```
 
+
+::: callout-info
+The plan is that DD2 will make an "official" definition of Faste and a variable indicating the fasting state will thus be included in the original data. 
+:::
+
+
 <!-- ------------------------------------------------------------------------ -->
 
 <!-- Få quarto til at markere koden (som når man laver R-koder) - overspringshandling? Koden virker, og jeg har ændret baggrundsfarven (men udkommenteret for at slippe for SAS) -->

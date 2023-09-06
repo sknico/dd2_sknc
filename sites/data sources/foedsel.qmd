@@ -13,12 +13,13 @@ CPR-numbers for a total of n=9,549 individuals were sent to Rigsarkivet and n=8,
 
 Data include n=9,549 CPR-numbers (one CPR-number is included twice), n=8,346 have non-missing birth weight, and a total of n=8,364 had a non-missing value in at least one of the five birth variables.
 
-In addition to the individuals from DD2, a control population was recorded. For every individual in DD2, two random individuals were selected based on the births from the same midwife information sheet (with birth information on ~6--8 different births). Controls from the same midwife record thus served as a match on date of birth, midwife, and geographical location. A total of n=18,210 individuals are recorded in the control population and data include information on year and month of birth, birth weight, birth length, sex, born at term, twin, and geographical location (lægekreds/fødselsamt). No CPR-numbers are available for the control population (data permissions and ethical reasons) and neither are links between the controls and the individuals in DD2. Data on controls are currently not available on the servers^[The current data permission includes only individuals in DD2 and therefore not the matched controls. As CPR-numbers are not available and controls ultimately cannot be linked to their DD2 individual there is no reason to upload data to the servers because all analyses can be performed locally.]. 
+In addition to the individuals from DD2, a control population was recorded. For every individual in DD2, two random individuals were selected based on the births from the same midwife information sheet (with birth information on ~6--8 different births). Controls from the same midwife record thus served as a match on date of birth, midwife, and geographical location. A total of n=18,210 individuals are recorded in the control population and data include information on year and month of birth, birth weight, birth length, sex, born at term, twin, and geographical location (lægekreds/fødselsamt). No CPR-numbers are available for the control population (data permissions and ethical and practical reasons) and neither are links between the controls and the individuals in DD2. Data on controls are currently not available on the servers^[The current data permission includes only individuals in DD2 and therefore not the matched controls. As CPR-numbers are not available and controls ultimately cannot be linked to their respective DD2 individual there is no reason to upload data to the servers because all analyses can be performed locally.]. 
 
 
 ::: {.callout-note appearance="default"}
-## Spørgsmål til Aleksander 
+## Spørgsmål til Aleksander og Jens  
 <!-- (mail sendt 05.09.2023) -->
+<!-- (mail sendt 06.09.2023) -->
 
 -   Jeg kan se i afslutningsrapporten at Rigsarkivet har fået n=9549 cpr-numre de skulle tjekke, og så vidt jeg kan se er det \"hele DD2\". Ved du hvem der har dannet denne population og hvornår? Jeg har nemlig brug for at vide pr. hvilken dato det er hele DD2 (og om der alligevel er eventuelle eksklusionskriterier). Mit bedste gæt er 22. februar 2022, men jeg vil bare gerne have den korrekte data, hvis det er muligt.
 

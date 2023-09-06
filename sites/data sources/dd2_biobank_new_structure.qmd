@@ -3,7 +3,13 @@ title: "New biobank structure"
 ---
 
 
-# Ny struktur - data delt i to
+::: callout-info
+Indholdet og strukturen på det biobankdata afhænger af hvilke variable der er tilgængelige fra biobanken (vejle)
+:::
+
+
+
+# Ny struktur - data delt i to (måske tre)
 
 DENNE SIDE SKAL BESKRIVE
 

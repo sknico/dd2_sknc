@@ -3,6 +3,16 @@
 /* Størrelsen på siden (i nyere versioner kan man gøre det i yml-filen) */
 /* css styles */
 
+
+
+
+.expand-control-text {
+    $headings-font-weight:  150 !default;
+}
+
+
+
+
 #quarto-document-content {
   width: 100%;
 }

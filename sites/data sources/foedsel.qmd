@@ -1,6 +1,8 @@
 ---
 title: "Birth data"
 ---
+{{< downloadthis ../../files/variable_documentation/DD2_questionnaire.csv dname="DD2_questionnaire" icon="file-earmark-text" label="Variable documentation" type="button" class="btn btn-light">}}
+
 
 Data from Danish midwife journals have been collected for all individuals enrolled in DD2 per 22 February 2022, *i.e.,* a total of n=9,549 individuals. Data include information on birth weight, birth length, born at term (yes/no, and if no then also the number of weeks), and twin (yes/no).
 
@@ -20,6 +22,8 @@ In addition to the individuals from DD2, a control population was recorded. For 
 ## Spørgsmål til Aleksander og Jens  
 <!-- (mail sendt 05.09.2023) -->
 <!-- (mail sendt 06.09.2023) -->
+
+<!-- Og nu har jeg sendt det til Allan og Charlotte  -->
 
 -   Jeg kan se i afslutningsrapporten at Rigsarkivet har fået n=9549 cpr-numre de skulle tjekke, og så vidt jeg kan se er det \"hele DD2\". Ved du hvem der har dannet denne population og hvornår? Jeg har nemlig brug for at vide pr. hvilken dato det er hele DD2 (og om der alligevel er eventuelle eksklusionskriterier). Mit bedste gæt er 22. februar 2022, men jeg vil bare gerne have den korrekte data, hvis det er muligt.
 

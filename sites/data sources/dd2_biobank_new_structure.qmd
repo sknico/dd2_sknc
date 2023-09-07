@@ -1,7 +1,7 @@
 ---
 title: "New biobank structure"
 ---
-
+{{< downloadthis ../../files/variable_documentation/DD2_questionnaire.csv dname="DD2_questionnaire" icon="file-earmark-text" label="Variable documentation" type="button" class="btn btn-light">}}
 
 ::: callout-info
 Indholdet og strukturen på det biobankdata afhænger af hvilke variable der er tilgængelige fra biobanken (vejle)

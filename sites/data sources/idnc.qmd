@@ -1,6 +1,8 @@
 ---
 title: "IDNC"
 ---
+{{< downloadthis ../../files/variable_documentation/DD2_questionnaire.csv dname="DD2_questionnaire" icon="file-earmark-text" label="Variable documentation" type="button" class="btn btn-light">}}
+
 
 IDNC is short for "International Diabetic Neuropathy Consortium". Read more about it here: <https://idnc.au.dk/about-idnc>.
 

@@ -1,8 +1,8 @@
 ---
 title: "DDDA"
 ---
-{{< downloadthis ../../files/variable_documentation/DD2_questionnaire.csv dname="DD2_questionnaire" icon="file-earmark-text" label="Variable documentation" type="button" class="btn btn-light">}}
 
+{{< downloadthis ../../files/variable_documentation/DD2_questionnaire.csv dname="DD2_questionnaire" icon="file-earmark-text" label="Variable documentation" type="button" class="btn btn-light">}}
 
 **Danish Diabetes Database for Adults** (DDDA) (Dansk Voksen Diabates Database, DVDD or NIP Diabetes) is a no longer active database from regionernes kliniske kvalitetsudviklingsprogram (RKKP). It was closed by 30 June 2022. It has now been replaced by Dansk Diabetes Database (DDD/DDiD), which has been active since 1 July 2022.
 
@@ -28,3 +28,13 @@ In the latest version of the DDDA data, around 80% (n=9,041) of the individuals 
 When using data from DDDA, it is important to be aware of the missing data. Data can be missing for two reasons; because data is missing/not reported or because the individual is simply not registered in DDDA. Thus, when reporting data from DDDA, *e.g.,* in a baseline table, remember to consider what "100%" should represent, as the interpretation of the result varies; is it x% of the entire study population or x% of the study population also registered in DDDA.
 
 In addition, the selection and timing of data should be considered. Individuals registered in DDDA full the criteria for this database (see population documentation above) which might induce some selection bias. Individuals in DDDA might not be as newly diagnosed as individuals in DD2. The records in DDDA are defined based on `status_dato` which is "den dato, hvor der årligt, i relation til databasen, gøres status over hvornår personer senest har fået foretaget forskellige relevante undersøgelser." The dates listed for each of the examinations might be long after (or before) enrollment in DD2, and for each scientific study question, it is thus crucial to consider in which time period data can be considered valid. An example could be to only include measurements in the period from 5 years prior to enrollment to 6 months after enrollment and then among these, include the one closest to the enrollment date as a "baseline" value. It all depends on the specific study.
+
+A slightly changed version of the DDDA data has been uploaded to SDS and DST. The changes are mainly to comply with the SDS/DST regulations.
+
+## Variables from previous versions
+
+In the current DDDA data, some variables from the database were not delivered. It was decided that the best suitable solution was to included these variable from older versions of data (and thus missing for some new individuals).
+
+-   From the 2021 data: `shared_care` and `Plasmakreatinin_operator`
+
+-   From the 2018 data (also missing in the 2021 delivery): `diag_dato`, `HbA1c_kode`, `HDLcholesterol`, and `HDLcholesterol_undersoegelse_kod`.

@@ -19,13 +19,13 @@ In addition to the individuals from DD2, a control population was recorded. For 
 
 
 ::: {.callout-note appearance="default"}
-## Spørgsmål til Aleksander og Jens  
+## Spørgsmål til dokumentationen  
 <!-- (mail sendt 05.09.2023) -->
 <!-- (mail sendt 06.09.2023) -->
 
 <!-- Og nu har jeg sendt det til Allan og Charlotte  -->
 
--   Jeg kan se i afslutningsrapporten at Rigsarkivet har fået n=9549 cpr-numre de skulle tjekke, og så vidt jeg kan se er det \"hele DD2\". Ved du hvem der har dannet denne population og hvornår? Jeg har nemlig brug for at vide pr. hvilken dato det er hele DD2 (og om der alligevel er eventuelle eksklusionskriterier). Mit bedste gæt er 22. februar 2022, men jeg vil bare gerne have den korrekte data, hvis det er muligt.
+-   Jeg kan se i afslutningsrapporten at Rigsarkivet har fået n=9549 cpr-numre de skulle tjekke, og så vidt jeg kan se er det \"hele DD2\". Ved du hvem der har dannet denne population og hvornår? Jeg har nemlig brug for at vide pr. hvilken dato det er hele DD2 (og om der alligevel er eventuelle eksklusionskriterier). Mit bedste gæt er 22. februar 2022, men jeg vil bare gerne have den korrekte dato, hvis det er muligt.
 
 -    I afslutningsrapporten står der også at ud af de n=9549 individer, kunne n=8896 dokumenteres, idet de opfyldte kriterierne (cpr, mor, Danmark osv.). Når jeg kigger i data er der non-missing data på n=8364 individer, så der må være 532 individer der af en eller anden grund ikke kunne findes i journalerne selvom de opfyldte kravene. Ved du om det er registreret hvem det er?
 

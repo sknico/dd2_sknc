@@ -25,6 +25,8 @@ editor:
 3a. DST
 
 3b. SDS
+Send en besked (via henvendelsesformularen) om at vi gerne vil have et upload-link. Linket skal sendes til HTS, men man kan godt bede dem om at give besked, når de har sendt det. 
+I tilfælde af man skal bede om et nyt link (hvis ikke man når at uploade inden der er gået 7 dage), skal man skrive en mail til forskerservice (med HENID) og ikke lave en ny henvendelse. 
 
 3c. Eksterne data
 

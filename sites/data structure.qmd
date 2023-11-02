@@ -8,6 +8,11 @@ title: "Data structure"
 
 The full DD2 research data is based on data collected/linked from multiple sources. This page is intended to give an overview of the data structure, the data sources and the definitions of data types. Detailed description of each of the data sources can be found on the following pages.
 
+::: {.callout-note appearance="default"}
+Husk at vi i stedet for at kalde det "additional dd2 data" har valgt at kalde det "internal dd2 data". Så vil vi have core data (data fra index), internal data (det det kun bor i dd2), og external data (det der kommer fra anden kilde)
+:::
+
+
 # DD2 core data
 
 DD2 core data include the data that make the foundation of DD2. This includes
@@ -18,9 +23,9 @@ DD2 core data include the data that make the foundation of DD2. This includes
 
 To be enrolled in DD2, the individual fills out the DD2 questionnaire and a blood/urine sample is collected. The core data only exist in DD2 and the DD2 cohort is defined to be those who enrolled in the DD2 by answering the DD2 questionnaire. As the blood/urine samples are collected at enrollment and currently stored in a biobank, it holds potential for additional biomarker analyses, genetic analyses, DNA sequencing etc., which would only add to the core data.
 
-# Additional DD2 data
+# Internal DD2 data
 
-Additional DD2 data include data from additional questionnaires and/or substudies. This includes data only available through DD2, meaning that it is data that had been generated only among individuals in DD2, but it was (probably) not collected as part of the initial enrollment process. This could e.g., include
+Internal DD2 data include data from additional questionnaires and/or substudies. This includes data only available through DD2, meaning that it is data that had been generated only among individuals in DD2, but it was (probably) not collected as part of the initial enrollment process. This could e.g., include
 
 -   IDNC questionnaire data, a follow-up questionnaire from 2016 including (follow-up) questions from the initial questionnaire along with multiple questions concerning diabetic neuropathy.
 
@@ -28,7 +33,7 @@ Additional DD2 data include data from additional questionnaires and/or substudie
 
 -   IDA, DICTA, CsubT2D, etc., are examples of projects initiated within DD2. These projects generate their own additional data and analyses but data are still part of the overall DD2 setup.
 
-These data sources will probably not be updated with new individuals or additional data, as they are mostly generated as part of specific research projects with closed cohorts.
+These data sources will probably not be updated with new individuals or additional data, as they are mostly generated as part of specific research projects with closed cohorts. Some of the substudies additionally contribute core data as they include analyses made on the blood/urine sample collected at enrollment.
 
 # Data extracts from external data sources
 

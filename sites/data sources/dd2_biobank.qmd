@@ -64,7 +64,7 @@ Information about some of the variables can be found in @Mor_DiabMetabResRev_201
     -   Cpeptid (numeric values for n=5.964 and "*NA*" for the remaining n=32 ID numbers)
     -   Fastende ("*Ja*" for n=2.891, "*Nej*" for n=397, and "*Ved ikke*" for the remaining n=2.708 ID numbers) (see below for more infomation about fasting blood samples)
 
-The majority of the initial 1.053 individuals are also included in this data file. We have been told to use the c-peptide measurements in this data file but to keep the CRP measurements from the original file and this file separated. The unit for CPR is mg/L in both data files.
+The majority of the initial 1.053 individuals are also included in this data file. We have been told to use the c-peptide measurements in this data file but to keep the CRP measurements from the original file and this file separated. The unit for CRP is mg/L in both data files.
 
 -   `WrongCPeptideMeasurements.txt`: We have probably received the file in November 2015. It includes n=105 ID numbers (end with -00) and the variables cpeptid and NyCpeptid. The values are quite different. We have noted in the syntax that JSN has told us not to use these variables (e-mail 31.05.2018).
 

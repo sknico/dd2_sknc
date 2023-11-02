@@ -229,7 +229,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#dd2-core-data" id="toc-dd2-core-data" class="nav-link active" data-scroll-target="#dd2-core-data">DD2 core data</a></li>
-  <li><a href="#additional-dd2-data" id="toc-additional-dd2-data" class="nav-link" data-scroll-target="#additional-dd2-data">Additional DD2 data</a></li>
+  <li><a href="#internal-dd2-data" id="toc-internal-dd2-data" class="nav-link" data-scroll-target="#internal-dd2-data">Internal DD2 data</a></li>
   <li><a href="#data-extracts-from-external-data-sources" id="toc-data-extracts-from-external-data-sources" class="nav-link" data-scroll-target="#data-extracts-from-external-data-sources">Data extracts from external data sources</a></li>
   <li><a href="#danish-medical-registry-data" id="toc-danish-medical-registry-data" class="nav-link" data-scroll-target="#danish-medical-registry-data">Danish medical registry data</a></li>
   </ul>
@@ -256,6 +256,19 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <p>The full DD2 research data is based on data collected/linked from multiple sources. This page is intended to give an overview of the data structure, the data sources and the definitions of data types. Detailed description of each of the data sources can be found on the following pages.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Husk at vi i stedet for at kalde det “additional dd2 data” har valgt at kalde det “internal dd2 data”. Så vil vi have core data (data fra index), internal data (det det kun bor i dd2), og external data (det der kommer fra anden kilde)</p>
+</div>
+</div>
 <section id="dd2-core-data" class="level1">
 <h1>DD2 core data</h1>
 <p>DD2 core data include the data that make the foundation of DD2. This includes</p>
@@ -265,15 +278,15 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>To be enrolled in DD2, the individual fills out the DD2 questionnaire and a blood/urine sample is collected. The core data only exist in DD2 and the DD2 cohort is defined to be those who enrolled in the DD2 by answering the DD2 questionnaire. As the blood/urine samples are collected at enrollment and currently stored in a biobank, it holds potential for additional biomarker analyses, genetic analyses, DNA sequencing etc., which would only add to the core data.</p>
 </section>
-<section id="additional-dd2-data" class="level1">
-<h1>Additional DD2 data</h1>
-<p>Additional DD2 data include data from additional questionnaires and/or substudies. This includes data only available through DD2, meaning that it is data that had been generated only among individuals in DD2, but it was (probably) not collected as part of the initial enrollment process. This could e.g., include</p>
+<section id="internal-dd2-data" class="level1">
+<h1>Internal DD2 data</h1>
+<p>Internal DD2 data include data from additional questionnaires and/or substudies. This includes data only available through DD2, meaning that it is data that had been generated only among individuals in DD2, but it was (probably) not collected as part of the initial enrollment process. This could e.g., include</p>
 <ul>
 <li><p>IDNC questionnaire data, a follow-up questionnaire from 2016 including (follow-up) questions from the initial questionnaire along with multiple questions concerning diabetic neuropathy.</p></li>
 <li><p>Birth data from Rigsarkivet collected from midwife journals. Data (<em>i.e.,</em> midwife journals) exist outside DD2 and could thus be considered external data, but it has only been registered electronically for individuals in DD2. For now, we consider it additional DD2 data as it is currently only (practically) available for individuals in DD2.</p></li>
 <li><p>IDA, DICTA, CsubT2D, etc., are examples of projects initiated within DD2. These projects generate their own additional data and analyses but data are still part of the overall DD2 setup.</p></li>
 </ul>
-<p>These data sources will probably not be updated with new individuals or additional data, as they are mostly generated as part of specific research projects with closed cohorts.</p>
+<p>These data sources will probably not be updated with new individuals or additional data, as they are mostly generated as part of specific research projects with closed cohorts. Some of the substudies additionally contribute core data as they include analyses made on the blood/urine sample collected at enrollment.</p>
 </section>
 <section id="data-extracts-from-external-data-sources" class="level1">
 <h1>Data extracts from external data sources</h1>

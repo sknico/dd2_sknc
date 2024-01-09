@@ -6,7 +6,13 @@ title: "DD2 biobank data"
 
 {{< downloadthis ../../files/variable_documentation/DD2_biobank.csv dname="DD2_biobank" icon="file-earmark-text" label="Variable documentation" type="button" class="btn btn-light">}}
 
-When patients are enrolled in the DD2, blood and a urine samples are collected and stored in the biobank in Vejle. The samples are from DD2 baseline, and future projects can have the samples analyzed if additional analyses are needed - the timing will always be baseline DD2.
+::: {.callout-important}
+
+The website is currently under development. Most of the documentation (enclosed documents) we are linking to are "dummy documents", and we will change this when we have confirmed which documents we are allowed to make publicly available.
+
+:::
+
+When patients are enrolled in the DD2, blood and a urine samples are collected and stored in the biobank in Vejle. The samples are all collected at DD2 *baseline*. No automatic or standard analyses are conducted, but DD2 projects/subprojects can have the samples analyzed if (additional) analyses are needed - the timing for the analysis results will always be baseline DD2, because that's when the blood/urine sample was collected.
 
 Further information about the initial idea about the biobank: @Christensen_ClinEpi_2012.\
 The documentation for the biobank can be downloaded here (Danish):{{\< downloadthis ../../files/biobank/DD2_dummy.pdf\
@@ -22,13 +28,16 @@ O:\\HE_KEA-DATA-RAW0050\\Main Part\\data\\Input Data Sets\\BioBank
 Data files from the 2022/2023 rounds are stored in the folder:\
 O:\\HE\\KEA-DATA-RAW0050\\Biomarkører
 
-## Original data
 
-In the first phase of DD2, a lot of biomarkers were analysed for the first 1.053 individuals enrolled in DD2 (some have later opted out). These individuals are marked by the variable `BlodProve1053patients` (based on the CPR numbers in data files `First1053Patients` (same as in `UrinResultatermedRatio2013Nov`)) and are predominantly enrolled in 2011-2012.
+Below is a list of the biobank data files stored at KEA (files read in locally). File names might have changed since we initially received them.
 
-These are the data files stored at KEA (files read in locally). File names might have changed since we initially received them.
 
--   `First1053Patients.txt`: We have probably received the data file in November 2012. It includes n=1.053 CPR numbers and they are most likely everyone in the database at that time. The file includes results from the initial blood samples. There are no dates in the data and there are no units for the variables hæmolyse, icteri, and lipæmi. The data set includes the variables:
+## First biomarkers
+
+In the first phase of DD2, a lot of biomarkers were analysed for the first 1.053 individuals enrolled in DD2 (some individuals have later opted out). These individuals are marked by the variable `BlodProve1053patients` (based on the CPR numbers in data file `First1053Patients` (same as in `UrinResultatermedRatio2013Nov`)) and are predominantly enrolled in 2011-2012.
+
+
+-   `First1053Patients.txt`: We have probably received the data file in November 2012. It includes n=1.053 CPR numbers and these individuals are most likely everyone in the database at that time. The file includes results from the initial blood samples. There are no dates in the data and there are no units for the variables hæmolyse, icteri, and lipæmi. The data set includes the variables:
 
     -   CPR
     -   ProjektID
@@ -56,7 +65,10 @@ Information about some of the variables can be found in @Mor_DiabMetabResRev_201
     -   Albumin_Kreatinin_ratio (n=1.041)
     -   Kommentar (n=473, \<5 with "*PROT-U \> 2.5 g/l*" and the rest with "*ALB-U \<3 mg/L*")
 
--   `DataTilDD2medFastende.txt`: We have probably received the file in September 2015 (Anne Gedebjerg). It includes n=5.996 CPR numbers with character results on GAD, glucose, and c-peptide, along with a variable about faste. The majority of the individuals in the file are enrolled before 2015, but it only includes around 80-85% of the individuals enrolled before 2016. There are no dates in the data. The data set includes the variables:
+
+## Additional biomarkers
+
+-   `DataTilDD2medFastende.txt`: We have probably received the file in September 2015 (Anne Gedebjerg). It includes n=5.996 CPR numbers with character results on GAD, glucose, and c-peptide, along with a variable about faste. The majority of the individuals in the file are enrolled before 2015, but it is only around 80-85% of all the individuals enrolled before 2016. There are no dates in the data. The data set includes the variables:
 
     -   Id (ProjectID, ends with -00)
     -   GAD (numeric values for n=131 ID numbers, the value "*\<0,000*" for n=5.797 ID numbers, "*\>525,000*" for n=51 ID numbers, and "*?????*" or "*NA*" for the remaining n=20 ID numbers)
@@ -64,7 +76,7 @@ Information about some of the variables can be found in @Mor_DiabMetabResRev_201
     -   Cpeptid (numeric values for n=5.964 and "*NA*" for the remaining n=32 ID numbers)
     -   Fastende ("*Ja*" for n=2.891, "*Nej*" for n=397, and "*Ved ikke*" for the remaining n=2.708 ID numbers) (see below for more infomation about fasting blood samples)
 
-The majority of the initial 1.053 individuals are also included in this data file. We have been told to use the c-peptide measurements in this data file but to keep the CRP measurements from the original file and this file separated. The unit for CRP is mg/L in both data files.
+The majority of the initial 1.053 individuals are also included in this data file. We have been told to use the c-peptide measurements in this data file and not the original data file. 
 
 -   `WrongCPeptideMeasurements.txt`: We have probably received the file in November 2015. It includes n=105 ID numbers (end with -00) and the variables cpeptid and NyCpeptid. The values are quite different. We have noted in the syntax that JSN has told us not to use these variables (e-mail 31.05.2018).
 
@@ -75,6 +87,9 @@ The majority of the initial 1.053 individuals are also included in this data fil
     -   barkode (ends with -99)
     -   CRP (n=7.510, mg/L)
     -   MBL (n=7.514, µg/L)
+
+We have been told to keep the CRP measurements from the original file and this file separate. The unit for CRP is mg/L in both data files.
+
 
 -   `Resultater den 250917 Anne Gedebjerg.xlsx`: We have received the file in September 2017 (from Anne Gedebjerg). It includes n=3.116 barcodes (end with -99) and variables regarding MBL expression genotyping (six SNPs in the MBL2 gene). The genotyping was done for the first \~3.000 individuals enrolled in DD2. See @Gedebjerg_DiabCare_2020 for more information. The data set includes the variables:
 
@@ -100,26 +115,36 @@ During 2022-2023 we received additional data on CRP, c-peptide, and glucose. We 
     -   CRP (n=2.478, mg/l, dated 30APR2022 or 01MAY2022)
     -   Glucose (n=3.055, mmol/L, dated 02APR2022 or 03APR2022)
 
-## C-peptide and glucose (full) (ikke lagt op endnu)
+## C-peptide and glucose (full) 
 
-During the summer 2023 we have received data on c-peptide (July 2023) and glucose (August 2023). These files include **all** measurements from the biobank, and results from these files will thus replace all the other measurements from earlier data sets. We now have the files:
+During the summer 2023 we have received data on c-peptide (July 2023) and glucose (August 2023). These files include **all** measurements from the biobank (cleaned), and results from these files will thus replace all the other measurements from earlier data sets. We now have the files:
 
--   `dd2_all_C_peptide_14July2023.xls`: Includes n=9.762 project_id with data on c-peptide. The file also includes information about analysis date, sampling date, freezing date, unit, and kit. The following data management has been done by DD2 (e-mail from Sidsel, 14JUL2023) before we received the file: \
-    *"- Jeg har erstattet alle 1254 observationer, som havde"gamle" målinger (før 28. feb 2015) med opdaterede målinger med nyt kit/assay (efter 28. feb 2015). \
-    - Jeg har slettet 6 observationer, som kun havde en "gammel" måling og INGEN opdateret genmåling\
-    - Jeg har renset op i data, så hvert individ kun fremgår med én måling, som er analyseret vha. nyt kit/assay "*
+-   `dd2_all_C_peptide_14July2023.xls`: Includes n=9.762 project_id with data on c-peptide. The file also includes information about analysis date, sampling date, freezing date, unit, and kit. The following data management has been done by DD2 (Biobank/Sidsel) before we received the file:
 
+:::{.callout-note header="Quote from e-mail"}
+Quote from e-mail
+<!-- e-mail from Sidsel, 14JUL2023  -->
+
+    - Jeg har erstattet alle 1254 observationer, som havde"gamle" målinger (før 28. feb 2015) med opdaterede målinger med nyt kit/assay (efter 28. feb 2015).
+    - Jeg har slettet 6 observationer, som kun havde en "gammel" måling og INGEN opdateret genmåling
+    - Jeg har renset op i data, så hvert individ kun fremgår med én måling, som er analyseret vha. nyt kit/assay 
+::: 
+
+Please note that c-peptide is now in another unit (it is just the old unit divided by 1000). 
+    
 -   `DD2_glukoser_2023_08_23.xlsx`: The data file includes n=9.563 projekt_id and information about glucose, units, and dates.
 
 ### HOMA
 
 [HOMA](https://www.rdm.ox.ac.uk/about/our-clinical-facilities-and-mrc-units/DTU/software/homa/history) values are calculated based on c-peptide and glucose. We use the Oxford calculator which can be downloaded from the website: <https://www.dtu.ox.ac.uk/homacalculator/download.php>.
 
-HOMA values in the data are calcualted based on the c-peptide and glucose measurements received during the summer 2023.
+HOMA values in the data are calcualted based on the c-peptide and glucose measurements received during the summer 2023. HOMA has only been estimated for glucose values in the interval 3.0-25 and c-peptide 0.2-3.5 (because of an updated Oxford HOMA calculator where values out of range cause problems in the excel calculator). Some individuals might therefore have glucose and c-peptide values but no HOMA values in the new data. 
+
+
 
 ## "Pladebiomarkører"
 
-During 2022-2023, we have received new data from additional biomarker analyses (Allan Vaag grant). The majority of the new biomarkers are so-called "pladebiomarkører" (as opposed to the current ones which are called "målebiomarkører") because of the way the analyses are performed. In practice, everyone enrolled as of the day the blood samples were taken from the biobank (in the beginning of 2022) were included in the analysis (approx. the first 9.200 individuals). Data in these files are in long format and include the following 22 biomarkers (all with unit pg/ml) and the dates refer to when we received the data files:
+During 2022-2023, we have received new data from additional biomarker analyses (from the Allan Vaag grant). The majority of the new biomarkers are so-called "pladebiomarkører" (as opposed to the current ones which are called "målebiomarkører") because of the way the analyses are performed. In practice, everyone enrolled as of the day the blood samples were taken from the biobank (in the beginning of 2022) were included in the analysis (approx. the first 9.200 individuals). Data in these files are in long format and include the following 22 biomarkers (all with unit pg/ml) and the dates refer to when we received the data files:
 
 -   TNF-a (April 2022, n=9.202, pg/ml)
 -   IL-6 (April 2022, n=9.195, pg/ml)
@@ -139,14 +164,16 @@ During 2022-2023, we have received new data from additional biomarker analyses (
 -   Resistin (April 2023, n=9.046, pg/ml)
 -   Serpin (April 2023, n=9.047, pg/ml)
 -   YKL-40 (April 2023, n=9.045, pg/ml)
--   Osteopontin (June 2023, n=9.204, pg/ml) - ikke lagt op på serverne endnu
--   Adiponectin (July 2023, n=9.204, pg/ml) - ikke lagt op på serverne endnu
--   Follistatin (July 2023, n=9.204, pg/ml) - ikke lagt op på serverne endnu
--   MPO (July 2023, n=9.204, pg/ml) - ikke lagt op på serverne endnu
+-   Osteopontin (June 2023, n=9.204, pg/ml)
+-   Adiponectin (July 2023, n=9.204, pg/ml)
+-   Follistatin (July 2023, n=9.204, pg/ml)
+-   MPO (July 2023, n=9.204, pg/ml)
 
 An overview of the biomarkers (table from the Allan Vaag grant application) can be found here: {{< downloadthis ../../files/biobank/Pladebiomarkorer.pdf dname="Pladebiomarkorer" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}}
 
-### Data files
+The data files with "pladebiomarkører" and "målebiomarkører" don't have the same format (e.g., long vs. wide format) and we have thus not combined the data files. 
+
+### Data files (pladebiomarkører)
 
 In the following section we will go through the data files we have received.
 
@@ -257,11 +284,9 @@ Currently, the fasting state has been defined by the following (SAS) algorithm c
 
 ```
 
-
 ::: callout-info
-The plan is that DD2 will make an "official" definition of Faste and a variable indicating the fasting state will thus be included in the original data. 
+The plan is that DD2 will make an "official" definition of Faste and a variable indicating the fasting state will thus be included in the data accompanying the questionnaire data.
 :::
-
 
 <!-- ------------------------------------------------------------------------ -->
 

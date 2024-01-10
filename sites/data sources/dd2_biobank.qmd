@@ -121,8 +121,8 @@ During the summer 2023 we have received data on c-peptide (July 2023) and glucos
 
 -   `dd2_all_C_peptide_14July2023.xls`: Includes n=9.762 project_id with data on c-peptide. The file also includes information about analysis date, sampling date, freezing date, unit, and kit. The following data management has been done by DD2 (Biobank/Sidsel) before we received the file:
 
-:::{.callout-note header="Quote from e-mail"}
-Quote from e-mail
+:::{.callout-note appearance="default"}
+## Quote from e-mail
 <!-- e-mail from Sidsel, 14JUL2023  -->
 
     - Jeg har erstattet alle 1254 observationer, som havde"gamle" målinger (før 28. feb 2015) med opdaterede målinger med nyt kit/assay (efter 28. feb 2015).

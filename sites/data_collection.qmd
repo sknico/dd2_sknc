@@ -4,22 +4,14 @@ title: "Data collection"
 
 Enrollment in DD2 consists of a questionnaire (with a few questions for the patient and a part to be filled out by the enroller) and the collection of a urine sample and a blood sample. All individuals older than 18 years of age diagnosed with diabetes within the last 2 years are eligible for inclusion in DD2.
 
-The individual can either sign up online (and then be contacted) or be approached by the practice personnel (e.g., during a regular diabetes check-up). The individual will receive an e-mail with a link to WebPatient, where a few questions should be filled out before the questionnaire will be sent to the practice. Hereafter, a DD2 examination will take place, where additional questions will be answered (e.g., diabetes debut date assessed by the enroller) along with a physical examination (weight, hip and waist circumference, resting heart rate, ...). The examination also involves a urine sample (morning urine) and a blood sample (fasting).
+The individual can either sign up online (and then be contacted) or be approached by the practice personnel (e.g., during a regular diabetes check-up). The individual will receive an e-mail with a link to WebPatient, where a few questions should be filled out before the questionnaire will be sent to the practice. Hereafter, a DD2 examination will take place, where additional questions will be answered (e.g., diabetes debut date assessed by the enroller) along with a physical examination (e.g., weight, hip and waist circumference, resting heart rate). The examination also involves a urine sample (morning urine) and a blood sample (fasting).
 
-Enrollment can either take place in the practice (GP) or in the outpatient clinic. Registration is also possible for individuals without internet access.
-
-For further information about the enrollment, see the DD2 website (Danish):
-
--   Patient information: <https://dd2.dk/praksis-og-amb/patientinformation>
-
--   Instructions and questionnaires: <https://dd2.dk/praksis-og-amb/vejledninger-og-reg-skema>
+Enrollment can either take place in the practice (GP) or in the outpatient clinic. Registration is also possible for individuals without internet access. For further information about the enrollment, see the DD2 website (Danish): [Patient information](https://dd2.dk/praksis-og-amb/patientinformation) and [Instructions and questionnaires](https://dd2.dk/praksis-og-amb/vejledninger-og-reg-skema).
 
 Some of the general documents can also be downloaded here (Danish, downloaded 12 January 2024):
 
--   DD2 questionnaire (praksis): {{\< downloadthis ../files/DD2_registrering/registreringsskema_almen_praksis.pdf dname="registreringsskema_almen_praksis" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}}
-
--   Inclusion information (praksis): {{\< downloadthis ../files/DD2_registrering/vejledning_transportordning_generisk.pdf dname="vejledning_transportordning_generisk" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}}
-
--   Biobank samples (biobank): {{\< downloadthis ../files/DD2_registrering/vejledning_i_patientregistrering_i_dd2_ambulatorier_2023_frost_og_post_samlet.pdf dname="vejledning_i_patientregistrering_i_dd2_ambulatorier_2023_frost_og_post_samlet" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}} and {{\< downloadthis ../files/DD2_registrering/vejledning_til_patientregistreing_praksis_centrifugere_selv__generisk.pdf dname="vejledning_til_patientregistreing_praksis_centrifugere_selv__generisk" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}}
+-   DD2 questionnaire: {{< downloadthis ../files/DD2_registrering/registreringsskema_almen_praksis.pdf dname="registreringsskema_almen_praksis" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}}
+-   Inclusion information: {{< downloadthis ../files/DD2_registrering/vejledning_transportordning_generisk.pdf dname="vejledning_transportordning_generisk" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}}
+-   Biobank samples: {{< downloadthis ../files/DD2_registrering/vejledning_i_patientregistrering_i_dd2_ambulatorier_2023_frost_og_post_samlet.pdf dname="vejledning_i_patientregistrering_i_dd2_ambulatorier_2023_frost_og_post_samlet" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}} and {{< downloadthis ../files/DD2_registrering/vejledning_til_patientregistreing_praksis_centrifugere_selv__generisk.pdf dname="vejledning_til_patientregistreing_praksis_centrifugere_selv__generisk" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}}
 
 For more information about the enrollment and data collection, please contact DD2.

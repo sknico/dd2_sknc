@@ -16,22 +16,10 @@ For further information about the enrollment, see the DD2 website (Danish):
 
 Some of the general documents can also be downloaded here (Danish, downloaded 12 January 2024):
 
-DD2 questionnaire (praksis): 
+-   DD2 questionnaire (praksis): {{\< downloadthis ../files/DD2_registrering/registreringsskema_almen_praksis.pdf dname="registreringsskema_almen_praksis" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}}
 
-{{\< downloadthis ../../files/DD2_registrering/registreringsskema_almen_praksis.pdf\
-dname="registreringsskema_almen_praksis" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}}
+-   Inclusion information (praksis): {{\< downloadthis ../files/DD2_registrering/vejledning_transportordning_generisk.pdf dname="vejledning_transportordning_generisk" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}}
 
-
-
-{{\< downloadthis ../../files/biobank/DD2_dummy.pdf\
-dname="20210809-vejledning-i-dd2-proevehaandtering_kba_hjemmeside" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}}
-
-
-
-
-<!-- Inclusion information (praksis): {{< downloadthis ../../files/DD2_registrering/vejledning-transportordning-generisk.pdfdname="vejledning-transportordning-generisk" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}} -->
-
-<!-- Biobank samples (biobank): {{\< downloadthis ../../files/DD2_registrering/vejledning-i-patientregistrering-i-dd2-ambulatorier-2023-frost-og-post-samlet.pdf dname="vejledning-i-patientregistrering-i-dd2-ambulatorier-2023-frost-og-post-samlet" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}} and {{\< downloadthis ../../files/DD2_registrering/vejledning-til-patientregistreing-praksis-centrifugere-selv-_generisk.pdf dname="vejledning-til-patientregistreing-praksis-centrifugere-selv-_generisk" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}} -->
-
+-   Biobank samples (biobank): {{\< downloadthis ../files/DD2_registrering/vejledning_i_patientregistrering_i_dd2_ambulatorier_2023_frost_og_post_samlet.pdf dname="vejledning_i_patientregistrering_i_dd2_ambulatorier_2023_frost_og_post_samlet" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}} and {{\< downloadthis ../files/DD2_registrering/vejledning_til_patientregistreing_praksis_centrifugere_selv__generisk.pdf dname="vejledning_til_patientregistreing_praksis_centrifugere_selv__generisk" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}}
 
 For more information about the enrollment and data collection, please contact DD2.

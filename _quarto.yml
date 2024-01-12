@@ -23,6 +23,7 @@ website:
       #- section: "Data sources"
       #  contents:
       - sites/data structure.qmd 
+      - sites/data collection.qmd 
       
       - text: "---"
         

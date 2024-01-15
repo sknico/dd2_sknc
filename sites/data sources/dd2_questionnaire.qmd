@@ -16,5 +16,4 @@ DENNE SIDE SKAL BESKRIVE
 
 Det ville være fint med en oversigt over de tilgængelige variable (metadata til seedcase)
 
-This
-
+QoL - der sendes en mail ved baseline (år 0) samt efter 2, 4 og 6 år. Det er dog ikke noget data vi har på kea. 

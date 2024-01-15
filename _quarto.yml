@@ -22,9 +22,9 @@ website:
   #        - index.qmd #index er inkluderet i "home" men jeg har fjernet den fra sidebar
       #- section: "Data sources"
       #  contents:
-      - sites/data_structure.qmd 
       - sites/data_collection.qmd 
-      
+      - sites/data_structure.qmd 
+
       - text: "---"
         
       - section: "DD2 core data"

@@ -18,6 +18,9 @@ Data include n=9,549 CPR-numbers (one CPR-number is included twice), n=8,346 hav
 # Control population
 In addition to the individuals from DD2, a control population was recorded. For every individual in DD2, approximately two random individuals were selected based on the births from the same midwife information sheet (with birth information on ~6--8 different births). Controls from the same midwife record thus served as a match on date of birth, midwife, and geographical location. A total of n=18,210 individuals are recorded in the control population and data include information on year and month of birth, birth weight, birth length, sex, born at term, twin, and geographical location (lægekreds/fødselsamt). No CPR-numbers are available for the control population (data permissions and ethical and practical reasons) and neither are links between the controls and the individuals in DD2. Data on controls are currently not available on the servers^[The current data permission includes only individuals in DD2 and therefore not the matched controls. As CPR-numbers are not available and controls ultimately cannot be linked to their respective DD2 individual there is no reason to upload data to the servers because all analyses can be performed locally.]. 
 
+Selected pages from the opgavebeskrivelse (del 1 and del 2) can be downloaded here (Danish):{{\< downloadthis ../../files/Foedselsdata_rigsarkivet/Kombineret_opgavebeskriveslse_udsnit_rigsarkivet.pdf\
+dname="Kombineret_opgavebeskriveslse_udsnit_rigsarkivet" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}}\
+
 
 <!-- ::: {.callout-note appearance="default"} -->
 <!-- ## Spørgsmål til dokumentationen   -->

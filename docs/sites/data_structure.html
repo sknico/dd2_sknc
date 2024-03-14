@@ -234,10 +234,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#dd2-core-data" id="toc-dd2-core-data" class="nav-link active" data-scroll-target="#dd2-core-data">DD2 core data</a></li>
-  <li><a href="#internal-dd2-data" id="toc-internal-dd2-data" class="nav-link" data-scroll-target="#internal-dd2-data">Internal DD2 data</a></li>
-  <li><a href="#data-extracts-from-external-data-sources" id="toc-data-extracts-from-external-data-sources" class="nav-link" data-scroll-target="#data-extracts-from-external-data-sources">Data extracts from external data sources</a></li>
-  <li><a href="#danish-medical-registry-data" id="toc-danish-medical-registry-data" class="nav-link" data-scroll-target="#danish-medical-registry-data">Danish medical registry data</a></li>
+  <li><a href="#primary-data" id="toc-primary-data" class="nav-link active" data-scroll-target="#primary-data">Primary data</a>
+  <ul class="collapse">
+  <li><a href="#dd2-enrollment-data" id="toc-dd2-enrollment-data" class="nav-link" data-scroll-target="#dd2-enrollment-data">DD2 enrollment data</a></li>
+  <li><a href="#additional-dd2-data" id="toc-additional-dd2-data" class="nav-link" data-scroll-target="#additional-dd2-data">Additional DD2 data</a></li>
+  </ul></li>
+  <li><a href="#secondary-data" id="toc-secondary-data" class="nav-link" data-scroll-target="#secondary-data">Secondary data</a>
+  <ul class="collapse">
+  <li><a href="#routine-registry-data" id="toc-routine-registry-data" class="nav-link" data-scroll-target="#routine-registry-data">Routine Registry Data</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -262,6 +267,50 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <p>The full DD2 research data is based on data collected/linked from multiple sources. This page is intended to give an overview of the data structure, the data sources and the definitions of data types. Detailed description of each of the data sources can be found on the following pages.</p>
+<p>The data sources include <strong>primary data</strong>, i.e., data that exists only within DD2, including data collected from participants at enrollment, and additional primary data derived from nested research studies in the DD2 cohort. The data also include <strong>secondary data</strong>, i.e., external data collected from other data sources and then linked to DD2. In addition, DD2 data (primary and secondary data) is linked to the nationwide routine registry data located in centralized databases (SDS and DST).</p>
+<section id="primary-data" class="level1">
+<h1>Primary data</h1>
+<p>Primary data can be split into two sections</p>
+<ul>
+<li><p>DD2 enrollment data</p></li>
+<li><p>Additional DD2 data derived from research studies</p></li>
+</ul>
+<section id="dd2-enrollment-data" class="level2">
+<h2 class="anchored" data-anchor-id="dd2-enrollment-data">DD2 enrollment data</h2>
+<p>DD2 core data include the data that make the foundation of DD2. This includes</p>
+<ul>
+<li><p>DD2 interview data</p></li>
+<li><p>Data from clinical examination at enrollment</p></li>
+<li><p>Blood and urine samples collected for storage in the DD2 biobank in Vejle.</p></li>
+</ul>
+<p>To be enrolled in DD2, the individual fills out the DD2 questionnaire and a blood/urine sample is collected. The DD2 cohort itself is defined to be those who enrolled in the DD2 by answering the DD2 questionnaire, and the DD2 enrollment data only exist within DD2, i.e., the interview data and data from the clinical examination is only available though DD2. All blood and urine samples are stored in the DD2 biobank, however, the samples are not necessarily analyzed, as analysis of samples generally depends on funding provided through specific research studies.</p>
+</section>
+<section id="additional-dd2-data" class="level2">
+<h2 class="anchored" data-anchor-id="additional-dd2-data">Additional DD2 data</h2>
+<p>Research studies nested within the DD2 cohort have the potential to generate new primary data. The additionl DD2 data thus includes data only available through DD2, meaning that it is data that had been generated only among individuals in DD2, but it was (probably) not collected as part of the initial enrollment process. This could e.g., be data from studies collecting additional follow-up DD2 data (by a follow-up questionnaire or follow-up clinical examinations) or from intervention studies using the DD2 cohort. As the blood/urine samples are collected at enrollment and currently stored in a biobank, it holds potential for additional biomarker analyses, genetic analyses, DNA sequencing etc., which would add to the primary collected data. The blood/urine samples are from enrollment, and the analysis results would therefor add to the baseline data.</p>
+<p>The completeness and availability of these data depend on the time points at which research studies generated the results.</p>
+<p>Examples of additional DD2 could include</p>
+<ul>
+<li><p>IDNC questionnaire data, a follow-up questionnaire from 2016 including (follow-up) questions from the initial questionnaire along with multiple questions concerning diabetic neuropathy.</p></li>
+<li><p>IDA, DICTA, CsubT2D, etc., are examples of projects initiated within DD2. These projects generate their own additional data and analyses but data are still part of the overall DD2 setup.</p></li>
+</ul>
+<p>These data sources will probably not be updated with new individuals or additional data, as they are mostly generated as part of specific research projects with closed cohorts. The data can be accessed through collaboration with DD2 research groups.</p>
+</section>
+</section>
+<section id="secondary-data" class="level1 page-columns page-full">
+<h1>Secondary data</h1>
+<p>The secondary DD2 data is data accessed from non-centralized data sources. Data from external data sources were not initially generated with the intention to be included in DD2. However, as data can be considered relevant for DD2 research questions, we have linked data from these external data sources to the DD2. In practice, this means that data (or a subset of data) has been handed over from the external data source to DD2, and we thus have relevant data on (a subset of) the individuals in DD2. Linkage to external data sources is considered a crucial source of data in DD2, as it allows for information about variables that are resource-intensive to collect in clinical practice and unavailable in the Danish health registries. Currently, we have agreements with the following external data sources:</p>
+<ul>
+<li><p>The Danish Diabetes Database for Adults (DDDA) (closed by June 2022)</p></li>
+<li><p>DDiD (new version of DDDA)</p></li>
+<li><p>The Danish National Podiatrist Registry (fodstatusdatabasen)</p></li>
+<li><p>Diabase (øjenkompl., aftale?)</p></li>
+<li><p>The Danish National Archive (Rigsarkivet), currently including birth data from midwife journals.</p></li>
+</ul>
+<p>The general idea is that we can get updates (either by including more time or by including more individuals) of data from these data sources. Therefore, we will for some of these data sources have the most recent data on the individuals in DD2 and also have updated data whenever we have new individuals in the DD2 cohort. The secondary data can be accessed through collaboration with DD2 research groups.</p>
+<section id="routine-registry-data" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="routine-registry-data">Routine Registry Data</h2>
+<p>The routine registry data is also secondary data, however, it is only available on remote research servers. DD2 research data will be uploaded to the servers hosted at Danmarks Statistik (DST, Statistics Denmark) and Sundhedsdatastyrelsen (SDS, The Danish Health Data Authority). On these servers, we have access to Danish medical and administrative registries, such as data from the CPR registry, hospital data from LPR, laboratory data from LAB-F etc. Linkage to additional registries and databases is possible with approval of data permission applications sent to Statistics Denmark or the Danish Health Data Authority.</p>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -272,52 +321,16 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Husk at vi i stedet for at kalde det “additional dd2 data” har valgt at kalde det “internal dd2 data”. Så vil vi have core data (data fra index), internal data (det det kun bor i dd2), og external data (det der kommer fra anden kilde)</p>
+<p>Replace figure (updated Figure 1 from paper)</p>
 </div>
 </div>
-<section id="dd2-core-data" class="level1">
-<h1>DD2 core data</h1>
-<p>DD2 core data include the data that make the foundation of DD2. This includes</p>
-<ul>
-<li><p>DD2 questionnaire data</p></li>
-<li><p>Biomarker data (analysis results based on the blood and urine samples from time of enrollment). The blood/urine samples are stored in a biobank in Vejle.</p></li>
-</ul>
-<p>To be enrolled in DD2, the individual fills out the DD2 questionnaire and a blood/urine sample is collected. The core data only exist in DD2 and the DD2 cohort is defined to be those who enrolled in the DD2 by answering the DD2 questionnaire. As the blood/urine samples are collected at enrollment and currently stored in a biobank, it holds potential for additional biomarker analyses, genetic analyses, DNA sequencing etc., which would only add to the core data.</p>
-</section>
-<section id="internal-dd2-data" class="level1">
-<h1>Internal DD2 data</h1>
-<p>Internal DD2 data include data from additional questionnaires and/or substudies. This includes data only available through DD2, meaning that it is data that had been generated only among individuals in DD2, but it was (probably) not collected as part of the initial enrollment process. This could e.g., include</p>
-<ul>
-<li><p>IDNC questionnaire data, a follow-up questionnaire from 2016 including (follow-up) questions from the initial questionnaire along with multiple questions concerning diabetic neuropathy.</p></li>
-<li><p>Birth data from Rigsarkivet collected from midwife journals. Data (<em>i.e.,</em> midwife journals) exist outside DD2 and could thus be considered external data, but it has only been registered electronically for individuals in DD2. For now, we consider it additional DD2 data as it is currently only (practically) available for individuals in DD2.</p></li>
-<li><p>IDA, DICTA, CsubT2D, etc., are examples of projects initiated within DD2. These projects generate their own additional data and analyses but data are still part of the overall DD2 setup.</p></li>
-</ul>
-<p>These data sources will probably not be updated with new individuals or additional data, as they are mostly generated as part of specific research projects with closed cohorts. Some of the substudies additionally contribute core data as they include analyses made on the blood/urine sample collected at enrollment.</p>
-</section>
-<section id="data-extracts-from-external-data-sources" class="level1">
-<h1>Data extracts from external data sources</h1>
-<p>Data from external data sources were not initially generated with the intention to be included in DD2. However, as data can be considered relevant for DD2 research questions, we have linked data from these external data sources to the DD2. In practice, this means that data (or a subset of data) has been handed over from the external data source to DD2, and we thus have relevant data on (a subset of) the individuals in DD2. Currently, we have agreements with the following external data sources:</p>
-<ul>
-<li><p>DDDA (udgår)</p></li>
-<li><p>DDiD (nyt, endnu ingen aftale)</p></li>
-<li><p>Fodstatus</p></li>
-<li><p>Diabase (øjenkompl., aftale?)</p></li>
-</ul>
-<p>The general idea is that we can get updates of data from these data sources. Therefore, we will have the most recent data on the individuals in DD2 and also have updated data whenever we have new individuals in the DD2 cohort.</p>
-</section>
-<section id="danish-medical-registry-data" class="level1 page-columns page-full">
-<h1>Danish medical registry data</h1>
-<p>DD2 research data will be uploaded to the servers hosted at Danmarks Statistik (DST, Statistics Denmark) and Sundhedsdatastyrelsen (SDS, The Danish Health Data Authority). On these servers, we have access to Danish medical registry data, such as data from the CPR registry, hospital data from LPR, laboratory data from LAB-F etc.</p>
-<ul>
-<li><p>SDS</p></li>
-<li><p>DST</p></li>
-</ul>
 <!-- :::{.column-page-right} -->
 <div class="column-screen-inset-right">
 <p><img src="..\figures/overblik.png" class="img-fluid" style="width:100.0%"></p>
 </div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

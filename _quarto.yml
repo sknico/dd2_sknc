@@ -22,6 +22,7 @@ website:
   #        - index.qmd #index er inkluderet i "home" men jeg har fjernet den fra sidebar
       #- section: "Data sources"
       #  contents:
+      
       - sites/data_collection.qmd 
       - sites/data_structure.qmd 
 
@@ -53,6 +54,7 @@ website:
         contents: 
         - sites/registry/SDS.qmd
         - sites/registry/DST.qmd
+        
         
       - text: "---"
         

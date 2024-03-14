@@ -28,27 +28,21 @@ website:
 
       - text: "---"
         
-      - section: "DD2 core data"
+      - section: "Primary DD2 data"
         contents: 
         - sites/data sources/dd2_questionnaire.qmd
         - sites/data sources/dd2_biobank.qmd
         - sites/data sources/dd2_biobank_new_structure.qmd
-        
-        
-      - section: "Additional DD2 data"
-        contents: 
         - sites/data sources/idnc.qmd
-        - sites/data sources/foedsel.qmd
+        
+      - section: "Secondary DD2 data"
+        contents:         
 
-
-
-      - section: "External DD2 data"
-        contents: 
         - sites/data sources/ddda.qmd
         - sites/data sources/ddid.qmd
         - sites/data sources/diabase.qmd
         - sites/data sources/fodstatus.qmd
-        
+        - sites/data sources/foedsel.qmd
          
       - section: "Registry data"
         contents: 

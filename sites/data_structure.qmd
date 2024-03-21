@@ -14,13 +14,13 @@ The data sources include **primary data**, i.e., data that exists only within DD
 
 Primary data can be split into two sections
 
-1.  DD2 enrollment data
+1.  DD2 enrollment information
 
 2.  Additional DD2 data derived from research studies.
 
-## 1. DD2 enrollment data
+## 1. DD2 enrollment information
 
-DD2 enrollment data include the data that make the foundation of DD2, i.e.,
+DD2 enrollment information include the information that make the foundation of DD2, i.e.,
 
 -   DD2 interview data
 
@@ -28,7 +28,7 @@ DD2 enrollment data include the data that make the foundation of DD2, i.e.,
 
 -   Blood and urine samples collected for storage in the DD2 biobank in Vejle.
 
-To be enrolled in DD2, the individual fills out the DD2 questionnaire and a blood/urine sample is collected. The DD2 cohort itself is defined to be those who enrolled in the DD2 (by answering the DD2 questionnaire), and the DD2 enrollment data only exist within DD2, i.e., the interview data and data from the clinical examination is only available though DD2. All blood and urine samples are stored in the DD2 biobank and are available for researchers. The samples have not necessarily been analyzed, as analysis of samples generally depends on funding provided through specific research studies.
+To be enrolled in DD2, the individual fills out the DD2 questionnaire and a blood/urine sample is collected. The DD2 cohort itself is defined to be those who enrolled in the DD2 (by answering the DD2 questionnaire), and the DD2 enrollment information only exist within DD2, i.e., the interview data and data from the clinical examination is only available though DD2. All blood and urine samples are stored in the DD2 biobank and are available for researchers. The samples have not necessarily been analyzed, as analysis of samples generally depends on funding provided through specific research studies.
 
 ## 2. Additional DD2 data
 

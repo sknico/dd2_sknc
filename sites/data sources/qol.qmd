@@ -1,5 +1,6 @@
 ---
-title: "Quality of life data (QoL)"
+title: "Quality of life"
+subtitle: "(QoL)"
 ---
 
 

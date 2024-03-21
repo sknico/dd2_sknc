@@ -1,5 +1,5 @@
 ---
-title: "DD2 biobank data"
+title: "DD2 biobank"
 #bibliography: 
 #- "`r system('kpsewhich ../../references.bib', intern = TRUE)`"
 ---

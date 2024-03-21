@@ -63,13 +63,15 @@ website:
         
 format:
   html:
+    grid:
+        sidebar-width: 500px
     page-layout: full
     #theme: cosmo
     theme: flatly
     css: styles.css
     toc: true
     # For at styre størrelsen skal man vist bruge en nyere version - se i stedet filen styles.css
-    # grid:
+    #grid:
     #   sidebar-width: 500px
     #   body-width: 800px
     #   margin-width: 200px

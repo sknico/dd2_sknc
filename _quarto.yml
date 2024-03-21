@@ -34,6 +34,7 @@ website:
         - sites/data sources/dd2_biobank.qmd
         - sites/data sources/dd2_biobank_new_structure.qmd
         - sites/data sources/idnc.qmd
+        - sites/data sources/qol.qmd
         
       - section: "Secondary DD2 data"
         contents:         

@@ -2,5 +2,6 @@
 title: "Quality of life data (QoL)"
 ---
 
+
  
 After enrollment, an e-mail with a questionnaire including questions about quality of life is sent to the individual. A follow-up questionnaire is sent after 2 years, 4 years, and 6 years. DCE does not have the QoL data. 

@@ -5,15 +5,10 @@ title: "DD2 questionnaire"
 #footer: "{{< meta date >}}"
 ---
 
-
 {{< downloadthis ../../files/variable_documentation/DD2_questionnaire.csv dname="DD2_questionnaire" icon="file-earmark-text" label="Variable documentation" type="button" class="btn btn-light">}}
 
+Data from the DD2 questionnaire include the responses along with general information about the individual.
 
+The DD2 questionnaire can be downloaded here: {{< downloadthis ../files/DD2_registrering/registreringsskema_almen_praksis.pdf dname="registreringsskema_almen_praksis" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}}
 
-DENNE SIDE SKAL BESKRIVE
-
--   DD2 QUESTIONNAIRE
-
-Det ville være fint med en oversigt over de tilgængelige variable (metadata til seedcase)
-
-QoL - der sendes en mail ved baseline (år 0) samt efter 2, 4 og 6 år. Det er dog ikke noget data vi har på kea. 
+--\> det skal afklares med Jens hvordan data ser ud, når det trækkes fra den nye server.

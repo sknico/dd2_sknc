@@ -1,108 +1,10 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "The Danish Center for Strategic Research in Type 2 Diabetes",
-    "section": "",
-    "text": "Important\n\n\n\nThis website is currently under development\n\n\nThis website includes details about The Danish Center for Strategic Research in Type 2 Diabetes (The DD2 Study). The intention of this website is to document the data sources used for research and to ease the day-to-day work with DD2. It is intended for employees at Department of Clinical Epidemiology (DCE/KEA), Aarhus University and Aarhus University Hospital, as it is mainly describing the setup used at DCE. Other institutions can also gain access to DD2 data but their setup might be different.\nTo learn more about DD2 please see: https://dd2.dk/\nAn extensive list of scientific publications based on data from DD2 is available on the website. That said, a good place to start is the 2012 paper about the DD2 enrollment process Nielsen et al. (2012) or the 2018 baseline paper Christensen et al. (2018). We are currently working on an update of this paper.\n\n\n\n\nReferences\n\nChristensen DH, Nicolaisen SK, Berencsi K, Beck-Nielsen H, Rungby J, Friborg S, et al. Danish centre for strategic research in type 2 diabetes (DD2) project cohort of newly diagnosed patients with type 2 diabetes: A cohort profile. BMJ Open [Internet]. 2018;8(4):e017273. Available from: https://www.ncbi.nlm.nih.gov/pubmed/29627803\n\n\nNielsen JS, Thomsen RW, Steffensen C, Christiansen JS. The danish centre for strategic research in type 2 diabetes (DD2) study: Implementation of a nationwide patient enrollment system. Clin Epidemiol [Internet]. 2012;4(Suppl 1):27–36. Available from: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3469284/pdf/clep-4-027.pdf"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "data sources.html",
-    "href": "data sources.html",
-    "title": "Data structure",
-    "section": "",
-    "text": "DENNE SIDE SKAL GIVE ET OVERBLIK OVER DE FORSKELLIGE DATAKILDER. DER SKAL INKLUDERES NOGLE FIGURER.\nDD2 is based on data from multiple sources:\n(vi skal have nogle gode navne til de forskellige datakilder)\n\nDD2 core data, i.e., data that makes the foundation of DD2\n\nDD2 questionnaire data\nBiomarker data (analysis results based on the blood and urine samples from time of enrollment)\n\nAdditional DD2 data, e.g., from additional questionnaires and/or substudies. This includes data only available through DD2, but it was not collected as part of the initial enrollment process.\n\nIDNC\nFødselsdata\n\nData extracts from external data sources\n\nDDDA (udgår)\nFodstatus\nDiabase (øjenkompl.)\n\nDanish medical registry data\n\nSDS\nDST\n\n\n\n\n\nOverview in DD2"
-  },
-  {
-    "objectID": "dd2_core_data.html",
-    "href": "dd2_core_data.html",
-    "title": "DD2 core data",
-    "section": "",
-    "text": "DENNE SIDE SKAL BESKRIVE\n\nDD2 QUESTIONNAIRE\nBIOBANK"
-  },
-  {
-    "objectID": "dd2_biobank.html",
-    "href": "dd2_biobank.html",
-    "title": "DD2 biobank data",
-    "section": "",
-    "text": "DENNE SIDE SKAL BESKRIVE\n\nDD2 BIOBANK (BIOMARKER)\n\nDer må gerne både være information om kvaliteten af data (biobank) samt info om den enkelte biomarkører."
-  },
-  {
-    "objectID": "dd2_questionnaire.html",
-    "href": "dd2_questionnaire.html",
+    "objectID": "sites/data sources/dd2_questionnaire.html",
+    "href": "sites/data sources/dd2_questionnaire.html",
     "title": "DD2 questionnaire",
     "section": "",
-    "text": "DENNE SIDE SKAL BESKRIVE\n\nDD2 QUESTIONNAIRE\n\nDet ville være fint med en oversigt over de tilgængelige variable (metadata til seedcase)\nThis"
-  },
-  {
-    "objectID": "working.html",
-    "href": "working.html",
-    "title": "Working with data",
-    "section": "",
-    "text": "How to work with data.\n\nUploads\nmacros\n“take home”\n\nKEA SOP\n\nfolder structure"
-  },
-  {
-    "objectID": "ddda.html",
-    "href": "ddda.html",
-    "title": "DDDA",
-    "section": "",
-    "text": "DENNE SIDE SKAL BESKRIVE\n\nDDDA –> DiaBase"
-  },
-  {
-    "objectID": "DST.html",
-    "href": "DST.html",
-    "title": "DST",
-    "section": "",
-    "text": "Danmarks statistik"
-  },
-  {
-    "objectID": "fodstatus.html",
-    "href": "fodstatus.html",
-    "title": "Fodstatus",
-    "section": "",
-    "text": "DENNE SIDE SKAL BESKRIVE\n\nfodstatus"
-  },
-  {
-    "objectID": "foedsel.html",
-    "href": "foedsel.html",
-    "title": "Fødselsdata",
-    "section": "",
-    "text": "DENNE SIDE SKAL BESKRIVE\n\nFødseslsdata/rigsarkivet"
-  },
-  {
-    "objectID": "idnc.html",
-    "href": "idnc.html",
-    "title": "IDNC",
-    "section": "",
-    "text": "DENNE SIDE SKAL BESKRIVE\n\nIDNC"
-  },
-  {
-    "objectID": "SDS.html",
-    "href": "SDS.html",
-    "title": "SDS",
-    "section": "",
-    "text": "Sundhedsdatastyrelsen"
-  },
-  {
-    "objectID": "SDS.html#population",
-    "href": "SDS.html#population",
-    "title": "SDS",
-    "section": "Population",
-    "text": "Population\nThe DD2 data is uploaded to SDS, and they check the validity of the CPR-numbers before encrypting them. The data set DS_EXT_DD2_POP includes individuals with a valid CPR-number. Individuals with a non-valid CPR-number are still included in the uploaded data, e.g. in DS_EXT_DD2CORE, but they will have a missing encrypted CPR-number (CPR_ENCRYPTED) and can thus not be linked across data sources. Previously (when we had local data), we would notify DD2 (Odense) about non-valid CPR-numbers, but this is no longer possible as we are not allowed to identify the individuals based on individual-level data on the servers."
-  },
-  {
-    "objectID": "SDS.html#data",
-    "href": "SDS.html#data",
-    "title": "SDS",
-    "section": "Data",
-    "text": "Data\nforskellige datakilder –> dataspecifikation\n\nLMS\nLPR\n…"
+    "text": "Variable documentation \nDENNE SIDE SKAL BESKRIVE\n\nDD2 QUESTIONNAIRE\n\nDet ville være fint med en oversigt over de tilgængelige variable (metadata til seedcase)\nQoL - der sendes en mail ved baseline (år 0) samt efter 2, 4 og 6 år. Det er dog ikke noget data vi har på kea."
   },
   {
     "objectID": "sites/data sources/dd2_biobank.html",
@@ -112,11 +14,53 @@
     "text": "Variable documentation\nWhen patients are enrolled in the DD2, blood and a urine samples are collected and stored in the biobank in Vejle. The samples are all collected at DD2 baseline. No automatic or standard analyses are conducted, but DD2 projects/subprojects can have the samples analyzed if (additional) analyses are needed - the timing for the analysis results will always be baseline DD2, because that’s when the blood/urine sample was collected.\nFurther information about the initial idea about the biobank: Christensen et al. (2012).\nThe documentation for the biobank can be downloaded here (Danish): Download"
   },
   {
-    "objectID": "sites/data sources/dd2_questionnaire.html",
-    "href": "sites/data sources/dd2_questionnaire.html",
-    "title": "DD2 questionnaire",
+    "objectID": "sites/data sources/dd2_biobank.html#first-biomarkers",
+    "href": "sites/data sources/dd2_biobank.html#first-biomarkers",
+    "title": "DD2 biobank data",
+    "section": "First biomarkers",
+    "text": "First biomarkers\nIn the first phase of DD2, a lot of biomarkers were analysed for the first 1.053 individuals enrolled in DD2 (some individuals have later opted out). These individuals are marked by the variable BlodProve1053patients (based on the CPR numbers in data file First1053Patients (same as in UrinResultatermedRatio2013Nov)) and are predominantly enrolled in 2011-2012.\n\nFirst1053Patients.txt: We have probably received the data file in November 2012. It includes n=1.053 CPR numbers and these individuals are most likely everyone in the database at that time. The file includes results from the initial blood samples. There are no dates in the data and there are no units for the variables hæmolyse, icteri, and lipæmi. The data set includes the variables:\n\nCPR\nProjektID\nC-peptid (n=1.053, pmol/L)\nGAD (n=1.053, kU/l)\nGlucose (n=1.050, mmol/L)\nALAT (n=1.030, U/L)\nHæmolyse (n=1.030)\nIcteri (n=1.030)\nLipæmi (n=1.030)\nAMYLP (n=1.041, U/L)\nCRP (n=1.041, mg/L)\n\n\nWe have been told (e-mail from JSN 31.05.2018) not to use the c-peptide measurements from this file (old analysis kit).\nInformation about some of the variables can be found in Mor et al. (2014).\n\nUrinResultatermedRatio2013Nov.txt: We have probably received the data file in December 2013. It includes n=1.053 CPR numbers (same as in First1053Patients) with results from the initial urine samples. The data set includes the variables:\n\nCPR\nBarkode (ends with -19)\nALBu_mg_L_ (n=1.041, mg/L, dated November 19, 20, and 23, 2012)\nKREA_mmol_L_ (n=1.041, mmol/L, dated November 19, 20, and 23, 2012)\nUPROT_g_L_ (n=1.041, g/L, dated November 19, 20, and 23, 2012)\nAlbumin_Kreatinin_ratio (n=1.041)\nKommentar (n=473, <5 with “PROT-U > 2.5 g/l” and the rest with “ALB-U <3 mg/L”)"
+  },
+  {
+    "objectID": "sites/data sources/dd2_biobank.html#additional-biomarkers",
+    "href": "sites/data sources/dd2_biobank.html#additional-biomarkers",
+    "title": "DD2 biobank data",
+    "section": "Additional biomarkers",
+    "text": "Additional biomarkers\n\nDataTilDD2medFastende.txt: We have probably received the file in September 2015 (Anne Gedebjerg). It includes n=5.996 CPR numbers with character results on GAD, glucose, and c-peptide, along with a variable about faste. The majority of the individuals in the file are enrolled before 2015, but it is only around 80-85% of all the individuals enrolled before 2016. There are no dates in the data. The data set includes the variables:\n\nId (ProjectID, ends with -00)\nGAD (numeric values for n=131 ID numbers, the value “<0,000” for n=5.797 ID numbers, “>525,000” for n=51 ID numbers, and “?????” or “NA” for the remaining n=20 ID numbers)\nGlucose (numeric values for n=4.457 and “NA” for the remaining n=1.539 ID numbers)\nCpeptid (numeric values for n=5.964 and “NA” for the remaining n=32 ID numbers)\nFastende (“Ja” for n=2.891, “Nej” for n=397, and “Ved ikke” for the remaining n=2.708 ID numbers) (see below for more infomation about fasting blood samples)\n\n\nThe majority of the initial 1.053 individuals are also included in this data file. We have been told to use the c-peptide measurements in this data file and not the original data file.\n\nWrongCPeptideMeasurements.txt: We have probably received the file in November 2015. It includes n=105 ID numbers (end with -00) and the variables cpeptid and NyCpeptid. The values are quite different. We have noted in the syntax that JSN has told us not to use these variables (e-mail 31.05.2018)."
+  },
+  {
+    "objectID": "sites/data sources/dd2_biobank.html#results-from-anne-gedebjerg",
+    "href": "sites/data sources/dd2_biobank.html#results-from-anne-gedebjerg",
+    "title": "DD2 biobank data",
+    "section": "Results from Anne Gedebjerg",
+    "text": "Results from Anne Gedebjerg\n\nDD2 resultater.xlsx (and DD2 resultater_10_0095, which is the version where <10 is replaced by 10 and <0,095 by 0,095): We have received the file in September 2017 (from Anne Gedebjerg). It includes n=7.519 barcodes (end with -99) in sheets of 100 or 101 rows, and should include CRP and mannose-binding lectin (MBL) on everyone enrolled by December 2016. See Gedebjerg et al. (2023) for more information. The data set includes the variables:\n\nbarkode (ends with -99)\nCRP (n=7.510, mg/L)\nMBL (n=7.514, µg/L)\n\n\nWe have been told to keep the CRP measurements from the original file and this file separate. The unit for CRP is mg/L in both data files.\n\nResultater den 250917 Anne Gedebjerg.xlsx: We have received the file in September 2017 (from Anne Gedebjerg). It includes n=3.116 barcodes (end with -99) and variables regarding MBL expression genotyping (six SNPs in the MBL2 gene). The genotyping was done for the first ~3.000 individuals enrolled in DD2. See Gedebjerg et al. (2020) for more information. The data set includes the variables:\n\nbarkode (ends with -99)\nHL\nXY\nPQ\n52\n54\n57\nHAPLOTYPE"
+  },
+  {
+    "objectID": "sites/data sources/dd2_biobank.html#april-2022-data",
+    "href": "sites/data sources/dd2_biobank.html#april-2022-data",
+    "title": "DD2 biobank data",
+    "section": "April 2022 data",
+    "text": "April 2022 data\nDuring 2022-2023 we received additional data on CRP, c-peptide, and glucose. We had a file with CRP in October 2022, but it is fully included in a file from January 2023 which also includes c-peptide and glucose. The October file is therefore not used during uploads, whereas the January 2023 file has been uploaded to the servers.\n\nDD2_cRP_Glucose_Cpep_2022_resultater (1).xlsx: The data file includes n=3.399 projekt_id. They are all enrolled after the first n=1.053 individuals, but we don’t know why they were analysed (not all individuals per year). The data set includes the variables: projekt_id, Cpeptid_Barkode, Cpeptid_Resultat, Cpeptid_Måleenhed, Cpeptid_Antal_decimaler, Cpeptid_Dato, Cpeptid_Notat, CRPHS_Barkode, CRPHS_Resultat, CRPHS_Måleenhed, CRPHS_Antal_decimaler, CRPHS_Dato, CRPHS_Notat, Glukose_Barkode, Glukose_Resultat, Glukose_Måleenhed, Glukose_Antal_decimaler, Glukose_Dato, Glukose_Notat.\n\nprojekt_id (n=3.339)\nc-peptid (n=2.933, pmol/l, dated 30APR2022 or 01MAY2022)\nCRP (n=2.478, mg/l, dated 30APR2022 or 01MAY2022)\nGlucose (n=3.055, mmol/L, dated 02APR2022 or 03APR2022)"
+  },
+  {
+    "objectID": "sites/data sources/dd2_biobank.html#c-peptide-and-glucose-full",
+    "href": "sites/data sources/dd2_biobank.html#c-peptide-and-glucose-full",
+    "title": "DD2 biobank data",
+    "section": "C-peptide and glucose (full)",
+    "text": "C-peptide and glucose (full)\nDuring the summer 2023 we have received data on c-peptide (July 2023) and glucose (August 2023). These files include all measurements from the biobank (cleaned), and results from these files will thus replace all the other measurements from earlier data sets. We now have the files:\n\ndd2_all_C_peptide_14July2023.xls: Includes n=9.762 project_id with data on c-peptide. The file also includes information about analysis date, sampling date, freezing date, unit, and kit. The following data management has been done by DD2 (Biobank/Sidsel) before we received the file:\n\n\n\n\n\n\n\nQuote from e-mail\n\n\n\n\n- Jeg har erstattet alle 1254 observationer, som havde\"gamle\" målinger (før 28. feb 2015) med opdaterede målinger med nyt kit/assay (efter 28. feb 2015).\n- Jeg har slettet 6 observationer, som kun havde en \"gammel\" måling og INGEN opdateret genmåling\n- Jeg har renset op i data, så hvert individ kun fremgår med én måling, som er analyseret vha. nyt kit/assay \n\n\nPlease note that c-peptide is now in another unit (it is just the old unit divided by 1000).\n\nDD2_glukoser_2023_08_23.xlsx: The data file includes n=9.563 projekt_id and information about glucose, units, and dates.\n\n\nHOMA\nHOMA values are calculated based on c-peptide and glucose. We use the Oxford calculator which can be downloaded from the website: https://www.dtu.ox.ac.uk/homacalculator/download.php.\nHOMA values in the data are calcualted based on the c-peptide and glucose measurements received during the summer 2023. HOMA has only been estimated for glucose values in the interval 3.0-25 and c-peptide 0.2-3.5 (because of an updated Oxford HOMA calculator where values out of range cause problems in the excel calculator). Some individuals might therefore have glucose and c-peptide values but no HOMA values in the new data."
+  },
+  {
+    "objectID": "sites/data sources/dd2_biobank.html#pladebiomarkører",
+    "href": "sites/data sources/dd2_biobank.html#pladebiomarkører",
+    "title": "DD2 biobank data",
+    "section": "“Pladebiomarkører”",
+    "text": "“Pladebiomarkører”\nDuring 2022-2023, we have received new data from additional biomarker analyses (from the Allan Vaag grant). The majority of the new biomarkers are so-called “pladebiomarkører” (as opposed to the current ones which are called “målebiomarkører”) because of the way the analyses are performed. In practice, everyone enrolled as of the day the blood samples were taken from the biobank (in the beginning of 2022) were included in the analysis (approx. the first 9.200 individuals). Data in these files are in long format and include the following 22 biomarkers (all with unit pg/ml) and the dates refer to when we received the data files:\n\nTNF-a (April 2022, n=9.202, pg/ml)\nIL-6 (April 2022, n=9.195, pg/ml)\nAng-Like4 (November 2022, n=9.200, pg/ml)\nFGF-21 (November 2022, n=9.200, pg/ml)\nFGF-23 (November 2022, Hu FGF-23, n=9.200, pg/ml)\nIL1-RA (November 2022, n=9.200, pg/ml)\nLeptin (November 2022, n=9.196, pg/ml)\nRAGE (November 2022, soluble, n=9.200, pg/ml)\nSclerostin (November 2022, n=9.200, pg/ml)\nU-PAR (November 2022, n=9.200, pg/ml)\nOsteocalcin-1 (February 2023, n=9.203)\nCD163 (April 2023, n=9.047, pg/ml)\nGalectin-3 (April 2023, n=9.008, pg/ml)\nGDF-15 (April 2023, n=9.046, pg/ml)\nNT-proBNP (April 2023, n=9.048, pg/ml)\nResistin (April 2023, n=9.046, pg/ml)\nSerpin (April 2023, n=9.047, pg/ml)\nYKL-40 (April 2023, n=9.045, pg/ml)\nOsteopontin (June 2023, n=9.204, pg/ml)\nAdiponectin (July 2023, n=9.204, pg/ml)\nFollistatin (July 2023, n=9.204, pg/ml)\nMPO (July 2023, n=9.204, pg/ml)\n\nAn overview of the biomarkers (table from the Allan Vaag grant application) can be found here:  Download \nThe data files with “pladebiomarkører” and “målebiomarkører” don’t have the same format (e.g., long vs. wide format) and we have thus not combined the data files.\n\nData files (pladebiomarkører)\nIn the following section we will go through the data files we have received.\n\nApril 2022, 220211 Vplex_final.xlsx with 2 sheets (data and background information). Data received in April 2022 but probably analyzed in February 2022 (no dates in data, but based on date stamps in file names). The data file includes data from n=9.294 DD2 individuals on IL-6 and TNF-a. The first sheet, Vplex sample results_final, includes the variables: Sample (id, ends with -12), Sample_Group (=Sample in all rows), Assay (either TNF-a or IL-6), Calc__Conc__Mean (results), RANGE (value 1 or 2), Plate_Name (each Plate_Name is used 78 times).\n\nTNF-a (n=9.202, pg/ml)\nIL-6 (n=9.195, pg/ml)\n\nThe second sheet, Vplex complete final, includes background information (rådata) about the sample from the sample_groups Sample (n=9.024), Standards (n=1.888), and Internal Control (n=236). The sheet includes the variables Plate_Name, Sample_Group, Sample, Assay, Well, Signal, Mean, CV Calc__Concentration, Calc__Conc__Mean, Calc__Conc__CV, __Recovery, __Recovery_Mean, Detection_Limits__Calc__Low, Detection_Limits__Calc__High, Detection_Range, Detection_Range_yesno, Quantification_range, Quantification_range_yesno, RANGE.\nAn additional overview sheet can be downloaded here:  Download    \nWe also received the data file DD2 quality log_panel 1 edited_TNF IL6.xlsx but is has not been used.\nNovember 2022, 8plex data final.xlsx, with 9 sheets (overview + 8 biomarkers). We received the data file in November 2022. There are no date stamps indicating when the analyses were performed. The data file include information on n=9.204 individuals (based on sample ID ending with -12). For each assay, the data file includes the variables sample (ID), assay, calc__conc__mean (result), RANGE, and plate_name. In an e-mail, we have been told the unit is pg/ml for all assays.\n\nAng-Like4 (n=9.200, pg/ml)\nFGF-21 (n=9.200, pg/ml)\nFGF-23 (Hu FGF-23, n=9.200, pg/ml)\nIL1-RA (n=9.200, pg/ml)\nLeptin (n=9.196, pg/ml)\nRAGE (soluble, n=9.200, pg/ml)\nSclerostin (n=9.200, pg/ml)\nU-PAR (n=9.200, pg/ml)\n\nThe overview sheet can be downloaded here:  Download \nWe also received data files eight biomarkers with CPR.xlsx and seven biomarkers with CPR.xls but these have not been used.\nFebruary 2023, DD2 osteocalcin final.xlsx with 3 sheets (overview, results, and rådata). We received the file in February 2023, but we have no indication of when the analyses were performed. The file includes n=9.204 individuals (sample, ends with -12). The data file includes the variables sample (ID), assay, calc__conc__mean (result), RANGE, and plate_name.\n\nOsteocalcin-1 (n=9.203)\n\nThe sheet rådata includes detailed information about each of the plates. The overview sheet (and additional information from an e-mail) can be downloaded here:  Download \nApril 2023, DD2_7plex_data_final.xlsx with 9 sheets (overview + 7 biomarkers + additional sheet with sample names). We received the data file in April 2023. There are no date stamps indicating when the analyses were performed. The data file include information on n=9.048 individuals (based on sample ID ending with -12). For each assay, the data file includes the variables sample (ID), assay, calc_conc_mean (result), RANGE, and plate_name. In an e-mail, we have been told the unit is pg/ml for all assays.\n\nCD163 (n=9.047, pg/ml)\nGalectin-3 (n=9.008, pg/ml)\nGDF-15 (n=9.046, pg/ml)\nNT-proBNP (n=9.048, pg/ml)\nResistin (n=9.046, pg/ml)\nSerpin (n=9.047, pg/ml)\nYKL-40 (n=9.045, pg/ml)\n\nThe overview sheet (and additional information from an e-mail) can be downloaded here:  Download \nJune 2023, Osteopontin data final (1).xlsx with 3 sheets (overview + data + rådata). We received the file in June 2023, but we have no indication of when the analyses were performed. It includes n=9.207 ID numbers (end with -12, plus a note that it means “EDTA plasma fraction”) with data on osteopontin.\n\nOsteopontin (n=9.204, pg/ml)\n\nThe overview sheet can be downloaded here:  Download \nAn additional method description/quality log can be downloaded here:  Download \nJuly 2023 (1), DD2_adiponectin_blue panel_final (1).xlsx with 3 sheets (overview + data + rådata). We received the file in July 2023, but we have no indication of when the analyses were performed. It includes n=9.204 ID numbers (sample, end with -12) with data on adiponectin.\n\nAdiponectin (n=9.204, pg/ml)\n\nThe sheet rådata includes detailed information about each of the plates. The overview sheet can be downloaded here:  Download \nAn additional method description/quality log can be downloaded here:  Download \nJuly 2023 (2), DD2 red panel_final.xlsx with 4 sheets (overview + data (Follistatin + MPO) + rådata). We received the file in July 2023, but we have no indication of when the analyses were performed. It includes n=9.204 ID numbers (sample, end with -12) with data on follistatin and MPO\n\nFollistatin (n=9.204, pg/ml)\nMPO (n=9.204, pg/ml)\n\nThe sheet rådata includes detailed information about each of the plates. The overview sheet can be downloaded here:  Download \nAn additional method description/quality log can be downloaded here:  Download"
+  },
+  {
+    "objectID": "sites/data sources/dd2_biobank_new_structure.html",
+    "href": "sites/data sources/dd2_biobank_new_structure.html",
+    "title": "New biobank structure",
     "section": "",
-    "text": "Variable documentation \nDENNE SIDE SKAL BESKRIVE\n\nDD2 QUESTIONNAIRE\n\nDet ville være fint med en oversigt over de tilgængelige variable (metadata til seedcase)\nQoL - der sendes en mail ved baseline (år 0) samt efter 2, 4 og 6 år. Det er dog ikke noget data vi har på kea."
+    "text": "Variable documentation \n\n\n\n\n\n\nInfo\n\n\n\nIndholdet og strukturen på det biobankdata afhænger af hvilke variable der er tilgængelige fra biobanken (vejle)\n\n\n\nNy struktur - data delt i to (måske tre)\nDENNE SIDE SKAL BESKRIVE\n\nDD2 BIOBANK: infodata om prøverne og kvaliteten af data (IKKE resultater)\n\ncpr/projectid (link mellem cpr og projectid)\nurinprøve, ja/nej\nblodprøve, ja/nej\nfaste ja/nej\nvejledato\nnye data fra biobanken/vejle: antal prøver, glas, osv.\n\nBiomarker: resultater fra de enkelte analyser (long format)\n\nprojectid\nbiomarker (e.g. c-pep, glucose, il6, …)\nresults (resultatet af analysen)\nunit\nstudy (hvorfor er målingen lavet?)\ndate (f.eks. ved c-pep er der forskel på om analysen er lavet på en ny eller gammel prøve, så det kan være relevant at kende datoen for analysen så man kan sammenligne den med datoen for blodprøven).\n\n\nDet kan evt. være relevant med et meta-data med henvisning til de enkelte studier.\nIdeelt set vil der for enhver biomarkør være en beskrivelse af markøren/data/pitfalls/beslutninger/overvejelser etc. Et slags opslagsværk, så man har samlet information om hver markør (e.g. c-pep så man ved hvilke beslutninger der er taget)."
   },
   {
     "objectID": "sites/data sources/ddda.html",
@@ -124,6 +68,27 @@
     "title": "DDDA",
     "section": "",
     "text": "Variable documentation\nDanish Diabetes Database for Adults (DDDA) (Dansk Voksen Diabates Database, DVDD or NIP Diabetes) is a no longer active database from regionernes kliniske kvalitetsudviklingsprogram (RKKP). It was closed by 30 June 2022. It has now been replaced by Dansk Diabetes Database (DDD/DDiD), which has been active since 1 July 2022.\nExtracts from the online DDDA documentation (downloaded 07 September 2023) about the population and variables can be downloaded here:  Variables   Population \nAnd additional documents:  Datadefinitioner   Registreringsskema\nSee also Jørgensen et al. (2016) for further information about the database."
+  },
+  {
+    "objectID": "sites/data sources/ddda.html#variables-from-previous-versions",
+    "href": "sites/data sources/ddda.html#variables-from-previous-versions",
+    "title": "DDDA",
+    "section": "Variables from previous versions",
+    "text": "Variables from previous versions\nIn the current DDDA data, some variables from the database were not delivered. It was decided that the best suitable solution was to included these variable from older versions of data (and thus missing for some new individuals).\n\nFrom the 2021 data: shared_care and Plasmakreatinin_operator\nFrom the 2018 data (also missing in the 2021 delivery): diag_dato, HbA1c_kode, HDLcholesterol, and HDLcholesterol_undersoegelse_kod."
+  },
+  {
+    "objectID": "sites/data sources/ddid.html",
+    "href": "sites/data sources/ddid.html",
+    "title": "DDiD",
+    "section": "",
+    "text": "Dansk Diabetes Database (DDD/DDiD), which has been active since 1/7 2022."
+  },
+  {
+    "objectID": "sites/data sources/diabase.html",
+    "href": "sites/data sources/diabase.html",
+    "title": "DiaBase",
+    "section": "",
+    "text": "Dansk kvalitetsdatabase for diabetisk retinopati – DiaBase\nDENNE SIDE SKAL BESKRIVE\nØjendata - Diabase (RKKP)"
   },
   {
     "objectID": "sites/data sources/fodstatus.html",
@@ -147,424 +112,11 @@
     "text": "Variable documentation\nIDNC is short for “International Diabetic Neuropathy Consortium”. Read more about it here: https://idnc.au.dk/about-idnc.\nA list of 7,011 CPR-numbers from all individuals enrolled in DD2 by February were sent to the CPR registry to get their addresses. The only criteria to be included in the questionnaire study were that individuals should be enrolled in DD2 (February 2016), be alive (24 May 2016), and have a valid Danish address (24 May 2016). A total of 6,726 questionnaires were sent out in June 2016 (07 June 2016), and a reminder was sent in September 2016 (12 September 2016) and again in October 2016 (10 October 2016) to those who had not provided a response. A total of 5,755 questionnaires were returned during the fall of 2016 and the inclusion ended in January 2017 (24 January 2017). The questionnaire included questions about height, weight, smoking and alcohol, and physical activity. These questions were intended to be follow-up questions similar to those from the baseline questionnaire. In addition, the questionnaire included questions about falls, quality of life, sleep, mental health, neuropathy (in hand and feet) and pain. The questionnaire thus included the Michigan Neuropathy Screening Instrument questionnaire (MNSIq) and the Douleur Neuropathique en 4 Questions (DN4).\nRead more about the questionnaire in Gylfadottir et al. (2020) and Christensen et al. (2020).\nThe questionnaire (in Danish) can be downloaded here:  Download \nAn English translation of the questionnaire is included in the supplement to Gylfadottir et al. (2020)."
   },
   {
-    "objectID": "sites/data sources.html",
-    "href": "sites/data sources.html",
-    "title": "Data structure",
-    "section": "",
-    "text": "The full DD2 research data is based on data collected/linked from multiple sources. The following sites include a detailed description of each of the data sources, whereas this site is intended to give an overview of the data structure, the data sources and the definitions of data types.\n\nDD2 core data\nDD2 core data include the data that make the foundation of DD2. This includes\n\nDD2 questionnaire data\nBiomarker data (analysis results based on the blood and urine samples from time of enrollment).\n\nTo be enrolled in DD2, the individual fills out the DD2 questionnaire and a blood/urine sample is collected. The core data only exist in DD2 and the DD2 cohort is defined to be those who enrolled in the DD2 by answering the DD2 questionnaire.\nAdditional DD2 data\nAdditional DD2 data include data from additional questionnaires and/or substudies. This includes data only available through DD2, meaning that it is data that had been generated only among individuals in DD2, but it was (probably) not collected as part of the initial enrollment process. This could e.g., include\n\nIDNC questionnaire data (follow-up questionnaire from 2016)\nFødselsdata from Rigsarkivet (birth data collected from midwife journals). Data (midwife journals) exist outside DD2 and could thus be considered external data, but it has only been registered electronically for individuals in DD2. For now, we consider it additional DD2 data as it is currently only (practically) available for individuals in DD2.\nIDA, DICTA, CsubT2D, etc., are examples of projects initiated within DD2. These projects generate their own additional data and analyses but data are still part of the overall DD2 setup.\n\nThe data sources will probably not be updated with new individuals, as they are mostly generated as part of specific research projects with closed cohorts.\nData extracts from external data sources\nData from external data sources were not initially generated with the intention to be included in DD2. However, as data can be considered relevant for DD2 research questions, we have linked data from these external data sources to the DD2. In practice, this means that data (or a subset of data) has been handed over from the external data source to DD2, and we thus have relevant data on (a subset) of the individuals in DD2. Currently, we have agreements with the following external data sources:\n\nDDDA (udgår)\nDDiD (nyt, endnu ingen aftale)\nFodstatus\nDiabase (øjenkompl., aftale?)\n\nThe general idea is that we can get updates of data from these data sources whenever we have new individual in the DD2 cohort.\nDanish medical registry data\nDD2 research data will be uploaded to the servers hosted at Danmarks Statistik (DST, Statistics Denmark) and Sundhedsdatastyrelsen (SDS, The Danish Health Data Authority). On these servers, we have access to Danish medical registry data, such as data from the CPR registry, hospital data from LPR, laboratory data from LAB-F etc.\n\nSDS\nDST\n\n\n\n\n\nOverview in DD2"
-  },
-  {
-    "objectID": "sites/registry/DST.html",
-    "href": "sites/registry/DST.html",
-    "title": "DST",
-    "section": "",
-    "text": "Danmarks statistik\n\nVi laver en DD2-population, som uploades til DST\nDST gør populationen klar til Lars\nLars laver tilhørende registerdata (projektmaskinen)\nDST tjekker data og kommer med rettelser/ændringer (korrespondance frem og tilbage med Lars)\nNår data er godkendt lægger DST det op så vi andre kan se det\n\nRegisterdata på forskermaskinen opdateres løbende. LPR-data kommer i løbet af Oktober/November, og indeholder som regel data til og med slutningen af det seneste år. Andre datakilder opdateres på andre tidspuntker (f.eks. bliver lægemiddelstatistikreg. opdateret hvert kvartal).\nHvis jeg f.eks. laver en DD2-population i løbet af efteråret 2023 (e.g. November), så vil vi nok i begyndelsen af 2024 have opdateret LPR-data til og med 2022 (og lægemiddelstat. vil nok være til og med sommer 2023)."
-  },
-  {
-    "objectID": "sites/registry/SDS.html",
-    "href": "sites/registry/SDS.html",
-    "title": "SDS",
-    "section": "",
-    "text": "Sundhedsdatastyrelsen - FSEID-00006014.\nDownload the “udtræksbeskrivelse” here:\nDataspecifikation  Bilag B \nDataoversigt  Bilag C"
-  },
-  {
-    "objectID": "sites/registry/SDS.html#population",
-    "href": "sites/registry/SDS.html#population",
-    "title": "SDS",
-    "section": "Population",
-    "text": "Population\nThe DD2 data is uploaded to SDS, and they check the validity of the CPR-numbers before encrypting them. The data set DS_EXT_DD2_POP includes individuals with a valid CPR-number. Individuals with a non-valid CPR-number are still included in the uploaded data, e.g. in DS_EXT_DD2CORE, but they will have a missing encrypted CPR-number (CPR_ENCRYPTED) and can thus not be linked across data sources. Previously (when we had local data), we would notify DD2 (Odense) about non-valid CPR-numbers, but this is no longer possible as we are not allowed to identify the individuals based on individual-level data on the servers.\nThe data files uploaded by us have the prefix DS_EXT_. Currently, data are uploaded in 2 versions; the initial upload version (without suffix) and the current version (with suffix _230601). The registry data are based on the population in the current version of data. We are planning to make a new structure where the library will only contain the current version of out own data plus the registry data based on the current version. Previous versions of our own data will be stored in a separate file and will be given a suffix when it is moved."
-  },
-  {
-    "objectID": "sites/registry/SDS.html#data",
-    "href": "sites/registry/SDS.html#data",
-    "title": "SDS",
-    "section": "Data",
-    "text": "Data\nVIEWS\nforskellige datakilder –> dataspecifikation\n\nLMS\nLPR\n…"
-  },
-  {
-    "objectID": "sites/working.html",
-    "href": "sites/working.html",
-    "title": "Working with data",
-    "section": "",
-    "text": "How to work with data.\n\nUploads\nmacros\n“take home”\n\nKEA SOP\n\nfolder structure\n\n\nKEA\nThis only makes sense to KEA employees with access to the common drive.\n\nS-drev\nO-drev\nHvor ligger filerne/data\n\n\n\nUpload\n\nHvordan tjekker man at data er klar til upload\nHvordan uploader man"
-  },
-  {
-    "objectID": "sites/data sources/diabase.html",
-    "href": "sites/data sources/diabase.html",
-    "title": "DiaBase",
-    "section": "",
-    "text": "Dansk kvalitetsdatabase for diabetisk retinopati – DiaBase\nDENNE SIDE SKAL BESKRIVE\nØjendata - Diabase (RKKP)"
-  },
-  {
-    "objectID": "sites/data sources/ddid.html",
-    "href": "sites/data sources/ddid.html",
-    "title": "DDiD",
-    "section": "",
-    "text": "Dansk Diabetes Database (DDD/DDiD), which has been active since 1/7 2022."
-  },
-  {
-    "objectID": "sites/data sources/dd2_biobank.html#gamle-datasæt",
-    "href": "sites/data sources/dd2_biobank.html#gamle-datasæt",
-    "title": "DD2 biobank data",
-    "section": "Gamle datasæt",
-    "text": "Gamle datasæt\nN = 1053 er indlæst fra txt.\nProjektID - hvordan er den lavet?\n\nData vi har modtaget på KEA (gammelt setup):\n\nFirst1053Patients, n=1053 med resultater fra blodprøver\nUrinResultatermedRatio2013Nov, n=1052 med resultater fra urinprøver\nDataTilDD2medFastende, n=5966 med resultater på GAD, glucose og cpeptid, samt en variabel med faste.\nWrongCpeptidmeas, n=105 med cpeptid og ny cpeptid, men jeg har en note om en mail fra Jens om at disse ikke skal bruges til noget.\nData fra AG (MBL+GENO)\n\n\nMBL: (Gedebjerg et al. 2020) C-pep. CRP: (Gedebjerg et al. 2023)"
-  },
-  {
-    "objectID": "sites/data sources/dd2_biobank.html#nye-datasæt",
-    "href": "sites/data sources/dd2_biobank.html#nye-datasæt",
-    "title": "DD2 biobank data",
-    "section": "Nye datasæt",
-    "text": "Nye datasæt\nDerudover har vi i 2022-2023 modtaget flere filer med måle/plade."
-  },
-  {
-    "objectID": "sites/data sources/dd2_biobank.html#original-data",
-    "href": "sites/data sources/dd2_biobank.html#original-data",
-    "title": "DD2 biobank data",
-    "section": "Original data",
-    "text": "Original data\nIn the first phase of DD2, a lot of biomarkers were analysed for the first 1.053 individuals enrolled in DD2 (some have later opted out). These individuals are marked by the variable BlodProve1053patients (based on the CPR numbers in data files First1053Patients (same as in UrinResultatermedRatio2013Nov)) and are predominantly enrolled in 2011-2012.\nThese are the data files stored at KEA (files read in locally). File names might have changed since we initially received them.\n\nFirst1053Patients.txt: We have probably received the data file in November 2012. It includes n=1.053 CPR numbers and they are most likely everyone in the database at that time. The file includes results from the initial blood samples. There are no dates in the data and there are no units for the variables hæmolyse, icteri, and lipæmi. The data set includes the variables:\n\nCPR\nProjektID\nC-peptid (n=1.053, pmol/L)\nGAD (n=1.053, kU/l)\nGlucose (n=1.050, mmol/L)\nALAT (n=1.030, U/L)\nHæmolyse (n=1.030)\nIcteri (n=1.030)\nLipæmi (n=1.030)\nAMYLP (n=1.041, U/L)\nCRP (n=1.041, mg/L)\n\n\nWe have been told (e-mail from JSN 31.05.2018) not to use the c-peptide measurements from this file (old analysis kit).\nInformation about some of the variables can be found in Mor et al. (2014).\n\nUrinResultatermedRatio2013Nov.txt: We have probably received the data file in December 2013. It includes n=1.053 CPR numbers (same as in First1053Patients) with results from the initial urine samples. The data set includes the variables:\n\nCPR\nBarkode (ends with -19)\nALBu_mg_L_ (n=1.041, mg/L, dated November 19, 20, and 23, 2012)\nKREA_mmol_L_ (n=1.041, mmol/L, dated November 19, 20, and 23, 2012)\nUPROT_g_L_ (n=1.041, g/L, dated November 19, 20, and 23, 2012)\nAlbumin_Kreatinin_ratio (n=1.041)\nKommentar (n=473, <5 with “PROT-U > 2.5 g/l” and the rest with “ALB-U <3 mg/L”)\n\nDataTilDD2medFastende.txt: We have probably received the file in September 2015 (Anne Gedebjerg). It includes n=5.996 CPR numbers with character results on GAD, glucose, and c-peptide, along with a variable about faste. The majority of the individuals in the file are enrolled before 2015, but it only includes around 80-85% of the individuals enrolled before 2016. There are no dates in the data. The data set includes the variables:\n\nId (ProjectID, ends with -00)\nGAD (numeric values for n=131 ID numbers, the value “<0,000” for n=5.797 ID numbers, “>525,000” for n=51 ID numbers, and “?????” or “NA” for the remaining n=20 ID numbers)\nGlucose (numeric values for n=4.457 and “NA” for the remaining n=1.539 ID numbers)\nCpeptid (numeric values for n=5.964 and “NA” for the remaining n=32 ID numbers)\nFastende (“Ja” for n=2.891, “Nej” for n=397, and “Ved ikke” for the remaining n=2.708 ID numbers) (see below for more infomation about fasting blood samples)\n\n\nThe majority of the initial 1.053 individuals are also included in this data file. We have been told to use the c-peptide measurements in this data file but to keep the CRP measurements from the original file and this file separated. The unit for CRP is mg/L in both data files.\n\nWrongCPeptideMeasurements.txt: We have probably received the file in November 2015. It includes n=105 ID numbers (end with -00) and the variables cpeptid and NyCpeptid. The values are quite different. We have noted in the syntax that JSN has told us not to use these variables (e-mail 31.05.2018)."
-  },
-  {
-    "objectID": "diverse/download_example.html",
-    "href": "diverse/download_example.html",
-    "title": "Downloadthis Example",
-    "section": "",
-    "text": "Using {{< downloadthis files/quarto.png >}}, you can create the following download buttons that downloads the logo of quarto embedded within this rendered html document,\nAnd it is also possible to specify,\n\nthe downloaded file name with dname argument,\nbutton label with label argument,\nbutton icon name with icon argument.\nbutton type with type argument."
-  },
-  {
-    "objectID": "diverse/download_example.html#downloading-csv-file",
-    "href": "diverse/download_example.html#downloading-csv-file",
-    "title": "Downloadthis Example",
-    "section": "Downloading csv file",
-    "text": "Downloading csv file\n{{< downloadthis files/mtcars.csv dname=Mtcars label=\"Download the mtcars data\" icon=database-fill-down type=info class=data-button id=mtcars >}}\nWriting the shortcode as above creates the following button,"
-  },
-  {
-    "objectID": "diverse/download_example.html#downloading-pdf-file",
-    "href": "diverse/download_example.html#downloading-pdf-file",
-    "title": "Downloadthis Example",
-    "section": "Downloading pdf file",
-    "text": "Downloading pdf file\n{{< downloadthis files/pdf_example.pdf dname= label=\"Download the pdf\" icon=file-earmark-pdf type=success >}}\nSimilarly, the above shortcode creates the following button,\n Download the pdf \nHer indsættes et link til download  Download  af SOP\n\n\n\n\n\n\n\n\n\n\n\ndownloadthis::download_file(\n  path = \"../files/SOP.pdf\",\n  output_name = \"CSS file from downloadthis\",\n  button_label = \"Download pdf\",\n  button_type = \"default\",\n  has_icon = FALSE,\n  icon = \"fa fa-save\",\n  self_contained = FALSE\n)\n\n\n Download pdf"
-  },
-  {
-    "objectID": "sites/data sources/dd2_biobank.html#results-from-anne-gedebjerg",
-    "href": "sites/data sources/dd2_biobank.html#results-from-anne-gedebjerg",
-    "title": "DD2 biobank data",
-    "section": "Results from Anne Gedebjerg",
-    "text": "Results from Anne Gedebjerg\n\nDD2 resultater.xlsx (and DD2 resultater_10_0095, which is the version where <10 is replaced by 10 and <0,095 by 0,095): We have received the file in September 2017 (from Anne Gedebjerg). It includes n=7.519 barcodes (end with -99) in sheets of 100 or 101 rows, and should include CRP and mannose-binding lectin (MBL) on everyone enrolled by December 2016. See Gedebjerg et al. (2023) for more information. The data set includes the variables:\n\nbarkode (ends with -99)\nCRP (n=7.510, mg/L)\nMBL (n=7.514, µg/L)\n\n\nWe have been told to keep the CRP measurements from the original file and this file separate. The unit for CRP is mg/L in both data files.\n\nResultater den 250917 Anne Gedebjerg.xlsx: We have received the file in September 2017 (from Anne Gedebjerg). It includes n=3.116 barcodes (end with -99) and variables regarding MBL expression genotyping (six SNPs in the MBL2 gene). The genotyping was done for the first ~3.000 individuals enrolled in DD2. See Gedebjerg et al. (2020) for more information. The data set includes the variables:\n\nbarkode (ends with -99)\nHL\nXY\nPQ\n52\n54\n57\nHAPLOTYPE"
-  },
-  {
-    "objectID": "sites/data sources/dd2_biobank.html#new-data",
-    "href": "sites/data sources/dd2_biobank.html#new-data",
-    "title": "DD2 biobank data",
-    "section": "New data",
-    "text": "New data"
-  },
-  {
-    "objectID": "sites/data sources/dd2_biobank.html#data-from-april-2022-upload-jan2023",
-    "href": "sites/data sources/dd2_biobank.html#data-from-april-2022-upload-jan2023",
-    "title": "DD2 biobank data",
-    "section": "Data from April 2022 (upload JAN2023)",
-    "text": "Data from April 2022 (upload JAN2023)\nDuring 2022 we received additional data on CRP, c-peptid, and glucose. We had a file with CRP in October 2022, but it is fully included in a file from January 2023 which also include c-peptide and glucose. The October file is therefore not used during uploads."
-  },
-  {
-    "objectID": "sites/data sources/dd2_biobank.html#data-from-april-2022-upload-january-2023",
-    "href": "sites/data sources/dd2_biobank.html#data-from-april-2022-upload-january-2023",
-    "title": "DD2 biobank data",
-    "section": "Data from April 2022 (upload January 2023)",
-    "text": "Data from April 2022 (upload January 2023)\nDuring 2022-2023 we received additional data on CRP, c-peptid, and glucose. We had a file with CRP in October 2022, but it is fully included in a file from January 2023 which also includes c-peptide and glucose. The October file is therefore not used during uploads.\n\nDD2_cRP_Glucose_Cpep_2022_resultater (1).xlsx: The data file includes n=3.399 projekt_id. They are all enrolled after the first n=1.053 individuals, but we don’t know why they were analysed (not all individuals per year). The data set includes the variables: projekt_id, Cpeptid_Barkode, Cpeptid_Resultat, Cpeptid_Måleenhed, Cpeptid_Antal_decimaler, Cpeptid_Dato, Cpeptid_Notat, CRPHS_Barkode, CRPHS_Resultat, CRPHS_Måleenhed, CRPHS_Antal_decimaler, CRPHS_Dato, CRPHS_Notat, Glukose_Barkode, Glukose_Resultat, Glukose_Måleenhed, Glukose_Antal_decimaler, Glukose_Dato, Glukose_Notat.\n\nprojekt_id (n=3.339)\nc-peptid (n=2.933, pmol/l, dated 30APR2022 or 01MAY2022)\nCRP (n=2.478, mg/l, dated 30APR2022 or 01MAY2022)\nGlucose (n=3.055, mmol/L, dated 02APR2022 or 03APR2022)\n\n\n\nHOMA\nHOMA values are calculated based on c-peptide and glucose. We use the Oxford calculator which can be downloaded from the website: https://www.dtu.ox.ac.uk/homacalculator/download.php"
-  },
-  {
-    "objectID": "sites/data sources/dd2_biobank.html#pladebiomarkører",
-    "href": "sites/data sources/dd2_biobank.html#pladebiomarkører",
-    "title": "DD2 biobank data",
-    "section": "“Pladebiomarkører”",
-    "text": "“Pladebiomarkører”\nDuring 2022-2023, we have received new data from additional biomarker analyses (from the Allan Vaag grant). The majority of the new biomarkers are so-called “pladebiomarkører” (as opposed to the current ones which are called “målebiomarkører”) because of the way the analyses are performed. In practice, everyone enrolled as of the day the blood samples were taken from the biobank (in the beginning of 2022) were included in the analysis (approx. the first 9.200 individuals). Data in these files are in long format and include the following 22 biomarkers (all with unit pg/ml) and the dates refer to when we received the data files:\n\nTNF-a (April 2022, n=9.202, pg/ml)\nIL-6 (April 2022, n=9.195, pg/ml)\nAng-Like4 (November 2022, n=9.200, pg/ml)\nFGF-21 (November 2022, n=9.200, pg/ml)\nFGF-23 (November 2022, Hu FGF-23, n=9.200, pg/ml)\nIL1-RA (November 2022, n=9.200, pg/ml)\nLeptin (November 2022, n=9.196, pg/ml)\nRAGE (November 2022, soluble, n=9.200, pg/ml)\nSclerostin (November 2022, n=9.200, pg/ml)\nU-PAR (November 2022, n=9.200, pg/ml)\nOsteocalcin-1 (February 2023, n=9.203)\nCD163 (April 2023, n=9.047, pg/ml)\nGalectin-3 (April 2023, n=9.008, pg/ml)\nGDF-15 (April 2023, n=9.046, pg/ml)\nNT-proBNP (April 2023, n=9.048, pg/ml)\nResistin (April 2023, n=9.046, pg/ml)\nSerpin (April 2023, n=9.047, pg/ml)\nYKL-40 (April 2023, n=9.045, pg/ml)\nOsteopontin (June 2023, n=9.204, pg/ml)\nAdiponectin (July 2023, n=9.204, pg/ml)\nFollistatin (July 2023, n=9.204, pg/ml)\nMPO (July 2023, n=9.204, pg/ml)\n\nAn overview of the biomarkers (table from the Allan Vaag grant application) can be found here:  Download \nThe data files with “pladebiomarkører” and “målebiomarkører” don’t have the same format (e.g., long vs. wide format) and we have thus not combined the data files.\n\nData files (pladebiomarkører)\nIn the following section we will go through the data files we have received.\n\nApril 2022, 220211 Vplex_final.xlsx with 2 sheets (data and background information). Data received in April 2022 but probably analyzed in February 2022 (no dates in data, but based on date stamps in file names). The data file includes data from n=9.294 DD2 individuals on IL-6 and TNF-a. The first sheet, Vplex sample results_final, includes the variables: Sample (id, ends with -12), Sample_Group (=Sample in all rows), Assay (either TNF-a or IL-6), Calc__Conc__Mean (results), RANGE (value 1 or 2), Plate_Name (each Plate_Name is used 78 times).\n\nTNF-a (n=9.202, pg/ml)\nIL-6 (n=9.195, pg/ml)\n\nThe second sheet, Vplex complete final, includes background information (rådata) about the sample from the sample_groups Sample (n=9.024), Standards (n=1.888), and Internal Control (n=236). The sheet includes the variables Plate_Name, Sample_Group, Sample, Assay, Well, Signal, Mean, CV Calc__Concentration, Calc__Conc__Mean, Calc__Conc__CV, __Recovery, __Recovery_Mean, Detection_Limits__Calc__Low, Detection_Limits__Calc__High, Detection_Range, Detection_Range_yesno, Quantification_range, Quantification_range_yesno, RANGE.\nAn additional overview sheet can be downloaded here:  Download    \nWe also received the data file DD2 quality log_panel 1 edited_TNF IL6.xlsx but is has not been used.\nNovember 2022, 8plex data final.xlsx, with 9 sheets (overview + 8 biomarkers). We received the data file in November 2022. There are no date stamps indicating when the analyses were performed. The data file include information on n=9.204 individuals (based on sample ID ending with -12). For each assay, the data file includes the variables sample (ID), assay, calc__conc__mean (result), RANGE, and plate_name. In an e-mail, we have been told the unit is pg/ml for all assays.\n\nAng-Like4 (n=9.200, pg/ml)\nFGF-21 (n=9.200, pg/ml)\nFGF-23 (Hu FGF-23, n=9.200, pg/ml)\nIL1-RA (n=9.200, pg/ml)\nLeptin (n=9.196, pg/ml)\nRAGE (soluble, n=9.200, pg/ml)\nSclerostin (n=9.200, pg/ml)\nU-PAR (n=9.200, pg/ml)\n\nThe overview sheet can be downloaded here:  Download \nWe also received data files eight biomarkers with CPR.xlsx and seven biomarkers with CPR.xls but these have not been used.\nFebruary 2023, DD2 osteocalcin final.xlsx with 3 sheets (overview, results, and rådata). We received the file in February 2023, but we have no indication of when the analyses were performed. The file includes n=9.204 individuals (sample, ends with -12). The data file includes the variables sample (ID), assay, calc__conc__mean (result), RANGE, and plate_name.\n\nOsteocalcin-1 (n=9.203)\n\nThe sheet rådata includes detailed information about each of the plates. The overview sheet (and additional information from an e-mail) can be downloaded here:  Download \nApril 2023, DD2_7plex_data_final.xlsx with 9 sheets (overview + 7 biomarkers + additional sheet with sample names). We received the data file in April 2023. There are no date stamps indicating when the analyses were performed. The data file include information on n=9.048 individuals (based on sample ID ending with -12). For each assay, the data file includes the variables sample (ID), assay, calc_conc_mean (result), RANGE, and plate_name. In an e-mail, we have been told the unit is pg/ml for all assays.\n\nCD163 (n=9.047, pg/ml)\nGalectin-3 (n=9.008, pg/ml)\nGDF-15 (n=9.046, pg/ml)\nNT-proBNP (n=9.048, pg/ml)\nResistin (n=9.046, pg/ml)\nSerpin (n=9.047, pg/ml)\nYKL-40 (n=9.045, pg/ml)\n\nThe overview sheet (and additional information from an e-mail) can be downloaded here:  Download \nJune 2023, Osteopontin data final (1).xlsx with 3 sheets (overview + data + rådata). We received the file in June 2023, but we have no indication of when the analyses were performed. It includes n=9.207 ID numbers (end with -12, plus a note that it means “EDTA plasma fraction”) with data on osteopontin.\n\nOsteopontin (n=9.204, pg/ml)\n\nThe overview sheet can be downloaded here:  Download \nAn additional method description/quality log can be downloaded here:  Download \nJuly 2023 (1), DD2_adiponectin_blue panel_final (1).xlsx with 3 sheets (overview + data + rådata). We received the file in July 2023, but we have no indication of when the analyses were performed. It includes n=9.204 ID numbers (sample, end with -12) with data on adiponectin.\n\nAdiponectin (n=9.204, pg/ml)\n\nThe sheet rådata includes detailed information about each of the plates. The overview sheet can be downloaded here:  Download \nAn additional method description/quality log can be downloaded here:  Download \nJuly 2023 (2), DD2 red panel_final.xlsx with 4 sheets (overview + data (Follistatin + MPO) + rådata). We received the file in July 2023, but we have no indication of when the analyses were performed. It includes n=9.204 ID numbers (sample, end with -12) with data on follistatin and MPO\n\nFollistatin (n=9.204, pg/ml)\nMPO (n=9.204, pg/ml)\n\nThe sheet rådata includes detailed information about each of the plates. The overview sheet can be downloaded here:  Download \nAn additional method description/quality log can be downloaded here:  Download"
-  },
-  {
-    "objectID": "sites/data sources/dd2_biobank_new_structure.html",
-    "href": "sites/data sources/dd2_biobank_new_structure.html",
-    "title": "New biobank structure",
-    "section": "",
-    "text": "Variable documentation \n\n\n\n\n\n\nInfo\n\n\n\nIndholdet og strukturen på det biobankdata afhænger af hvilke variable der er tilgængelige fra biobanken (vejle)\n\n\n\nNy struktur - data delt i to (måske tre)\nDENNE SIDE SKAL BESKRIVE\n\nDD2 BIOBANK: infodata om prøverne og kvaliteten af data (IKKE resultater)\n\ncpr/projectid (link mellem cpr og projectid)\nurinprøve, ja/nej\nblodprøve, ja/nej\nfaste ja/nej\nvejledato\nnye data fra biobanken/vejle: antal prøver, glas, osv.\n\nBiomarker: resultater fra de enkelte analyser (long format)\n\nprojectid\nbiomarker (e.g. c-pep, glucose, il6, …)\nresults (resultatet af analysen)\nunit\nstudy (hvorfor er målingen lavet?)\ndate (f.eks. ved c-pep er der forskel på om analysen er lavet på en ny eller gammel prøve, så det kan være relevant at kende datoen for analysen så man kan sammenligne den med datoen for blodprøven).\n\n\nDet kan evt. være relevant med et meta-data med henvisning til de enkelte studier.\nIdeelt set vil der for enhver biomarkør være en beskrivelse af markøren/data/pitfalls/beslutninger/overvejelser etc. Et slags opslagsværk, så man har samlet information om hver markør (e.g. c-pep så man ved hvilke beslutninger der er taget)."
-  },
-  {
-    "objectID": "sites/data sources/dd2_biobank.html#homa",
-    "href": "sites/data sources/dd2_biobank.html#homa",
-    "title": "DD2 biobank data",
-    "section": "HOMA",
-    "text": "HOMA\nHOMA values are calculated based on c-peptide and glucose. We use the Oxford calculator which can be downloaded from the website: https://www.dtu.ox.ac.uk/homacalculator/download.php"
-  },
-  {
-    "objectID": "sites/registry/SDS.html#rawdata-available-on-sds",
-    "href": "sites/registry/SDS.html#rawdata-available-on-sds",
-    "title": "SDS",
-    "section": "Rawdata available on SDS",
-    "text": "Rawdata available on SDS\nData on SDS are based on data views, i.e., we have access to data updated (almost) on a day-to-day basis. The update file (SAS IN06014.OpdateringsOversigt) contains the time of the current update for each data set in the library. The metadata file (SAS metadata.metadata_allcolumns) contains information about variables in the data. For research projects, in order to be able to reproduce results, remember to save a copy of the research data in a suitable project folder on SDS.\nFurther documentation on the main data sources can be found here:\n\nCPR-registeret (CPR): documentation\nReferences: Schmidt et al. (2014)\nLandspatientregisteret (LPR2 and LPR3): documentation, LPR3, LPR3 vejledning\nReferences: Schmidt et al. (2015)\nLægemiddelstatistikregisteret (LRS/LMS): documentation\nReferences: Kildemoes et al. (2011), Johannesdottir et al. (2012), Pottegård et al. (2017), Ehrenstein et al. (2010)\nLaboratoriedatabasen (LAB-F/RLRR): documentation\nReferences: Grann et al. (2011), Arendt et al. (2020)\n\n\nAccess to data\nAll DD2-researchers with access to FSEID-00006014 can work with all the data sets. As these data sets are considered rawdata, they are cannot be edited/changed/moved/renamed/etc. To access data, please do the following:\n\nSAS: The data are already available in the libraries in06014 and metadata\nSTATA: Run the (relevant parts of the) DO file located at F:\\Projekter\\FSEID00006014\\DB Connections FSED00006014.do\nR: Run the (relevant parts of the) R file located at F:\\Projekter\\FSEID00006014\\DB Connections FSED00006014.R"
-  },
-  {
-    "objectID": "sites/registry/SDS.html#simple-versions-of-data",
-    "href": "sites/registry/SDS.html#simple-versions-of-data",
-    "title": "Sundhedsdatastyrelsen, SDS",
-    "section": "Simple versions of data",
-    "text": "Simple versions of data"
-  },
-  {
-    "objectID": "sites/data sources/dd2_biobank.html#april-2022-data",
-    "href": "sites/data sources/dd2_biobank.html#april-2022-data",
-    "title": "DD2 biobank data",
-    "section": "April 2022 data",
-    "text": "April 2022 data\nDuring 2022-2023 we received additional data on CRP, c-peptide, and glucose. We had a file with CRP in October 2022, but it is fully included in a file from January 2023 which also includes c-peptide and glucose. The October file is therefore not used during uploads, whereas the January 2023 file has been uploaded to the servers.\n\nDD2_cRP_Glucose_Cpep_2022_resultater (1).xlsx: The data file includes n=3.399 projekt_id. They are all enrolled after the first n=1.053 individuals, but we don’t know why they were analysed (not all individuals per year). The data set includes the variables: projekt_id, Cpeptid_Barkode, Cpeptid_Resultat, Cpeptid_Måleenhed, Cpeptid_Antal_decimaler, Cpeptid_Dato, Cpeptid_Notat, CRPHS_Barkode, CRPHS_Resultat, CRPHS_Måleenhed, CRPHS_Antal_decimaler, CRPHS_Dato, CRPHS_Notat, Glukose_Barkode, Glukose_Resultat, Glukose_Måleenhed, Glukose_Antal_decimaler, Glukose_Dato, Glukose_Notat.\n\nprojekt_id (n=3.339)\nc-peptid (n=2.933, pmol/l, dated 30APR2022 or 01MAY2022)\nCRP (n=2.478, mg/l, dated 30APR2022 or 01MAY2022)\nGlucose (n=3.055, mmol/L, dated 02APR2022 or 03APR2022)"
-  },
-  {
-    "objectID": "sites/registry/SDS.html#simple-versions-of-data-macro",
-    "href": "sites/registry/SDS.html#simple-versions-of-data-macro",
-    "title": "SDS",
-    "section": "Simple versions of data (macro)",
-    "text": "Simple versions of data (macro)\nmulig gennemgang af simple udtræk + macroer"
-  },
-  {
-    "objectID": "dd2_sknc/index.html",
-    "href": "dd2_sknc/index.html",
-    "title": "The Danish Center for Strategic Research in Type 2 Diabetes",
-    "section": "",
-    "text": "This website includes details about The Danish Center for Strategic Research in Type 2 Diabetes (The DD2 Study). The intention of this website is to document the data sources used for research and to ease the day-to-day work with DD2. It is intended for employees at Department of Clinical Epidemiology (DCE/KEA), Aarhus University and Aarhus University Hospital, as it is mainly describing the setup used at DCE. Other institutions can also gain access to DD2 data but their setup might be different.\nTo learn more about DD2 please see: https://dd2.dk/\nAn extensive list of scientific publications based on data from DD2 is available on the website. That said, a good place to start is the 2012 paper about the DD2 enrollment Nielsen et al. (2012) process or the 2018 baseline paper Christensen et al. (2018). We are currently working on an update of this paper.\n\n\n\n\nReferences\n\nChristensen DH, Nicolaisen SK, Berencsi K, Beck-Nielsen H, Rungby J, Friborg S, et al. Danish centre for strategic research in type 2 diabetes (DD2) project cohort of newly diagnosed patients with type 2 diabetes: A cohort profile. BMJ Open [Internet]. 2018;8(4):e017273. Available from: https://www.ncbi.nlm.nih.gov/pubmed/29627803\n\n\nNielsen JS, Thomsen RW, Steffensen C, Christiansen JS. The danish centre for strategic research in type 2 diabetes (DD2) study: Implementation of a nationwide patient enrollment system. Clin Epidemiol [Internet]. 2012;4(Suppl 1):27–36. Available from: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3469284/pdf/clep-4-027.pdf"
-  },
-  {
-    "objectID": "dd2_sknc/sites/data sources/dd2_biobank.html",
-    "href": "dd2_sknc/sites/data sources/dd2_biobank.html",
-    "title": "DD2 biobank data",
-    "section": "",
-    "text": "Variable documentation\nWhen patients are enrolled in the DD2, blood and a urine samples are collected and stored in the biobank in Vejle. The samples are from DD2 baseline, and future projects can have the samples analyzed if additional analyses are needed - the timing will always be baseline DD2.\nFurther information about the initial idea about the biobank: Christensen et al. (2012).\nThe documentation for the biobank can be downloaded here (Danish): Download"
-  },
-  {
-    "objectID": "dd2_sknc/sites/data sources/dd2_biobank.html#original-data",
-    "href": "dd2_sknc/sites/data sources/dd2_biobank.html#original-data",
-    "title": "DD2 biobank data",
-    "section": "Original data",
-    "text": "Original data\nIn the first phase of DD2, a lot of biomarkers were analysed for the first 1.053 individuals enrolled in DD2 (some have later opted out). These individuals are marked by the variable BlodProve1053patients (based on the CPR numbers in data files First1053Patients (same as in UrinResultatermedRatio2013Nov)) and are predominantly enrolled in 2011-2012.\nThese are the data files stored at KEA (files read in locally). File names might have changed since we initially received them.\n\nFirst1053Patients.txt: We have probably received the data file in November 2012. It includes n=1.053 CPR numbers and they are most likely everyone in the database at that time. The file includes results from the initial blood samples. There are no dates in the data. The data set includes the variables:\n\nCPR\nProjektID\nC-peptid (pmol/L)\nGAD (kU/l)\nGlucose (n=1.050, mmol/L)\nALAT (n=1.030, U/L)\nHæmolyse (n=1.030)\nIcteri (n=1.030)\nLipæmi (n=1.030)\nAMYLP (n=1.041, U/L)\nCRP (n=1.041, mg/L)\n\nUrinResultatermedRatio2013Nov.txt: We have probably received the data file in December 2013. It includes n=1.053 CPR numbers (same as in First1053Patients) with results from the initial urine samples. The data set includes the variables:\n\nCPR\nBarkode (ends with -19)\nALBu_mg_L_ (n=1.041, mg/L, dated November 19, 20, and 23, 2012)\nKREA_mmol_L_ (n=1.041, mmol/L, dated November 19, 20, and 23, 2012)\nUPROT_g_L_ (n=1.041, g/L, dated November 19, 20, and 23, 2012)\nAlbumin_Kreatinin_ratio (n=1.041)\nKommentar (n=473, <5 with “PROT-U > 2.5 g/l” and the rest with “ALB-U <3 mg/L”)\n\nDataTilDD2medFastende.txt: We have probably received the file in September 2015. It includes n=5.966 CPR numbers with character results on GAD, glucose, and cpeptid, along with a variable about faste. The majority of the individuals in the file are enrolled before 2015, but it only includes around 80-85% of the individuals enrolled before 2016. There are no dates in the data. The data set includes the variables:\n\nId (ProjectID, ends with -00)\nGAD (numeric values for n=131 ID numbers, the value “<0,000” for n=5.797 ID numbers, “>525,000” for n=51 ID numbers, and “?????” or “NA” for the remaining n=20 ID numbers)\nGlucose (numeric values for n=4.457 and “NA” for the remaining n=1.539 ID numbers)\nCpeptid (numeric values for n=5.964 and “NA” for the remaining n=32 ID numbers)\nFastende (“Ja” for n=2.891, “Nej” for n=397, and “Ved ikke” for the remaining n=2.708 ID numbers) (see below for more infomation about fasting blood samples)\n\nWrongCPeptideMeasurements.txt: We have probably received the file in November 2015. It includes n=105 ID numbers (end with -00) and the variables cpeptid and NyCpeptid. The values are quite different. We have noted in the syntax that DD2/Jens has told us not to use this file (May 2018)."
-  },
-  {
-    "objectID": "dd2_sknc/sites/data sources/dd2_biobank.html#results-from-anne-gedebjerg",
-    "href": "dd2_sknc/sites/data sources/dd2_biobank.html#results-from-anne-gedebjerg",
-    "title": "DD2 biobank data",
-    "section": "Results from Anne Gedebjerg",
-    "text": "Results from Anne Gedebjerg\n\nDD2 resultater.xlsx (and DD2 resultater_10_0095, which is the version where <10 is replaced by 10 and <0,095 by 0,095): We have received the file in September 2017 (from Anne Gedebjerg). It includes n=7.519 barcodes (end with -99) in sheets of 100 or 101 rows, and should include CRP and mannose-binding lectin (MBL) on everyone enrolled by December 2016. See Gedebjerg et al. (2023) for more information. The data set includes the variables:\n\nbarkode (ends with -99)\nCRP (n=7.510, mg/L)\nMBL (n=7.514, µg/L)\n\nResultater den 250917 Anne Gedebjerg.xlsx: We have received the file in September 2017 (from Anne Gedebjerg). It includes n=3.116 barcodes (end with -99) and variables regarding MBL expression genotyping (six SNPs in the MBL2 gene). The genotyping was done for the first ~3.000 individuals enrolled in DD2. See Gedebjerg et al. (2020) for more information. The data set includes the variables:\n\nbarkode (ends with -99)\nHL\nXY\nPQ\n52\n54\n57\nHAPLOTYPE"
-  },
-  {
-    "objectID": "dd2_sknc/sites/data sources/dd2_biobank.html#april-2022-data",
-    "href": "dd2_sknc/sites/data sources/dd2_biobank.html#april-2022-data",
-    "title": "DD2 biobank data",
-    "section": "April 2022 data",
-    "text": "April 2022 data\nDuring 2022-2023 we received additional data on CRP, c-peptid, and glucose. We had a file with CRP in October 2022, but it is fully included in a file from January 2023 which also includes c-peptide and glucose. The October file is therefore not used during uploads, whereas the January 2023 file has been uploadet to the servers.\n\nDD2_cRP_Glucose_Cpep_2022_resultater (1).xlsx: The data file includes n=3.399 projekt_id. They are all enrolled after the first n=1.053 individuals, but we don’t know why they were analysed (not all individuals per year). The data set includes the variables: projekt_id, Cpeptid_Barkode, Cpeptid_Resultat, Cpeptid_Måleenhed, Cpeptid_Antal_decimaler, Cpeptid_Dato, Cpeptid_Notat, CRPHS_Barkode, CRPHS_Resultat, CRPHS_Måleenhed, CRPHS_Antal_decimaler, CRPHS_Dato, CRPHS_Notat, Glukose_Barkode, Glukose_Resultat, Glukose_Måleenhed, Glukose_Antal_decimaler, Glukose_Dato, Glukose_Notat.\n\nprojekt_id (n=3.339)\nc-peptid (n=2.933, pmol/l, dated 30APR2022 or 01MAY2022)\nCRP (n=2.478, mg/l, dated 30APR2022 or 01MAY2022)\nGlucose (n=3.055, mmol/L, dated 02APR2022 or 03APR2022)\n\n\n\nHOMA\nHOMA values are calculated based on c-peptide and glucose. We use the Oxford calculator which can be downloaded from the website: https://www.dtu.ox.ac.uk/homacalculator/download.php"
-  },
-  {
-    "objectID": "dd2_sknc/sites/data sources/dd2_biobank.html#pladebiomarkører",
-    "href": "dd2_sknc/sites/data sources/dd2_biobank.html#pladebiomarkører",
-    "title": "DD2 biobank data",
-    "section": "“Pladebiomarkører”",
-    "text": "“Pladebiomarkører”\nDuring 2022-2023, we have received new data from additional biomarker analyses. The majority of the new biomarkers are so-called “pladebiomarkører” (as opposed to the current ones which are called “målebiomarkører”) because of the way the analyses are performed. Data in these files are in long format.\n\nApril 2022, 220211 Vplex_final.xlsx with 2 sheets: Data received in April 2022 but probably analyzed in February 2022 (no dates in data, but based on date stamps in file names). The data file includes data from n=9.294 DD2 individuals on IL-6 and TNF-a.\n\nSheet 1, Vplex sample results_final. It includes the variables: Sample (id, ends with -12), Sample_Group (=Sample in all rows), Assay (either TNF-a or IL-6), Assay (either TNF-a or IL-6), Calc__Conc__Mean (results), RANGE (value 1 or 2), Plate_Name (each Plate_Name is used 78 times).\n\nTNF-a (n=9.202, pg/ml)\nIL-6,(n=9.195, pg/ml)\n\nSheet 2, Vplex complete final. Includes background information about the sample from the sample_groups Sample (n=9.024), Standards (n=1.888), and Internal Control (n=236). The sheet includes the variables Plate_Name, Sample_Group, Sample, Assay, Well, Signal, Mean, CV Calc__Concentration, Calc__Conc__Mean, Calc__Conc__CV, __Recovery, __Recovery_Mean, Detection_Limits__Calc__Low, Detection_Limits__Calc__High, Detection_Range, Detection_Range_yesno, Quantification_range, Quantification_range_yesno, RANGE\n\nAn additional quality log can be downloaded here:  Download    \nWe also received the data file DD2 quality log_panel 1 edited_TNF IL6.xlsx but is has not been used.\nNovember 2022, 8plex data final.xlsx with 9 sheets (overview + 8 biomarkers). We received the data file in November 2022. There are no date stamps indicating when the analyses were performed. The data file include information on n=9.204 individuals (based on sample ID ending with -12). For each assay, the data file includes the variables sample (ID), assay, calc__conc__mean (result), RANGE, and plate_name. In an e-mail, we have been told the unit is pg/ml for all assays.\n\nAng-Like4 (n=9.200, pg/ml)\nFGF-21 (n=9.200, pg/ml)\nFGF-23 (Hu FGF-23, n=9.200, pg/ml)\nIL1-RA (n=9.200, pg/ml)\nLeptin (n=9.196, pg/ml)\nRAGE (soluble, n=9.200, pg/ml)\nSclerostin (n=9.200, pg/ml)\nU-PAR (n=9.200, pg/ml)\n\nThe overview sheet can be downloaded here:  Download \nWe also received data files eight biomarkers with CPR.xlsx and seven biomarkers with CPR.xls but these have not been used.\nFebruary 2023, DD2 osteocalcin final.xlsx with 3 sheets (overview, results, and rådata). We received the file in February 2023, but we have no indication of when the analyses were performed. The file includes n=9.204 individuals (sample, ends with -12). The data file includes the variables sample (ID), assay, calc__conc__mean (result), RANGE, and plate_name.\n\nOsteocalcin-1 (n=9.203)\n\nThe sheet rådata includes detailed information about each of the plates. The overview sheet (and additional information from e-mail) can be downloaded here:  Download \nApril 2023, DD2_7plex_data_final.xlsx with 9 sheets (overview + 7 biomarkers + additional sheet with sample names). We received the data file in April 2023. There are no date stamps indicating when the analyses were performed. The data file include information on n=9.048 individuals (based on sample ID ending with -12). For each assay, the data file includes the variables sample (ID), assay, calc_conc_mean (result), RANGE, and plate_name. In an e-mail, we have been told the unit is pg/ml for all assays.\n\nCD163 (n=9.047, pg/ml)\nGalectin-3 (n=9.008, pg/ml)\nGDF-15 (n=9.046, pg/ml)\nNT-proBNP (n=9.048, pg/ml)\nResistin (n=9.046, pg/ml)\nSerpin (n=9.047, pg/ml)\nYKL-40 (n=9.045, pg/ml)\n\nThe overview sheet (and additional information from e-mail) can be downloaded here:  Download \nJune 2023, Osteopontin data final (1).xlsx with 3 sheets (overview + data + rådata). We received the file in June 2023, but we have no indication of when the analyses were performed. This data file has not yet been uploaded to the servers. It includes n=9.207 ID numbers (end with -12, plus a note that it means “EDTA plasma fraction”) with data on osteopontin.\n\nOsteopontin (n=9.204, pg/ml)\n\nThe overview sheet can be downloaded here:  Download \n“THE LAST ONE” we were told the June 2023 data was “det næstsidste”, hence, we expect to receive another data file."
-  },
-  {
-    "objectID": "dd2_sknc/sites/data sources/dd2_biobank_new_structure.html",
-    "href": "dd2_sknc/sites/data sources/dd2_biobank_new_structure.html",
-    "title": "New biobank structure",
-    "section": "",
-    "text": "Ny struktur - data delt i to\nDENNE SIDE SKAL BESKRIVE\n\nDD2 BIOBANK: infodata om prøverne og kvaliteten af data (IKKE resultater)\n\ncpr/projectid (link mellem cpr og projectid)\nurinprøve, ja/nej\nblodprøve, ja/nej\nfaste ja/nej\nvejledato\nnye data fra biobanken/vejle: antal prøver, glas, osv.\n\nBiomarker: resultater fra de enkelte analyser (long format)\n\nprojectid\nbiomarker (e.g. c-pep, glucose, il6, …)\nresults (resultatet af analysen)\nunit\nstudy (hvorfor er målingen lavet?)\ndate (f.eks. ved c-pep er der forskel på om analysen er lavet på en ny eller gammel prøve, så det kan være relevant at kende datoen for analysen så man kan sammenligne den med datoen for blodprøven).\n\n\nDet kan evt. være relevant med et meta-data med henvisning til de enkelte studier."
-  },
-  {
-    "objectID": "dd2_sknc/sites/data sources/dd2_questionnaire.html",
-    "href": "dd2_sknc/sites/data sources/dd2_questionnaire.html",
-    "title": "DD2 questionnaire",
-    "section": "",
-    "text": "DENNE SIDE SKAL BESKRIVE\n\nDD2 QUESTIONNAIRE\n\nDet ville være fint med en oversigt over de tilgængelige variable (metadata til seedcase)\nThis"
-  },
-  {
-    "objectID": "dd2_sknc/sites/data sources/ddda.html",
-    "href": "dd2_sknc/sites/data sources/ddda.html",
-    "title": "DDDA",
-    "section": "",
-    "text": "Danish Diabetes Database for Adults (DDDA) (Dansk Voksen Diabates Database, DVDD) is a no longer active database from regionernes kliniske kvalitetsudviklingsprogram (RKKP). It was closed by 30/6 2022. It has now been replaced by Dansk Diabetes Database (DDD/DDiD), which has been active since 1/7 2022.\nWe currently have data from DDDA in the period from May 2005 to June 2022.\nDENNE SIDE SKAL BESKRIVE\n\nDDDA - data findes kun frem til Juni 2022 DDDA udgår og bliver fremover til Dansk Diabetes Database (DDD/DDiD), som gik i drift pr. 1/7 2022.\n\nHusk man skal overveje hvordan man angiver % i en tabel (hvad er 100%)"
-  },
-  {
-    "objectID": "dd2_sknc/sites/data sources/ddid.html",
-    "href": "dd2_sknc/sites/data sources/ddid.html",
-    "title": "DDiD",
-    "section": "",
-    "text": "Dansk Diabetes Database (DDD/DDiD), which has been active since 1/7 2022."
-  },
-  {
-    "objectID": "dd2_sknc/sites/data sources/diabase.html",
-    "href": "dd2_sknc/sites/data sources/diabase.html",
-    "title": "DiaBase",
-    "section": "",
-    "text": "DENNE SIDE SKAL BESKRIVE\nØjendata - Diabase (RKKP)"
-  },
-  {
-    "objectID": "dd2_sknc/sites/data sources/fodstatus.html",
-    "href": "dd2_sknc/sites/data sources/fodstatus.html",
-    "title": "Fodstatus",
-    "section": "",
-    "text": "DENNE SIDE SKAL BESKRIVE\n\nfodstatus"
-  },
-  {
-    "objectID": "dd2_sknc/sites/data sources/foedsel.html",
-    "href": "dd2_sknc/sites/data sources/foedsel.html",
-    "title": "Fødselsdata",
-    "section": "",
-    "text": "DENNE SIDE SKAL BESKRIVE\n\nFødseslsdata/rigsarkivet"
-  },
-  {
-    "objectID": "dd2_sknc/sites/data sources/idnc.html",
-    "href": "dd2_sknc/sites/data sources/idnc.html",
-    "title": "IDNC",
-    "section": "",
-    "text": "DENNE SIDE SKAL BESKRIVE\n\nIDNC"
-  },
-  {
-    "objectID": "dd2_sknc/sites/data sources.html",
-    "href": "dd2_sknc/sites/data sources.html",
-    "title": "Data structure",
-    "section": "",
-    "text": "DENNE SIDE SKAL GIVE ET OVERBLIK OVER DE FORSKELLIGE DATAKILDER. DER SKAL INKLUDERES NOGLE FIGURER.\nDD2 is based on data from multiple sources:\n(vi skal have nogle gode navne til de forskellige datakilder)\n\nDD2 core data, i.e., data that makes the foundation of DD2\n\nDD2 questionnaire data\nBiomarker data (analysis results based on the blood and urine samples from time of enrollment)\n\nAdditional DD2 data, e.g., from additional questionnaires and/or substudies. This includes data only available through DD2, but it was not collected as part of the initial enrollment process.\n\nIDNC\nFødselsdata\n\nData extracts from external data sources\n\nDDDA (udgår)\nFodstatus\nDiabase (øjenkompl.)\n\nDanish medical registry data\n\nSDS\nDST\n\n\n\n\n\nOverview in DD2"
-  },
-  {
-    "objectID": "dd2_sknc/sites/registry/DST.html",
-    "href": "dd2_sknc/sites/registry/DST.html",
-    "title": "DST",
-    "section": "",
-    "text": "Danmarks statistik"
-  },
-  {
-    "objectID": "dd2_sknc/sites/registry/SDS.html",
-    "href": "dd2_sknc/sites/registry/SDS.html",
-    "title": "Sundhedsdatastyrelsen, SDS",
-    "section": "",
-    "text": "Sundhedsdatastyrelsen - FSEID-00006014.\nDownload the “udtræksbeskrivelse” here:\nDataspecifikation  Bilag B \nDataoversigt  Bilag C"
-  },
-  {
-    "objectID": "dd2_sknc/sites/registry/SDS.html#population",
-    "href": "dd2_sknc/sites/registry/SDS.html#population",
-    "title": "Sundhedsdatastyrelsen, SDS",
-    "section": "Population",
-    "text": "Population\nThe DD2 data is uploaded to SDS, and they check the validity of the CPR-numbers before encrypting them. The data set DS_EXT_DD2_POP includes individuals with a valid CPR-number. Individuals with a non-valid CPR-number are still included in the uploaded data, e.g. in DS_EXT_DD2CORE, but they will have a missing encrypted CPR-number (CPR_ENCRYPTED) and can thus not be linked across data sources. Previously (when we had local data), we would notify DD2 (Odense) about non-valid CPR-numbers, but this is no longer possible as we are not allowed to identify the individuals based on individual-level data on the servers.\nThe data files uploaded by us have the prefix DS_EXT_. Currently, data are uploadet in 2 versions; the initial upload version (without suffix) and the current version (with suffix _230601). The registry data are based on the population in the current version of data. We are planning to make a new structure where the library will only contain the current version of out own data plus the registry data based on the current version. Previous verions of our own data will be stored in a separate file and will be given a suffix when it is moved."
-  },
-  {
-    "objectID": "dd2_sknc/sites/registry/SDS.html#rawdata-available-on-sds",
-    "href": "dd2_sknc/sites/registry/SDS.html#rawdata-available-on-sds",
-    "title": "Sundhedsdatastyrelsen, SDS",
-    "section": "Rawdata available on SDS",
-    "text": "Rawdata available on SDS\nData on SDS are based on data views, i.e., we have access to data updated (almost) on a day-to-day basis. The update file (SAS IN06014.OpdateringsOversigt) contains the time of the current update for each data set in the library. The metadata file (SAS metadata.metadata_allcolumns) contains information about variables in the data. For research projects, in order to be able to reproduce results, remember to save a copy of the research data in a suitable project folder on SDS.\nFurther documentation on the main data sources can be found here:\n\nCPR-registeret (CPR): documentation\nReferences: Schmidt et al. (2014)\nLandspatientregisteret (LPR2 and LPR3): documentation, LPR3, LPR3 vejledning\nReferences: Schmidt et al. (2015)\nLægemiddelstatistikregisteret (LRS/LMS): documentation\nReferences: Kildemoes et al. (2011), Johannesdottir et al. (2012), Pottegård et al. (2017), Ehrenstein et al. (2010)\nLaboratoriedatabasen (LAB-F/RLRR): documentation\nReferences: Grann et al. (2011), Arendt et al. (2020)\n\n\nAccess to data\nAll DD2-researchers with access to FSEID-00006014 can work with all the data sets. As these data sets are considered rawdata, they are cannot be edited/changed/moved/renamed/etc. To access data, please do the following:\n\nSAS: The data are already available in the libraries in06014 and metadata\nSTATA: Run the (relevant parts of the) DO file located at F:\\Projekter\\FSEID00006014\\DB Connections FSED00006014.do\nR: Run the (relevant parts of the) R file located at F:\\Projekter\\FSEID00006014\\DB Connections FSED00006014.R"
-  },
-  {
-    "objectID": "dd2_sknc/sites/registry/SDS.html#simple-versions-of-data-macro",
-    "href": "dd2_sknc/sites/registry/SDS.html#simple-versions-of-data-macro",
-    "title": "Sundhedsdatastyrelsen, SDS",
-    "section": "Simple versions of data (macro)",
-    "text": "Simple versions of data (macro)\nmulig gennemgang af simple udtræk + macroer"
-  },
-  {
-    "objectID": "dd2_sknc/sites/working.html",
-    "href": "dd2_sknc/sites/working.html",
-    "title": "Working with data",
-    "section": "",
-    "text": "How to work with data.\n\nUploads\nmacros\n“take home”\n\nKEA SOP\n\nfolder structure\n\n\nKEA\nThis only makes sense to KEA employees with access to the common drive.\n\nS-drev\nO-drev\nHvor ligger filerne/data\n\n\n\nUpload\n\nHvordan tjekker man at data er klar til upload\nHvordan uploader man"
-  },
-  {
-    "objectID": "sites/data structure.html",
-    "href": "sites/data structure.html",
-    "title": "Data structure",
-    "section": "",
-    "text": "The full DD2 research data is based on data collected/linked from multiple sources. This page is intended to give an overview of the data structure, the data sources and the definitions of data types. Detailed description of each of the data sources can be found on the following pages.\n\n\n\n\n\n\nNote\n\n\n\nHusk at vi i stedet for at kalde det “additional dd2 data” har valgt at kalde det “internal dd2 data”. Så vil vi have core data (data fra index), internal data (det det kun bor i dd2), og external data (det der kommer fra anden kilde)\n\n\n\nDD2 core data\nDD2 core data include the data that make the foundation of DD2. This includes\n\nDD2 questionnaire data\nBiomarker data (analysis results based on the blood and urine samples from time of enrollment). The blood/urine samples are stored in a biobank in Vejle.\n\nTo be enrolled in DD2, the individual fills out the DD2 questionnaire and a blood/urine sample is collected. The core data only exist in DD2 and the DD2 cohort is defined to be those who enrolled in the DD2 by answering the DD2 questionnaire. As the blood/urine samples are collected at enrollment and currently stored in a biobank, it holds potential for additional biomarker analyses, genetic analyses, DNA sequencing etc., which would only add to the core data.\n\n\nInternal DD2 data\nInternal DD2 data include data from additional questionnaires and/or substudies. This includes data only available through DD2, meaning that it is data that had been generated only among individuals in DD2, but it was (probably) not collected as part of the initial enrollment process. This could e.g., include\n\nIDNC questionnaire data, a follow-up questionnaire from 2016 including (follow-up) questions from the initial questionnaire along with multiple questions concerning diabetic neuropathy.\nBirth data from Rigsarkivet collected from midwife journals. Data (i.e., midwife journals) exist outside DD2 and could thus be considered external data, but it has only been registered electronically for individuals in DD2. For now, we consider it additional DD2 data as it is currently only (practically) available for individuals in DD2.\nIDA, DICTA, CsubT2D, etc., are examples of projects initiated within DD2. These projects generate their own additional data and analyses but data are still part of the overall DD2 setup.\n\nThese data sources will probably not be updated with new individuals or additional data, as they are mostly generated as part of specific research projects with closed cohorts. Some of the substudies additionally contribute core data as they include analyses made on the blood/urine sample collected at enrollment.\n\n\nData extracts from external data sources\nData from external data sources were not initially generated with the intention to be included in DD2. However, as data can be considered relevant for DD2 research questions, we have linked data from these external data sources to the DD2. In practice, this means that data (or a subset of data) has been handed over from the external data source to DD2, and we thus have relevant data on (a subset of) the individuals in DD2. Currently, we have agreements with the following external data sources:\n\nDDDA (udgår)\nDDiD (nyt, endnu ingen aftale)\nFodstatus\nDiabase (øjenkompl., aftale?)\n\nThe general idea is that we can get updates of data from these data sources. Therefore, we will have the most recent data on the individuals in DD2 and also have updated data whenever we have new individuals in the DD2 cohort.\n\n\nDanish medical registry data\nDD2 research data will be uploaded to the servers hosted at Danmarks Statistik (DST, Statistics Denmark) and Sundhedsdatastyrelsen (SDS, The Danish Health Data Authority). On these servers, we have access to Danish medical registry data, such as data from the CPR registry, hospital data from LPR, laboratory data from LAB-F etc.\n\nSDS\nDST"
-  },
-  {
     "objectID": "sites/data sources/idnc.html#variables",
     "href": "sites/data sources/idnc.html#variables",
     "title": "IDNC",
     "section": "Variables",
     "text": "Variables\nThe original questionnaire data included a total of around 109 variables (including some variables from the data cleaning process added by the working group). To ease working with data and to have some pre-defined variables/definitions, an additional 78 variables were created by the working group.\nThe questions and variable definitions for the original variables can be downloaded here:  Download \n\nThe SAS syntax for the definition of the additional variables is here:  Download \n\nAnd the corresponding SAS formats for the additional variables is here:  Download \n\n(SAS syntax files can be opened using notepad if SAS is not installed)\n\nData\nData are stored locally at KEA and a slightly changed version has been uploaded to DST and SDS. The changes are mainly due to similar definitions of variables, variable names and labels, and to comply with the SDS/DST regulations."
-  },
-  {
-    "objectID": "sites/data sources/idnc.html#format",
-    "href": "sites/data sources/idnc.html#format",
-    "title": "IDNC",
-    "section": "format",
-    "text": "format\nupload format file SAS"
-  },
-  {
-    "objectID": "sites/working/macro_syntax.html",
-    "href": "sites/working/macro_syntax.html",
-    "title": "Macros and syntaxes",
-    "section": "",
-    "text": "Macros and programs/syntaxes\nHOW TO WORK IN SAS!?!\nSimple versions of data:\n\nLPR: syntax to make a simple combination of data from LPR2 and LPR3 and create a simple data set including only dates and diagnoses.\n\n\nVariable definitions:\n\nGLD_classification: Classification of glucose-lowering drugs.\nFirstDiabDate: The first indication of diabetes, either as a hospitalization, glucose-lowering treatment initiation, or elevated HbA1c. In addition, enrollment in DD2 (or DDDA) is included as an indication for diabetes.\nHOMA-phenotypes\nANDIS-phenotypes"
-  },
-  {
-    "objectID": "sites/working/working.html",
-    "href": "sites/working/working.html",
-    "title": "Working with data",
-    "section": "",
-    "text": "How to work with data.\n\nUploads\nmacros\n“take home”\n\nKEA SOP\n\nfolder structure\n\n\nKEA\nThis only makes sense to KEA employees with access to the common drive.\n\nS-drev\nO-drev\nHvor ligger filerne/data\n\n\n\nUpload\n\nHvordan tjekker man at data er klar til upload\nHvordan uploader man"
-  },
-  {
-    "objectID": "sites/working/macro_syntax/GLD_classification.html",
-    "href": "sites/working/macro_syntax/GLD_classification.html",
-    "title": "GLD_classification",
-    "section": "",
-    "text": "A SAS macro to classify diabetes treatment regimens. The input is a data set (SAS, STATA, csv) including a column of CPR-numbers and a column of ATC-codes (glucose-lowering drugs, i.e. A10). The output is a data set (SAS, STATA, csv) where the treatment is classified into disjoint groups, e.g., insulin based monotherapy or non-insulin based monotherapy, based on all possible ATC-codes. The output also includes a pdf table with the results.\nThe macro is uploaded to DST and SDS."
-  },
-  {
-    "objectID": "sites/working/macro_syntax/FirstDiabDate.html",
-    "href": "sites/working/macro_syntax/FirstDiabDate.html",
-    "title": "FirstDiabDate",
-    "section": "",
-    "text": "Definition of variable (date) with the first indication of diabetes.\n\n\n\n\n\n\nInfo\n\n\n\nhej\n\n\n\n\n\n\n\n\nInfo\n\n\n\n\nog helst som liste\npunkt\npunkt"
-  },
-  {
-    "objectID": "sites/data sources/dd2_biobank.html#c-peptide-and-glucose-full-ikke-lagt-op-endnu",
-    "href": "sites/data sources/dd2_biobank.html#c-peptide-and-glucose-full-ikke-lagt-op-endnu",
-    "title": "DD2 biobank data",
-    "section": "C-peptide and glucose (full) (ikke lagt op endnu)",
-    "text": "C-peptide and glucose (full) (ikke lagt op endnu)\nDuring the summer 2023 we have received data on c-peptide (July 2023) and glucose (August 2023). These files include all measurements from the biobank, and results from these files will thus replace all the other measurements from earlier data sets. We now have the files:\n\ndd2_all_C_peptide_14July2023.xls: Includes n=9.762 project_id with data on c-peptide. The file also includes information about analysis date, sampling date, freezing date, unit, and kit. The following data management has been done by DD2 (e-mail from Sidsel, 14JUL2023) before we received the file:\n*“- Jeg har erstattet alle 1254 observationer, som havde”gamle” målinger (før 28. feb 2015) med opdaterede målinger med nyt kit/assay (efter 28. feb 2015).\n\n\nJeg har slettet 6 observationer, som kun havde en “gammel” måling og INGEN opdateret genmåling\n\nJeg har renset op i data, så hvert individ kun fremgår med én måling, som er analyseret vha. nyt kit/assay “*\n\nDD2_glukoser_2023_08_23.xlsx: The data file includes n=9.563 projekt_id and information about glucose, units, and dates.\n\n\nHOMA\nHOMA values are calculated based on c-peptide and glucose. We use the Oxford calculator which can be downloaded from the website: https://www.dtu.ox.ac.uk/homacalculator/download.php.\nHOMA values in the data are calcualted based on the c-peptide and glucose measurements received during the summer 2023."
-  },
-  {
-    "objectID": "sites/working/data_upload.html",
-    "href": "sites/working/data_upload.html",
-    "title": "Data upload",
-    "section": "",
-    "text": "Deadline for hvornår jeg skal have data (og hvornår jeg skal vide data skal med i en opdatering)\n\nOpdatering af eksisterende data (wide vs. long format)\nEksisterende datasæt med nye individer\nEksisterende datasæt med nye variable\nEksisterende datasæt med nye værdier\n\nNy datakilde\n\nmed/uden mulighed for opdatering (individ, variabel, værdi?)\n\nLong vs. wide format for data\nIdentifier\nKrav til variable (e.g. formater )\nKrav til dokumentation\n\n\nDefinér DD2-populationen: få nyt data fra DD2/Jens\nOprens og tjek\n\n3a. DST\n3b. SDS Send en besked (via henvendelsesformularen) om at vi gerne vil have et upload-link. Linket skal sendes til HTS, men man kan godt bede dem om at give besked, når de har sendt det. I tilfælde af man skal bede om et nyt link (hvis ikke man når at uploade inden der er gået 7 dage), skal man skrive en mail til forskerservice (med HENID) og ikke lave en ny henvendelse.\n3c. Eksterne data\n\nVi laver en DD2-population, som uploades til DST\nDST gør populationen klar til Lars\nLars laver tilhørende registerdata (projektmaskinen)\nDST tjekker data og kommer med rettelser/ændringer (korrespondance frem og tilbage med Lars)\nNår data er godkendt lægger DST det op så vi andre kan se det\n\nRegisterdata på forskermaskinen opdateres løbende. LPR-data kommer i løbet af Oktober/November, og indeholder som regel data til og med slutningen af det seneste år. Andre datakilder opdateres på andre tidspuntker (f.eks. bliver lægemiddelstatistikreg. opdateret hvert kvartal).\nHvis jeg f.eks. laver en DD2-population i løbet af efteråret 2023 (e.g. November), så vil vi nok i begyndelsen af 2024 have opdateret LPR-data til og med 2022 (og lægemiddelstat. vil nok være til og med sommer 2023)."
-  },
-  {
-    "objectID": "sites/data sources/ddda.html#variables-from-previous-versions",
-    "href": "sites/data sources/ddda.html#variables-from-previous-versions",
-    "title": "DDDA",
-    "section": "Variables from previous versions",
-    "text": "Variables from previous versions\nIn the current DDDA data, some variables from the database were not delivered. It was decided that the best suitable solution was to included these variable from older versions of data (and thus missing for some new individuals).\n\nFrom the 2021 data: shared_care and Plasmakreatinin_operator\nFrom the 2018 data (also missing in the 2021 delivery): diag_dato, HbA1c_kode, HDLcholesterol, and HDLcholesterol_undersoegelse_kod."
-  },
-  {
-    "objectID": "sites/data sources/dd2_biobank.html#first-biomarkers",
-    "href": "sites/data sources/dd2_biobank.html#first-biomarkers",
-    "title": "DD2 biobank data",
-    "section": "First biomarkers",
-    "text": "First biomarkers\nIn the first phase of DD2, a lot of biomarkers were analysed for the first 1.053 individuals enrolled in DD2 (some individuals have later opted out). These individuals are marked by the variable BlodProve1053patients (based on the CPR numbers in data file First1053Patients (same as in UrinResultatermedRatio2013Nov)) and are predominantly enrolled in 2011-2012.\n\nFirst1053Patients.txt: We have probably received the data file in November 2012. It includes n=1.053 CPR numbers and these individuals are most likely everyone in the database at that time. The file includes results from the initial blood samples. There are no dates in the data and there are no units for the variables hæmolyse, icteri, and lipæmi. The data set includes the variables:\n\nCPR\nProjektID\nC-peptid (n=1.053, pmol/L)\nGAD (n=1.053, kU/l)\nGlucose (n=1.050, mmol/L)\nALAT (n=1.030, U/L)\nHæmolyse (n=1.030)\nIcteri (n=1.030)\nLipæmi (n=1.030)\nAMYLP (n=1.041, U/L)\nCRP (n=1.041, mg/L)\n\n\nWe have been told (e-mail from JSN 31.05.2018) not to use the c-peptide measurements from this file (old analysis kit).\nInformation about some of the variables can be found in Mor et al. (2014).\n\nUrinResultatermedRatio2013Nov.txt: We have probably received the data file in December 2013. It includes n=1.053 CPR numbers (same as in First1053Patients) with results from the initial urine samples. The data set includes the variables:\n\nCPR\nBarkode (ends with -19)\nALBu_mg_L_ (n=1.041, mg/L, dated November 19, 20, and 23, 2012)\nKREA_mmol_L_ (n=1.041, mmol/L, dated November 19, 20, and 23, 2012)\nUPROT_g_L_ (n=1.041, g/L, dated November 19, 20, and 23, 2012)\nAlbumin_Kreatinin_ratio (n=1.041)\nKommentar (n=473, <5 with “PROT-U > 2.5 g/l” and the rest with “ALB-U <3 mg/L”)"
-  },
-  {
-    "objectID": "sites/data sources/dd2_biobank.html#additional-biomarkers",
-    "href": "sites/data sources/dd2_biobank.html#additional-biomarkers",
-    "title": "DD2 biobank data",
-    "section": "Additional biomarkers",
-    "text": "Additional biomarkers\n\nDataTilDD2medFastende.txt: We have probably received the file in September 2015 (Anne Gedebjerg). It includes n=5.996 CPR numbers with character results on GAD, glucose, and c-peptide, along with a variable about faste. The majority of the individuals in the file are enrolled before 2015, but it is only around 80-85% of all the individuals enrolled before 2016. There are no dates in the data. The data set includes the variables:\n\nId (ProjectID, ends with -00)\nGAD (numeric values for n=131 ID numbers, the value “<0,000” for n=5.797 ID numbers, “>525,000” for n=51 ID numbers, and “?????” or “NA” for the remaining n=20 ID numbers)\nGlucose (numeric values for n=4.457 and “NA” for the remaining n=1.539 ID numbers)\nCpeptid (numeric values for n=5.964 and “NA” for the remaining n=32 ID numbers)\nFastende (“Ja” for n=2.891, “Nej” for n=397, and “Ved ikke” for the remaining n=2.708 ID numbers) (see below for more infomation about fasting blood samples)\n\n\nThe majority of the initial 1.053 individuals are also included in this data file. We have been told to use the c-peptide measurements in this data file and not the original data file.\n\nWrongCPeptideMeasurements.txt: We have probably received the file in November 2015. It includes n=105 ID numbers (end with -00) and the variables cpeptid and NyCpeptid. The values are quite different. We have noted in the syntax that JSN has told us not to use these variables (e-mail 31.05.2018)."
-  },
-  {
-    "objectID": "sites/data sources/dd2_biobank.html#c-peptide-and-glucose-full",
-    "href": "sites/data sources/dd2_biobank.html#c-peptide-and-glucose-full",
-    "title": "DD2 biobank data",
-    "section": "C-peptide and glucose (full)",
-    "text": "C-peptide and glucose (full)\nDuring the summer 2023 we have received data on c-peptide (July 2023) and glucose (August 2023). These files include all measurements from the biobank (cleaned), and results from these files will thus replace all the other measurements from earlier data sets. We now have the files:\n\ndd2_all_C_peptide_14July2023.xls: Includes n=9.762 project_id with data on c-peptide. The file also includes information about analysis date, sampling date, freezing date, unit, and kit. The following data management has been done by DD2 (Biobank/Sidsel) before we received the file:\n\n\n\n\n\n\n\nQuote from e-mail\n\n\n\n\n- Jeg har erstattet alle 1254 observationer, som havde\"gamle\" målinger (før 28. feb 2015) med opdaterede målinger med nyt kit/assay (efter 28. feb 2015).\n- Jeg har slettet 6 observationer, som kun havde en \"gammel\" måling og INGEN opdateret genmåling\n- Jeg har renset op i data, så hvert individ kun fremgår med én måling, som er analyseret vha. nyt kit/assay \n\n\nPlease note that c-peptide is now in another unit (it is just the old unit divided by 1000).\n\nDD2_glukoser_2023_08_23.xlsx: The data file includes n=9.563 projekt_id and information about glucose, units, and dates.\n\n\nHOMA\nHOMA values are calculated based on c-peptide and glucose. We use the Oxford calculator which can be downloaded from the website: https://www.dtu.ox.ac.uk/homacalculator/download.php.\nHOMA values in the data are calcualted based on the c-peptide and glucose measurements received during the summer 2023. HOMA has only been estimated for glucose values in the interval 3.0-25 and c-peptide 0.2-3.5 (because of an updated Oxford HOMA calculator where values out of range cause problems in the excel calculator). Some individuals might therefore have glucose and c-peptide values but no HOMA values in the new data."
-  },
-  {
-    "objectID": "sites/data collection.html",
-    "href": "sites/data collection.html",
-    "title": "Data collection",
-    "section": "",
-    "text": "Enrollment in DD2 consists of a questionnaire (with a few questions for the patient and a part to be filled out by the enroller) and the collection of a urine sample and a blood sample. All individuals older than 18 years of age diagnosed with diabetes within the last 2 years are eligible for inclusion in DD2.\nThe individual can either sign up online (and then be contacted) or be approached by the practice personnel (e.g., during a regular diabetes check-up). The individual will receive an e-mail with a link to WebPatient, where a few questions should be filled out before the questionnaire will be sent to the practice. Hereafter, a DD2 examination will take place, where additional questions will be answered (e.g., diabetes debut date assessed by the enroller) along with a physical examination (weight, hip and waist circumference, resting heart rate, …). The examination also involves a urine sample (morning urine) and a blood sample (fasting).\nEnrollment can either take place in the practice (GP) or in the outpatient clinic. Registration is also possible for individuals without internet access.\nFor further information about the enrollment, see the DD2 website (Danish):\n\nPatient information: https://dd2.dk/praksis-og-amb/patientinformation\nInstructions and questionnaires: https://dd2.dk/praksis-og-amb/vejledninger-og-reg-skema\n\nSome of the general documents can also be downloaded here (Danish, downloaded 12.01.2023):\n\nDD2 questionnaire (praksis): {{<downloadthis ../../files/DD2_registrering/registreringsskema_almen_praksis.pdf\ndname=“registreringsskema-almen-praksis” icon=“file-earmark-pdf” label=“Download” type=“button” class=“btn btn-link”>}}\n\nThe documentation for the biobank can be downloaded here (Danish):\n\n\nInclusion information (praksis): \nBiobank samples (biobank): and \n\nFor more information about the enrollment and data collection, please contact DD2."
   },
   {
     "objectID": "sites/data_collection.html",
@@ -600,5 +152,68 @@
     "title": "Data structure",
     "section": "Routine Registry Data",
     "text": "Routine Registry Data\nThe routine registry data is also secondary data, however, it is only available on remote research servers. DD2 research data will be uploaded to the servers hosted at Danmarks Statistik (DST, Statistics Denmark) and Sundhedsdatastyrelsen (SDS, The Danish Health Data Authority). On these servers, we have access to Danish medical and administrative registries, such as data from the CPR registry, hospital data from LPR, laboratory data from LAB-F etc. Linkage to additional registries and databases is possible with approval of data permission applications sent to Statistics Denmark or the Danish Health Data Authority.\n\n\n\n\n\n\nNote\n\n\n\nReplace figure (updated Figure 1 from paper)"
+  },
+  {
+    "objectID": "sites/registry/DST.html",
+    "href": "sites/registry/DST.html",
+    "title": "DST",
+    "section": "",
+    "text": "Danmarks statistik\n\nVi laver en DD2-population, som uploades til DST\nDST gør populationen klar til Lars\nLars laver tilhørende registerdata (projektmaskinen)\nDST tjekker data og kommer med rettelser/ændringer (korrespondance frem og tilbage med Lars)\nNår data er godkendt lægger DST det op så vi andre kan se det\n\nRegisterdata på forskermaskinen opdateres løbende. LPR-data kommer i løbet af Oktober/November, og indeholder som regel data til og med slutningen af det seneste år. Andre datakilder opdateres på andre tidspuntker (f.eks. bliver lægemiddelstatistikreg. opdateret hvert kvartal).\nHvis jeg f.eks. laver en DD2-population i løbet af efteråret 2023 (e.g. November), så vil vi nok i begyndelsen af 2024 have opdateret LPR-data til og med 2022 (og lægemiddelstat. vil nok være til og med sommer 2023)."
+  },
+  {
+    "objectID": "sites/registry/SDS.html",
+    "href": "sites/registry/SDS.html",
+    "title": "SDS",
+    "section": "",
+    "text": "Sundhedsdatastyrelsen - FSEID-00006014.\nDownload the “udtræksbeskrivelse” here:\nDataspecifikation  Bilag B \nDataoversigt  Bilag C"
+  },
+  {
+    "objectID": "sites/registry/SDS.html#population",
+    "href": "sites/registry/SDS.html#population",
+    "title": "SDS",
+    "section": "Population",
+    "text": "Population\nThe DD2 data is uploaded to SDS, and they check the validity of the CPR-numbers before encrypting them. The data set DS_EXT_DD2_POP includes individuals with a valid CPR-number. Individuals with a non-valid CPR-number are still included in the uploaded data, e.g. in DS_EXT_DD2CORE, but they will have a missing encrypted CPR-number (CPR_ENCRYPTED) and can thus not be linked across data sources. Previously (when we had local data), we would notify DD2 (Odense) about non-valid CPR-numbers, but this is no longer possible as we are not allowed to identify the individuals based on individual-level data on the servers.\nThe data files uploaded by us have the prefix DS_EXT_. Currently, data are uploaded in 2 versions; the initial upload version (without suffix) and the current version (with suffix _230601). The registry data are based on the population in the current version of data. We are planning to make a new structure where the library will only contain the current version of out own data plus the registry data based on the current version. Previous versions of our own data will be stored in a separate file and will be given a suffix when it is moved."
+  },
+  {
+    "objectID": "sites/registry/SDS.html#rawdata-available-on-sds",
+    "href": "sites/registry/SDS.html#rawdata-available-on-sds",
+    "title": "SDS",
+    "section": "Rawdata available on SDS",
+    "text": "Rawdata available on SDS\nData on SDS are based on data views, i.e., we have access to data updated (almost) on a day-to-day basis. The update file (SAS IN06014.OpdateringsOversigt) contains the time of the current update for each data set in the library. The metadata file (SAS metadata.metadata_allcolumns) contains information about variables in the data. For research projects, in order to be able to reproduce results, remember to save a copy of the research data in a suitable project folder on SDS.\nFurther documentation on the main data sources can be found here:\n\nCPR-registeret (CPR): documentation\nReferences: Schmidt et al. (2014)\nLandspatientregisteret (LPR2 and LPR3): documentation, LPR3, LPR3 vejledning\nReferences: Schmidt et al. (2015)\nLægemiddelstatistikregisteret (LRS/LMS): documentation\nReferences: Kildemoes et al. (2011), Johannesdottir et al. (2012), Pottegård et al. (2017), Ehrenstein et al. (2010)\nLaboratoriedatabasen (LAB-F/RLRR): documentation\nReferences: Grann et al. (2011), Arendt et al. (2020)\n\n\nAccess to data\nAll DD2-researchers with access to FSEID-00006014 can work with all the data sets. As these data sets are considered rawdata, they are cannot be edited/changed/moved/renamed/etc. To access data, please do the following:\n\nSAS: The data are already available in the libraries in06014 and metadata\nSTATA: Run the (relevant parts of the) DO file located at F:\\Projekter\\FSEID00006014\\DB Connections FSED00006014.do\nR: Run the (relevant parts of the) R file located at F:\\Projekter\\FSEID00006014\\DB Connections FSED00006014.R"
+  },
+  {
+    "objectID": "sites/working/data_upload.html",
+    "href": "sites/working/data_upload.html",
+    "title": "Data upload",
+    "section": "",
+    "text": "Deadline for hvornår jeg skal have data (og hvornår jeg skal vide data skal med i en opdatering)\n\nOpdatering af eksisterende data (wide vs. long format)\nEksisterende datasæt med nye individer\nEksisterende datasæt med nye variable\nEksisterende datasæt med nye værdier\n\nNy datakilde\n\nmed/uden mulighed for opdatering (individ, variabel, værdi?)\n\nLong vs. wide format for data\nIdentifier\nKrav til variable (e.g. formater )\nKrav til dokumentation\n\n\nDefinér DD2-populationen: få nyt data fra DD2/Jens\nOprens og tjek\n\n3a. DST\n3b. SDS Send en besked (via henvendelsesformularen) om at vi gerne vil have et upload-link. Linket skal sendes til HTS, men man kan godt bede dem om at give besked, når de har sendt det. I tilfælde af man skal bede om et nyt link (hvis ikke man når at uploade inden der er gået 7 dage), skal man skrive en mail til forskerservice (med HENID) og ikke lave en ny henvendelse.\n3c. Eksterne data\n\nVi laver en DD2-population, som uploades til DST\nDST gør populationen klar til Lars\nLars laver tilhørende registerdata (projektmaskinen)\nDST tjekker data og kommer med rettelser/ændringer (korrespondance frem og tilbage med Lars)\nNår data er godkendt lægger DST det op så vi andre kan se det\n\nRegisterdata på forskermaskinen opdateres løbende. LPR-data kommer i løbet af Oktober/November, og indeholder som regel data til og med slutningen af det seneste år. Andre datakilder opdateres på andre tidspuntker (f.eks. bliver lægemiddelstatistikreg. opdateret hvert kvartal).\nHvis jeg f.eks. laver en DD2-population i løbet af efteråret 2023 (e.g. November), så vil vi nok i begyndelsen af 2024 have opdateret LPR-data til og med 2022 (og lægemiddelstat. vil nok være til og med sommer 2023)."
+  },
+  {
+    "objectID": "sites/working/macro_syntax/FirstDiabDate.html",
+    "href": "sites/working/macro_syntax/FirstDiabDate.html",
+    "title": "FirstDiabDate",
+    "section": "",
+    "text": "Definition of variable (date) with the first indication of diabetes.\n\n\n\n\n\n\nInfo\n\n\n\nhej\n\n\n\n\n\n\n\n\nInfo\n\n\n\n\nog helst som liste\npunkt\npunkt"
+  },
+  {
+    "objectID": "sites/working/macro_syntax/GLD_classification.html",
+    "href": "sites/working/macro_syntax/GLD_classification.html",
+    "title": "GLD_classification",
+    "section": "",
+    "text": "A SAS macro to classify diabetes treatment regimens. The input is a data set (SAS, STATA, csv) including a column of CPR-numbers and a column of ATC-codes (glucose-lowering drugs, i.e. A10). The output is a data set (SAS, STATA, csv) where the treatment is classified into disjoint groups, e.g., insulin based monotherapy or non-insulin based monotherapy, based on all possible ATC-codes. The output also includes a pdf table with the results.\nThe macro is uploaded to DST and SDS."
+  },
+  {
+    "objectID": "sites/working/macro_syntax.html",
+    "href": "sites/working/macro_syntax.html",
+    "title": "Macros and syntaxes",
+    "section": "",
+    "text": "Macros and programs/syntaxes\nHOW TO WORK IN SAS!?!\nSimple versions of data:\n\nLPR: syntax to make a simple combination of data from LPR2 and LPR3 and create a simple data set including only dates and diagnoses.\n\n\nVariable definitions:\n\nGLD_classification: Classification of glucose-lowering drugs.\nFirstDiabDate: The first indication of diabetes, either as a hospitalization, glucose-lowering treatment initiation, or elevated HbA1c. In addition, enrollment in DD2 (or DDDA) is included as an indication for diabetes.\nHOMA-phenotypes\nANDIS-phenotypes"
+  },
+  {
+    "objectID": "sites/working/working.html",
+    "href": "sites/working/working.html",
+    "title": "Working with data",
+    "section": "",
+    "text": "How to work with data.\n\nUploads\nmacros\n“take home”\n\nKEA SOP\n\nfolder structure\n\n\nKEA\nThis only makes sense to KEA employees with access to the common drive.\n\nS-drev\nO-drev\nHvor ligger filerne/data\n\n\n\nUpload\n\nHvordan tjekker man at data er klar til upload\nHvordan uploader man"
   }
 ]

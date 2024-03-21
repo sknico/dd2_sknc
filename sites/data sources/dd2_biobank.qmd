@@ -288,7 +288,7 @@ Currently, the fasting state has been defined by the following (SAS) algorithm c
 The plan is that DD2 will make an "official" definition of Faste and a variable indicating the fasting state will thus be included in the data accompanying the questionnaire data.
 :::
 
-The patient is informed to be fasting: no food/liquid (except water) from 22.00 o'clock the night before. Also, while fasting, the patient should not take any glucose-regulating drugs.
+The patient is informed to be fasting: no food/liquid (except water) from 10.00 o'clock the night before. Also, while fasting, the patient should not take any glucose-regulating drugs.
 
 
 ::: callout-note

@@ -8,7 +8,7 @@ title: "Data structure"
 
 The full DD2 research data is based on data collected/linked from multiple sources. This page is intended to give an overview of the data structure, the data sources, and the definitions of data types. Detailed description of each of the data sources can be found on the following pages.
 
-The data sources include **primary data**, i.e., data that exists only within DD2, including data collected from participants at enrollment, and additional primary data derived from nested research studies in the DD2 cohort. The data also include **secondary data**, i.e., external data collected from other data sources and then linked to DD2. In addition, DD2 data (primary and secondary data) is linked to the nationwide routine registry data located in centralized databases (SDS and DST).
+The data sources include **primary data**, i.e., data that exists only within DD2, including data/information collected from participants at enrollment, and additional primary data derived from nested research studies in the DD2 cohort. The data also include **secondary data**, i.e., external data collected from other data sources and then linked to DD2. In addition, DD2 data (primary and secondary data) is linked to the nationwide routine registry data located in centralized databases (SDS and DST).
 
 # Primary data
 

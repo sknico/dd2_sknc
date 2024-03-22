@@ -60,7 +60,7 @@
     "href": "sites/data sources/dd2_biobank_new_structure.html",
     "title": "New biobank structure",
     "section": "",
-    "text": "Variable documentation \n\n\n\n\n\n\nInfo\n\n\n\nIndholdet og strukturen på det biobankdata afhænger af hvilke variable der er tilgængelige fra biobanken (vejle)\n\n\n\nNy struktur - data delt i to (måske tre)\nDENNE SIDE SKAL BESKRIVE\n\nDD2 BIOBANK: infodata om prøverne og kvaliteten af data (IKKE resultater)\n\ncpr/projectid (link mellem cpr og projectid)\nurinprøve, ja/nej\nblodprøve, ja/nej\nfaste ja/nej\nvejledato\nnye data fra biobanken/vejle: antal prøver, glas, osv.\n\nBiomarker: resultater fra de enkelte analyser (long format)\n\nprojectid\nbiomarker (e.g. c-pep, glucose, il6, …)\nresults (resultatet af analysen)\nunit\nstudy (hvorfor er målingen lavet?)\ndate (f.eks. ved c-pep er der forskel på om analysen er lavet på en ny eller gammel prøve, så det kan være relevant at kende datoen for analysen så man kan sammenligne den med datoen for blodprøven).\n\n\nDet kan evt. være relevant med et meta-data med henvisning til de enkelte studier.\nIdeelt set vil der for enhver biomarkør være en beskrivelse af markøren/data/pitfalls/beslutninger/overvejelser etc. Et slags opslagsværk, så man har samlet information om hver markør (e.g. c-pep så man ved hvilke beslutninger der er taget)."
+    "text": "Variable documentation \n\nIndholdet og strukturen på det biobankdata afhænger af hvilke variable der er tilgængelige fra biobanken (vejle)\n\n\nNy struktur - data delt i to (måske tre)\nDENNE SIDE SKAL BESKRIVE\n\nDD2 BIOBANK: infodata om prøverne og kvaliteten af data (IKKE resultater)\n\ncpr/projectid (link mellem cpr og projectid)\nurinprøve, ja/nej\nblodprøve, ja/nej\nfaste ja/nej\nvejledato\nnye data fra biobanken/vejle: antal prøver, glas, osv.\n\nBiomarker: resultater fra de enkelte analyser (long format)\n\nprojectid\nbiomarker (e.g. c-pep, glucose, il6, …)\nresults (resultatet af analysen)\nunit\nstudy (hvorfor er målingen lavet?)\ndate (f.eks. ved c-pep er der forskel på om analysen er lavet på en ny eller gammel prøve, så det kan være relevant at kende datoen for analysen så man kan sammenligne den med datoen for blodprøven).\n\n\nDet kan evt. være relevant med et meta-data med henvisning til de enkelte studier.\nIdeelt set vil der for enhver biomarkør være en beskrivelse af markøren/data/pitfalls/beslutninger/overvejelser etc. Et slags opslagsværk, så man har samlet information om hver markør (e.g. c-pep så man ved hvilke beslutninger der er taget)."
   },
   {
     "objectID": "sites/data sources/ddda.html",
@@ -179,7 +179,7 @@
     "href": "sites/registry/SDS.html#rawdata-available-on-sds",
     "title": "SDS",
     "section": "Rawdata available on SDS",
-    "text": "Rawdata available on SDS\nData on SDS are based on data views, i.e., we have access to data updated (almost) on a day-to-day basis. The update file (SAS IN06014.OpdateringsOversigt) contains the time of the current update for each data set in the library. The metadata file (SAS metadata.metadata_allcolumns) contains information about variables in the data. For research projects, in order to be able to reproduce results, remember to save a copy of the research data in a suitable project folder on SDS.\nFurther documentation on the main data sources can be found here:\n\nCPR-registeret (CPR): documentation\nReferences: Schmidt et al. (2014)\nLandspatientregisteret (LPR2 and LPR3): documentation, LPR3, LPR3 vejledning\nReferences: Schmidt et al. (2015)\nLægemiddelstatistikregisteret (LRS/LMS): documentation\nReferences: Kildemoes et al. (2011), Johannesdottir et al. (2012), Pottegård et al. (2017), Ehrenstein et al. (2010)\nLaboratoriedatabasen (LAB-F/RLRR): documentation\nReferences: Grann et al. (2011), Arendt et al. (2020)\n\n\nAccess to data\nAll DD2-researchers with access to FSEID-00006014 can work with all the data sets. As these data sets are considered rawdata, they are cannot be edited/changed/moved/renamed/etc. To access data, please do the following:\n\nSAS: The data are already available in the libraries in06014 and metadata\nSTATA: Run the (relevant parts of the) DO file located at F:\\Projekter\\FSEID00006014\\DB Connections FSED00006014.do\nR: Run the (relevant parts of the) R file located at F:\\Projekter\\FSEID00006014\\DB Connections FSED00006014.R"
+    "text": "Rawdata available on SDS\nData on SDS are based on data views, i.e., we have access to data updated (almost) on a day-to-day basis. The update file (SAS IN06014.OpdateringsOversigt) contains the time of the current update for each data set in the library. The metadata file (SAS metadata.metadata_allcolumns) contains information about variables in the data. For research projects, in order to be able to reproduce results, remember to save a copy of the research data in a suitable project folder on SDS.\nFurther documentation on the main data sources can be found here:\n\nCPR-registret (CPR): documentation\nReferences: Schmidt et al. (2014)\nLandspatientregistret (LPR2 and LPR3): documentation, LPR3, LPR3 vejledning\nReferences: Schmidt et al. (2015)\nLægemiddelstatistikregistret (LRS/LMS): documentation\nReferences: Kildemoes et al. (2011), Johannesdottir et al. (2012), Pottegård et al. (2017), Ehrenstein et al. (2010)\nLaboratoriedatabasen (LAB-F/RLRR): documentation\nReferences: Grann et al. (2011), Arendt et al. (2020)\n\n\nAccess to data\nAll DD2-researchers with access to FSEID-00006014 can (in principle) work with all the data sets. As these data sets are considered rawdata, they are cannot be edited/changed/moved/renamed/etc. To access data, please do the following:\n\nSAS: The data are already available in the libraries in06014 and metadata\nSTATA: Run the (relevant parts of the) DO file located at F:\\Projekter\\FSEID00006014\\DB Connections FSED00006014.do\nR: Run the (relevant parts of the) R file located at F:\\Projekter\\FSEID00006014\\DB Connections FSED00006014.R\n\nIn each research project, it is the individual researchers’ responsibility to ensure data usage is allowed."
   },
   {
     "objectID": "sites/working/data_upload.html",
@@ -250,5 +250,33 @@
     "title": "Birth data",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nIt is not marked in the data whether missing was due to not being eligible or due to other reasons↩︎\nThe current data permission includes only individuals in DD2 and therefore not the matched controls. As CPR-numbers are not available and controls ultimately cannot be linked to their respective DD2 individual there is no reason to upload data to the servers because all analyses can be performed locally.↩︎"
+  },
+  {
+    "objectID": "sites/data sources/dd2_genetics.html",
+    "href": "sites/data sources/dd2_genetics.html",
+    "title": "Genetics",
+    "section": "",
+    "text": "Genetik på baggrund af blodprøven"
+  },
+  {
+    "objectID": "sites/data sources/dd2_qol.html",
+    "href": "sites/data sources/dd2_qol.html",
+    "title": "Quality of life",
+    "section": "",
+    "text": "After enrollment, an e-mail with a questionnaire including questions about quality of life (QoL) is sent to the individual. A follow-up questionnaire is sent after 2 years, 4 years, and 6 years. DCE does not have the QoL data."
+  },
+  {
+    "objectID": "sites/data sources/dd2_idnc.html",
+    "href": "sites/data sources/dd2_idnc.html",
+    "title": "Neuropathy questionnaire (IDNC)",
+    "section": "",
+    "text": "Variable documentation\nIDNC is short for “International Diabetic Neuropathy Consortium”. Read more about it here: https://idnc.au.dk/about-idnc.\nA list of 7,011 CPR-numbers from all individuals enrolled in DD2 by February were sent to the CPR registry to get their addresses. The only criteria to be included in the questionnaire study were that individuals should be enrolled in DD2 (February 2016), be alive (24 May 2016), and have a valid Danish address (24 May 2016). A total of 6,726 questionnaires were sent out in June 2016 (07 June 2016), and a reminder was sent in September 2016 (12 September 2016) and again in October 2016 (10 October 2016) to those who had not provided a response. A total of 5,755 questionnaires were returned during the fall of 2016 and the inclusion ended in January 2017 (24 January 2017). The questionnaire included questions about height, weight, smoking and alcohol, and physical activity. These questions were intended to be follow-up questions similar to those from the baseline questionnaire. In addition, the questionnaire included questions about falls, quality of life, sleep, mental health, neuropathy (in hand and feet) and pain. The questionnaire thus included the Michigan Neuropathy Screening Instrument questionnaire (MNSIq) and the Douleur Neuropathique en 4 Questions (DN4).\nRead more about the questionnaire in Gylfadottir et al. (2020) and Christensen et al. (2020).\nThe questionnaire (in Danish) can be downloaded here:  Download \nAn English translation of the questionnaire is included in the supplement to Gylfadottir et al. (2020)."
+  },
+  {
+    "objectID": "sites/data sources/dd2_idnc.html#variables",
+    "href": "sites/data sources/dd2_idnc.html#variables",
+    "title": "Neuropathy questionnaire (IDNC)",
+    "section": "Variables",
+    "text": "Variables\nThe original questionnaire data included a total of around 109 variables (including some variables from the data cleaning process added by the working group). To ease working with data and to have some pre-defined variables/definitions, an additional 78 variables were created by the working group.\nThe questions and variable definitions for the original variables can be downloaded here:  Download \n\nThe SAS syntax for the definition of the additional variables is here:  Download \n\nAnd the corresponding SAS formats for the additional variables is here:  Download \n\n(SAS syntax files can be opened using notepad if SAS is not installed)\n\nData\nData are stored locally at KEA and a slightly changed version has been uploaded to DST and SDS. The changes are mainly due to similar definitions of variables, variable names and labels, and to comply with the SDS/DST regulations."
   }
 ]

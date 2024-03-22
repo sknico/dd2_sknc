@@ -1,6 +1,6 @@
 ---
 title: "SDS"
-subtitle: "Secondary data: Centralized routine registry data available on remote research server"
+subtitle: "Secondary data from centralized routine registry data available on remote research server"
 ---
 
 ## Sundhedsdatastyrelsen (SDS)/The Danish Health Data Authority 

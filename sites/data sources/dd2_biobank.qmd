@@ -1,5 +1,6 @@
 ---
 title: "DD2 biobank"
+subtitle: "Primary data derived from DD2 research studies"
 #bibliography: 
 #- "`r system('kpsewhich ../../references.bib', intern = TRUE)`"
 ---

@@ -17,7 +17,8 @@ website:
   sidebar:
     style: "docked"
     search: true
-    collapse-level: 0  # antal sider under hver section i sidebar der vises pr. default
+    #collapse-level: 0  # antal sider under hver section i sidebar der vises pr. default #0 betyder alt er foldet ud
+    collapse-level: 1 #viser kun overskriften, og så skal man selv folde det ud 
     contents:
   #        - index.qmd #index er inkluderet i "home" men jeg har fjernet den fra sidebar
       #- section: "Data sources"
@@ -27,8 +28,8 @@ website:
       - sites/data_structure.qmd 
 
       - text: "---"
-        
-      - section: "Primary data"
+    
+      - text: "Primary data"
       - section: "DD2 enrollment information"
         contents: 
         - sites/data sources/dd2_questionnaire.qmd
@@ -37,10 +38,11 @@ website:
         contents: 
         - sites/data sources/dd2_biobank.qmd
         - sites/data sources/dd2_biobank_new_structure.qmd
-        - sites/data sources/idnc.qmd
-        - sites/data sources/qol.qmd
+        - sites/data sources/dd2_genetics.qmd
+        - sites/data sources/dd2_idnc.qmd
+        - sites/data sources/dd2_qol.qmd
         
-      - section: "Secondary data"
+      - text: "Secondary data"
       - section: "External DD2 data"
         contents:         
 

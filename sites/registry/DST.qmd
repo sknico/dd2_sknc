@@ -1,6 +1,6 @@
 ---
 title: "DST"
-subtitle: "Secondary data: Centralized routine registry data available on remote research server"
+subtitle: "Secondary data from centralized routine registry data available on remote research server"
 ---
 
 Danmarks statistik

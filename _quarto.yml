@@ -28,15 +28,20 @@ website:
 
       - text: "---"
         
-      - section: "Primary DD2 data"
+      - section: "Primary data"
+      - section: "DD2 enrollment information"
         contents: 
         - sites/data sources/dd2_questionnaire.qmd
+        
+      - section: "Additional DD2 data"
+        contents: 
         - sites/data sources/dd2_biobank.qmd
         - sites/data sources/dd2_biobank_new_structure.qmd
         - sites/data sources/idnc.qmd
         - sites/data sources/qol.qmd
         
-      - section: "Secondary DD2 data"
+      - section: "Secondary data"
+      - section: "External DD2 data"
         contents:         
 
         - sites/data sources/ddda.qmd
@@ -45,7 +50,7 @@ website:
         - sites/data sources/fodstatus.qmd
         - sites/data sources/foedsel.qmd
          
-      - section: "Registry data"
+      - section: "Routine registry data"
         contents: 
         - sites/registry/SDS.qmd
         - sites/registry/DST.qmd
@@ -64,7 +69,7 @@ website:
 format:
   html:
     grid:
-        sidebar-width: 500px
+        sidebar-width: 350px
     page-layout: full
     #theme: cosmo
     theme: flatly

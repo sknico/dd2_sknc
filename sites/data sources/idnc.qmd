@@ -1,6 +1,6 @@
 ---
-title: "Neuropathy follow-up questionnaire"
-subtitle: "IDNC data"
+title: "Neuropathy questionnaire (IDNC)"
+subtitle: "IDNC follow-up data"
 ---
 {{< downloadthis ../../files/variable_documentation/DD2_questionnaire.csv dname="DD2_questionnaire" icon="file-earmark-text" label="Variable documentation" type="button" class="btn btn-light">}}
 

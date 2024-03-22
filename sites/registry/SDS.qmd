@@ -1,5 +1,6 @@
 ---
 title: "SDS"
+subtitle: "Centralized routine registry data available on remote research server"
 ---
 
 ## Sundhedsdatastyrelsen (SDS)/The Danish Health Data Authority 

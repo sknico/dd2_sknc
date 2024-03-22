@@ -1,5 +1,6 @@
 ---
 title: "DST"
+subtitle: "Centralized routine registry data available on remote research server"
 ---
 
 Danmarks statistik

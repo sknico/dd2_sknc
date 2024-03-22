@@ -1,6 +1,6 @@
 ---
 title: "DiaBase"
-subtitle: "External data from non-centralized data source"
+subtitle: "Secondary data from non-centralized data source"
 ---
 Dansk kvalitetsdatabase for diabetisk retinopati – DiaBase
 

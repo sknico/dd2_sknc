@@ -1,3 +1,6 @@
+# Små ændringer til at tjekke om det viker
+
+
 # fil til at tjekke github
 
 getwd()

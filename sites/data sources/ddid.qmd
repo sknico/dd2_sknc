@@ -1,0 +1,7 @@
+---
+title: "DDiD"
+subtitle: "Secondary data from non-centralized data source"
+---
+
+Dansk Diabetes Database (DDD/DDiD), which has been active since 1/7 2022.  
+

@@ -1,0 +1,56 @@
+---
+title: "SDS"
+subtitle: "Secondary data from centralized routine registry data available on remote research server"
+---
+
+## Sundhedsdatastyrelsen (SDS)/The Danish Health Data Authority 
+Sundhedsdatastyrelsen - FSEID-00006014.
+
+Download the "udtræksbeskrivelse" here: \
+Dataspecifikation {{\< downloadthis documents/2023-02-15-Bilag_B.docx\
+dname="Bilag_B" icon="file-earmark-text" label="Bilag B" type="button" class="btn btn-link"\>}} \
+Dataoversigt {{\< downloadthis documents/2023-02-15-Bilag_C.xlsx\
+dname="Bilag_C" icon="file-earmark-text" label="Bilag C" type="button" class="btn btn-link"\>}}
+
+
+<!-- jeg har snakket med Lars, og han siger jeg gerne må lægge udtræksbeskrivelserne op.  -->
+
+## Population
+
+The DD2 data is uploaded to SDS, and they check the validity of the CPR-numbers before encrypting them. The data set `DS_EXT_DD2_POP` includes individuals with a valid CPR-number. Individuals with a non-valid CPR-number are still included in the uploaded data, e.g. in `DS_EXT_DD2CORE`, but they will have a missing encrypted CPR-number (`CPR_ENCRYPTED`) and can thus not be linked across data sources. Previously (when we had local data), we would notify DD2 (Odense) about non-valid CPR-numbers, but this is no longer possible as we are not allowed to identify the individuals based on individual-level data on the servers.
+
+The data files uploaded by us have the prefix `DS_EXT_`. Currently, data are uploaded in 2 versions; the initial upload version (without suffix) and the current version (with suffix \_230601). The registry data are based on the population in the current version of data. We are planning to make a new structure where the library will only contain the current version of out own data plus the registry data based on the current version. Previous versions of our own data will be stored in a separate file and will be given a suffix when it is moved.
+
+## Rawdata available on SDS
+
+Data on SDS are based on data views, i.e., we have access to data updated (almost) on a day-to-day basis. The update file (SAS `IN06014.OpdateringsOversigt`) contains the time of the current update for each data set in the library. The metadata file (SAS `metadata.metadata_allcolumns`) contains information about variables in the data. For research projects, in order to be able to reproduce results, remember to save a copy of the research data in a suitable project folder on SDS.
+
+Further documentation on the main data sources can be found here:
+
+-   CPR-registret (CPR): [documentation](https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-de-nationale-sundhedsregistre/personoplysninger-og-sundhedsfaglig-beskaeftigelse/cpr-registeret) \
+    References: @Schmidt_EurJEpi_2014
+
+-   Landspatientregistret (LPR2 and LPR3): [documentation](https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-de-nationale-sundhedsregistre/sygdomme-laegemidler-og-behandlinger/landspatientregisteret), [LPR3](https://sundhedsdatastyrelsen.dk/da/forskerservice/om-forskerservice/nyheder_forskerservice/helbredsforloeb_lpr3f070422), 
+[LPR3 vejledning](https://sundhedsdatastyrelsen.dk/-/media/sds/filer/Forskerservice/Vejledning%20til%20LPR3_F) \
+    References: @Schmidt_ClinEpi_2015
+
+-   Lægemiddelstatistikregistret (LRS/LMS): [documentation](https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-de-nationale-sundhedsregistre/sygdomme-laegemidler-og-behandlinger/laegemiddelstatistikregisteret)\
+    References: @Kildemoes_ScanJPubHeal_2011, @Johannesdottir_ClinEpi_2012, @Pottegard_IntJEpi_2017, @Ehrenstein_ClinEpi_2010
+
+-   Laboratoriedatabasen (LAB-F/RLRR): [documentation](https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-de-nationale-sundhedsregistre/doedsaarsager-og-biologisk-materiale/laboratoriedatabasen) \
+    References: @Grann_ClinEpi_2011, @Arendt_ClinEpi_2020
+
+### Access to data
+
+All DD2-researchers with access to FSEID-00006014 can (in principle) work with all the data sets. As these data sets are considered rawdata, they are cannot be edited/changed/moved/renamed/etc. To access data, please do the following:
+
+-   **SAS**: The data are already available in the libraries `in06014` and `metadata`
+
+-   **STATA**: Run the (relevant parts of the) DO file located at `F:\Projekter\FSEID00006014\DB Connections FSED00006014.do`
+
+-   **R**: Run the (relevant parts of the) R file located at `F:\Projekter\FSEID00006014\DB Connections FSED00006014.R`
+
+In each research project, it is the individual researchers' responsibility to ensure data usage is allowed. 
+
+<!-- ## Simple versions of data (macro) -->
+<!-- mulig gennemgang af simple udtræk + macroer -->

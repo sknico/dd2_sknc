@@ -1,0 +1,49 @@
+---
+title: "Data upload"
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+-   Deadline for hvornår jeg skal have data (og hvornår jeg skal vide
+    data skal med i en opdatering)
+    -   Opdatering af eksisterende data (wide vs. long format)
+    -   Eksisterende datasæt med nye individer
+    -   Eksisterende datasæt med nye variable
+    -   Eksisterende datasæt med nye værdier
+-   Ny datakilde
+    -   med/uden mulighed for opdatering (individ, variabel, værdi?)
+-   Long vs. wide format for data
+-   Identifier
+-   Krav til variable (e.g. formater )
+-   Krav til dokumentation
+
+1.  Definér DD2-populationen: få nyt data fra DD2/Jens
+
+2.  Oprens og tjek
+
+3a. DST
+
+3b. SDS
+Send en besked (via henvendelsesformularen) om at vi gerne vil have et upload-link. Linket skal sendes til HTS, men man kan godt bede dem om at give besked, når de har sendt det. 
+I tilfælde af man skal bede om et nyt link (hvis ikke man når at uploade inden der er gået 7 dage), skal man skrive en mail til forskerservice (med HENID) og ikke lave en ny henvendelse. 
+
+3c. Eksterne data
+
+-   Vi laver en DD2-population, som uploades til DST
+-   DST gør populationen klar til Lars
+-   Lars laver tilhørende registerdata (projektmaskinen)
+-   DST tjekker data og kommer med rettelser/ændringer (korrespondance
+    frem og tilbage med Lars)
+-   Når data er godkendt lægger DST det op så vi andre kan se det
+
+Registerdata på forskermaskinen opdateres løbende. LPR-data kommer i
+løbet af Oktober/November, og indeholder som regel data til og med
+slutningen af det seneste år. Andre datakilder opdateres på andre
+tidspuntker (f.eks. bliver lægemiddelstatistikreg. opdateret hvert
+kvartal).
+
+Hvis jeg f.eks. laver en DD2-population i løbet af efteråret 2023 (e.g.
+November), så vil vi nok i begyndelsen af 2024 have opdateret LPR-data
+til og med 2022 (og lægemiddelstat. vil nok være til og med sommer
+2023).

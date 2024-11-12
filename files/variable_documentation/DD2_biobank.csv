@@ -1,0 +1,25 @@
+﻿name_eng;name_dk;description
+Name_Enrolling_GP;Navn_Indrullering_Praksis;If enrolled by GP = name of GP clinic else blank
+Name_Enrolling_others;Navn_Indrullering_Andre;If enrolled by another place (outpatient clinic, municipality, pharmacy) = name of another place else blank 
+Name_Current_GP;Navn_Nuværende_Praksis;Name of the current GP of the patient. Manual entry of current GP if change in GP since enrollment else same as Name_Enrolling_GP.
+Name_Submitter;Navn_Indtaster;If not enrolled by WebReq = name of submitter (if manual GP registration, outpatient clinic, municipality, pharmacy)  else blank
+Date_WebReq_sent;Dato_WebPatient_skema_afsendt;
+Date_Consent;Dato_Samtykke;If WebPatient = date of consent given, if others = date of online registration completed (dd-mm-yyyy)
+Date_Patient_Registration;Dato_Patientskema_Udfyldt;If WebPatient = date of patient part of questionnaire completed, if others = date of online registration completed (dd-mm-yyyy)
+Date_Full_Registration;Dato_Fuld_Registrering;If WebPatient = date of full questionnaire completed, if others = date of online registration completed (dd-mm-yyyy)
+Date_Manual_Entry;Dato_Manuel_Indtastning;If Webpatient = blank, if manual submittion = date of manual entry (dd-mm-yyyy)
+CPR;CPR;Social Security Number (CRP number) of the Patient (ddmmyy-xxxx)
+CPR_Without_Hyphen;CPR_Uden_Bindestreg;Social Security Number (CPR number) without hyphen (ddmmyyxxxx)
+Birth_Date;Fødselsdato;Birth date (dd-mm-yyyy)
+Current_Age;Alder_Nuværende;"Current age (birth date subtracted today in years and months - 12 months = 1 ; 6 months = 0,5 ; 3 months = 0,25)  "
+Age_Enrollment;Alder_Indrullering;"Age at enrollement (birht date substracted Date_Consent in years and months - 12 months = 1 ; 6 months = 0,5 ; 3 months = 0,25)  "
+Gender;Køn ;Gender divided into Kvinde = female / Mand = male
+Patient_First_Name(s);Patient_Fornavn_e;First name(s) of the patient
+Patient_Surname;Patient_Efternavn;Family name of the patient
+Patient_Email;Patient_Email;E-mail adress of the patient
+Patient_Phone_Number;Patient_Telefonnummer;Phone number of the patient 
+Healthcare_Provider_Number_Current;Ydernr_Nuværende;Manual entry of current healthcare provider number if change in GP since enrollment else same as Healthcare_Provider_Number_Enrollment
+Healthcare_Provider_Number_Enrollment;Ydernr_Indrullering;If WebReq = automatically enrolling healthcare provider number, others = manual entry, else blank
+Region;Region;Region
+WebReq;Webreq;Enrollment via WebReq (Ja=yes, Nej=no)
+Comments;Kommentarer;Comments

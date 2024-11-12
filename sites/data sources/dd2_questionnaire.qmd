@@ -1,0 +1,15 @@
+---
+title: "DD2 questionnaire"
+subtitle: "Primary DD2 enrollment data"
+#date: last-modified
+#date-format: long
+#footer: "{{< meta date >}}"
+---
+
+{{< downloadthis ../../files/variable_documentation/DD2_questionnaire.csv dname="DD2_questionnaire" icon="file-earmark-text" label="Variable documentation" type="button" class="btn btn-light">}}
+
+Data from the DD2 questionnaire include the responses along with general information about the individual.
+
+The DD2 questionnaire can be downloaded here: {{< downloadthis ../files/DD2_registrering/registreringsskema_almen_praksis.pdf dname="registreringsskema_almen_praksis" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}}
+
+--\> det skal afklares med Jens hvordan data ser ud, når det trækkes fra den nye server.

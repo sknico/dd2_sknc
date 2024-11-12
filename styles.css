@@ -1,1 +1,47 @@
 /* css styles */
+
+/* Størrelsen på siden (i nyere versioner kan man gøre det i yml-filen) */
+/* css styles */
+
+
+
+
+#quarto-document-content {
+  width: 100%;
+}
+
+#quarto-margin-sidebar {
+  margin-right: -600px;
+  margin-left: 200px;
+}
+
+
+
+
+/*
+.sidebar-left{
+  width: 2000px;
+}*/
+
+
+/*
+svg {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  height: auto !important;
+  width: auto !important;
+}
+*/
+
+/* et forsøg på at lave en style til sas */
+/*.sas_sknc {
+  background-color: lightpink;
+  border: 3px solid red;
+  font-weight: bold;
+}*/
+
+.sas_sknc {
+  background-color: #397d7f; /*#e5e5e5e5;*/
+  font-weight: bold;
+}

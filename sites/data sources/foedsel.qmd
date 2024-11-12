@@ -1,0 +1,55 @@
+---
+title: "Birth data"
+subtitle: "Secondary data from non-centralized data source"
+---
+{{< downloadthis ../../files/variable_documentation/DD2_questionnaire.csv dname="DD2_questionnaire" icon="file-earmark-text" label="Variable documentation" type="button" class="btn btn-light">}}
+
+
+Data from Danish midwife journals have been collected for all individuals enrolled in DD2 per 22 February 2022, *i.e.,* a total of n=9,549 individuals. Data include information on birth weight, birth length, born at term (yes/no, and if no then also the number of weeks), and twin (yes/no).
+
+The afleverings-/afslutningsrapport from Rigsarkivet (the Danish National Archive) can be downloaded here (Danish):{{\< downloadthis ../../files/Foedselsdata_rigsarkivet/Afslutningsrapport_Steno.pdf\
+dname="Afslutningsrapport_Steno" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}}\
+There is similar description in English in the electronic supplemental material from @Hansen_Diabetologia_2023:{{\< downloadthis ../../files/Foedselsdata_rigsarkivet/ESM_Hansen_Diabetologia_2023.pdf\
+dname="ESM_Hansen_Diabetologia_2023" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}}
+
+CPR-numbers for a total of n=9,549 individuals were sent to Rigsarkivet and n=8,896 fulfilled the criteria for potentially having available birth information (born in the period from \~1920 to 1988, born in Denmark, and identifiable through the biological mother's name). During the retrieval, data were uniformized (*e.g.,* to include birth weight in grams and not pounds) and proofread.
+
+Data include n=9,549 CPR-numbers (one CPR-number is included twice), n=8,346 have non-missing birth weight, and a total of n=8,364 had a non-missing value in at least one of the five birth variables. A total of 8,869-8,364=532 were not included despite fulfilling the criteria (not registered^[It is not marked in the data whether missing was due to not being eligible or due to other reasons]). 
+
+# Control population
+In addition to the individuals from DD2, a control population was recorded. For every individual in DD2, approximately two random individuals were selected based on the births from the same midwife information sheet (with birth information on ~6--8 different births). Controls from the same midwife record thus served as a match on date of birth, midwife, and geographical location. A total of n=18,210 individuals are recorded in the control population and data include information on year and month of birth, birth weight, birth length, sex, born at term, twin, and geographical location (lægekreds/fødselsamt). No CPR-numbers are available for the control population (data permissions and ethical and practical reasons) and neither are links between the controls and the individuals in DD2. Data on controls are currently not available on the servers^[The current data permission includes only individuals in DD2 and therefore not the matched controls. As CPR-numbers are not available and controls ultimately cannot be linked to their respective DD2 individual there is no reason to upload data to the servers because all analyses can be performed locally.]. 
+
+Selected pages from the opgavebeskrivelse (del 1 and del 2) can be downloaded here (Danish):{{\< downloadthis ../../files/Foedselsdata_rigsarkivet/Kombineret_opgavebeskriveslse_udsnit_rigsarkivet.pdf\
+dname="Kombineret_opgavebeskriveslse_udsnit_rigsarkivet" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}}\
+
+
+<!-- ::: {.callout-note appearance="default"} -->
+<!-- ## Spørgsmål til dokumentationen   -->
+<!-- (mail sendt 05.09.2023) -->
+<!-- (mail sendt 06.09.2023) -->
+
+<!-- Og nu har jeg sendt det til Allan og Charlotte  -->
+
+<!-- -   Jeg kan se i afslutningsrapporten at Rigsarkivet har fået n=9549 cpr-numre de skulle tjekke, og så vidt jeg kan se er det \"hele DD2\". Ved du hvem der har dannet denne population og hvornår? Jeg har nemlig brug for at vide pr. hvilken dato det er hele DD2 (og om der alligevel er eventuelle eksklusionskriterier). Mit bedste gæt er 22. februar 2022, men jeg vil bare gerne have den korrekte dato, hvis det er muligt. -->
+<!-- Vi går med 22. feb -->
+
+<!-- -    I afslutningsrapporten står der også at ud af de n=9549 individer, kunne n=8896 dokumenteres, idet de opfyldte kriterierne (cpr, mor, Danmark osv.). Når jeg kigger i data er der non-missing data på n=8364 individer, så der må være 532 individer der af en eller anden grund ikke kunne findes i journalerne selvom de opfyldte kravene. Ved du om det er registreret hvem det er? -->
+<!-- Det er ikke registreret -->
+
+<!-- -    Mht. kontrollerne, så vil jeg høre om du har noget dokumentation på dem. Jeg har vist bare et datasæt, men ikke noget yderligere information om hvordan de er fundet. Jeg kan se i ESM til din artikel, at det er 2 individer fra samme side i journalen, og det er såmænd bare det jeg gerne vil have noget officielt dokumentation på. Derudover, så har vi ingen cpr-numre på kontrollerne, og så vidt jeg husker har du engang sagt at det var fordi vi ikke fik lov til at indsamle dem. Er det korrekt? Ved du om der også er en grund til man ikke har gemt hvilket individ fra DD2 hver kontrol tilhører? -->
+<!-- Jeg har nu fået noget informaiton fra Allan, men det passer stadig ikke helt 100% -->
+
+<!-- -    Jeg kan også se at der er n=18,210 kontroller. Hvis der er fundet 2 pr. individ, så svarer det til 9105 individer i DD2, men det er jo ikke muligt, hvis de kun kunne dokumentere maksimalt n=8896. Ved du hvorfor det netop er dette antal? -->
+<!-- Der er bare angivet cirka-tal i opgaven -->
+
+
+
+<!-- I dokumentationen står der: -->
+<!-- I opgaven indtastes: -->
+<!-- o 50% af jordemoderprotokolsiderne fra den tidligere fødselsdataundersøgelse. Ca. -->
+<!-- 15.000 kontrolfødsler, ud fra en antagelse om cirka 5 fødsler pr. side. -->
+<!-- o 50% af fødselsindberetningerne udvælges 2 tilfældige indberetninger fra ca. samme -->
+<!-- dato i samme amt. Ca. 1200. -->
+<!-- o I alt forventes altså en kontrolpopulation på ca. 16.000 individer. -->
+
+<!-- ::: -->

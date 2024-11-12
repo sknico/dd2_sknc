@@ -1,11 +1,13 @@
 project:
   type: website
-  output-dir: docs
+  output-dir: docs #hvis hjemmesiden driller med updates, så kan man slette alt i docs og generere det igen
 
 website:
   title: "DD2"
   page-navigation: true
-  page-footer: "SKNC" 
+  page-footer:
+    center: 
+      - text: "SKNC"
   #navbar:
   #  left:
   #    - href: index.qmd
@@ -15,39 +17,75 @@ website:
   sidebar:
     style: "docked"
     search: true
+    #collapse-level: 0  # antal sider under hver section i sidebar der vises pr. default #0 betyder alt er foldet ud
+    collapse-level: 1 #viser kun overskriften, og så skal man selv folde det ud 
     contents:
   #        - index.qmd #index er inkluderet i "home" men jeg har fjernet den fra sidebar
       #- section: "Data sources"
       #  contents:
-      - data sources.qmd 
       
+      - sites/data_collection.qmd 
+      - sites/data_structure.qmd 
+
       - text: "---"
-        
-      - section: "DD2 core data "
+    
+      - text: "Primary data"
+      - section: "DD2 enrollment information"
         contents: 
-        - dd2_questionnaire.qmd
-        - dd2_biobank.qmd
+        - sites/data sources/dd2_questionnaire.qmd
+        
       - section: "Additional DD2 data"
-        #contents: 
+        contents: 
+        - sites/data sources/dd2_biobank.qmd
+        - sites/data sources/dd2_biobank_new_structure.qmd
+        - sites/data sources/dd2_genetics.qmd
+        - sites/data sources/dd2_idnc.qmd
+        - sites/data sources/dd2_qol.qmd
         
+      - text: "Secondary data"
       - section: "External DD2 data"
-        #contents: 
+        contents:         
+
+        - sites/data sources/ddda.qmd
+        - sites/data sources/ddid.qmd
+        - sites/data sources/diabase.qmd
+        - sites/data sources/fodstatus.qmd
+        - sites/data sources/foedsel.qmd
+         
+      - section: "Routine registry data"
+        contents: 
+        - sites/registry/SDS.qmd
+        - sites/registry/DST.qmd
         
-      - section: "Registry data"
-        #contents: 
         
       - text: "---"
         
       - section: "How to work"
         contents: 
-        - working.qmd
+        - sites/working/working.qmd
+        - sites/working/data_upload.qmd
+        - sites/working/macro_syntax.qmd
+        
+        
         
 format:
   html:
+    grid:
+        sidebar-width: 350px
+    page-layout: full
     #theme: cosmo
     theme: flatly
     css: styles.css
     toc: true
-
+    # For at styre størrelsen skal man vist bruge en nyere version - se i stedet filen styles.css
+    #grid:
+    #   sidebar-width: 500px
+    #   body-width: 800px
+    #   margin-width: 200px
+    #   gutter-width: 1.5rem
+    
+    
+bibliography: "references.bib"
+csl: "vancouver-author-date.csl"
 
 

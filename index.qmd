@@ -9,8 +9,6 @@ author: Sia K. Nicolaisen
 This website is currently under development
 ::: 
 
-TILFØJ COHORT PAPER
-
 This website includes details about **The Danish Center for Strategic Research in Type 2 Diabetes** (The **DD2** Study). The intention with this website is to document the data sources used for research and to ease the day-to-day work with DD2. It is mainly aimed at employees at Department of Clinical Epidemiology (DCE/KEA), Aarhus University and Aarhus University Hospital, as it is describing the setup used at DCE. Other institutions can also gain access to DD2 data but their setup might be different. 
 
 To learn more about DD2 please see: <https://dd2.dk/>

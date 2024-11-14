@@ -6,13 +6,13 @@ title: "Data structure"
 #format: revealjs
 ---
 
-The full DD2 research data is based on data collected/linked from multiple sources. This page is intended to give an overview of the data structure, the data sources, and the definitions of data types. Detailed description of each of the data sources can be found on the following pages.
+The full DD2 research data are based on data collected/linked from multiple sources (@Kristensen_ClinEpi_2024). This page gives an overview of the data structure, the data sources, and the definitions of data types. Detailed description of each of the data sources can be found on the next pages.
 
-The data sources include **primary data**, i.e., data that exists only within DD2, including data/information collected from participants at enrollment, and additional primary data derived from nested research studies in the DD2 cohort. The data also include **secondary data**, i.e., external data collected from other data sources and then linked to DD2. In addition, DD2 data (primary and secondary data) is linked to the nationwide routine registry data located in centralized databases (SDS and DST).
+The data sources include **primary data**, i.e., data that exist only within DD2, including data/information collected from participants at enrollment, and additional primary data derived from nested research studies in the DD2 cohort. The data also include **secondary data**, i.e., external data collected from other data sources and then linked to DD2. In addition, DD2 data (primary and secondary data) are linked to the nationwide routine registry data located in centralized databases (SDS and DST) (@Kristensen_ClinEpi_2024).
 
 # Primary data
 
-Primary data can be split into two sections
+Primary data can be split into two sections:
 
 1.  DD2 enrollment information
 
@@ -22,9 +22,9 @@ Primary data can be split into two sections
 
 DD2 enrollment information include the information that make the foundation of DD2, i.e.,
 
--   DD2 interview data
+-   DD2 interview data (questionnaire)
 
--   Data from clinical examination at enrollment
+-   Data from the clinical examination at enrollment
 
 -   Blood and urine samples collected for storage in the DD2 biobank in Vejle.
 
@@ -44,30 +44,27 @@ These data sources will not be routinely updated with new individuals or additio
 
 # Secondary data
 
-Secondary data include data from external data sources that were not initially generated with the intention to be included in DD2. However, as data can be considered relevant for DD2 research questions, we have linked data from these external data sources to the DD2. In practice, this means that data (or a subset of data) has been handed over from the external data source to DD2, and we thus have relevant data on (a subset of) the individuals in DD2. Linkage to external data sources is considered a crucial source of data in DD2, as it allows for information about variables that are resource-intensive to collect in clinical practice and unavailable in the Danish health registries. The secondary DD2 data are data accessed from non-centralized data source, and we currently have agreements with the following external data sources:
+Secondary data include data from external data sources that were not initially generated with the intention to be included in DD2. However, as data can be considered relevant for DD2 research questions, we have linked data from these external data sources to the DD2. In practice, this means that data (or a subset of data) have been handed over from the external data source to DD2, and we thus have relevant data on (a subset of) the individuals in DD2. Linkage to external data sources is considered a crucial source of data in DD2, as it allows for information about variables that are resource-intensive to collect in clinical practice and unavailable in the Danish health registries. The secondary DD2 data are data accessed from non-centralized data source, and we currently have agreements with the following external data sources:
 
 -   The Danish Diabetes Database for Adults (DDDA) (closed by June 2022)
 
--   DDiD (new version of DDDA)
-
 -   The Danish National Podiatrist Registry (fodstatusdatabasen)
-
--   Diabase (øjenkomplikationer, vi har p.t. ingen aftale, men vi arbejder på det)
 
 -   The Danish National Archive (Rigsarkivet), currently including birth data from midwife journals.
 
-The general idea is that we can get updates of data from these data sources, either by e.g., including more follow-up time or by including more individuals. For some of these data sources we will therefor have the most recent data on all the current individuals in DD2, and we can also get updated data whenever we have new individuals in the DD2 cohort. The secondary data can be accessed through collaboration with DD2 research groups.
+The general idea is that we can potentially get updates of data from these data sources, either by e.g., including more follow-up time or by including more individuals. For some of these data sources we will therefore have the most recent data on all the current individuals in DD2, and we can also get updated data whenever we have new individuals in the DD2 cohort. The secondary data can be accessed through collaboration with DD2 research groups.
+In addition, we are considering making agreements with the Dansk Diabetes Database (DDiD) and Dansk kvalitetsdatabase for diabetisk retinopati (DiaBase), but it depends on funding and data availability. 
 
 # Routine Registry Data
 
 The routine registry data is also secondary data, however, it is only available on remote research servers. DD2 research data will be uploaded to the servers hosted at Danmarks Statistik (DST, Statistics Denmark) and Sundhedsdatastyrelsen (SDS, The Danish Health Data Authority). On these servers, we have access to Danish medical and administrative registries, such as data from the CPR registry, hospital data from LPR, laboratory data from LAB-F etc. Linkage to additional registries and databases is possible with approval of data permission applications sent to Statistics Denmark or the Danish Health Data Authority.
 
-::: callout-note
-Replace figure (updated Figure 1 from paper)
-:::
+<!-- ::: callout-note -->
+<!-- Replace figure (updated Figure 1 from paper) -->
+<!-- ::: -->
 
 <!-- :::{.column-page-right} -->
 
 ::: column-screen-inset-right
-![](/figures/overblik.png){width="100%"}
+![Overview of data sources in the DD2 cohort (@Kristensen_ClinEpi_2024).](/figures/Figure_1.png){width="100%"}
 :::

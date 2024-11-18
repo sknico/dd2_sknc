@@ -1,21 +1,26 @@
 ---
 title: "DST"
-subtitle: "Secondary data from centralized routine registry data available on remote research server"
+subtitle: "DST Projektnr. 708637 (and FSEID-00006159 transfer from SDS)"
 ---
+
+Secondary data from centralized routine registry data available on remote research server
+
+
+Lav en oversigt over historik (hvornår er hvad blevet uploadet)
+
+| Description | Date | Noget info | Mere info |
+|--------------------|:---------------|------------------:|:---------------:|
+| Update of population (+ registries), oupdate of "egen data" (biobank and genetics), and add extra variables in the registry data. The application was made via DDV. | November 2024 | 123 | 123 |
+| Original upload | September 2022 | 1 | 1 |
 
 Danmarks statistik
 
+-   Vi laver en DD2-population, som uploades til DST
+-   DST gør populationen klar til Lars
+-   Lars laver tilhørende registerdata (projektmaskinen)
+-   DST tjekker data og kommer med rettelser/ændringer (korrespondance frem og tilbage med Lars)
+-   Når data er godkendt lægger DST det op så vi andre kan se det
 
+Registerdata på forskermaskinen opdateres løbende. LPR-data kommer i løbet af Oktober/November, og indeholder som regel data til og med slutningen af det seneste år. Andre datakilder opdateres på andre tidspuntker (f.eks. bliver lægemiddelstatistikreg. opdateret hvert kvartal).
 
-* Vi laver en DD2-population, som uploades til DST
-* DST gør populationen klar til Lars
-* Lars laver tilhørende registerdata (projektmaskinen)
-* DST tjekker data og kommer med rettelser/ændringer (korrespondance frem og tilbage med Lars) 
-* Når data er godkendt lægger DST det op så vi andre kan se det
-
-Registerdata på forskermaskinen opdateres løbende. LPR-data kommer i løbet af Oktober/November,
-og indeholder som regel data til og med slutningen af det seneste år. Andre datakilder opdateres på 
-andre tidspuntker (f.eks. bliver lægemiddelstatistikreg. opdateret hvert kvartal).
-
-Hvis jeg f.eks. laver en DD2-population i løbet af efteråret 2023 (e.g. November), så vil vi nok i begyndelsen af 
-2024 have opdateret LPR-data til og med 2022 (og lægemiddelstat. vil nok være til og med sommer 2023).
+Hvis jeg f.eks. laver en DD2-population i løbet af efteråret 2023 (e.g. November), så vil vi nok i begyndelsen af 2024 have opdateret LPR-data til og med 2022 (og lægemiddelstat. vil nok være til og med sommer 2023).

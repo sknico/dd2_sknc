@@ -52,15 +52,16 @@ Secondary data include data from external data sources that were not initially g
 
 -   The Danish National Archive (Rigsarkivet), currently including birth data from midwife journals.
 
-The general idea is that we can potentially get updates of data from these data sources, either by e.g., including more follow-up time or by including more individuals. For some of these data sources we will therefore have the most recent data on all the current individuals in DD2, and we can also get updated data whenever we have new individuals in the DD2 cohort. The secondary data can be accessed through collaboration with DD2 research groups.
-In addition, we are considering making agreements with the Dansk Diabetes Database (DDiD) and Dansk kvalitetsdatabase for diabetisk retinopati (DiaBase), but it depends on funding and data availability. 
+The general idea is that we can potentially get updates of data from these data sources, either by e.g., including more follow-up time or by including more individuals. For some of these data sources we will therefore have the most recent data on all the current individuals in DD2, and we can also get updated data whenever we have new individuals in the DD2 cohort. The secondary data can be accessed through collaboration with DD2 research groups. In addition, we are considering making agreements with the Dansk Diabetes Database (DDiD) and Dansk kvalitetsdatabase for diabetisk retinopati (DiaBase), but it depends on funding and data availability.
 
 # Routine Registry Data
 
 The routine registry data is also secondary data, however, it is only available on remote research servers. DD2 research data will be uploaded to the servers hosted at Danmarks Statistik (DST, Statistics Denmark) and Sundhedsdatastyrelsen (SDS, The Danish Health Data Authority). On these servers, we have access to Danish medical and administrative registries, such as data from the CPR registry, hospital data from LPR, laboratory data from LAB-F etc. Linkage to additional registries and databases is possible with approval of data permission applications sent to Statistics Denmark or the Danish Health Data Authority.
 
 <!-- ::: callout-note -->
+
 <!-- Replace figure (updated Figure 1 from paper) -->
+
 <!-- ::: -->
 
 <!-- :::{.column-page-right} -->

@@ -6,6 +6,11 @@ subtitle: "DST Projektnr. 708637 (and FSEID-00006159 transfer from SDS)"
 Secondary data from centralized routine registry data available on remote research server
 
 
+
+Inkluder en oversigt over godkendte registerdata. 
+Skriv hvordan man indlæser formater (DST + IDNC)
+
+
 Lav en oversigt over historik (hvornår er hvad blevet uploadet)
 
 | Description | Date | Noget info | Mere info |

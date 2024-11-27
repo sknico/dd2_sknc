@@ -6,11 +6,13 @@ subtitle: "Secondary data from centralized routine registry data available on re
 ## Sundhedsdatastyrelsen (SDS)/The Danish Health Data Authority 
 Sundhedsdatastyrelsen - FSEID-00006014.
 
+
+
 Download the "udtræksbeskrivelse" here: \
-Dataspecifikation {{\< downloadthis documents/2023-02-15-Bilag_B.docx\
-dname="Bilag_B" icon="file-earmark-text" label="Bilag B" type="button" class="btn btn-link"\>}} \
-Dataoversigt {{\< downloadthis documents/2023-02-15-Bilag_C.xlsx\
-dname="Bilag_C" icon="file-earmark-text" label="Bilag C" type="button" class="btn btn-link"\>}}
+Dataspecifikation {{< downloadthis documents/2023-02-15-Bilag_B.docx 
+dname="Bilag_B" icon="file-earmark-text" label="Bilag B" type="button" class="btn btn-link">}} \
+Dataoversigt {{< downloadthis documents/2023-02-15-Bilag_C.xlsx
+dname="Bilag_C" icon="file-earmark-text" label="Bilag C" type="button" class="btn btn-link">}}
 
 
 <!-- jeg har snakket med Lars, og han siger jeg gerne må lægge udtræksbeskrivelserne op.  -->

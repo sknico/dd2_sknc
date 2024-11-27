@@ -33,7 +33,7 @@ options fmtsearch=(idnc.idnc_formats);
 
 ## Data uploads
 
-The first data were uploaded in 2022 when the server access was initially established. Since then, DST has changed their system to Danmarks Datavindue (DDV). In November 2024, we had to make a "genindtilling" via DDV and in principle make a new data agreement.
+The first data were uploaded in 2022 when the server access was initially established. Since then, DST has changed their system to Danmarks Datavindue (DDV). In November 2024, we had to make a "genindtilling" via DDV and in principle make a new data agreement. We used this opportunity to make some changes in the data structure (e.g., from IL6_TNF to BIOMARK and GENETIK)
 
 | Short description | Detailed description | Date | Affected data sets |
 |----------------|-----------------------|:---------------|-----------------:|

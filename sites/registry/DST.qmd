@@ -1,31 +1,47 @@
 ---
 title: "DST"
-subtitle: "DST Projektnr. 708637 (and FSEID-00006159 transfer from SDS)"
+subtitle: "Secondary data from centralized routine registry data available on remote research server"
 ---
 
-Secondary data from centralized routine registry data available on remote research server
+## Danmarks Statistik (DST)/Statistics Denmark
+
+DST Projektnr. 708637 (and FSEID-00006159 transfer from SDS). The project is placed under the "Projektdatabaseordning (705004)". The DD2 projects itself had the project number 708637 (via 705004), and the agreement with DST makes registry data available. Data from Det Psykiatriske Centrale Forskningsregister (PCR), Laboratoriedatabasens Forskertabel (LAB-F), Overvågningsdata - COVID-19-testsvar fra SSI (OVD_SSI), Det Danske Vaccinationsregister - COVID-19-vaccinationsdata fra SSI (DDV_SSI), and Cancerregisteret (CAR) are tranferred from SDS (FSEID-00006159). Data from Lægemiddelstatistikregisteret/Lægemiddeldatabasen (LSR/LMDB) is included via DDV (DST), but based on the agreement with SDS (FSEID-00006159).
+
+::: callout-important
+Tjek om aftale + bilag må ligge offentlig tilgængeligt.
+:::
+
+Download the general agreement including the agreement about medicinal data here:\
+Aftale (mail) {{< downloadthis documents/2023-02-15-Bilag_B.docx dname="Bilag_B" icon="file-earmark-text" label="Bilag B" type="button" class="btn btn-link">}}\
+Bilag LMDB {{< downloadthis documents/2023-02-15-Bilag_C.xlsx dname="Bilag_C" icon="file-earmark-text" label="Bilag C" type="button" class="btn btn-link">}}
+
+## Population
+
+The DD2 data are uploaded to DST, and the population include all individuals in DD2CORE (encrypted CPR). Registry data (Raw data \-> Grunddata) is linked, and based in the individuals in the data set `pniveau`. 
+
+### Formats
+
+On DST formats from DST and IDNC should be included manually. Here is an example of how it can be done in SAS:
+
+```{r, eval = FALSE}
+libname fmt "E:\Formater\SAS formater i DAnmarks Statistik\FORMATKATALOG" access=readonly;
+options fmtsearch=(fmt.disced fmt.times_personstatistik fmt.dream fmt.statistikbank);
+
+libname idnc "path" access=readonly;
+options fmtsearch=(idnc.idnc_formats);
+```
 
 
+## Data uploads
 
-Inkluder en oversigt over godkendte registerdata. 
-Skriv hvordan man indlæser formater (DST + IDNC)
+The first data were uploaded in 2022 when the server access was initially established. Since then, DST has changed their system to Danmarks Datavindue (DDV). In November 2024, we had to make a "genindtilling" via DDV and in principle make a new data agreement.
 
+| Short description | Detailed description | Date | Affected data sets |
+|----------------|-----------------------|:---------------|-----------------:|
+| Original upload | Upload of data sets for the initial server access | Summer 2022 | DD2CORE, DD2_POP, BIOBANK, DDDA, FOEDSELSDATA, IDNC, IL6_TNF |
+| General update (DDV) | Population update (incl. DICTA variable), updated biobank data (variables from April 2022), including the new data source FODSTATUS, and a general update of registry data. IL6_TNF was updated with all 22 "pladebiomarkører" and renamed to PLADEBIOMARK. The data set GENETIK was also included. | November 2024 | DD2CORE, DD2_POP, BIOBANK, DDDA, FOEDSELSDATA, IDNC, FODSTATUS, BIOMARK, GENETIK |
 
-Lav en oversigt over historik (hvornår er hvad blevet uploadet)
+NB: we try to distinguish between "update" and "upload". An "update" means that the population, and therefore also the registry data, has changed, and that the entire DD2 cohort should be seen as a new version. By "upload" we mean additional data uploaded to the current population. This could for example be adding analyses from the biobank or adding a new data source, i.e., something that doesn't affect the population itself. The plan is to make one annual update (November/end of the year) and two to three additional uploads during per year.
 
-| Description | Date | Noget info | Mere info |
-|--------------------|:---------------|------------------:|:---------------:|
-| Update of population (+ registries), oupdate of "egen data" (biobank and genetics), and add extra variables in the registry data. The application was made via DDV. | November 2024 | 123 | 123 |
-| Original upload | September 2022 | 1 | 1 |
-
-Danmarks statistik
-
--   Vi laver en DD2-population, som uploades til DST
--   DST gør populationen klar til Lars
--   Lars laver tilhørende registerdata (projektmaskinen)
--   DST tjekker data og kommer med rettelser/ændringer (korrespondance frem og tilbage med Lars)
--   Når data er godkendt lægger DST det op så vi andre kan se det
-
-Registerdata på forskermaskinen opdateres løbende. LPR-data kommer i løbet af Oktober/November, og indeholder som regel data til og med slutningen af det seneste år. Andre datakilder opdateres på andre tidspuntker (f.eks. bliver lægemiddelstatistikreg. opdateret hvert kvartal).
-
-Hvis jeg f.eks. laver en DD2-population i løbet af efteråret 2023 (e.g. November), så vil vi nok i begyndelsen af 2024 have opdateret LPR-data til og med 2022 (og lægemiddelstat. vil nok være til og med sommer 2023).
+Registry data on the forskermaskine is updated regularly. LPR-data for the previous calendar year (e.g. 2023) is available during October/November (2024), i.e., if we prepare for a new population update at the end of the year (2024), we will probably be able to get LPR-data for the full previous calendar year (2023), when we receive data in the beginning of the next year (2025). 
+Other registries are updated at different time points (e.g., LMDB is updated quarterly). 

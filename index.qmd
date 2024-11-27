@@ -1,6 +1,7 @@
 ---
 title: "The Danish Center for Strategic Research in Type 2 Diabetes"
 author: Sia K. Nicolaisen
+date: "`r Sys.Date()`"
 #date: last-modified
 #bibliography: references.bib
 ---

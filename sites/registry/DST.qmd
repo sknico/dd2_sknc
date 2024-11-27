@@ -21,8 +21,7 @@ The DD2 data are uploaded to DST, and the population include all individuals in 
 
 ### Formats
 
-On DST formats from DST and IDNC should be included manually. Here is an example of how it can be done in SAS:
-
+On DST formats from DST and IDNC should be included manually. Here is an example of how it can be done in SAS
 ```{r, eval = FALSE}
 libname fmt "E:\Formater\SAS formater i DAnmarks Statistik\FORMATKATALOG" access=readonly;
 options fmtsearch=(fmt.disced fmt.times_personstatistik fmt.dream fmt.statistikbank);

@@ -241,7 +241,7 @@
     "href": "sites/registry/SDS.html#population",
     "title": "SDS",
     "section": "Population",
-    "text": "Population\nThe DD2 data is uploaded to SDS, and they check the validity of the CPR-numbers before encrypting them. The data set DS_EXT_DD2_POP includes individuals with a valid CPR-number. Individuals with a non-valid CPR-number are still included in the uploaded data, e.g. in DS_EXT_DD2CORE, but they will have a missing encrypted CPR-number (CPR_ENCRYPTED) and can thus not be linked across data sources. Previously (when we had local data), we would notify DD2 (Odense) about non-valid CPR-numbers, but this is no longer possible as we are not allowed to identify the individuals based on individual-level data on the servers.\nThe data files uploaded by us have the prefix DS_EXT_. Currently, data are uploaded in 2 versions; the initial upload version (without suffix) and the current version (with suffix _230601). The registry data are based on the population in the current version of data. We are planning to make a new structure where the library will only contain the current version of out own data plus the registry data based on the current version. Previous versions of our own data will be stored in a separate file and will be given a suffix when it is moved.",
+    "text": "Population\nThe DD2 data are uploaded to SDS, and they check the validity of the CPR-numbers before encrypting them. The data set DS_EXT_DD2_POP includes all individuals with a valid CPR-number. Individuals with a non-valid CPR-number are still included in the uploaded data, e.g. in DS_EXT_DD2CORE, but they will have a missing encrypted CPR-number (CPR_ENCRYPTED) and can thus not be linked across data sources. Previously (when we had local data), we would notify DD2 (Odense) about non-valid CPR-numbers, but this is no longer possible as we are not allowed to identify the individuals based on individual-level data on the servers.\nThe data files uploaded by us have the prefix DS_EXT_. Data are available in 2 versions; the initial upload version (without suffix) and the updated versions (with suffix _230601, _231026, etc., corresponding to the date of the update on SDS). The registry data (views) will always be based on the newest population, i.e., individuals in the newest version of DS_EXT_DD2_POP.",
     "crumbs": [
       "Routine registry data",
       "SDS"
@@ -393,6 +393,17 @@
     "crumbs": [
       "Additional DD2 data",
       "Neuropathy questionnaire (IDNC)"
+    ]
+  },
+  {
+    "objectID": "sites/registry/SDS.html#data-uploads",
+    "href": "sites/registry/SDS.html#data-uploads",
+    "title": "SDS",
+    "section": "Data uploads",
+    "text": "Data uploads\nThe first data were uploaded in 2022 when the server access was initially established. Since then, the data have been updated multiple times.\n\n\n\n\n\n\n\n\n\nShort description\nDetailed description\nDate\nAffected data sets\n\n\n\n\nOriginal upload\nUpload of data sets for the initial server access\nSummer 2022\nDD2CORE, DD2_POP, BIOBANK, DDDA, FOEDSELSDATA, IDNC, IL6_TNF\n\n\nGeneral update\nPopulation update and inclusion of data source FODSTATUS. The biobank was updated with additional measurements of CRP, c-peptide, glucose, and HOMA (from April 2022), and additional “pladebiomarkører” were added to IL6_TNF. DDDA data were updated (June 2022) before the registry closed. IDNC was trimmed to the current population.\nJune 2023 (_230621)\nDD2CORE, DD2_POP, BIOBANK, DDDA, FOEDSELSDATA, IDNC, IL6_TNF, FODSTATUS\n\n\nUpload of biobank data\nC-peptide and glucose (and therefore also HOMA) were changed, and the remaining “pladebiomarkører” were added to IL6_TNF, which is now complete\nFall 2023 (_231026)\nBIOBANK, IL6_TNF\n\n\nUpload of biobank data (genetics)\nGenetic variables (polygenic risk scores) were added to IL6_TNF (long format). All new variables are labelled “Gen1”\nApril 2024 (_240429)\nIL6_TNF\n\n\nUpload of biobank data (genetics) and DICTA variable\nAdditional genetic variables were added to IL6_TNF. In DD2CORE the DICTA variable was added.\nJuly 2024 (_240711)\nDD2CORE, IL6_TNF\n\n\n\nNB: we try to distinguish between “update” and “upload”. An “update” means that the population, and therefore also the registry data, has changed, and that the entire DD2 cohort should be seen as a new version. By “upload” we mean additional data uploaded to the current population. This could for example be adding analyses from the biobank or adding a new data source, i.e., something that doesn’t affect the population itself. The plan is to make one annual update (November/end of the year) and two to three additional uploads during per year.",
+    "crumbs": [
+      "Routine registry data",
+      "SDS"
     ]
   }
 ]

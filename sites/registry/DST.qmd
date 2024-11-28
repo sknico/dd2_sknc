@@ -37,8 +37,11 @@ The first data were uploaded in 2022 when the server access was initially establ
 
 | Short description | Detailed description | Date | Affected data sets |
 |----------------|-----------------------|:---------------|-----------------:|
-| Original upload | Upload of data sets for the initial server access | Summer 2022 | DD2CORE, DD2_POP, BIOBANK, DDDA, FOEDSELSDATA, IDNC, IL6_TNF |
+| Original upload | Upload of data sets for the initial server access. Data from the original upload are located in the folder with "Eksterne data" under the rawdata folder (Rawdata > 708637 > Eksterne data). DD2 data are in the 20230104_FraSDS folder, whereas SDS data are in the folder 20221020_FraSDS. Registry data are in the Grunddata folder  | Summer 2022 | DD2CORE, DD2_POP, BIOBANK, DDDA, FOEDSELSDATA, IDNC, IL6_TNF |
 | General update (DDV) | Population update (incl. DICTA variable), updated biobank data (variables from April 2022), including the new data source FODSTATUS, and a general update of registry data. IL6_TNF was updated with all 22 "pladebiomarkører" and renamed to PLADEBIOMARK. The data set GENETIK was also included. | November 2024 | DD2CORE, DD2_POP, BIOBANK, DDDA, FOEDSELSDATA, IDNC, FODSTATUS, BIOMARK, GENETIK |
+
+
+
 
 NB: we try to distinguish between "update" and "upload". An "update" means that the population, and therefore also the registry data, has changed, and that the entire DD2 cohort should be seen as a new version. By "upload" we mean additional data uploaded to the current population. This could for example be adding analyses from the biobank or adding a new data source, i.e., something that doesn't affect the population itself. The plan is to make one annual update (November/end of the year) and two to three additional uploads during per year.
 

@@ -23,6 +23,40 @@ The data files uploaded by us have the prefix `DS_EXT_`. Data are available in 2
 
 Data on SDS are based on data views, i.e., we have access to data updated (almost) on a day-to-day basis. The update file (SAS `IN06014.OpdateringsOversigt`) contains the time of the current update for each data set in the library. The metadata file (SAS `metadata.metadata_allcolumns`) contains information about variables in the data. For research projects, in order to be able to reproduce results, remember to save a copy of the research data in a suitable project folder on SDS.
 
+<!-- Teams-besked fra Uffe (redigeret) -->
+
+::: callout-note
+Using SAS, if you extract data from views you will likely save a lot of time by writing code that is proper sql, rather than using SAS-specific syntax
+:::
+
+```{r, eval=FALSE}
+Example:
+1)
+
+proc sql;
+  create table x as
+  select *
+  from data.lab_lab_dm_forsker(where = (analysiscode in: ([list of npucodes])));
+quit; * takes ~40 minutes to run
+
+2)
+proc sql;
+  create table x as
+  select *
+  from data.lab_lab_dm_forsker
+  where analysiscode eqt [npucode1] or ... or analysiscode eqt [npucodeN];
+quit; * takes ~40 minutes to run
+
+
+3)
+proc sql;
+  create table x as
+  select *
+  from data.lab_lab_dm_forsker
+  where analysiscode like [npucode1%] or ... or analysiscode like [npucodeN%];
+quit; * takes ~10-20 seconds to run
+```
+
 Further documentation on the main data sources can be found here:
 
 -   CPR-registret (CPR): [documentation](https://sundhedsdatastyrelsen.dk/da/registre-og-services/om-de-nationale-sundhedsregistre/personoplysninger-og-sundhedsfaglig-beskaeftigelse/cpr-registeret)\
@@ -54,16 +88,15 @@ In each research project, it is the individual researchers' responsibility to en
 The first data were uploaded in 2022 when the server access was initially established. Since then, the data have been updated multiple times.
 
 | Short description | Detailed description | Date | Affected data sets |
-|-----------------|--------------------------------|:--------------|-------------------------:|
+|-----------------|--------------------|:----------------|----------------:|
 | Original upload | Upload of data sets for the initial server access | Summer 2022 | DD2CORE, DD2_POP, BIOBANK, DDDA, FOEDSELSDATA, IDNC, IL6_TNF |
 | General update | Population update and inclusion of data source FODSTATUS. The biobank was updated with additional measurements of CRP, c-peptide, glucose, and HOMA (from April 2022), and additional "pladebiomarkører" were added to IL6_TNF. DDDA data were updated (June 2022) before the registry closed. IDNC was trimmed to the current population. | June 2023 (\_230621) | DD2CORE, DD2_POP, BIOBANK, DDDA, FOEDSELSDATA, IDNC, IL6_TNF, FODSTATUS |
 | Upload of biobank data | C-peptide and glucose (and therefore also HOMA) were changed, and the remaining "pladebiomarkører" were added to IL6_TNF, which is now complete | Fall 2023 (\_231026) | BIOBANK, IL6_TNF |
 | Upload of biobank data (genetics) | Genetic variables (polygenic risk scores) were added to IL6_TNF (long format). All new variables are labelled "Gen1" | April 2024 (\_240429) | IL6_TNF |
 | Upload of biobank data (genetics) and DICTA variable | Additional genetic variables were added to IL6_TNF. In DD2CORE the DICTA variable was added. | July 2024 (\_240711) | DD2CORE, IL6_TNF |
-| Population update and upload of genetics | The population (and registries) was updated and additional genetic variables were included. We made the SDS update in the same round where the DST data were updated (genindstilling via DDV), and decided to rename IL6_TNF to PLADEBIOMARK including only the "pladebiomarkører", and including the genetic variables in a separate data set called GENETIK | November 2024 | DD2CORE, DD2_POP, PLADEBIOMARK, GENETIK | 
+| Population update and upload of genetics | The population (and registries) was updated and additional genetic variables were included. We made the SDS update in the same round where the DST data were updated (genindstilling via DDV), and decided to rename IL6_TNF to PLADEBIOMARK including only the "pladebiomarkører", and including the genetic variables in a separate data set called GENETIK | November 2024 | DD2CORE, DD2_POP, PLADEBIOMARK, GENETIK |
 
-NB: we try to distinguish between "update" and "upload". An "update" means that the population, and therefore also the registry data, has changed, and that the entire DD2 cohort should be seen as a new version. By "upload" we mean additional data uploaded to the current population. This could for example be adding analyses from the biobank or adding a new data source, i.e., something that doesn't affect the population itself. The plan is to make one annual update (November/end of the year) and two to three additional uploads during per year. 
-
+NB: we try to distinguish between "update" and "upload". An "update" means that the population, and therefore also the registry data, has changed, and that the entire DD2 cohort should be seen as a new version. By "upload" we mean additional data uploaded to the current population. This could for example be adding analyses from the biobank or adding a new data source, i.e., something that doesn't affect the population itself. The plan is to make one annual update (November/end of the year) and two to three additional uploads during per year.
 
 <!-- ## Simple versions of data (macro) -->
 

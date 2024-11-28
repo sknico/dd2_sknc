@@ -4,30 +4,25 @@ subtitle: "Primary data derived from DD2 research studies"
 ---
 {{< downloadthis ../../files/variable_documentation/DD2_questionnaire.csv dname="DD2_questionnaire" icon="file-earmark-text" label="Variable documentation" type="button" class="btn btn-light">}}
 
-
 IDNC is short for "International Diabetic Neuropathy Consortium". Read more about it here: <https://idnc.au.dk/about-idnc>.
 
 A list of 7,011 CPR-numbers from all individuals enrolled in DD2 by February were sent to the CPR registry to get their addresses. The only criteria to be included in the questionnaire study were that individuals should be enrolled in DD2 (February 2016), be alive (24 May 2016), and have a valid Danish address (24 May 2016). A total of 6,726 questionnaires were sent out in June 2016 (07 June 2016), and a reminder was sent in September 2016 (12 September 2016) and again in October 2016 (10 October 2016) to those who had not provided a response. A total of 5,755 questionnaires were returned during the fall of 2016 and the inclusion ended in January 2017 (24 January 2017). The questionnaire included questions about height, weight, smoking and alcohol, and physical activity. These questions were intended to be follow-up questions similar to those from the baseline questionnaire. In addition, the questionnaire included questions about falls, quality of life, sleep, mental health, neuropathy (in hand and feet) and pain. The questionnaire thus included the Michigan Neuropathy Screening Instrument questionnaire (MNSIq) and the Douleur Neuropathique en 4 Questions (DN4).
 
 Read more about the questionnaire in @Gylfadottir_pain_2020 and @Christensen_DiabCare_2020.\
-The questionnaire (in Danish) can be downloaded here: {{\< downloadthis ../../files/IDNC/KEA_endeligt_sporgeskema_til_tryk_260516.pdf\
-dname="KEA_endeligt_sporgeskema_til_tryk_260516" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}}\
+The questionnaire (in Danish) can be downloaded here: {{< downloadthis ../../files/IDNC/KEA_endeligt_sporgeskema_til_tryk_260516.pdf dname="KEA_endeligt_sporgeskema_til_tryk_260516" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}}\
 An English translation of the questionnaire is included in the supplement to @Gylfadottir_pain_2020.
 
 ## Variables
 The original questionnaire data included a total of around 109 variables (including some variables from the data cleaning process added by the working group). To ease working with data and to have some pre-defined variables/definitions, an additional 78 variables were created by the working group.
 
 The questions and variable definitions for the original variables can be downloaded here:
-{{\< downloadthis ../../files/IDNC/IDNC_sporgeskema_spg_svar.pdf\
-dname="IDNC_sporgeskema_spg_svar" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link"\>}}\
+{{< downloadthis ../../files/IDNC/IDNC_sporgeskema_spg_svar.pdf dname="IDNC_sporgeskema_spg_svar" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}}\
 
 The SAS syntax for the definition of the additional variables is here: 
-{{\< downloadthis ../../files/IDNC/06_change_variables_17182023sknc.sas\
-dname="06_change_variables" icon="file-earmark-code" label="Download" type="button" class="btn btn-link"\>}}\
+{{< downloadthis ../../files/IDNC/06_change_variables_17182023sknc.sas dname="06_change_variables" icon="file-earmark-code" label="Download" type="button" class="btn btn-link">}}\
 
 And the corresponding SAS formats for the additional variables is here: 
-{{\< downloadthis ../../files/IDNC/99_formats.sas\
-dname="99_formats" icon="file-earmark-code" label="Download" type="button" class="btn btn-link"\>}}\
+{{< downloadthis ../../files/IDNC/99_formats.sas dname="99_formats" icon="file-earmark-code" label="Download" type="button" class="btn btn-link">}}\
 
 (SAS syntax files can be opened using notepad if SAS is not installed)
 

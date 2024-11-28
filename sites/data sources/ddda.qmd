@@ -7,12 +7,9 @@ subtitle: "Secondary data from non-centralized data source"
 
 **Danish Diabetes Database for Adults** (DDDA) (Dansk Voksen Diabates Database, DVDD or NIP Diabetes) is a no longer active database from regionernes kliniske kvalitetsudviklingsprogram (RKKP). It was closed by 30 June 2022. It has now been replaced by Dansk Diabetes Database (DDD/DDiD), which has been active since 1 July 2022.
 
-Extracts from the [online](https://www.rkkp-dokumentation.dk/Public/Databases.aspx?db=43&db2=1000000549) DDDA documentation (downloaded 07 September 2023) about the population and variables can be downloaded here: {{\< downloadthis ../../files/DDDA/RKKP_Dokumentation_DDDA_variable.pdf\
-dname="RKKP_Dokumentation_DDDA_variable" icon="file-earmark-pdf" label="Variables" type="button" class="btn btn-link"\>}} {{\< downloadthis ../../files/DDDA/RKKP_Dokumentation_DDDA_population.pdf\
-dname="RKKP_Dokumentation_DDDA_population" icon="file-earmark-pdf" label="Population" type="button" class="btn btn-link"\>}}\
-And additional documents: {{\< downloadthis ../../files/DDDA/dvdd_datadefinitioner_mar021.pdf\
-dname="dvdd_datadefinitioner_mar021" icon="file-earmark-pdf" label="Datadefinitioner" type="button" class="btn btn-link"\>}} {{\< downloadthis ../../files/DDDA/dvdd_registreringsskema_1marts2017_endelig.pdf\
-dname="dvdd_registreringsskema_1marts2017_endelig" icon="file-earmark-pdf" label="Registreringsskema" type="button" class="btn btn-link"\>}}
+Extracts from the [online](https://www.rkkp-dokumentation.dk/Public/Databases.aspx?db=43&db2=1000000549) DDDA documentation (downloaded 07 September 2023) about the population and variables can be downloaded here: {{< downloadthis ../../files/DDDA/RKKP_Dokumentation_DDDA_variable.pdf dname="RKKP_Dokumentation_DDDA_variable" icon="file-earmark-pdf" label="Variables" type="button" class="btn btn-link">}} {{< downloadthis ../../files/DDDA/RKKP_Dokumentation_DDDA_population.pdf dname="RKKP_Dokumentation_DDDA_population" icon="file-earmark-pdf" label="Population" type="button" class="btn btn-link">}}
+
+And additional documents: {{< downloadthis ../../files/DDDA/dvdd_datadefinitioner_mar021.pdf dname="dvdd_datadefinitioner_mar021" icon="file-earmark-pdf" label="Datadefinitioner" type="button" class="btn btn-link">}} {{< downloadthis ../../files/DDDA/dvdd_registreringsskema_1marts2017_endelig.pdf dname="dvdd_registreringsskema_1marts2017_endelig" icon="file-earmark-pdf" label="Registreringsskema" type="button" class="btn btn-link">}}
 
 See also @Jorgensen_ClinEpi_2016 for further information about the database.
 

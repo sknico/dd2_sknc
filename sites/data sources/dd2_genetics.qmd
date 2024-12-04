@@ -7,7 +7,7 @@ subtitle: "Primary data derived from DD2 research studies"
 We have received data on genetics/polygenic risk scores (PRS) in multiple rounds.
 In the following section we will go through the data files we have received. Of note, we also received PRS data in October 2023 which was used for one of the birth weight studies (@Hansen_Diabetologia_2023), but these data have not been uploaded to the servers. 
 
-On SDS, the first and second rounds of data were originally included in the 
+On SDS, the first and second rounds of data were originally included in the `IL6_TNF` data, but this data source has now been split into `Pladebiomark` including the 22 "pladebiomarkør" biomarkers  and `Genetik` including the genetics data described here. 
 
 
 

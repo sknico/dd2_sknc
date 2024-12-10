@@ -32,15 +32,18 @@ Data include 9,997 observations and 65 variables. Using the same procedure as in
 
 Documentation and README files can be downloaded here: {{< downloadthis ../../files/biobank/DD2_dummy.pdf dname="DD2_genetics_round 3_documentation_241122" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}} {{< downloadthis ../../files/biobank/DD2_dummy.pdf dname="README_DD2_genetic_data_round_3_241122" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}}
 
-We also received a document about the r2 values which can be downloaded here:  {{< downloadthis ../../files/biobank/DD2_dummy.pdf dname="YKL40_r2_info_score_hrc" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}}
+<!-- We also received a document about the r2 values which can be downloaded here:  {{< downloadthis ../../files/biobank/DD2_dummy.pdf dname="YKL40_r2_info_score_hrc" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}} -->
+
+For single SNPs, the original variable name corresponded to `chr:position:allele1:allele2_effect-allele`, however, SAS replaces `:` with `_` and adds `_` in the beginning of the variable name (as a variable name can't start with a number), i.e., the variable name is currently `_chr_position_allele1_allele2_effect-allele`. 
+Additionally, a document including the r2 values is available on the servers. 
 
 
 ### Round 3, additional data for Tarun (Tar1) 
 
-In addition to the Round 3 genetics data, we received a data file including a broader list with around 1300 SNPs (Tarun Veer Singh Ahluwalia is lead on the project). The file thus included 9,997 observations and 1309 variables, and we again restricted to the n=9,856 individuals with valid, unique, and non-missing ID and barcode. Data were marked with `CV_on_plate="Tar1"`.  
+In addition to the Round 3 genetics data, we received a data file including a broader list with around 1300 SNPs (Tarun Veer Singh Ahluwalia is lead on the project). The file thus included 9,997 observations and 1309 variables, and we again restricted to the n=9,856 individuals with valid, unique, and non-missing ID and barcode. Data were marked with `CV_on_plate="Tar1"`, and variable names correspond to `_chr_position_allele1_allele2_effect-allele`. A document including the r2 values is available on the servers.  
 
 Documentation and README files can be downloaded here: {{< downloadthis ../../files/biobank/DD2_dummy.pdf dname="DD2_SNP_list_Tarun_documentation_241122" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}} {{< downloadthis ../../files/biobank/DD2_dummy.pdf dname="README_DD2_SNP_list_Tarun_241122" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}}
-
-We also received a document about the r2 values which can be downloaded here:  {{< downloadthis ../../files/biobank/DD2_dummy.pdf dname="SNP_list_Tarun_r2_info_score_hrc" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}}
+ 
+<!-- We also received a document about the r2 values which can be downloaded here:  {{< downloadthis ../../files/biobank/DD2_dummy.pdf dname="SNP_list_Tarun_r2_info_score_hrc" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}} -->
 
 

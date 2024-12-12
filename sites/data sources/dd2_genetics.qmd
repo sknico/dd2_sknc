@@ -7,13 +7,13 @@ subtitle: "Primary data derived from DD2 research studies"
 We have received data on genetics/polygenic risk scores (PRS) in multiple rounds.
 In the following section we will go through the data files we have received. Of note, we also received PRS data in October 2023 which was used for one of the birth weight studies (@Hansen_Diabetologia_2023), but these data have not been uploaded to the servers. 
 
-On SDS, the first and second rounds of data were originally included in the `IL6_TNF` data, but this data source has now been split into `Pladebiomark` including the 22 "pladebiomarkør" biomarkers  and `Genetik` including the genetics data described here. 
+On SDS, the first and second rounds of data were originally included in the `IL6_TNF` data, but this data source has now been split into `Biomark` including the 22 "pladebiomarkør" biomarkers  and `Genetik` including the genetics data described here. The variables in the `Genetik` has been renamed, i.e., `Assay = GeneMarker`, `Calc_Conc_Mean = Value`, and `CV_on_plate = data_round`.
 
 
 
 ## Round 1 (April 2024 - Gen1)
 
-Data include 9,997 observations and 104 variables. Some individuals had missing ID (but potentially non-missing barcode) and some had duplicate barcodes. The n=215 individuals with missing ID were checked by JSN, and 85 of these were denoted "ok". Around 500 individuals were originally analysed, but for various reasons, information on all the PRS values had been deleted (see README file for reasons). Data were restricted to n=9,856 individuals with valid, unique, and non-missing ID and barcode, and transformed to long format. The variables geno_id, rem, p_id (text), DD2_projectid, DD2_barcode were removed from data (to align with the format from the original biobank file, `IL6_TNF`). Before upload to SDS (`IL6_TNF_240411`), 69 individuals were excluded as they were not among the n=11,381 individuals in the DD2 cohort (SDS, April 2023). Data were marked with `CV_on_plate="Gen1"`.  
+Data include 9,997 observations and 104 variables. Some individuals had missing ID (but potentially non-missing barcode) and some had duplicate barcodes. The n=215 individuals with missing ID were checked by JSN, and 85 of these were denoted "ok". Around 500 individuals were originally analysed, but for various reasons, information on all the PRS values had been deleted (see README file for reasons). Data were restricted to n=9,856 individuals with valid, unique, and non-missing ID and barcode, and transformed to long format. The variables geno_id, rem, p_id (text), DD2_projectid, DD2_barcode were removed from data (to align with the format from the original biobank file, `IL6_TNF`). Before upload to SDS (`IL6_TNF_240411`), 69 individuals were excluded as they were not among the n=11,381 individuals in the DD2 cohort (SDS, April 2023). Data were marked with `data_round="Gen1"`.  
 
 Documentation and README files can be downloaded here (jeg skal lige have tjekket om dokumenterne må uploades): {{< downloadthis ../../files/biobank/DD2_dummy.pdf dname="DD2_genetics_round 1_documentation_240313" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}} {{< downloadthis ../../files/biobank/DD2_dummy.pdf dname="README_DD2_genetic_data_round_1_240313" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}}
 
@@ -21,14 +21,14 @@ The PRS `oram_T1D` has been replaced by `oram_T1D_v2` in Round 2 as there was an
 
 ## Round 2 (July 2024 - Gen2)
 
-Data include 9,997 observations and 28 variables. Using the same procedure as in Round 1, we end up with n=9,856 individuals with valid, unique, and non-missing ID and barcode. Again, data were transformed to long format, and the variables geno_id, rem, p_id (text), DD2_projectid, DD2_barcode were removed. Before upload to SDS (`IL6_TNF_240711`), 69 individuals were excluded as they were not among the n=11,381 individuals in the DD2 cohort (April 2023). Data were marked with `CV_on_plate="Gen2"`.  
+Data include 9,997 observations and 28 variables. Using the same procedure as in Round 1, we end up with n=9,856 individuals with valid, unique, and non-missing ID and barcode. Again, data were transformed to long format, and the variables geno_id, rem, p_id (text), DD2_projectid, DD2_barcode were removed. Before upload to SDS (`IL6_TNF_240711`), 69 individuals were excluded as they were not among the n=11,381 individuals in the DD2 cohort (April 2023). Data were marked with `data_round="Gen2"`.  
 
 Documentation and README files can be downloaded here: {{< downloadthis ../../files/biobank/DD2_dummy.pdf dname="DD2_genetics_round 2_documentation_240710" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}} {{< downloadthis ../../files/biobank/DD2_dummy.pdf dname="README_DD2_genetic_data_round_2_240710" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}}
 
 
 ## Round 3 (December 2024 - Gen3)
 
-Data include 9,997 observations and 65 variables. Using the same procedure as in Round 1 and Round 2, we end up with n=9,856 individuals with valid, unique, and non-missing ID and barcode. Data were marked with `CV_on_plate="Gen3"`.  
+Data include 9,997 observations and 65 variables. Using the same procedure as in Round 1 and Round 2, we end up with n=9,856 individuals with valid, unique, and non-missing ID and barcode. Data were marked with `data_round="Gen3"`.  
 
 Documentation and README files can be downloaded here: {{< downloadthis ../../files/biobank/DD2_dummy.pdf dname="DD2_genetics_round 3_documentation_241122" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}} {{< downloadthis ../../files/biobank/DD2_dummy.pdf dname="README_DD2_genetic_data_round_3_241122" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}}
 
@@ -40,7 +40,7 @@ Additionally, a document including the r2 values is available on the servers.
 
 ### Round 3, additional data for Tarun (Tar1) 
 
-In addition to the Round 3 genetics data, we received a data file including a broader list with around 1300 SNPs (Tarun Veer Singh Ahluwalia is lead on the project). The file thus included 9,997 observations and 1309 variables, and we again restricted to the n=9,856 individuals with valid, unique, and non-missing ID and barcode. Data were marked with `CV_on_plate="Tar1"`, and variable names correspond to `_chr_position_allele1_allele2_effect-allele`. A document including the r2 values is available on the servers.  
+In addition to the Round 3 genetics data, we received a data file including a broader list with around 1300 SNPs (Tarun Veer Singh Ahluwalia is lead on the project). The file thus included 9,997 observations and 1309 variables, and we again restricted to the n=9,856 individuals with valid, unique, and non-missing ID and barcode. Data were marked with `data_round="Tar1"`, and variable names correspond to `_chr_position_allele1_allele2_effect-allele`. A document including the r2 values is available on the servers.  
 
 Documentation and README files can be downloaded here: {{< downloadthis ../../files/biobank/DD2_dummy.pdf dname="DD2_SNP_list_Tarun_documentation_241122" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}} {{< downloadthis ../../files/biobank/DD2_dummy.pdf dname="README_DD2_SNP_list_Tarun_241122" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}}
  

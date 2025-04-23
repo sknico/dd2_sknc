@@ -67,5 +67,5 @@ The routine registry data is also secondary data, however, it is only available 
 <!-- :::{.column-page-right} -->
 
 ::: column-screen-inset-right
-![Overview of data sources in the DD2 cohort (@Kristensen_ClinEpi_2024).](/figures/Figure_1.png){width="100%"}
+![Overview of data sources in the DD2 cohort (@Kristensen_ClinEpi_2024). Notes: *These data can be accessed through collaboration with DD2 research groups.](/figures/Figure_1.png){width="100%"}
 :::

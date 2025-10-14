@@ -19,6 +19,7 @@ website:
     search: true
     #collapse-level: 0  # antal sider under hver section i sidebar der vises pr. default #0 betyder alt er foldet ud
     collapse-level: 1 #viser kun overskriften, og så skal man selv folde det ud 
+    active: none
     contents:
   #        - index.qmd #index er inkluderet i "home" men jeg har fjernet den fra sidebar
       #- section: "Data sources"

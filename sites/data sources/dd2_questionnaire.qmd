@@ -10,6 +10,8 @@ subtitle: "Primary DD2 enrollment data"
 
 Data from the DD2 questionnaire include the responses along with general information about the individual.
 
-The DD2 questionnaire can be downloaded here: {{< downloadthis ../files/DD2_registrering/registreringsskema_almen_praksis.pdf dname="registreringsskema_almen_praksis" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}}
+The DD2 questionnaire can be downloaded here: {{< downloadthis ../../files/DD2_registrering/registreringsskema_almen_praksis.pdf dname="registreringsskema_almen_praksis" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}}
 
---\> det skal afklares med Jens hvordan data ser ud, når det trækkes fra den nye server.
+
+As of summer 2025, DD2 was migrated to a new server setup (in Odense). DCE only has data from the old setup. 
+

@@ -140,7 +140,7 @@ Please note that c-peptide is now in another unit (it is just the old unit divid
 
 ### HOMA
 
-[HOMA](https://www.rdm.ox.ac.uk/about/our-clinical-facilities-and-mrc-units/DTU/software/homa/history) values are calculated based on c-peptide and glucose. We use the Oxford calculator which can be downloaded from the website: <https://www.dtu.ox.ac.uk/homacalculator/download.php>.
+[HOMA](https://www.rdm.ox.ac.uk/about/our-clinical-facilities-and-mrc-units/DTU/software/homa/history){target="_blank"} values are calculated based on c-peptide and glucose. We use the Oxford calculator which can be downloaded from the website: <https://www.dtu.ox.ac.uk/homacalculator/download.php>{target="_blank"}. Since summer 2024, access to the HOMA calculator requires a licence (should be free of charge for "academic researchers"). 
 
 HOMA values in the data are calculated based on the c-peptide and glucose measurements received during the summer 2023. HOMA has only been estimated for glucose values in the interval 3.0-25 and c-peptide 0.2-3.5 (because of an updated Oxford HOMA calculator where values out of range cause problems in the excel calculator). Some individuals might therefore have glucose and c-peptide values but no HOMA values in the new data. 
 

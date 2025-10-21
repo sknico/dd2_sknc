@@ -207,7 +207,7 @@
     "href": "sites/data sources/dd2_biobank.html#c-peptide-and-glucose-full",
     "title": "DD2 biobank",
     "section": "C-peptide and glucose (full)",
-    "text": "C-peptide and glucose (full)\nDuring the summer 2023 we have received data on c-peptide (July 2023) and glucose (August 2023). These files include all measurements from the biobank (cleaned), and results from these files will thus replace all the other measurements from earlier data sets. We now have the files:\n\ndd2_all_C_peptide_14July2023.xls: Includes n=9,762 project_id with data on c-peptide. The file also includes information about analysis date, sampling date, freezing date, unit, and kit. The following data management has been done by DD2 (Biobank/Sidsel) before we received the file:\n\n\n\n\n\n\n\nQuote from e-mail\n\n\n\n\n- Jeg har erstattet alle 1254 observationer, som havde\"gamle\" målinger (før 28. feb 2015) med opdaterede målinger med nyt kit/assay (efter 28. feb 2015).\n- Jeg har slettet 6 observationer, som kun havde en \"gammel\" måling og INGEN opdateret genmåling\n- Jeg har renset op i data, så hvert individ kun fremgår med én måling, som er analyseret vha. nyt kit/assay \n\n\nPlease note that c-peptide is now in another unit (it is just the old unit divided by 1000).\n\nDD2_glukoser_2023_08_23.xlsx: The data file includes n=9,563 projekt_id and information about glucose, units, and dates.\n\n\nHOMA\nHOMA values are calculated based on c-peptide and glucose. We use the Oxford calculator which can be downloaded from the website: https://www.dtu.ox.ac.uk/homacalculator/download.php.\nHOMA values in the data are calculated based on the c-peptide and glucose measurements received during the summer 2023. HOMA has only been estimated for glucose values in the interval 3.0-25 and c-peptide 0.2-3.5 (because of an updated Oxford HOMA calculator where values out of range cause problems in the excel calculator). Some individuals might therefore have glucose and c-peptide values but no HOMA values in the new data.",
+    "text": "C-peptide and glucose (full)\nDuring the summer 2023 we have received data on c-peptide (July 2023) and glucose (August 2023). These files include all measurements from the biobank (cleaned), and results from these files will thus replace all the other measurements from earlier data sets. We now have the files:\n\ndd2_all_C_peptide_14July2023.xls: Includes n=9,762 project_id with data on c-peptide. The file also includes information about analysis date, sampling date, freezing date, unit, and kit. The following data management has been done by DD2 (Biobank/Sidsel) before we received the file:\n\n\n\n\n\n\n\nQuote from e-mail\n\n\n\n\n- Jeg har erstattet alle 1254 observationer, som havde\"gamle\" målinger (før 28. feb 2015) med opdaterede målinger med nyt kit/assay (efter 28. feb 2015).\n- Jeg har slettet 6 observationer, som kun havde en \"gammel\" måling og INGEN opdateret genmåling\n- Jeg har renset op i data, så hvert individ kun fremgår med én måling, som er analyseret vha. nyt kit/assay \n\n\nPlease note that c-peptide is now in another unit (it is just the old unit divided by 1000).\n\nDD2_glukoser_2023_08_23.xlsx: The data file includes n=9,563 projekt_id and information about glucose, units, and dates.\n\n\nHOMA\nHOMA values are calculated based on c-peptide and glucose. We use the Oxford calculator which can be downloaded from the website: https://www.dtu.ox.ac.uk/homacalculator/download.php. Since summer 2024, access to the HOMA calculator requires a licence (should be free of charge for “academic researchers”).\nHOMA values in the data are calculated based on the c-peptide and glucose measurements received during the summer 2023. HOMA has only been estimated for glucose values in the interval 3.0-25 and c-peptide 0.2-3.5 (because of an updated Oxford HOMA calculator where values out of range cause problems in the excel calculator). Some individuals might therefore have glucose and c-peptide values but no HOMA values in the new data.",
     "crumbs": [
       "Additional DD2 data",
       "DD2 biobank"
@@ -227,45 +227,45 @@
   {
     "objectID": "sites/data sources/dd2_genetics.html",
     "href": "sites/data sources/dd2_genetics.html",
-    "title": "Genetics - polygenic risk scores",
+    "title": "Genetic variables",
     "section": "",
     "text": "We have received data on genetics/polygenic risk scores (PRS) in multiple rounds. In the following section we will go through the data files we have received. Of note, we also received PRS data in October 2023 which was used for one of the birth weight studies (Hansen et al. (2023)), but these data have not been uploaded to the servers.\nOn SDS, the first and second rounds of data were originally included in the IL6_TNF data, but this data source has now been split into Biomark including the 22 “pladebiomarkør” biomarkers and Genetik including the genetics data described here. The variables in Genetik has been renamed, i.e., Assay = GeneMarker, Calc_Conc_Mean = Value, and CV_on_plate = data_round.",
     "crumbs": [
       "Additional DD2 data",
-      "Genetics - polygenic risk scores"
+      "Genetic variables"
     ]
   },
   {
     "objectID": "sites/data sources/dd2_genetics.html#round-1-april-2024---gen1",
     "href": "sites/data sources/dd2_genetics.html#round-1-april-2024---gen1",
-    "title": "Genetics - polygenic risk scores",
+    "title": "Genetic variables",
     "section": "Round 1 (April 2024 - Gen1)",
     "text": "Round 1 (April 2024 - Gen1)\nData include 9,997 observations and 104 variables. Some individuals had missing ID (but potentially non-missing barcode) and some had duplicate barcodes. The n=215 individuals with missing ID were checked by JSN, and 85 of these were denoted “ok”. Around 500 individuals were originally analysed, but for various reasons, information on all the PRS values had been deleted (see README file for reasons). Data were restricted to n=9,856 individuals with valid, unique, and non-missing ID and barcode, and transformed to long format. The variables geno_id, rem, p_id (text), DD2_projectid, DD2_barcode were removed from data (to align with the format from the original biobank file, IL6_TNF). Before upload to SDS (IL6_TNF_240411), 69 individuals were excluded as they were not among the n=11,381 individuals in the DD2 cohort (SDS, April 2023). Data were marked with data_round=\"Gen1\".\nDocumentation and README files can be downloaded here (jeg skal lige have tjekket om dokumenterne må uploades):  Download   Download \nThe PRS oram_T1D has been replaced by oram_T1D_v2 in Round 2 as there was an error in the calculation from Round 1. The variable from Round 1 should therefore not be used.",
     "crumbs": [
       "Additional DD2 data",
-      "Genetics - polygenic risk scores"
+      "Genetic variables"
     ]
   },
   {
     "objectID": "sites/data sources/dd2_genetics.html#round-2-july-2024---gen2",
     "href": "sites/data sources/dd2_genetics.html#round-2-july-2024---gen2",
-    "title": "Genetics - polygenic risk scores",
+    "title": "Genetic variables",
     "section": "Round 2 (July 2024 - Gen2)",
     "text": "Round 2 (July 2024 - Gen2)\nData include 9,997 observations and 28 variables. Using the same procedure as in Round 1, we end up with n=9,856 individuals with valid, unique, and non-missing ID and barcode. Again, data were transformed to long format, and the variables geno_id, rem, p_id (text), DD2_projectid, DD2_barcode were removed. Before upload to SDS (IL6_TNF_240711), 69 individuals were excluded as they were not among the n=11,381 individuals in the DD2 cohort (April 2023). Data were marked with data_round=\"Gen2\".\nDocumentation and README files can be downloaded here:  Download   Download",
     "crumbs": [
       "Additional DD2 data",
-      "Genetics - polygenic risk scores"
+      "Genetic variables"
     ]
   },
   {
     "objectID": "sites/data sources/dd2_genetics.html#round-3-december-2024---gen3",
     "href": "sites/data sources/dd2_genetics.html#round-3-december-2024---gen3",
-    "title": "Genetics - polygenic risk scores",
+    "title": "Genetic variables",
     "section": "Round 3 (December 2024 - Gen3)",
     "text": "Round 3 (December 2024 - Gen3)\nData include 9,997 observations and 65 variables. Using the same procedure as in Round 1 and Round 2, we end up with n=9,856 individuals with valid, unique, and non-missing ID and barcode. Data were marked with data_round=\"Gen3\".\nDocumentation and README files can be downloaded here:  Download   Download \n\nFor single SNPs, the original variable name corresponded to chr:position:allele1:allele2_effect-allele, however, SAS replaces : with _ and adds _ in the beginning of the variable name (as a variable name can’t start with a number), i.e., the variable name is currently _chr_position_allele1_allele2_effect-allele. Additionally, a document including the r2 values is available on the servers.\n\nRound 3, additional data for Tarun (Tar1)\nIn addition to the Round 3 genetics data, we received a data file including a broader list with around 1300 SNPs (Tarun Veer Singh Ahluwalia is lead on the project). The file thus included 9,997 observations and 1309 variables, and we again restricted to the n=9,856 individuals with valid, unique, and non-missing ID and barcode. Data were marked with data_round=\"Tar1\", and variable names correspond to _chr_position_allele1_allele2_effect-allele. A document including the r2 values is available on the servers.\nDocumentation and README files can be downloaded here:  Download   Download",
     "crumbs": [
       "Additional DD2 data",
-      "Genetics - polygenic risk scores"
+      "Genetic variables"
     ]
   },
   {

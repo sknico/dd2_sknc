@@ -59,14 +59,14 @@ website:
         - sites/registry/DST.qmd
         
         
-      - text: "---"
-        
-      - section: "How to work"
-        contents: 
-        - sites/working/working.qmd
-        - sites/working/data_upload.qmd
-        - sites/working/macro_syntax.qmd
-        
+      # - text: "---"
+      #   
+      # - section: "How to work"
+      #   contents: 
+      #   - sites/working/working.qmd
+      #   - sites/working/data_upload.qmd
+      #   - sites/working/macro_syntax.qmd
+      #   
         
         
 format:

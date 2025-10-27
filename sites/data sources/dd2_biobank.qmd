@@ -15,7 +15,7 @@ The website is currently under development. Most of the documentation (enclosed 
 
 When patients are enrolled in the DD2, blood and a urine samples are collected and stored in the biobank in Vejle. The samples are all collected at DD2 *baseline*. No automatic or standard analyses are conducted, but DD2 projects/subprojects can have the samples analyzed if (additional) analyses are needed - the timing for the analysis results will always be baseline DD2, because that's when the blood/urine sample was collected.
 
-Further information about the initial idea about the biobank: @Christensen_ClinEpi_2012.\
+For fuurther information about the initial idea about the biobank, please see @Christensen_ClinEpi_2012.\
 The documentation for the biobank can be downloaded here (Danish):{{< downloadthis ../../files/biobank/vejledning-i-dd2-proevehaandtering_lab_hjemmeside.pdf
 dname="vejledning-i-dd2-proevehaandtering_lab_hjemmeside" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}} 
 

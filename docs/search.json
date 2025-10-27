@@ -152,7 +152,7 @@
     "href": "sites/data sources/dd2_biobank.html",
     "title": "DD2 biobank",
     "section": "",
-    "text": "Variable documentation\nWhen patients are enrolled in the DD2, blood and a urine samples are collected and stored in the biobank in Vejle. The samples are all collected at DD2 baseline. No automatic or standard analyses are conducted, but DD2 projects/subprojects can have the samples analyzed if (additional) analyses are needed - the timing for the analysis results will always be baseline DD2, because that’s when the blood/urine sample was collected.\nFurther information about the initial idea about the biobank: Christensen et al.\nThe documentation for the biobank can be downloaded here (Danish): Download",
+    "text": "Variable documentation\nWhen patients are enrolled in the DD2, blood and a urine samples are collected and stored in the biobank in Vejle. The samples are all collected at DD2 baseline. No automatic or standard analyses are conducted, but DD2 projects/subprojects can have the samples analyzed if (additional) analyses are needed - the timing for the analysis results will always be baseline DD2, because that’s when the blood/urine sample was collected.\nFor fuurther information about the initial idea about the biobank, please see Christensen et al.\nThe documentation for the biobank can be downloaded here (Danish): Download",
     "crumbs": [
       "Additional DD2 data",
       "DD2 biobank"

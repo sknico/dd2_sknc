@@ -41,7 +41,7 @@ website:
         #- sites/data sources/dd2_biobank_new_structure.qmd #jeg ved ikke om det nogensinde bliver til noget
         - sites/data sources/dd2_genetics.qmd
         - sites/data sources/dd2_idnc.qmd
-        - sites/data sources/dd2_qol.qmd
+        #- sites/data sources/dd2_qol.qmd  # nu inkluderet som del af "additional DD2 data" under Data structure
         
       - text: "Secondary data"
       - section: "External DD2 data"

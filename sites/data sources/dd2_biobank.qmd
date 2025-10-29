@@ -148,7 +148,7 @@ HOMA values in the data are calculated based on the c-peptide and glucose measur
 
 ## "Pladebiomarkører"
 
-During 2022-2023, we have received new data from additional biomarker analyses (from the Allan Vaag grant). The majority of the new biomarkers are so-called "pladebiomarkører" (as opposed to the current ones which are called "målebiomarkører") because of the way the analyses are performed. In practice, everyone enrolled as of the day the blood samples were taken from the biobank (in the beginning of 2022) were included in the analysis (approx. the first 9,200 individuals). Data in these files are in long format and include the following 22 biomarkers (all with unit pg/ml) and the dates refer to when we received the data files:
+During 2022-2023, we have received new data from additional biomarker analyses (from the Allan Vaag grant). The majority of the new biomarkers are so-called "pladebiomarkører" (as opposed to the current ones which are called "målebiomarkører") because of the way the analyses are performed. In practice, everyone enrolled as of the day the blood samples were taken from the biobank (in the beginning of 2022) were included in the analysis (approx. the first 9,200 individuals). A small number of individuals have multiple measurements for specific biomarkers, most likely due to sample dilution during the analytical process. Data are in long format and include the following 22 biomarkers (all with unit pg/ml) and the dates refer to when we received the data files:
 
 -   TNF-a (April 2022, n=9,202, pg/ml)
 -   IL-6 (April 2022, n=9,195, pg/ml)

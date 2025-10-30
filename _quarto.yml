@@ -29,9 +29,9 @@ website:
       - sites/data_structure.qmd 
 
       - text: "---"
-    
+      - text: "The DD2 data collection"
       - text: "Primary data"
-      - section: "DD2 enrollment information"
+      - section: "DD2 enrollment data"
         contents: 
         - sites/data sources/dd2_questionnaire.qmd
         
@@ -52,7 +52,8 @@ website:
        # - sites/data sources/diabase.qmd # der har været problemer med hvordan dataadgangen skal være, og vi har derfor i første omgang stoppet processen
         - sites/data sources/fodstatus.qmd
         - sites/data sources/foedsel.qmd
-         
+        
+      - text: "---"   
       - section: "Routine registry data"
         contents: 
         - sites/registry/SDS.qmd

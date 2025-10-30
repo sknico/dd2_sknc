@@ -8,8 +8,7 @@ title: "Data structure"
 
 The full DD2 research data are based on data collected and linked from multiple sources (@Kristensen_ClinEpi_2024). This page gives an overview of the data structure, the data sources, and the definitions of data types. Detailed descriptions of each data source are provided on the following pages.
 
-The data sources include **primary data**, i.e., data unique to DD2, including data and material collected from participants at enrollment, and additional primary data from nested research studies in the DD2 cohort. The data also include **secondary data**, i.e., external data collected from other data sources and then linked to DD2. In addition, DD2 data (primary and secondary data) are linked to the nationwide routine registry data located in centralized databases (SDS and DST) (@Kristensen_ClinEpi_2024).
-
+Within the DD2 data collection, the data sources include **primary data**, i.e., data unique to DD2, including data and material collected from participants at enrollment, and additional data from research studies within the DD2 cohort. The data also include **secondary data**, i.e., external data collected from other data sources and then linked to DD2. Data from the DD2 data collection are also linked to the nationwide routine registry data located in centralized databases on remote research servers (SDS and DST).
 
 
 ::: column-screen-inset-right
@@ -37,8 +36,8 @@ Enrollment in DD2 involves completing the DD2 questionnaire, undergoing the clin
 
 ## 2. Additional DD2 data
 
-Research studies in the DD2 setup can generate new primary data. The completeness and availability of these primary data depend on when the studies are conducted and when results become available. The data are generated among individuals already enrolled in DD2, and are likely not collected during the initial enrollment process. This could e.g., be data from studies collecting additional follow-up DD2 data (by a follow-up questionnaire or follow-up clinical examinations) or from intervention studies using individuals from the DD2 cohort.      
-The biological samples (blood and urine) are collected at enrollment and thus considered enrollment material. HOwever, they are stored in the biobank, and can be used for additional analyses in new research studies, e.g., biomarker analyses, genetic studies, or DNA sequencing. These analysis results add to the primary collected data by adding additional baseline information.
+Research studies in the DD2 setup can generate new primary data. The completeness and availability of these primary data depend on when the studies are conducted and when results become available. The data are generated among individuals already enrolled in DD2, and are likely not collected during the initial enrollment process. This could e.g., be data from studies collecting additional follow-up data (by a follow-up questionnaire or follow-up clinical examinations) or from intervention studies including individuals from the DD2 cohort.      
+The biological samples (blood and urine) are collected at enrollment and thus considered enrollment material. However, they are stored in the biobank, and can be used for additional analyses in new research studies, e.g., biomarker analyses, genetic studies, or DNA sequencing. These analysis results add to the primary collected data by adding additional baseline information.
 
 Examples of currently available additional DD2 data include
 
@@ -65,6 +64,6 @@ In general, updates from these sources may be possible, for example by extending
 
 # Routine Registry Data
 
-The routine registry data are also secondary data, however, they are only available on remote research servers. DD2 research data is uploaded to the servers hosted at Danmarks Statistik (DST, Statistics Denmark) and Sundhedsdatastyrelsen (SDS, The Danish Health Data Authority). On these servers, we have access to Danish medical and administrative registries, such as data from the CPR registry, hospital data from LPR, laboratory data from LAB-F etc. Linkage to additional registries and databases is possible with approval of data permission applications sent to Statistics Denmark or the Danish Health Data Authority.
+The routine registry data are also secondary data, however, they are only available on remote research servers and not considered part of the DD2 data collection. DD2 research data is uploaded to the servers hosted at Danmarks Statistik (DST, Statistics Denmark) and Sundhedsdatastyrelsen (SDS, The Danish Health Data Authority). On these servers, we have access to Danish medical and administrative registries, such as data from the CPR registry, hospital data from LPR, prescription data, laboratory data etc. Linkage to additional registries and databases is possible after approval of data permission applications sent to Statistics Denmark or the Danish Health Data Authority.
 
 

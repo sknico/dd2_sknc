@@ -25,7 +25,8 @@ website:
       #- section: "Data sources"
       #  contents:
       
-      - sites/data_collection.qmd 
+      #- sites/data_collection.qmd 
+      - sites/dd2_enrollment.qmd 
       - sites/data_structure.qmd 
 
       - text: "---"

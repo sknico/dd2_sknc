@@ -5,13 +5,13 @@ title: "DD2 enrollment"
 
 Enrollment in DD2 includes a questionnaire and the collection of urine and blood samples. The questionnaire includes a section with a few questions for the patient to fill out (at registration for enrollment) and another to be filled out by the enroller (at enrollment). All individuals older than 18 years of age diagnosed with diabetes within the last 2 years are eligible for inclusion in DD2 (previously, a longer diabetes duration was allowed).
 
-The individual can either sign up online (and then be contacted) or be approached by the practice personnel (e.g., during a regular diabetes check-up). The individual will receive an e-mail with a link to WebPatient, where a few questions should be filled out before the questionnaire will be sent to the practice. Hereafter, a DD2 examination will take place, where additional questions will be answered (e.g., a clinically assessed diabetes debut date) along with a physical examination (e.g., to measure weight, hip and waist circumference, and resting heart rate). The examination also involves a urine sample (morning urine) and a blood sample (fasting).
+Individuals may either sign up online and be contacted later, or be approached by practice personnel during routine care. The individual will receive an e-mail with a link to WebPatient, where a few questions should be filled out before the questionnaire will be sent to the practice. Hereafter, a DD2 examination will take place, where additional questions will be answered (e.g., a clinically assessed date of diabetes onset) along with a physical examination (e.g., to measure weight, hip and waist circumference, and resting heart rate). The examination also involves a urine sample (morning urine) and a blood sample (fasting).
 
 Enrollment can either take place in the general practice (GP) or in the outpatient clinic. Registration is also possible for individuals without internet access. For further information about the enrollment, please see the DD2 website (Danish): [Patient information](https://dd2.dk/praksis-og-amb/patientinformation){target="_blank"} and [Instructions and questionnaires](https://dd2.dk/praksis-og-amb/vejledninger-og-reg-skema){target="_blank"}.
 
 
 ::: column-screen-inset-right
-![Figure from <https://dd2.dk/om-dd2/hvem-er-med>{target="_blank"} (downloaded 30 October 2025) showing the general practicioners and outpatient clinic enrolling individuals in DD2.](/figures/DK_indrullering.png){width="60%"}
+![Figure from <https://dd2.dk/om-dd2/hvem-er-med>{target="_blank"} (downloaded 30 October 2025) showing the general practitioners and outpatient clinic enrolling individuals in DD2.](/figures/DK_indrullering.png){width="60%"}
 :::
 
 
@@ -23,7 +23,7 @@ The first individual was enrolled in DD2 in November 2010. Between 2010 and Apri
 ![Figure from @Kristensen_ClinEpi_2024 with a total of N=11,369 individuals. <br> Overview of enrollment in the DD2 cohort from November 2010 to April 2023. The plots show the cumulative and annual number of enrolled individuals.  ](/figures/enrollment_axis.png){width="50%"}
 :::
 
-The median age at enrollment was 61 years (IQR 53–69 years) and 41% were women (@Kristensen_ClinEpi_2024). Individuals are eligible for inclusion in DD2 if they diagnosed with diabetes within the last 2 years (a longer diabetes duration was allowed in the early phase). Median diabetes duration at time of enrollment was 1.3 years (IQR 0.4–2.9 years) and 87% were already prescribed with glucose-lowering treatment at the time of enrollment (@Kristensen_ClinEpi_2024). 
+The median age at enrollment was 61 years (IQR 53–69 years) and 41% were women (@Kristensen_ClinEpi_2024). Individuals are eligible for inclusion in DD2 if they are diagnosed with diabetes within the last 2 years (a longer diabetes duration was allowed in the early phase). Median diabetes duration at time of enrollment was 1.3 years (IQR 0.4–2.9 years) and 87% were already prescribed with glucose-lowering treatment at the time of enrollment (@Kristensen_ClinEpi_2024). 
 
 For more information about the enrollment and data collection, please contact DD2.
 Some of the general DD2 documents can also be downloaded here (Danish, downloaded 12 January 2024):

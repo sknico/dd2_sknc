@@ -2,9 +2,10 @@
 title: "Neuropathy questionnaire (IDNC)"
 subtitle: "Primary data derived from DD2 research studies"
 ---
-{{< downloadthis ../../files/variable_documentation/DD2_questionnaire.csv dname="DD2_questionnaire" icon="file-earmark-text" label="Variable documentation" type="button" class="btn btn-light">}}
 
-IDNC is short for "International Diabetic Neuropathy Consortium". Read more about it here: <https://idnc.au.dk/about-idnc>.
+Go to [Data documentation](dd2_idnc.qmd#data-documentation)
+
+IDNC is short for "International Diabetic Neuropathy Consortium". Read more about it here: <https://idnc.au.dk/about-idnc>{target="_blank"}.
 
 A list of 7,011 CPR-numbers from all individuals enrolled in DD2 by February were sent to the CPR registry to get their addresses. The only criteria to be included in the questionnaire study were that individuals should be enrolled in DD2 (February 2016), be alive (24 May 2016), and have a valid Danish address (24 May 2016). A total of 6,726 questionnaires were sent out in June 2016 (07 June 2016), and a reminder was sent in September 2016 (12 September 2016) and again in October 2016 (10 October 2016) to those who had not provided a response. A total of 5,755 questionnaires were returned during the fall of 2016 and the inclusion ended in January 2017 (24 January 2017). The questionnaire included questions about height, weight, smoking and alcohol, and physical activity. These questions were intended to be follow-up questions similar to those from the baseline questionnaire. In addition, the questionnaire included questions about falls, quality of life, sleep, mental health, neuropathy (in hand and feet) and pain. The questionnaire thus included the Michigan Neuropathy Screening Instrument questionnaire (MNSIq) and the Douleur Neuropathique en 4 Questions (DN4).
 
@@ -12,11 +13,46 @@ Read more about the questionnaire in @Gylfadottir_pain_2020 and @Christensen_Dia
 The questionnaire (in Danish) can be downloaded here: {{< downloadthis ../../files/IDNC/KEA_endeligt_sporgeskema_til_tryk_260516.pdf dname="KEA_endeligt_sporgeskema_til_tryk_260516" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}}\
 An English translation of the questionnaire is included in the supplement to @Gylfadottir_pain_2020.
 
-## Variables
-The original questionnaire data included a total of around 109 variables (including some variables from the data cleaning process added by the working group). To ease working with data and to have some pre-defined variables/definitions, an additional 78 variables were created by the working group.
-
 The questions and variable definitions for the original variables can be downloaded here:
 {{< downloadthis ../../files/IDNC/IDNC_sporgeskema_spg_svar.pdf dname="IDNC_sporgeskema_spg_svar" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}}\
+
+------------------------------------------------------------------------
+
+# Data documentation
+
+## IDNC.sas7bdat
+
+{{< downloadthis ../../files/variable_documentation/IDNC.xlsx dname="IDNC" icon="file-earmark-text" label="Variable documentation" type="button" class="btn btn-light">}}
+
+| Format (var x obs)    | Id variables   | Unique key      | Important dates |
+|-----------------------|----------------|-----------------|-----------------|
+| Wide (162 x 5,658)    | CPR    | CPR   | reg_dato, IDNCData_date             |
+
+
+The `IDNCData_date` takes the value `01JUN2016` for all individuals, as this is the date of the first IDNC data round. The local data also include the variable `tid` with the values `T1`, `T2` and `T3`, indicating in which round the individual answered the questionnaire (based on whether or not a reminder was sent). This variable is not included in the datasets on the servers. 
+
+<!-- Af en eller anden grund har JOK ikke inkluderet variablen tid i listen over variable der er med (han har sikkert sine grunde)  -->
+<!-- Syntax: "O:\HE_KEA-DATA-RAW0050\Forskermaskiner\DST - projektnr 708637 (SDS FSEID-00006159)\2022-06 - Initial upload (JOK)\juli2022\udtraek\syntax\02 Indlaesning af IDNC.sas" -->
+<!-- Oprindelig data: libname DD2 "O:\HE_KEA-DATA-RAW0050\Main Part\data\Created Data Sets\DD2 Cohort\Version 11FEB2022" access=readonly; -->
+<!-- Nyt data: libname dataout "O:\HE_KEA-DATA-RAW0050\Til Forskermaskine\juli2022\udtraek\filer_til_tjek"; -->
+
+
+| Row    | CPR      | IDNCData_date      | reg_dato      | ... |
+|--------|----------|----------------|---------------|-----|
+| 1      | CPR1     | 01JUN2016     | reg_dato1     | ... |
+| 2      | CPR2     | 01JUN2016     | reg_dato2     | ... |
+| 3      | CPR3     | 01JUN2016     | reg_dato3     | ... |
+| ...    | ...      | ...            | ...           | ... |
+| 12,098 | CPR12098 | 01JUN2016 | reg_dato12098 | ... |
+
+
+: Illustration of the overall data structure. The dataset is in wide format (162 x 5,658), with CPR as the unique key.
+
+
+The original data are stored locally at DCE and a slightly changed version (IDNC.sas7bdat) has been uploaded to DST and SDS. The changes are mainly due to similar definitions of variables, variable names and labels, and to comply with the SDS/DST regulations. 
+
+## Variables
+The original questionnaire data included a total of around 109 variables (including some variables from the data cleaning process added by the working group). To ease working with data and to have some pre-defined variables/definitions, an additional 78 variables were created by the working group.
 
 The SAS syntax for the definition of the additional variables is here: 
 {{< downloadthis ../../files/IDNC/06_change_variables_17182023sknc.sas dname="06_change_variables" icon="file-earmark-code" label="Download" type="button" class="btn btn-link">}}\
@@ -25,9 +61,3 @@ And the corresponding SAS formats for the additional variables is here:
 {{< downloadthis ../../files/IDNC/99_formats.sas dname="99_formats" icon="file-earmark-code" label="Download" type="button" class="btn btn-link">}}\
 
 (SAS syntax files can be opened using notepad if SAS is not installed)
-
-
-### Data 
-Data are stored locally at KEA and a slightly changed version has been uploaded to DST and SDS. The changes are mainly due to similar definitions of variables, variable names and labels, and to comply with the SDS/DST regulations. 
-
-

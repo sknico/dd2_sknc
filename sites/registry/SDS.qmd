@@ -15,13 +15,13 @@ Dataoversigt {{< downloadthis documents/2023-02-15-Bilag_C.xlsx dname="Bilag_C" 
 
 ## Population
 
-The DD2 data are uploaded to SDS, and they check the validity of the CPR-numbers before encrypting them. The data set `DS_EXT_DD2_POP` includes all individuals with a valid CPR-number. Individuals with a non-valid CPR-number are still included in the uploaded data, e.g. in `DS_EXT_DD2CORE`, but they will have a missing encrypted CPR-number (`CPR_ENCRYPTED`) and can thus not be linked across data sources. Previously (when we had local data), we would notify DD2 (Odense) about non-valid CPR-numbers, but this is no longer possible as we are not allowed to identify the individuals based on individual-level data on the servers.
+The DD2 data are uploaded to SDS, and they check the validity of the CPR-numbers before encrypting them. The dataset `DS_EXT_DD2_POP` includes all individuals with a valid CPR-number. Individuals with a non-valid CPR-number are still included in the uploaded data, e.g. in `DS_EXT_DD2CORE`, but they will have a missing encrypted CPR-number (`CPR_ENCRYPTED`) and can thus not be linked across data sources. Previously (when we had local data), we would notify DD2 (Odense) about non-valid CPR-numbers, but this is no longer possible as we are not allowed to identify the individuals based on individual-level data on the servers.
 
 The data files uploaded by us have the prefix `DS_EXT_`. Data are available in 2 versions; the initial upload version (without suffix) and the updated versions (with suffix \_230601, \_231026, etc., corresponding to the date of the update on SDS). The registry data (views) will always be based on the newest population, i.e., individuals in the newest version of `DS_EXT_DD2_POP`. <!-- We are planning to make a new structure where the library will only contain the current version of out own data plus the registry data based on the current version. Previous versions of our own data will be stored in a separate file and will be given a suffix when it is moved. -->
 
 ## Rawdata available on SDS
 
-Data on SDS are based on data views, i.e., we have access to data updated (almost) on a day-to-day basis. The update file (SAS `IN06014.OpdateringsOversigt`) contains the time of the current update for each data set in the library. The metadata file (SAS `metadata.metadata_allcolumns`) contains information about variables in the data. For research projects, in order to be able to reproduce results, remember to save a copy of the research data in a suitable project folder on SDS.
+Data on SDS are based on data views, i.e., we have access to data updated (almost) on a day-to-day basis. The update file (SAS `IN06014.OpdateringsOversigt`) contains the time of the current update for each dataset in the library. The metadata file (SAS `metadata.metadata_allcolumns`) contains information about variables in the data. For research projects, in order to be able to reproduce results, remember to save a copy of the research data in a suitable project folder on SDS.
 
 <!-- Teams-besked fra Uffe (redigeret) -->
 
@@ -73,7 +73,7 @@ Further documentation on the main data sources can be found here:
 
 ### Access to data
 
-All DD2-researchers with access to FSEID-00006014 can (in principle) work with all the data sets. As these data sets are considered rawdata, they are cannot be edited/changed/moved/renamed/etc. To access data, please do the following:
+All DD2-researchers with access to FSEID-00006014 can (in principle) work with all the datasets. As these datasets are considered rawdata, they are cannot be edited/changed/moved/renamed/etc. To access data, please do the following:
 
 -   **SAS**: The data are already available in the libraries `in06014` and `metadata`
 
@@ -87,14 +87,14 @@ In each research project, it is the individual researchers' responsibility to en
 
 The first data were uploaded in 2022 when the server access was initially established. Since then, the data have been updated multiple times.
 
-| Short description | Detailed description | Date | Affected data sets |
+| Short description | Detailed description | Date | Affected datasets |
 |------------------|--------------------|:-----------------|-----------------:|
-| Original upload | Upload of data sets for the initial server access | Summer 2022 | DD2CORE, DD2_POP, BIOBANK, DDDA, FOEDSELSDATA, IDNC, IL6_TNF |
+| Original upload | Upload of datasets for the initial server access | Summer 2022 | DD2CORE, DD2_POP, BIOBANK, DDDA, FOEDSELSDATA, IDNC, IL6_TNF |
 | General update | Population update and inclusion of data source FODSTATUS. The biobank was updated with additional measurements of CRP, c-peptide, glucose, and HOMA (from April 2022), and additional "pladebiomarkører" were added to IL6_TNF. DDDA data were updated (June 2022) before the registry closed. IDNC was trimmed to the current population. | June 2023 (\_230621) | DD2CORE, DD2_POP, BIOBANK, DDDA, FOEDSELSDATA, IDNC, IL6_TNF, FODSTATUS |
 | Upload of biobank data | C-peptide and glucose (and therefore also HOMA) were changed, and the remaining "pladebiomarkører" were added to IL6_TNF, which is now complete | Fall 2023 (\_231026) | BIOBANK, IL6_TNF |
 | Upload of biobank data (genetics) | Genetic variables (polygenic risk scores) were added to IL6_TNF (long format). All new variables are labelled "Gen1" | April 2024 (\_240429) | IL6_TNF |
 | Upload of biobank data (genetics) and DICTA variable | Additional genetic variables were added to IL6_TNF. In DD2CORE the DICTA variable was added. | July 2024 (\_240711) | DD2CORE, IL6_TNF |
-| Population update and upload of genetics | The population (and registries) was updated (November 2023) and additional genetic variables were included. We made the SDS update in the same round where the DST data were updated (genindstilling via DDV), and decided to rename IL6_TNF to BIOMARK including only the "pladebiomarkører", and including the genetic variables in a separate data set called GENETIK. The data set INFODATA including e.g., DICTA was also included. | December 2024 (upload not available as we are waiting for SDS updates) | DD2CORE, DD2_POP, BIOMARK, GENETIK, INFODATA |
+| Population update and upload of genetics | The population (and registries) was updated (November 2023) and additional genetic variables were included. We made the SDS update in the same round where the DST data were updated (genindstilling via DDV), and decided to rename IL6_TNF to BIOMARK including only the "pladebiomarkører", and including the genetic variables in a separate dataset called GENETIK. The dataset INFODATA including e.g., DICTA was also included. | December 2024 (upload not available as we are waiting for SDS updates) | DD2CORE, DD2_POP, BIOMARK, GENETIK, INFODATA |
 | December 2024 upload | The upload from December 2024 was made available and we added CAR and DAR from the "omlægning af registre" (still waiting for LAB). | June 2025 | DD2CORE, DD2_POP, BIOMARK, GENETIK, INFODATA (and CAR+DAR from registries) |
 
 NB: we try to distinguish between "update" and "upload". An "update" means that the population, and therefore also the registry data, has changed, and that the entire DD2 cohort should be seen as a new version. By "upload" we mean additional data uploaded to the current population. This could for example be adding analyses from the biobank or adding a new data source, i.e., something that doesn't affect the population itself. The plan is to make one annual update (November/end of the year) and two to three additional uploads during per year.

@@ -1,10 +1,37 @@
 ---
-title: "Fodstatus"
+title: "Podiatrist data"
 subtitle: "Secondary data from non-centralized data source"
 ---
 
+Go to [Data documentation](fodstatus.qmd#data-documentation)
 
-DENNE SIDE SKAL BESKRIVE 
+The DD2 cohort is linked to the Podiatrist Database (fodstatusdatabasen). This database was established in 2011, and includes information on examinations performed by Danish podiatrists working under a collective agreement with the Danish Administrative Regions (@Kristensen_ClinEpi_2024). Records include symptoms of neuropathy and information from a clinical examination of the lower extremities (including circulatory and neuropathy status).
 
-- fodstatus
+Individuals in DD2 enrolled between 2011 and 2022 are linked to the Podiatrist Database. Approximately 60% of the DD2 participants have at least one record in the database, and they have median 4 (IQR 2-6) records. DD2 participants without records may have had foot examinations by other healthcare professionals (e.g., diabetes outpatient clinics, general practitioners), a private podiatrist not working under the collective agreement or may not have been examined at all (@Kristensen_ClinEpi_2024).
 
+------------------------------------------------------------------------
+
+# Data documentation
+
+## fodstatus.sas7bdat
+
+{{< downloadthis ../../files/variable_documentation/fodstatus.xlsx dname="fodstatus" icon="file-earmark-text" label="Variable documentation" type="button" class="btn btn-light">}}
+
+| Format (var x obs) | Id variables | Unique key | Important dates |
+|--------------------|--------------|------------|-----------------|
+| Wide (88 x 29,214)   | CPR          | CPR*statusdate        | statusdate            |
+
+The dataset include podiatrist data for a total of N=6,734 individuals. Data are uniquely identified via CPR\*statusdate.
+
+| Row    | CPR     | statusdate       | Variable1 | Variable2 | ... |
+|--------|---------|------------------|-----------|-----------|-----|
+| 1      | CPR1    | statusdate1.1    | num.      | char.     | ... |
+| 2      | CPR1    | statusdate1.2    | num.      | char.     | ... |
+| ...    | ...     | ...              | ...       | ...       | ... |
+| 5      | CPR1    | statusdate1.5    | num.      | char.     | ... |
+| 6      | CPR2    | statusdate2.1    | num.      | char.     | ... |
+| 7      | CPR2    | statusdate2.2    | num.      | char.     | ... |
+| ...    | ...     | ...              | ...       | ...       | ... |
+| 29,214 | CPR6734 | statusdate6734.1 | num.      | char.     | ... |
+
+: Illustration of the overall data structure. The dataset is in wide format (88 variables x 29,214 observations), with CPR\*statusdate as the unique key.

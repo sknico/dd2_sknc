@@ -14,13 +14,13 @@ As of summer 2025, DD2 was migrated to a new server setup at Steno Diabetes Cent
 
 ------------------------------------------------------------------------
 
-## Data documentation
+# Data documentation
 
-### DD2core.sas7bdat
+## DD2core.sas7bdat
 
 {{< downloadthis ../../files/variable_documentation/DD2core.xlsx dname="DD2core" icon="file-earmark-text" label="Variable documentation" type="button" class="btn btn-light">}}
 
-| Format (var x obs) | Id variables           | Unique key | Important dates |
+| Format (var x obs) | Id variables | Unique key | Important dates |
 |--------------------|------------------------|------------|-----------------|
 | Wide (52 x 12,098) | CPR, ProjektID, ydernr | CPR        | reg_dato        |
 

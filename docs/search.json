@@ -164,7 +164,11 @@
     "href": "sites/data sources/dd2_genetics.html",
     "title": "Genetic variables",
     "section": "",
+<<<<<<< HEAD
     "text": "Go to Data documentation\nWe received data on genetics/polygenic risk scores (PRS) in multiple rounds. In the following section we will go through the data files we received. Of note, we also received PRS data in October 2023 which was used for one of the birth weight studies (Hansen et al. (2023)), but these data have not been uploaded to the servers.\nOn SDS, the first and second rounds of data were originally included in the IL6_TNF data, but this data source has now been split into Biomark including the 22 “pladebiomarkør” biomarkers and Genetik including the genetics data described here. The variables in Genetik were renamed, i.e., Assay = GeneMarker, Calc_Conc_Mean = Value, and CV_on_plate = data_round.",
+=======
+    "text": "Go to Data documentation\nWe have received data on genetics/polygenic risk scores (PRS) in multiple rounds. In the following section we will go through the data files we have received. Of note, we also received PRS data in October 2023 which was used for one of the birth weight studies (Hansen et al. (2023)), but these data have not been uploaded to the servers.\nOn SDS, the first and second rounds of data were originally included in the IL6_TNF data, but this data source has now been split into Biomark including the 22 “pladebiomarkør” biomarkers and Genetik including the genetics data described here. The variables in Genetik were renamed, i.e., Assay = GeneMarker, Calc_Conc_Mean = Value, and CV_on_plate = data_round.",
+>>>>>>> b8294a37293062843b1ae95f2c5a339682cb9dc7
     "crumbs": [
       "Additional DD2 data",
       "Genetic variables"
@@ -175,7 +179,11 @@
     "href": "sites/data sources/dd2_genetics.html#round-1-april-2024---gen1",
     "title": "Genetic variables",
     "section": "Round 1 (April 2024 - Gen1)",
+<<<<<<< HEAD
     "text": "Round 1 (April 2024 - Gen1)\nData include 9,997 observations and 104 variables. Some individuals had missing ID (but potentially non-missing barcode) and some had duplicate barcodes. The n=215 individuals with missing ID were checked by JSN, and 85 of these were denoted “ok”. For around 500 individuals, information on all the PRS values were deleted in the genetic analysis (see README file for specific reasons). Data were restricted to n=9,856 individuals with valid, unique, and non-missing ID and barcode, and transformed to long format. The variables geno_id, rem, p_id (text), DD2_projectid, DD2_barcode were removed from data (to align with the format from the original biobank file, IL6_TNF). Before upload to SDS (IL6_TNF_240411), 69 individuals were excluded as they were not among the n=11,381 individuals in the DD2 cohort (SDS, April 2023). Data were marked with data_round=\"Gen1\".\nThe PRS oram_T1D has been replaced by oram_T1D_v2 in Round 2 as there was an error in the calculation from Round 1. The variable from Round 1 should therefore not be used.",
+=======
+    "text": "Round 1 (April 2024 - Gen1)\nData include 9,997 observations and 104 variables. Some individuals had missing ID (but potentially non-missing barcode) and some had duplicate barcodes. The n=215 individuals with missing ID were checked by JSN, and 85 of these were denoted “ok”. Around 500 individuals were originally analysed, but for various reasons, information on all the PRS values had been deleted (see README file for reasons). Data were restricted to n=9,856 individuals with valid, unique, and non-missing ID and barcode, and transformed to long format. The variables geno_id, rem, p_id (text), DD2_projectid, DD2_barcode were removed from data (to align with the format from the original biobank file, IL6_TNF). Before upload to SDS (IL6_TNF_240411), 69 individuals were excluded as they were not among the n=11,381 individuals in the DD2 cohort (SDS, April 2023). Data were marked with data_round=\"Gen1\".\nThe PRS oram_T1D has been replaced by oram_T1D_v2 in Round 2 as there was an error in the calculation from Round 1. The variable from Round 1 should therefore not be used.",
+>>>>>>> b8294a37293062843b1ae95f2c5a339682cb9dc7
     "crumbs": [
       "Additional DD2 data",
       "Genetic variables"
@@ -499,7 +507,11 @@
     "href": "sites/data sources/dd2_genetics.html#genetik.sas7bdat",
     "title": "Genetic variables",
     "section": "genetik.sas7bdat",
+<<<<<<< HEAD
     "text": "genetik.sas7bdat\n Variable documentation \n\n\n\n\n\n\n\n\n\nFormat (var x obs)\nId variables\nUnique key\nImportant dates\n\n\n\n\nLong (8 x 14,572,843)\nCPR, ProjektID\nCPR*GeneMarker\n-\n\n\n\nThe genetik dataset includes analysis results from the three data rounds. There are no dates in the dataset, but all analyses are performed on the enrollment samples. Data can be stratified by round using the variable data_round with values Gen1, Gen2, Gen3, and Tar1. A total of 14,089 different gene markers (or PRS or whatever they are) are currently included in the data. Data include 9,787*1,489=14,572,843 rows.\n\nIllustration of the overall data structure. The dataset is in long format (8 x 14,572,843), with CPR*GeneMarker as the unique key.\n\n\nRow\nCPR\nProjektID\ndata_round\nGeneMarker\nValue\n…\n\n\n\n\n1\nCPR1\nProjektID1\nGen1\nACSL1_rs221\nnum.\n…\n\n\n2\nCPR1\nProjektID1\nGen1\nACSL1_rs624\nnum.\n…\n\n\n4\nCPR1\nProjektID1\nGen1\nACSL1_rs756\nnum.\n…\n\n\n…\n…\n…\n…\n…\n…\n…\n\n\n14,089\nCPR1\nProjektID1\nTar1\nwang_ST\nnum.\n…\n\n\n14,090\nCPR2\nProjektID2\nGen1\nACSL1_rs221\nnum.\n…\n\n\n14,091\nCPR2\nProjektID2\nGen1\nACSL1_rs624\nnum.\n…\n\n\n…\n…\n…\n…\n…\n…\n…\n\n\n\nAdditional documentation and README files (from Mette Andersen, KU) are available upon request. Among others, they include information about GeneMarker definition.",
+=======
+    "text": "genetik.sas7bdat\n Variable documentation \n\n\n\n\n\n\n\n\n\nFormat (var x obs)\nId variables\nUnique key\nImportant dates\n\n\n\n\nLong (8 x 14,572,843)\nCPR, ProjektID\nCPR*GeneMarker\n-\n\n\n\nThe genetik dataset includes analysis results from the three data rounds. There are no dates in the dataset, but all analyses are performed on the enrollment samples. Data can be stratified by round using the variable data_round with values Gen1, Gen2, Gen3, and Tar1.\n\nIllustration of the overall data structure. The dataset is in long format (8 x 14,572,843), with CPR*GeneMarker as the unique key.\n\n\nRow\nCPR\nProjektID\ndata_round\nGeneMarker\nValue\n…\n\n\n\n\n1\nCPR1\nProjektID1\nGen1\nACSL1_rs221\nnum.\n…\n\n\n2\nCPR1\nProjektID1\nGen1\nACSL1_rs624\nnum.\n…\n\n\n4\nCPR1\nProjektID1\nGen1\nACSL1_rs756\nnum.\n…\n\n\n…\n…\n…\n…\n…\n…\n…\n\n\n14,089\nCPR1\nProjektID1\nTar1\nwang_ST\nnum.\n…\n\n\n14,090\nCPR2\nProjektID2\nGen1\nACSL1_rs221\nnum.\n…\n\n\n14,091\nCPR2\nProjektID2\nGen1\nACSL1_rs624\nnum.\n…\n\n\n…\n…\n…\n…\n…\n…\n…\n\n\n\nAdditional documentation and README files (from Mette Andersen, KU) are available upon request. Among others, they include information about GeneMarker definition.",
+>>>>>>> b8294a37293062843b1ae95f2c5a339682cb9dc7
     "crumbs": [
       "Additional DD2 data",
       "Genetic variables"

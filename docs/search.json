@@ -208,7 +208,7 @@
     "href": "sites/data sources/dd2_biobank.html",
     "title": "DD2 biobank",
     "section": "",
-    "text": "Variable documentation\nWhen patients are enrolled in the DD2, blood and a urine samples are collected and stored in the biobank in Vejle. The samples are all collected at DD2 baseline. No automatic or standard analyses are conducted, but DD2 projects/subprojects can have the samples analyzed if (additional) analyses are needed - the timing for the analysis results will always be baseline DD2, because that’s when the blood/urine sample was collected.\nFor further information about the initial idea about the biobank, please see Christensen et al.\nThe documentation for the biobank can be downloaded here (Danish): Download",
+    "text": "Go to Data documentation\nVariable documentation\nWhen patients are enrolled in the DD2, blood and a urine samples are collected and stored in the biobank in Vejle. The samples are all collected at DD2 baseline. No automatic or standard analyses are conducted, but DD2 projects/subprojects can have the samples analyzed if (additional) analyses are needed - the timing for the analysis results will always be baseline DD2, because that’s when the blood/urine sample was collected.\nFor further information about the initial idea about the biobank, please see Christensen et al.\nThe documentation for the biobank can be downloaded here (Danish): Download",
     "crumbs": [
       "Additional DD2 data",
       "DD2 biobank"
@@ -307,7 +307,7 @@
     "href": "sites/data sources/dd2_questionnaire.html",
     "title": "DD2 questionnaire",
     "section": "",
-    "text": "Variable documentation \nData from the DD2 questionnaire include the responses along with general information about the individual.\nThe DD2 questionnaire can be downloaded here:  Download \nAs of summer 2025, DD2 was migrated to a new server setup (in Odense). DCE only has data from the old setup.",
+    "text": "Go to Data documentation\nData from the DD2 questionnaire include the responses from the enrollment, information from the clinical examination along with general information about the individual. The DD2 questionnaire can be downloaded here:  Download\nAs of summer 2025, DD2 was migrated to a new server setup at Steno Diabetes Center Odense. DCE retains data from the previous setup. Historically, data updates were received regularly, but from the end of 2025, DCE must submit a formal application to obtain new data.",
     "crumbs": [
       "DD2 enrollment data",
       "DD2 questionnaire"
@@ -416,5 +416,38 @@
     "title": "Macros and syntaxes",
     "section": "",
     "text": "Macros and programs/syntaxes\nHOW TO WORK IN SAS!?!\nSimple versions of data:\n\nLPR: syntax to make a simple combination of data from LPR2 and LPR3 and create a simple data set including only dates and diagnoses.\n\n\nVariable definitions:\n\nGLD_classification: Classification of glucose-lowering drugs.\nFirstDiabDate: The first indication of diabetes, either as a hospitalization, glucose-lowering treatment initiation, or elevated HbA1c. In addition, enrollment in DD2 (or DDDA) is included as an indication for diabetes.\nHOMA-phenotypes\nANDIS-phenotypes"
+  },
+  {
+    "objectID": "sites/data sources/dd2_questionnaire.html#dd2core.sas7bdat",
+    "href": "sites/data sources/dd2_questionnaire.html#dd2core.sas7bdat",
+    "title": "DD2 questionnaire",
+    "section": "DD2core.sas7bdat",
+    "text": "DD2core.sas7bdat\n Variable documentation \n\n\n\nFormat (var x obs)\nId variables\nUnique key\nImportant dates\n\n\n\n\nWide (52 x 12,098)\nCPR, ProjektID, ydernr\nCPR\nreg_dato\n\n\n\nData from the DD2 enrollment questionnaire and clinical examination are stored in the dd2core.sas7bdat data set. (Note: The name “dd2core” is not ideal, as there is no definition of what is actually considered “core” data in DD2. Therefore, the data should be referred to as “enrollment data”. The data set cannot easily be renamed as it is on its current form in the agreements with DST and SDS.)\nData (November 2023) include enrollment information on all N=12,098 individuals enrolled in DD2 by November 2023. Data are on wide format, currently with 52 variables, and include one row per CPR number. A ProjektID is also included for individuals with a blood/urine sample in the biobank. The variable ydernr is also included as a identifier and is therefore encrypted by SDS and DST. Individuals are enrolled in DD2 on the enrollment data, reg_dato. Data can be updated (new procedure after 2025), and if so, more enrolled individuals are included, and we have usually received a full new data set with the current DD2 population - this is to ensure we only have data on individuals we are allowed to have data on, and to ensure any manual corrections in the DD2 setup have been implemented in our data. Data were received as Excel or CSV files and underwent initial data cleaning before being saved in dd2core.sas7bdat.\n\nTable: Illustration of overall data structure. Data is on wide format (52 variables and 12,098 rows) with CPR as the unique key.\n\n\nRow\nCPR\nProjektID\nreg_dato\n…\n\n\n\n\n1\ncpr1\nProjektID1\nreg_dato1\n…\n\n\n2\ncpr2\nProjektID2\nreg_dato2\n…\n\n\n3\ncpr3\nProjektID3\nreg_dato3\n…\n\n\n…\n…\n…\n…\n…\n\n\n12,098\ncpr12098\nProjektID12098\nreg_dato12098\n…",
+    "crumbs": [
+      "DD2 enrollment data",
+      "DD2 questionnaire"
+    ]
+  },
+  {
+    "objectID": "sites/data sources/dd2_questionnaire.html#data-documentation",
+    "href": "sites/data sources/dd2_questionnaire.html#data-documentation",
+    "title": "DD2 questionnaire",
+    "section": "Data documentation",
+    "text": "Data documentation\n\nDD2core.sas7bdat\n Variable documentation \n\n\n\n\n\n\n\n\n\nFormat (var x obs)\nId variables\nUnique key\nImportant dates\n\n\n\n\nWide (52 x 12,098)\nCPR, ProjektID, ydernr\nCPR\nreg_dato\n\n\n\nData from the DD2 enrollment questionnaire and clinical examination are stored in the dd2core.sas7bdat dataset. (Note: The name “dd2core” is not ideal, as there is no definition of what is actually considered “core” data in DD2. Therefore, the data should be referred to as “enrollment data”. The dataset cannot easily be renamed as it is in its current form in the agreements with DST and SDS.)\nData (November 2023) include enrollment information on all N=12,098 individuals enrolled in DD2 by November 2023. Data are on wide format, currently with 52 variables, and include one row per CPR number. A ProjektID is also included for individuals with a blood/urine sample in the biobank. The variable ydernr is also included as a identifier and is therefore encrypted by SDS and DST. Individuals are enrolled in DD2 on the enrollment date, reg_dato. Data can be updated (new procedure after 2025), and if so, more enrolled individuals are included (same variable set). We have usually received a full new dataset with the current DD2 population - this is to ensure we only have data on individuals we are allowed to have data on, and to ensure any manual corrections in the DD2 setup have been implemented in our data. Data were received as Excel or CSV files and underwent initial data cleaning before being saved in dd2core.sas7bdat.\n\nIllustration of the overall data structure. The dataset is in wide format (52 variables × 12,098 rows), with CPR as the unique key.\n\n\nRow\nCPR\nProjektID\nreg_dato\n…\n\n\n\n\n1\nCPR1\nProjektID1\nreg_dato1\n…\n\n\n2\nCPR2\nProjektID2\nreg_dato2\n…\n\n\n3\nCPR3\nProjektID3\nreg_dato3\n…\n\n\n…\n…\n…\n…\n…\n\n\n12,098\nCPR12098\nProjektID12098\nreg_dato12098\n…",
+    "crumbs": [
+      "DD2 enrollment data",
+      "DD2 questionnaire"
+    ]
+  },
+  {
+    "objectID": "sites/data sources/dd2_questionnaire.html#section",
+    "href": "sites/data sources/dd2_questionnaire.html#section",
+    "title": "DD2 questionnaire",
+    "section": "————————————————————————",
+    "text": "————————————————————————",
+    "crumbs": [
+      "DD2 enrollment data",
+      "DD2 questionnaire"
+    ]
   }
 ]

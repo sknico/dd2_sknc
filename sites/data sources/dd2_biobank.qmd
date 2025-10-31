@@ -5,6 +5,9 @@ subtitle: "Primary data derived from DD2 research studies"
 #- "`r system('kpsewhich ../../references.bib', intern = TRUE)`"
 ---
 
+
+Go to [Data documentation](dd2_biobank.qmd#data-documentation)
+
 {{< downloadthis ../../files/variable_documentation/DD2_biobank.csv dname="DD2_biobank" icon="file-earmark-text" label="Variable documentation" type="button" class="btn btn-light">}}
 
 ::: {.callout-important}
@@ -319,3 +322,7 @@ Quote from patientvejledning: "møde fastende til en blodprøvetagning, dvs. ikk
 <!-- c(1:3) -->
 
 <!-- ``` -->
+
+
+# Data documentation
+afdas

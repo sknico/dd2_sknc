@@ -6,12 +6,34 @@ subtitle: "Primary DD2 enrollment data"
 #footer: "{{< meta date >}}"
 ---
 
-{{< downloadthis ../../files/variable_documentation/DD2_questionnaire.csv dname="DD2_questionnaire" icon="file-earmark-text" label="Variable documentation" type="button" class="btn btn-light">}}
+Go to [Data documentation](dd2_questionnaire.qmd#data-documentation)
 
-Data from the DD2 questionnaire include the responses along with general information about the individual.
+Data from the DD2 questionnaire include the responses from the enrollment, information from the clinical examination along with general information about the individual. The DD2 questionnaire can be downloaded here: {{< downloadthis ../../files/DD2_registrering/registreringsskema_almen_praksis.pdf dname="registreringsskema_almen_praksis" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}}
 
-The DD2 questionnaire can be downloaded here: {{< downloadthis ../../files/DD2_registrering/registreringsskema_almen_praksis.pdf dname="registreringsskema_almen_praksis" icon="file-earmark-pdf" label="Download" type="button" class="btn btn-link">}}
+As of summer 2025, DD2 was migrated to a new server setup at Steno Diabetes Center Odense. DCE retains data from the previous setup. Historically, data updates were received regularly, but from the end of 2025, DCE must submit a formal application to obtain new data.
 
+------------------------------------------------------------------------
 
-As of summer 2025, DD2 was migrated to a new server setup (in Odense). DCE only has data from the old setup. 
+## Data documentation
 
+### DD2core.sas7bdat
+
+{{< downloadthis ../../files/variable_documentation/DD2core.xlsx dname="DD2core" icon="file-earmark-text" label="Variable documentation" type="button" class="btn btn-light">}}
+
+| Format (var x obs) | Id variables           | Unique key | Important dates |
+|--------------------|------------------------|------------|-----------------|
+| Wide (52 x 12,098) | CPR, ProjektID, ydernr | CPR        | reg_dato        |
+
+Data from the DD2 enrollment questionnaire and clinical examination are stored in the `dd2core.sas7bdat` dataset. (Note: The name "dd2core" is not ideal, as there is no definition of what is actually considered "core" data in DD2. Therefore, the data should be referred to as "enrollment data". The dataset cannot easily be renamed as it is in its current form in the agreements with DST and SDS.)
+
+Data (November 2023) include enrollment information on all N=12,098 individuals enrolled in DD2 by November 2023. Data are on wide format, currently with 52 variables, and include one row per CPR number. A ProjektID is also included for individuals with a blood/urine sample in the biobank. The variable `ydernr` is also included as a identifier and is therefore encrypted by SDS and DST. Individuals are enrolled in DD2 on the enrollment date, `reg_dato`. Data can be updated (new procedure after 2025), and if so, more enrolled individuals are included (same variable set). We have usually received a full new dataset with the current DD2 population - this is to ensure we only have data on individuals we are allowed to have data on, and to ensure any manual corrections in the DD2 setup have been implemented in our data. Data were received as Excel or CSV files and underwent initial data cleaning before being saved in `dd2core.sas7bdat`.
+
+| Row    | CPR      | ProjektID      | reg_dato      | ... |
+|--------|----------|----------------|---------------|-----|
+| 1      | CPR1     | ProjektID1     | reg_dato1     | ... |
+| 2      | CPR2     | ProjektID2     | reg_dato2     | ... |
+| 3      | CPR3     | ProjektID3     | reg_dato3     | ... |
+| ...    | ...      | ...            | ...           | ... |
+| 12,098 | CPR12098 | ProjektID12098 | reg_dato12098 | ... |
+
+: Illustration of the overall data structure. The dataset is in wide format (52 variables × 12,098 rows), with CPR as the unique key.

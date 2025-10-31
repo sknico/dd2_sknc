@@ -164,7 +164,7 @@
     "href": "sites/data sources/dd2_genetics.html",
     "title": "Genetic variables",
     "section": "",
-    "text": "We have received data on genetics/polygenic risk scores (PRS) in multiple rounds. In the following section we will go through the data files we have received. Of note, we also received PRS data in October 2023 which was used for one of the birth weight studies (Hansen et al. (2023)), but these data have not been uploaded to the servers.\nOn SDS, the first and second rounds of data were originally included in the IL6_TNF data, but this data source has now been split into Biomark including the 22 “pladebiomarkør” biomarkers and Genetik including the genetics data described here. The variables in Genetik has been renamed, i.e., Assay = GeneMarker, Calc_Conc_Mean = Value, and CV_on_plate = data_round.",
+    "text": "Go to Data documentation\nWe have received data on genetics/polygenic risk scores (PRS) in multiple rounds. In the following section we will go through the data files we have received. Of note, we also received PRS data in October 2023 which was used for one of the birth weight studies (Hansen et al. (2023)), but these data have not been uploaded to the servers.\nOn SDS, the first and second rounds of data were originally included in the IL6_TNF data, but this data source has now been split into Biomark including the 22 “pladebiomarkør” biomarkers and Genetik including the genetics data described here. The variables in Genetik were renamed, i.e., Assay = GeneMarker, Calc_Conc_Mean = Value, and CV_on_plate = data_round.",
     "crumbs": [
       "Additional DD2 data",
       "Genetic variables"
@@ -175,7 +175,7 @@
     "href": "sites/data sources/dd2_genetics.html#round-1-april-2024---gen1",
     "title": "Genetic variables",
     "section": "Round 1 (April 2024 - Gen1)",
-    "text": "Round 1 (April 2024 - Gen1)\nData include 9,997 observations and 104 variables. Some individuals had missing ID (but potentially non-missing barcode) and some had duplicate barcodes. The n=215 individuals with missing ID were checked by JSN, and 85 of these were denoted “ok”. Around 500 individuals were originally analysed, but for various reasons, information on all the PRS values had been deleted (see README file for reasons). Data were restricted to n=9,856 individuals with valid, unique, and non-missing ID and barcode, and transformed to long format. The variables geno_id, rem, p_id (text), DD2_projectid, DD2_barcode were removed from data (to align with the format from the original biobank file, IL6_TNF). Before upload to SDS (IL6_TNF_240411), 69 individuals were excluded as they were not among the n=11,381 individuals in the DD2 cohort (SDS, April 2023). Data were marked with data_round=\"Gen1\".\nDocumentation and README files can be downloaded here (jeg skal lige have tjekket om dokumenterne må uploades):  Download   Download \nThe PRS oram_T1D has been replaced by oram_T1D_v2 in Round 2 as there was an error in the calculation from Round 1. The variable from Round 1 should therefore not be used.",
+    "text": "Round 1 (April 2024 - Gen1)\nData include 9,997 observations and 104 variables. Some individuals had missing ID (but potentially non-missing barcode) and some had duplicate barcodes. The n=215 individuals with missing ID were checked by JSN, and 85 of these were denoted “ok”. Around 500 individuals were originally analysed, but for various reasons, information on all the PRS values had been deleted (see README file for reasons). Data were restricted to n=9,856 individuals with valid, unique, and non-missing ID and barcode, and transformed to long format. The variables geno_id, rem, p_id (text), DD2_projectid, DD2_barcode were removed from data (to align with the format from the original biobank file, IL6_TNF). Before upload to SDS (IL6_TNF_240411), 69 individuals were excluded as they were not among the n=11,381 individuals in the DD2 cohort (SDS, April 2023). Data were marked with data_round=\"Gen1\".\nThe PRS oram_T1D has been replaced by oram_T1D_v2 in Round 2 as there was an error in the calculation from Round 1. The variable from Round 1 should therefore not be used.",
     "crumbs": [
       "Additional DD2 data",
       "Genetic variables"
@@ -186,7 +186,7 @@
     "href": "sites/data sources/dd2_genetics.html#round-2-july-2024---gen2",
     "title": "Genetic variables",
     "section": "Round 2 (July 2024 - Gen2)",
-    "text": "Round 2 (July 2024 - Gen2)\nData include 9,997 observations and 28 variables. Using the same procedure as in Round 1, we end up with n=9,856 individuals with valid, unique, and non-missing ID and barcode. Again, data were transformed to long format, and the variables geno_id, rem, p_id (text), DD2_projectid, DD2_barcode were removed. Before upload to SDS (IL6_TNF_240711), 69 individuals were excluded as they were not among the n=11,381 individuals in the DD2 cohort (April 2023). Data were marked with data_round=\"Gen2\".\nDocumentation and README files can be downloaded here:  Download   Download",
+    "text": "Round 2 (July 2024 - Gen2)\nData include 9,997 observations and 28 variables. Using the same procedure as in Round 1, we end up with n=9,856 individuals with valid, unique, and non-missing ID and barcode. Again, data were transformed to long format, and the variables geno_id, rem, p_id (text), DD2_projectid, DD2_barcode were removed. Before upload to SDS (IL6_TNF_240711), 69 individuals were excluded as they were not among the n=11,381 individuals in the DD2 cohort (SDS, April 2023). Data were marked with data_round=\"Gen2\".",
     "crumbs": [
       "Additional DD2 data",
       "Genetic variables"
@@ -197,7 +197,7 @@
     "href": "sites/data sources/dd2_genetics.html#round-3-december-2024---gen3",
     "title": "Genetic variables",
     "section": "Round 3 (December 2024 - Gen3)",
-    "text": "Round 3 (December 2024 - Gen3)\nData include 9,997 observations and 65 variables. Using the same procedure as in Round 1 and Round 2, we end up with n=9,856 individuals with valid, unique, and non-missing ID and barcode. Data were marked with data_round=\"Gen3\".\nDocumentation and README files can be downloaded here:  Download   Download \n\nFor single SNPs, the original variable name corresponded to chr:position:allele1:allele2_effect-allele, however, SAS replaces : with _ and adds _ in the beginning of the variable name (as a variable name can’t start with a number), i.e., the variable name is currently _chr_position_allele1_allele2_effect-allele. Additionally, a document including the r2 values is available on the servers.\n\nRound 3, additional data for Tarun (Tar1)\nIn addition to the Round 3 genetics data, we received a data file including a broader list with around 1300 SNPs (Tarun Veer Singh Ahluwalia is lead on the project). The file thus included 9,997 observations and 1309 variables, and we again restricted to the n=9,856 individuals with valid, unique, and non-missing ID and barcode. Data were marked with data_round=\"Tar1\", and variable names correspond to _chr_position_allele1_allele2_effect-allele. A document including the r2 values is available on the servers.\nDocumentation and README files can be downloaded here:  Download   Download",
+    "text": "Round 3 (December 2024 - Gen3)\nData include 9,997 observations and 65 variables. Using the same procedure as in Round 1 and Round 2, we end up with n=9,856 individuals with valid, unique, and non-missing ID and barcode. Data were marked with data_round=\"Gen3\".\nFor single SNPs, the original variable name corresponded to chr:position:allele1:allele2_effect-allele, however, SAS replaces : with _ and adds _ in the beginning of the variable name (as a variable name can’t start with a number), i.e., the variable name is currently _chr_position_allele1_allele2_effect-allele. Additionally, a document including the r2 values is available on the servers.\n\nRound 3, additional data for Tarun (Tar1)\nIn addition to the Round 3 genetics data, we received a data file including a broader list with around 1300 SNPs (Tarun Veer Singh Ahluwalia is lead on the project). The file thus included 9,997 observations and 1309 variables, and we again restricted to the n=9,856 individuals with valid, unique, and non-missing ID and barcode. Data were marked with data_round=\"Tar1\", and variable names correspond to _chr_position_allele1_allele2_effect-allele. A document including the r2 values is available on the servers.",
     "crumbs": [
       "Additional DD2 data",
       "Genetic variables"
@@ -492,6 +492,17 @@
     "crumbs": [
       "Additional DD2 data",
       "DD2 biobank"
+    ]
+  },
+  {
+    "objectID": "sites/data sources/dd2_genetics.html#genetik.sas7bdat",
+    "href": "sites/data sources/dd2_genetics.html#genetik.sas7bdat",
+    "title": "Genetic variables",
+    "section": "genetik.sas7bdat",
+    "text": "genetik.sas7bdat\n Variable documentation \n\n\n\n\n\n\n\n\n\nFormat (var x obs)\nId variables\nUnique key\nImportant dates\n\n\n\n\nLong (8 x 14,572,843)\nCPR, ProjektID\nCPR*GeneMarker\n-\n\n\n\nThe genetik dataset includes analysis results from the three data rounds. There are no dates in the dataset, but all analyses are performed on the enrollment samples. Data can be stratified by round using the variable data_round with values Gen1, Gen2, Gen3, and Tar1.\n\nIllustration of the overall data structure. The dataset is in long format (8 x 14,572,843), with CPR*GeneMarker as the unique key.\n\n\nRow\nCPR\nProjektID\ndata_round\nGeneMarker\nValue\n…\n\n\n\n\n1\nCPR1\nProjektID1\nGen1\nACSL1_rs221\nnum.\n…\n\n\n2\nCPR1\nProjektID1\nGen1\nACSL1_rs624\nnum.\n…\n\n\n4\nCPR1\nProjektID1\nGen1\nACSL1_rs756\nnum.\n…\n\n\n…\n…\n…\n…\n…\n…\n…\n\n\n14,089\nCPR1\nProjektID1\nTar1\nwang_ST\nnum.\n…\n\n\n14,090\nCPR2\nProjektID2\nGen1\nACSL1_rs221\nnum.\n…\n\n\n14,091\nCPR2\nProjektID2\nGen1\nACSL1_rs624\nnum.\n…\n\n\n…\n…\n…\n…\n…\n…\n…\n\n\n\nAdditional documentation and README files (from Mette Andersen, KU) are available upon request. Among others, they include information about GeneMarker definition.",
+    "crumbs": [
+      "Additional DD2 data",
+      "Genetic variables"
     ]
   }
 ]

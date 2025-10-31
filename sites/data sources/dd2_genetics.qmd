@@ -44,7 +44,6 @@ In addition to the Round 3 genetics data, we received a data file including a br
 |-----------------------|----------------|-----------------|-----------------|
 | Long (8 x 14,572,843) | CPR, ProjektID | CPR\*GeneMarker | \-              |
 
-<<<<<<< HEAD
 The `genetik` dataset includes analysis results from the three data rounds. There are no dates in the dataset, but all analyses are performed on the enrollment samples. Data can be stratified by round using the variable `data_round` with values `Gen1`, `Gen2`, `Gen3`, and `Tar1`. A total of 14,089 different gene markers (or PRS or whatever they are) are currently included in the data. Data include 9,787*1,489=14,572,843 rows. 
 
 
@@ -61,23 +60,4 @@ The `genetik` dataset includes analysis results from the three data rounds. Ther
 
 : Illustration of the overall data structure. The dataset is in long format (8 x 14,572,843), with CPR\*GeneMarker as the unique key.
 
-
-=======
-The `genetik` dataset includes analysis results from the three data rounds. There are no dates in the dataset, but all analyses are performed on the enrollment samples. Data can be stratified by round using the variable `data_round` with values `Gen1`, `Gen2`, `Gen3`, and `Tar1`.
-
-| Row    | CPR  | ProjektID  | data_round | GeneMarker  | Value | ... |
-|--------|------|------------|------------|-------------|-------|-----|
-| 1      | CPR1 | ProjektID1 | Gen1       | ACSL1_rs221 | num.  | ... |
-| 2      | CPR1 | ProjektID1 | Gen1       | ACSL1_rs624 | num.  | ... |
-| 4      | CPR1 | ProjektID1 | Gen1       | ACSL1_rs756 | num.  | ... |
-| ...    | ...  | ...        | ...        | ...         | ...   | ... |
-| 14,089 | CPR1 | ProjektID1 | Tar1       | wang_ST     | num.  | ... |
-| 14,090 | CPR2 | ProjektID2 | Gen1       | ACSL1_rs221 | num.  | ... |
-| 14,091 | CPR2 | ProjektID2 | Gen1       | ACSL1_rs624 | num.  | ... |
-| ...    | ...  | ...        | ...        | ...         | ...   | ... |
-
-: Illustration of the overall data structure. The dataset is in long format (8 x 14,572,843), with CPR\*GeneMarker as the unique key.
-
-
->>>>>>> b8294a37293062843b1ae95f2c5a339682cb9dc7
 Additional documentation and README files (from Mette Andersen, KU) are available upon request. Among others, they include information about GeneMarker definition. 

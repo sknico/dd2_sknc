@@ -302,7 +302,7 @@ Upon enrollment, the individuals are informed to be fasting: no food/liquid (exc
 
 ## biobank.sas7bdat
 
-{{< downloadthis ../../files/variable_documentation/biobank.xlsx dname="iobank" icon="file-earmark-text" label="Variable documentation" type="button" class="btn btn-light">}}
+{{< downloadthis ../../files/variable_documentation/biobank.xlsx dname="biobank" icon="file-earmark-text" label="Variable documentation" type="button" class="btn btn-light">}}
 
 | Format (var x obs) | Id variables   | Unique key      | Important dates |
 |--------------------|----------------|-----------------|-----------------|

@@ -71,23 +71,20 @@ website:
       #   
         
         
+
+
 format:
   html:
-    grid:
-        sidebar-width: 350px
-    page-layout: full
-    #theme: cosmo
-    theme: flatly
     css: styles.css
+    theme: flatly
     toc: true
-    # For at styre størrelsen skal man vist bruge en nyere version - se i stedet filen styles.css
-    #grid:
-    #   sidebar-width: 500px
-    #   body-width: 800px
-    #   margin-width: 200px
-    #   gutter-width: 1.5rem
-    
-    
+    page-layout: full
+    grid:
+      sidebar-width: 350px
+
+
+
+
 bibliography: "references.bib"
 csl: "vancouver-author-date.csl"
 

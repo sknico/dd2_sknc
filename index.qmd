@@ -8,16 +8,18 @@ author:
     email: "sknc@clin.au.dk"
     orcid: "0000-0002-6106-1945"
     url: "https://pure.au.dk/portal/en/persons/sknc%40clin.au.dk"
-
 date: "`r format(Sys.Date(), '%Y-%m-%d')`"
 engine: knitr
 ---
 
 
-
 ::: callout-important
 This website is currently under development
 :::
+
+
+The [DD2]{.abbr title="The Danish Center for Strategic Research in Type 2 Diabetes"} sets global health standards.
+
 
 This website includes details about **The Danish Center for Strategic Research in Type 2 Diabetes** (The **DD2** Study). The intention of this website is to document the data sources used for research and to support the day-to-day work with DD2. It is mainly aimed at employees of the Department of Clinical Epidemiology (DCE/KEA), Aarhus University and Aarhus University Hospital, as it describes the setup used at DCE. Other institutions can also access DD2 data but their setup might differ.
 

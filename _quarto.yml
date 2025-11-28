@@ -2,6 +2,9 @@ project:
   type: website
   output-dir: docs #hvis hjemmesiden driller med updates, så kan man slette alt i docs og generere det igen
 
+filters: 
+  - abbr
+  
 website:
   title: "DD2"
   page-navigation: true

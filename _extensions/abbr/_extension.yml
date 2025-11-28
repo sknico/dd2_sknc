@@ -1,3 +1,4 @@
 name: abbr
+title: "Abbreviation Filter"
 filters:
   - abbr.lua

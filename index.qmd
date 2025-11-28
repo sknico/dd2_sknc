@@ -18,7 +18,8 @@ This website is currently under development
 :::
 
 
-The [DD2]{.abbr title="The Danish Center for Strategic Research in Type 2 Diabetes"} sets global health standards.
+The WHO sets global health standards. And WHO again. 
+
 
 
 This website includes details about **The Danish Center for Strategic Research in Type 2 Diabetes** (The **DD2** Study). The intention of this website is to document the data sources used for research and to support the day-to-day work with DD2. It is mainly aimed at employees of the Department of Clinical Epidemiology (DCE/KEA), Aarhus University and Aarhus University Hospital, as it describes the setup used at DCE. Other institutions can also access DD2 data but their setup might differ.

@@ -1,0 +1,7 @@
+name: abbr_auto
+title: "Automatic Abbreviation Filter"
+version: 1.0.0
+quarto-required: ">=1.2.0"
+contributes:
+  filters:
+    - abbr_auto.lua

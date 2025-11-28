@@ -18,7 +18,7 @@
 
 
 abbr {
-  color: #0056b3; /* Bootstrap link color */
+  color: #4682B4; /* Bootstrap link color */
   text-decoration: none !important; /* Force remove underline */
   text-decoration-skip-ink: none; /* Prevent ink skipping */
   border-bottom: none; /* Remove any border-based underline */
@@ -28,10 +28,10 @@ abbr:hover {
   color: #0056b3; /* Darker on hover */
   background-color: #f0f8ff; /* Light blue highlight */
 }
-
+/* First occurrence: look like normal text */
 abbr:first-of-type {
-  font-weight: bold;
-  color: #0056b3;
+  color: inherit;       /* Use normal text color */
+  font-weight: normal;  /* Remove bold */
 }
 
 

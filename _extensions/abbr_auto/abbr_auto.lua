@@ -10,11 +10,26 @@ function read_abbreviations()
 end
 
 local abbreviations = read_abbreviations()
+local seen = {} -- Track which abbreviations have been expanded
 
 function Str(el)
   local text = el.text
-  if abbreviations[text] then
-    local full = pandoc.utils.stringify(abbreviations[text])
-    return pandoc.RawInline("html", "<abbr title=\"" .. full .. "\">" .. text .. "</abbr>")
+  -- Remove punctuation from start and end (commas, periods, colons, semicolons, etc.)
+  local clean_text = text:gsub("^[%p]+", ""):gsub("[%p]+$", "")
+
+  if abbreviations[clean_text] then
+    local full = pandoc.utils.stringify(abbreviations[clean_text])
+    if not seen[clean_text] then
+      -- First occurrence: full term + abbreviation with <abbr>
+      seen[clean_text] = true
+      return pandoc.RawInline("html",
+        full .. " (<abbr title=\"" .. full .. "\">" .. clean_text .. "</abbr>)"
+      )
+    else
+      -- Subsequent occurrences: just <abbr>
+      return pandoc.RawInline("html",
+        "<abbr title=\"" .. full .. "\">" .. clean_text .. "</abbr>"
+      )
+    end
   end
 end

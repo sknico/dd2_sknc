@@ -2,9 +2,6 @@
 title: "The Danish Center for Strategic Research in Type 2 Diabetes"
 author:
   - name: "Sia Kromann Nicolaisen"
-    affiliation: |
-      Department of Clinical Epidemiology  
-      Aarhus University and Aarhus University Hospital
     email: "sknc@clin.au.dk"
     orcid: "0000-0002-6106-1945"
     url: "https://pure.au.dk/portal/en/persons/sknc%40clin.au.dk"
@@ -17,7 +14,7 @@ engine: knitr
 This website is currently under development. 
 :::
 
-This website includes details about **DD2** study. The intention of this website is to document the data sources used for research and to support the day-to-day work with DD2. It is mainly aimed at employees of the DCE, Aarhus University and Aarhus University Hospital, as it describes the setup used at DCE. Other institutions can also access DD2 data but their setup might differ.
+This website includes details about DD2 study. The intention of this website is to document the data sources used for research and to support the day-to-day work with DD2. It is mainly aimed at employees of the DCE, Aarhus University and Aarhus University Hospital, as it describes the setup used at DCE. Other institutions can also access DD2 data but their setup might differ.
 
 To learn more about DD2, please visit the official DD2 website: <https://dd2.dk/>{target="_blank"}
 

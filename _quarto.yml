@@ -1,13 +1,12 @@
 project:
   type: website
   output-dir: docs #hvis hjemmesiden driller med updates, så kan man slette alt i docs og generere det igen
-  resources:
-    - abbreviations.yml
+#  resources:
+#    - abbreviations.yml
 
 
-filters:
-  - abbr_auto
-
+#filters:
+#  - abbr_auto
   
 website:
   title: "DD2"

@@ -30,26 +30,27 @@ local seen = {}
 
 -- Replace abbreviation if found
 local function replace_if_abbreviation(text)
-  -- Remove leading/trailing punctuation for matching
-  local clean_text = text:gsub("^[%p]+", ""):gsub("[%p]+$", "")
-  local key = clean_text:lower()
+  -- Extract leading and trailing punctuation
+  local lead, core, trail = text:match("^(%p*)(.-)(%p*)$")
+  local key = core:lower()
   local full = normalized_abbr[key]
 
   if not full then return nil end
 
   -- Special case: DD2 (always abbreviation only)
   if key == "dd2" then
-    return "<abbr title=\"" .. full .. "\">" .. clean_text .. "</abbr>"
+    return lead .. "<abbr title=\"" .. full .. "\">" .. core .. "</abbr>" .. trail
   end
 
-  -- Default: first occurrence per page shows full description
   if not seen[key] then
     seen[key] = true
-    return full .. " (<abbr title=\"" .. full .. "\">" .. clean_text .. "</abbr>)"
+    return lead .. full .. " (<abbr class=\"abbr-first\" title=\"" .. full .. "\">" .. core .. "</abbr>)" .. trail
   else
-    return "<abbr title=\"" .. full .. "\">" .. clean_text .. "</abbr>"
+    return lead .. "<abbr title=\"" .. full .. "\">" .. core .. "</abbr>" .. trail
   end
 end
+
+
 
 -- Process inline elements recursively
 local function process_inlines(inlines)

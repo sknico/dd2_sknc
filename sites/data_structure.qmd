@@ -64,6 +64,6 @@ In general, updates from these sources may be possible, for example by extending
 
 # Routine Registry Data
 
-The routine registry data are also secondary data, however, they are only available on remote research servers and not considered part of the DD2 data collection. DD2 research data is uploaded to the servers hosted at Danmarks Statistik (DST, Statistics Denmark) and Sundhedsdatastyrelsen (SDS, The Danish Health Data Authority). On these servers, we have access to Danish medical and administrative registries, such as data from the CPR registry, hospital data from LPR, prescription data, laboratory data etc. Linkage to additional registries and databases is possible after approval of data permission applications sent to Statistics Denmark or the Danish Health Data Authority.
+The routine registry data are also secondary data, however, they are only available on remote research servers and not considered part of the DD2 data collection. DD2 research data is uploaded to the servers hosted at DST and SDS. On these servers, we have access to Danish medical and administrative registries, such as data from the CPR registry, hospital data from LPR, prescription data, laboratory data etc. Linkage to additional registries and databases is possible after approval of data permission applications sent to Statistics Denmark or the Danish Health Data Authority.
 
 

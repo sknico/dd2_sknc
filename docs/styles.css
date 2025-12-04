@@ -28,10 +28,12 @@ abbr:hover {
   color: #0056b3; /* Darker on hover */
   background-color: #f0f8ff; /* Light blue highlight */
 }
-/* First occurrence: look like normal text */
-abbr:first-of-type {
+/* First occurrence (where it is written in full text): look like normal text */
+abbr.abbr-first {
   color: inherit;       /* Use normal text color */
   font-weight: normal;  /* Remove bold */
 }
+
+
 
 

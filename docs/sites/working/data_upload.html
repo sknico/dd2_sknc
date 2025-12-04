@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,10 +35,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-c0011d4058ed6ed9b854a8e2e0822f3c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -279,8 +279,8 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Definér DD2-populationen: få nyt data fra DD2/Jens</p></li>
 <li><p>Oprens og tjek</p></li>
 </ol>
-<p>3a. <abbr title="Danmarks Statistik/Statistics Denmark">DST</abbr></p>
-<p>3b. <abbr title="Sundhedsdatastyrelsen/The Danish Health Data Authority">SDS</abbr> Send en besked (via henvendelsesformularen) om at vi gerne vil have et upload-link. Linket skal sendes til HTS, men man kan godt bede dem om at give besked, når de har sendt det. I tilfælde af man skal bede om et nyt link (hvis ikke man når at uploade inden der er gået 7 dage), skal man skrive en mail til forskerservice (med HENID) og ikke lave en ny henvendelse.</p>
+<p>3a. Danmarks Statistik/Statistics Denmark (<abbr title="Danmarks Statistik/Statistics Denmark">DST</abbr>)</p>
+<p>3b. Sundhedsdatastyrelsen/The Danish Health Data Authority (<abbr title="Sundhedsdatastyrelsen/The Danish Health Data Authority">SDS</abbr>) Send en besked (via henvendelsesformularen) om at vi gerne vil have et upload-link. Linket skal sendes til HTS, men man kan godt bede dem om at give besked, når de har sendt det. I tilfælde af man skal bede om et nyt link (hvis ikke man når at uploade inden der er gået 7 dage), skal man skrive en mail til forskerservice (med HENID) og ikke lave en ny henvendelse.</p>
 <p>3c. Eksterne data</p>
 <ul>
 <li>Vi laver en DD2-population, som uploades til DST</li>
@@ -377,8 +377,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -489,7 +487,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

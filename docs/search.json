@@ -1,10 +1,33 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "The Danish Center for Strategic Research in Type 2 Diabetes",
+    "objectID": "sites/data_structure.html",
+    "href": "sites/data_structure.html",
+    "title": "Data structure",
     "section": "",
-    "text": "Important\n\n\n\nThis website is currently under development.\n\n\nThis website includes details about The Danish Center for Strategic Research in Type 2 Diabetes - The DD2 Study. The intention of this website is to document the data sources used for research and to support the day-to-day work with DD2. It is mainly aimed at employees of the Department of Clinical Epidemiology (DCE), Aarhus University and Aarhus University Hospital, as it describes the setup used at DCE. Other institutions can also access DD2 data but their setup might differ.\nTo learn more about DD2, please visit the official DD2 website: https://dd2.dk/\nPlease see Nielsen et al. (2012) for information about the initial DD2 enrollment process and the 2018 and 2024 cohort papers (Christensen et al. (2018) and Kristensen et al. (2024)) for information about enrollment, data sources, and baseline characteristics. An extensive list of scientific publications based on data from DD2 is available on the official website.\n\n\n\n\nReferences\n\nChristensen DH, Nicolaisen SK, Berencsi K, Beck-Nielsen H, Rungby J, Friborg S, et al. Danish centre for strategic research in type 2 diabetes (DD2) project cohort of newly diagnosed patients with type 2 diabetes: A cohort profile. BMJ Open. 2018;8(4):e017273.\n\n\nKristensen FPB, Nicolaisen SK, Nielsen JS, Christensen DH, Højlund K, Beck-Nielsen H, et al. The danish centre for strategic research in type 2 diabetes (DD2) project cohort and biobank from 2010 through 2023 - a cohort profile update. 2024;16:641–56.\n\n\nNielsen JS, Thomsen RW, Steffensen C, Christiansen JS. The danish centre for strategic research in type 2 diabetes (DD2) study: Implementation of a nationwide patient enrollment system. Clin Epidemiol. 2012;4(Suppl 1):27–36."
+    "text": "The full DD2 research data are based on data collected and linked from multiple sources (Kristensen et al. (2024)). This page gives an overview of the data structure, the data sources, and the definitions of data types. Detailed descriptions of each data source are provided on the following pages.\nWithin the DD2 data collection, the data sources include primary data, i.e., data unique to DD2, including data and material collected from participants at enrollment, and additional data from research studies within the DD2 cohort. The data also include secondary data, i.e., external data collected from other data sources and then linked to DD2. Data from the DD2 data collection are also linked to the nationwide routine registry data located in centralized databases on remote research servers.",
+    "crumbs": [
+      "Data structure"
+    ]
+  },
+  {
+    "objectID": "sites/data_structure.html#dd2-enrollment-material",
+    "href": "sites/data_structure.html#dd2-enrollment-material",
+    "title": "Data structure",
+    "section": "1. DD2 enrollment material",
+    "text": "1. DD2 enrollment material\nEverything collected during the DD2 enrollment constitutes the DD2 enrollment material and forms the foundation of DD2 as a distinct data source. This includes:\n\nDD2 interview data (questionnaire)\nData from the clinical examination at enrollment\nBlood and urine samples collected for storage in the DD2 biobank in Vejle.\n\nEnrollment in DD2 involves completing the DD2 questionnaire, undergoing the clinical examination, and providing blood and urine samples. The DD2 cohort is defined by individuals who completed the enrollment process. These materials are unique to DD2 and are not available from other sources. All blood and urine samples are stored in the DD2 biobank and may be used for future research, though analyses of the samples typically depend on funding from specific studies.",
+    "crumbs": [
+      "Data structure"
+    ]
+  },
+  {
+    "objectID": "sites/data_structure.html#additional-dd2-data",
+    "href": "sites/data_structure.html#additional-dd2-data",
+    "title": "Data structure",
+    "section": "2. Additional DD2 data",
+    "text": "2. Additional DD2 data\nResearch studies in the DD2 setup can generate new primary data. The completeness and availability of these primary data depend on when the studies are conducted and when results become available. The data are generated among individuals already enrolled in DD2, and are likely not collected during the initial enrollment process. This could e.g., be data from studies collecting additional follow-up data (by a follow-up questionnaire or follow-up clinical examinations) or from intervention studies including individuals from the DD2 cohort.\nThe biological samples (blood and urine) are collected at enrollment and thus considered enrollment material. However, they are stored in the biobank, and can be used for additional analyses in new research studies, e.g., biomarker analyses, genetic studies, or DNA sequencing. These analysis results add to the primary collected data by adding additional baseline information.\nExamples of currently available additional DD2 data include: \n\nIDNC questionnaire data, which is a follow-up questionnaire from 2016 including (follow-up) questions from the initial questionnaire along with multiple questions concerning diabetic neuropathy.\nIDA, DICTA, CsubT2D, etc., are examples of subprojects initiated by DD2 research groups. These research groups generate their own additional data, but the data are still part of the overall DD2 setup.\nQoL data. After enrollment, an e-mail with a questionnaire about quality of life is sent to the individual. Additional follow-up questionnaires are sent after 2 years, 4 years, and 6 years.\n\nThese data sources will most likely not be routinely updated with new individuals or additional information, as they are primarily generated as part of specific research projects with closed cohorts. The data can be accessed through collaboration with DD2 research groups.",
+    "crumbs": [
+      "Data structure"
+    ]
   },
   {
     "objectID": "sites/working/working.html",
@@ -18,7 +41,7 @@
     "href": "sites/working/macro_syntax/GLD_classification.html",
     "title": "GLD_classification",
     "section": "",
-    "text": "A SAS macro to classify diabetes treatment regimens. The input is a data set (SAS, STATA, csv) including a column of CPR-numbers and a column of ATC-codes (glucose-lowering drugs, i.e. A10). The output is a data set (SAS, STATA, csv) where the treatment is classified into disjoint groups, e.g., insulin based monotherapy or non-insulin based monotherapy, based on all possible ATC-codes. The output also includes a pdf table with the results.\nThe macro is uploaded to Danmarks Statistik/Statistics Denmark (DST) and Sundhedsdatastyrelsen/The Danish Health Data Authority (SDS)"
+    "text": "A SAS macro to classify diabetes treatment regimens. The input is a data set (SAS, STATA, csv) including a column of CPR-numbers and a column of ATC-codes (glucose-lowering drugs, i.e. A10). The output is a data set (SAS, STATA, csv) where the treatment is classified into disjoint groups, e.g., insulin based monotherapy or non-insulin based monotherapy, based on all possible ATC-codes. The output also includes a pdf table with the results.\nThe macro is uploaded to Danmarks Statistik/Statistics Denmark (DST) and Sundhedsdatastyrelsen/The Danish Health Data Authority (SDS)."
   },
   {
     "objectID": "sites/working/data_upload.html",
@@ -32,7 +55,7 @@
     "href": "sites/registry/DST.html",
     "title": "DST",
     "section": "",
-    "text": "Danmarks Statistik/Statistics Denmark (DST) Projektnr. 708637 (and FSEID-00006159 transfer from Sundhedsdatastyrelsen/The Danish Health Data Authority (SDS) The project is placed under the “Projektdatabaseordning (705004)”. The DD2 projects itself had the project number 708637 (via 705004), and the agreement with DST makes registry data available. Data from Det Psykiatriske Centrale Forskningsregister (PCR), Laboratoriedatabasens Forskertabel (LAB-F), Overvågningsdata - COVID-19-testsvar fra SSI (OVD_SSI), Det Danske Vaccinationsregister - COVID-19-vaccinationsdata fra SSI (DDV_SSI), and Cancerregisteret (CAR) are tranferred from SDS (FSEID-00006159). Data from Lægemiddelstatistikregisteret/Lægemiddeldatabasen (LSR/LMDB) is included via DDV DST but based on the agreement with SDS (FSEID-00006159).\n\n\n\n\n\n\nImportant\n\n\n\nTjek om aftale + bilag må ligge offentlig tilgængeligt.\n\n\nDownload the general agreement including the agreement about medicinal data here:\nAftale (mail)  Bilag B \nBilag LMDB  Bilag C",
+    "text": "Danmarks Statistik/Statistics Denmark (DST) Projektnr. 708637 (and FSEID-00006159 transfer from Sundhedsdatastyrelsen/The Danish Health Data Authority (SDS)). The project is placed under the “Projektdatabaseordning (705004)”. The DD2 projects itself had the project number 708637 (via 705004), and the agreement with DST makes registry data available. Data from Det Psykiatriske Centrale Forskningsregister (PCR), Laboratoriedatabasens Forskertabel (LAB-F), Overvågningsdata - COVID-19-testsvar fra SSI (OVD_SSI), Det Danske Vaccinationsregister - COVID-19-vaccinationsdata fra SSI (DDV_SSI), and Cancerregisteret (CAR) are tranferred from SDS (FSEID-00006159). Data from Lægemiddelstatistikregisteret/Lægemiddeldatabasen (LSR/LMDB) is included via DDV (DST), but based on the agreement with SDS (FSEID-00006159).\n\n\n\n\n\n\nImportant\n\n\n\nTjek om aftale + bilag må ligge offentlig tilgængeligt.\n\n\nDownload the general agreement including the agreement about medicinal data here:\nAftale (mail)  Bilag B \nBilag LMDB  Bilag C",
     "crumbs": [
       "Routine registry data",
       "DST"
@@ -43,7 +66,7 @@
     "href": "sites/registry/DST.html#danmarks-statistik-dststatistics-denmark",
     "title": "DST",
     "section": "",
-    "text": "Danmarks Statistik/Statistics Denmark (DST) Projektnr. 708637 (and FSEID-00006159 transfer from Sundhedsdatastyrelsen/The Danish Health Data Authority (SDS) The project is placed under the “Projektdatabaseordning (705004)”. The DD2 projects itself had the project number 708637 (via 705004), and the agreement with DST makes registry data available. Data from Det Psykiatriske Centrale Forskningsregister (PCR), Laboratoriedatabasens Forskertabel (LAB-F), Overvågningsdata - COVID-19-testsvar fra SSI (OVD_SSI), Det Danske Vaccinationsregister - COVID-19-vaccinationsdata fra SSI (DDV_SSI), and Cancerregisteret (CAR) are tranferred from SDS (FSEID-00006159). Data from Lægemiddelstatistikregisteret/Lægemiddeldatabasen (LSR/LMDB) is included via DDV DST but based on the agreement with SDS (FSEID-00006159).\n\n\n\n\n\n\nImportant\n\n\n\nTjek om aftale + bilag må ligge offentlig tilgængeligt.\n\n\nDownload the general agreement including the agreement about medicinal data here:\nAftale (mail)  Bilag B \nBilag LMDB  Bilag C",
+    "text": "Danmarks Statistik/Statistics Denmark (DST) Projektnr. 708637 (and FSEID-00006159 transfer from Sundhedsdatastyrelsen/The Danish Health Data Authority (SDS)). The project is placed under the “Projektdatabaseordning (705004)”. The DD2 projects itself had the project number 708637 (via 705004), and the agreement with DST makes registry data available. Data from Det Psykiatriske Centrale Forskningsregister (PCR), Laboratoriedatabasens Forskertabel (LAB-F), Overvågningsdata - COVID-19-testsvar fra SSI (OVD_SSI), Det Danske Vaccinationsregister - COVID-19-vaccinationsdata fra SSI (DDV_SSI), and Cancerregisteret (CAR) are tranferred from SDS (FSEID-00006159). Data from Lægemiddelstatistikregisteret/Lægemiddeldatabasen (LSR/LMDB) is included via DDV (DST), but based on the agreement with SDS (FSEID-00006159).\n\n\n\n\n\n\nImportant\n\n\n\nTjek om aftale + bilag må ligge offentlig tilgængeligt.\n\n\nDownload the general agreement including the agreement about medicinal data here:\nAftale (mail)  Bilag B \nBilag LMDB  Bilag C",
     "crumbs": [
       "Routine registry data",
       "DST"
@@ -54,7 +77,7 @@
     "href": "sites/registry/DST.html#population",
     "title": "DST",
     "section": "Population",
-    "text": "Population\nThe DD2 data are uploaded to DST and the population include all individuals in DD2CORE (encrypted CPR). Registry data (Raw data -&gt; Grunddata) is linked, and based on the individuals in the dataset pniveau.\n\nFormats\nOn DST formats from DST and IDNC should be included manually. Here is an example of how it can be done in SAS\n\nlibname fmt \"E:\\Formater\\SAS formater i DAnmarks Statistik\\FORMATKATALOG\" access=readonly;\noptions fmtsearch=(fmt.disced fmt.times_personstatistik fmt.dream fmt.statistikbank);\n\nlibname idnc \"path\" access=readonly;\noptions fmtsearch=(idnc.idnc_formats);",
+    "text": "Population\nThe DD2 data are uploaded to DST, and the population include all individuals in DD2CORE (encrypted CPR). Registry data (Raw data -&gt; Grunddata) is linked, and based on the individuals in the dataset pniveau.\n\nFormats\nOn DST formats from DST and International Diabetic Neuropathy Consortium (IDNC) should be included manually. Here is an example of how it can be done in SAS\n\nlibname fmt \"E:\\Formater\\SAS formater i DAnmarks Statistik\\FORMATKATALOG\" access=readonly;\noptions fmtsearch=(fmt.disced fmt.times_personstatistik fmt.dream fmt.statistikbank);\n\nlibname idnc \"path\" access=readonly;\noptions fmtsearch=(idnc.idnc_formats);",
     "crumbs": [
       "Routine registry data",
       "DST"
@@ -72,157 +95,83 @@
     ]
   },
   {
-    "objectID": "sites/data_structure.html",
-    "href": "sites/data_structure.html",
-    "title": "Data structure",
+    "objectID": "sites/data sources/old/diabase.html",
+    "href": "sites/data sources/old/diabase.html",
+    "title": "DiaBase",
     "section": "",
-    "text": "The full DD2 research data are based on data collected and linked from multiple sources (Kristensen et al. (2024)). This page gives an overview of the data structure, the data sources, and the definitions of data types. Detailed descriptions of each data source are provided on the following pages.\nWithin the DD2 data collection, the data sources include primary data, i.e., data unique to DD2, including data and material collected from participants at enrollment, and additional data from research studies within the DD2 cohort. The data also include secondary data, i.e., external data collected from other data sources and then linked to DD2. Data from the DD2 data collection are also linked to the nationwide routine registry data located in centralized databases on remote research servers (Sundhedsdatastyrelsen/The Danish Health Data Authority (SDS) and Danmarks Statistik/Statistics Denmark (DST)).",
-    "crumbs": [
-      "Data structure"
-    ]
+    "text": "Dansk kvalitetsdatabase for diabetisk retinopati – Dansk kvalitetsdatabase for diabetisk retinopati (DiaBase)\nDENNE SIDE SKAL BESKRIVE\nØjendata - Diabase (Regionernes Kliniske Kvalitetsudviklingsprogram (RKKP))"
   },
   {
-    "objectID": "sites/data_structure.html#dd2-enrollment-material",
-    "href": "sites/data_structure.html#dd2-enrollment-material",
-    "title": "Data structure",
-    "section": "1. DD2 enrollment material",
-    "text": "1. DD2 enrollment material\nEverything collected during the DD2 enrollment (questionnaire responses, clinical measurements, and biological samples) constitutes the DD2 enrollment material and forms the foundation of DD2 as a distinct data source. This includes:\n\nDD2 interview data (questionnaire)\nData from the clinical examination at enrollment\nBlood and urine samples collected for storage in the DD2 biobank in Vejle.\n\nEnrollment in DD2 involves completing the DD2 questionnaire, undergoing the clinical examination, and providing blood and urine samples. The DD2 cohort is defined by individuals who completed the enrollment process. These materials are unique to DD2 and are not available from other sources. All blood and urine samples are stored in the DD2 biobank and may be used for future research, though analysis typically depends on funding from specific studies.",
-    "crumbs": [
-      "Data structure"
-    ]
-  },
-  {
-    "objectID": "sites/data_structure.html#additional-dd2-data",
-    "href": "sites/data_structure.html#additional-dd2-data",
-    "title": "Data structure",
-    "section": "2. Additional DD2 data",
-    "text": "2. Additional DD2 data\nResearch studies in the DD2 setup can generate new primary data. The completeness and availability of these primary data depend on when the studies are conducted and when results become available. The data are generated among individuals already enrolled in DD2, and are likely not collected during the initial enrollment process. This could e.g., be data from studies collecting additional follow-up data (by a follow-up questionnaire or follow-up clinical examinations) or from intervention studies including individuals from the DD2 cohort.\nThe biological samples (blood and urine) are collected at enrollment and thus considered enrollment material. However, they are stored in the biobank, and can be used for additional analyses in new research studies, e.g., biomarker analyses, genetic studies, or DNA sequencing. These analysis results add to the primary collected data by adding additional baseline information.\nExamples of currently available additional DD2 data include\n\nIDNC questionnaire data, a follow-up questionnaire from 2016 including (follow-up) questions from the initial questionnaire along with multiple questions concerning diabetic neuropathy.\nIDA, DICTA, CsubT2D, etc., are examples of projects initiated within DD2. These projects generate their own additional data and analyses but data are still part of the overall DD2 setup.\nQoL data. After enrollment, an e-mail with a questionnaire about quality of life (QoL) is sent to the individual. Additional follow-up questionnaires are sent after 2 years, 4 years, and 6 years.\n\nThese data sources will most likely not be routinely updated with new individuals or additional data, as they are primarily generated as part of specific research projects with closed cohorts. The data can be accessed through collaboration with DD2 research groups.",
-    "crumbs": [
-      "Data structure"
-    ]
-  },
-  {
-    "objectID": "sites/data sources/old/ddid.html",
-    "href": "sites/data sources/old/ddid.html",
-    "title": "DDiD",
+    "objectID": "sites/data sources/old/dd2_biobank_new_structure.html",
+    "href": "sites/data sources/old/dd2_biobank_new_structure.html",
+    "title": "New biobank structure",
     "section": "",
-    "text": "Dansk Diabetes Database (DDD/DDiD), which has been active since 1/7 2022."
+    "text": "Important\n\n\n\nIndholdet og strukturen på det biobankdata afhænger af hvilke variable der er tilgængelige fra biobanken (vejle).\n\n\n\nNy struktur - data delt i to (måske tre)\nDENNE SIDE SKAL BESKRIVE\n\nDD2 BIOBANK: infodata om prøverne og kvaliteten af data (IKKE resultater)\n\ncpr/projectid (link mellem cpr og projectid)\nurinprøve, ja/nej\nblodprøve, ja/nej\nfaste ja/nej\nvejledato\nnye data fra biobanken/vejle: antal prøver, glas, osv.\n\nBiomarker: resultater fra de enkelte analyser (long format)\n\nprojectid\nbiomarker (e.g. c-pep, glucose, il6, …)\nresults (resultatet af analysen)\nunit\nstudy (hvorfor er målingen lavet?)\ndate (f.eks. ved c-pep er der forskel på om analysen er lavet på en ny eller gammel prøve, så det kan være relevant at kende datoen for analysen så man kan sammenligne den med datoen for blodprøven).\n\n\nDet kan evt. være relevant med et meta-data med henvisning til de enkelte studier.\nIdeelt set vil der for enhver biomarkør være en beskrivelse af markøren/data/pitfalls/beslutninger/overvejelser etc. Et slags opslagsværk, så man har samlet information om hver markør (e.g. c-pep så man ved hvilke beslutninger der er taget)."
   },
   {
-    "objectID": "sites/data sources/foedsel.html",
-    "href": "sites/data sources/foedsel.html",
-    "title": "Birth data",
+    "objectID": "sites/data sources/fodstatus.html",
+    "href": "sites/data sources/fodstatus.html",
+    "title": "Podiatrist data",
     "section": "",
-    "text": "Go to Data documentation\nData from Danish midwife journals have been collected for all individuals enrolled in DD2 per 22 February 2022, i.e., a total of n=9,549 individuals. Data include information on birth weight, birth length, born at term (yes/no, and if no then also the number of weeks), and twin (yes/no).\nThe afleverings-/afslutningsrapport from Rigsarkivet (the Danish National Archive) can be downloaded here (Danish): Download \nThere is similar description in English in the electronic supplemental material from Hansen et al. (2023): Download\nCPR-numbers for a total of n=9,549 individuals were sent to Rigsarkivet and n=8,896 fulfilled the criteria for potentially having available birth information (born in the period from ~1920 to 1988, born in Denmark, and identifiable through the biological mother’s name). During the retrieval, data were uniformized (e.g., to include birth weight in grams and not pounds) and proofread.\nData include n=9,549 CPR-numbers (one CPR-number is included twice), n=8,346 have non-missing birth weight, and a total of n=8,364 had a non-missing value in at least one of the five birth variables. A total of 8,869-8,364=532 were not included despite fulfilling the criteria (not registered1).",
+    "text": "Go to Data documentation\nThe DD2 cohort is linked to The Danish National Podiatrist Registry (the Podiatrist Database, fodstatusdatabasen). This database was established in 2011, and includes information on examinations performed by Danish podiatrists working under a collective agreement with the Danish Administrative Regions (Kristensen et al. (2024)). Records include symptoms of neuropathy and information from a clinical examination of the lower extremities (including circulatory and neuropathy status).\nIndividuals in DD2 enrolled between 2011 and 2022 are linked to the Podiatrist Database. Approximately 60% of the DD2 participants have at least one record in the database, and they have median 4 (IQR 2-6) records. DD2 participants without records may have had foot examinations by other healthcare professionals (e.g., diabetes outpatient clinics, general practitioners), a private podiatrist not working under the collective agreement or may not have been examined at all (Kristensen et al. (2024)).",
     "crumbs": [
       "External DD2 data",
-      "Birth data"
+      "Podiatrist data"
     ]
   },
   {
-    "objectID": "sites/data sources/foedsel.html#foedselsdata.sas7bdat",
-    "href": "sites/data sources/foedsel.html#foedselsdata.sas7bdat",
-    "title": "Birth data",
-    "section": "foedselsdata.sas7bdat",
-    "text": "foedselsdata.sas7bdat\n Variable documentation \n\n\n\nFormat (var x obs)\nId variables\nUnique key\nImportant dates\n\n\n\n\nWide (9 x 9,544)\nCPR\nCPR\n-\n\n\n\nThe dataset include birth data for N=9,544 individuals identified via CPR. There are no dates in the dataset, however, information relates to birth date.\n\nIllustration of the overall data structure. The dataset is in wide format (9 variables x 9,544 observations), with CPR as the unique key.\n\n\n\n\n\n\n\n\n\n\n\nRow\nCPR\nfoedselsvaegt\nfoedselslaengde\nfuldbaarenhed\nuger_for_tidligt\ntvilllingefoedsel\n\n\n\n\n1\nCPR1\nnum.\nnum.\nJa\n\n0\n\n\n2\nCPR2\nnum.\nnum.\nNej\n2 til 3\n0\n\n\n3\nCPR3\nnum.\nnum.\nJa\n\n0\n\n\n…\n…\n…\n…\n…\n…\n…\n\n\n9,544\nCPR9544\nnum.\nnum.\nJa\n\n1",
+    "objectID": "sites/data sources/fodstatus.html#fodstatus.sas7bdat",
+    "href": "sites/data sources/fodstatus.html#fodstatus.sas7bdat",
+    "title": "Podiatrist data",
+    "section": "fodstatus.sas7bdat",
+    "text": "fodstatus.sas7bdat\n Variable documentation \n\n\n\n\n\n\n\n\n\nFormat (var x obs)\nId variables\nUnique key\nImportant dates\n\n\n\n\nWide (88 x 29,214)\nCPR\nCPR*statusdate\nstatusdate\n\n\n\nThe dataset include podiatrist data for a total of N=6,734 individuals. Data are uniquely identified via CPR*statusdate.\n\nIllustration of the overall data structure. The dataset is in wide format (88 variables x 29,214 observations), with CPR*statusdate as the unique key.\n\n\nRow\nCPR\nstatusdate\nVariable1\nVariable2\n…\n\n\n\n\n1\nCPR1\nstatusdate1.1\nnum.\nchar.\n…\n\n\n2\nCPR1\nstatusdate1.2\nnum.\nchar.\n…\n\n\n…\n…\n…\n…\n…\n…\n\n\n5\nCPR1\nstatusdate1.5\nnum.\nchar.\n…\n\n\n6\nCPR2\nstatusdate2.1\nnum.\nchar.\n…\n\n\n7\nCPR2\nstatusdate2.2\nnum.\nchar.\n…\n\n\n…\n…\n…\n…\n…\n…\n\n\n29,214\nCPR6734\nstatusdate6734.1\nnum.\nchar.\n…",
     "crumbs": [
       "External DD2 data",
-      "Birth data"
+      "Podiatrist data"
     ]
   },
   {
-    "objectID": "sites/data sources/foedsel.html#footnotes",
-    "href": "sites/data sources/foedsel.html#footnotes",
-    "title": "Birth data",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nIt is not marked in the data whether missing was due to not being eligible or due to other reasons↩︎\nThe current data permission includes only individuals in DD2 and therefore not the matched controls. As CPR-numbers are not available and controls ultimately cannot be linked to their respective DD2 individual there is no reason to upload data to the servers because all analyses can be performed locally.↩︎",
-    "crumbs": [
-      "External DD2 data",
-      "Birth data"
-    ]
-  },
-  {
-    "objectID": "sites/data sources/ddda.html",
-    "href": "sites/data sources/ddda.html",
-    "title": "DDDA",
+    "objectID": "sites/data sources/dd2_questionnaire.html",
+    "href": "sites/data sources/dd2_questionnaire.html",
+    "title": "DD2 questionnaire",
     "section": "",
-    "text": "Go to Data documentation\nDanish Diabetes Database for Adults The Danish Diabetes Database for Adults (DDDA) (also known as Dansk Voksen Diabetes Database (DVDD) or Det Nationale Indikatorprojekt (NIP) Diabetes) is a no longer active database from regionernes kliniske kvalitetsudviklingsprogram Regionernes Kliniske Kvalitetsudviklingsprogram (RKKP) It was closed by 30 June 2022. It has now been replaced by Dansk Diabetes Database (DDD/DDiD), which has been active since 1 July 2022. DDiD currently mainly uses registry data, however, as additional data are still being recorded in the clinic, it is worth checking the database in the future, as additional variables might be included (e.g. smoking, blood pressure, BMI, etc.).\nExtracts from the online DDDA documentation (downloaded 07 September 2023) about the population and variables can be downloaded here:  Variables   Population\nAnd additional documents:  Datadefinitioner   Registreringsskema   Variabeloversigt   Questionnaire\nSee also Jørgensen et al. (2016) for further information about the database.",
+    "text": "Go to Data documentation\nData from the DD2 questionnaire include the responses from the enrollment, information from the clinical examination along with general information about the individual. The DD2 questionnaire can be downloaded here:  Download\nAs of summer 2025, DD2 was migrated to a new server setup at Steno Diabetes Center Odense. Department of Clinical Epidemiology (DCE) retains data from the previous setup. Historically, data updates were received regularly, but from the end of 2025, DCE must submit a formal application to obtain new data.",
     "crumbs": [
-      "External DD2 data",
-      "DDDA"
+      "DD2 enrollment data",
+      "DD2 questionnaire"
     ]
   },
   {
-    "objectID": "sites/data sources/ddda.html#ddda.sas7bdat",
-    "href": "sites/data sources/ddda.html#ddda.sas7bdat",
-    "title": "DDDA",
-    "section": "DDDA.sas7bdat",
-    "text": "DDDA.sas7bdat\n Variable documentation \n\n\n\n\n\n\n\n\n\nFormat (var x obs)\nId variables\nUnique key\nImportant dates\n\n\n\n\nWide (75 x 30,806)\nCPR\nCPR*status_dato\nstatus_dato, specific date variables\n\n\n\nN=8,512 distinct CPR numbers with non-missing data are included in the data, i.e., individuals with data in DDDA A total of N=10,219 individuals are included (merged with DD2core). A record is unique based on CPR and status_dato, however, for many of the variables, it is worth also considering the corresponding var_dato.\n\nIllustration of the overall data structure. The dataset is in wide format (75 variables × 30,806 rows), with CPR*status_dato as the unique key.\n\n\n\n\n\n\n\n\n\n\nRow\nCPR\nstatus_dato\nVar\nVar_dato\n…\n\n\n\n\n1\nCPR1\nstatus_dato1.1\nnum.\nVar_dato1.1\n…\n\n\n2\nCPR1\nstatus_dato1.2\nnum.\nVar_dato1.2\n…\n\n\n3\nCPR1\nstatus_dato1.3\nnum.\nVar_dato1.2\n…\n\n\n…\n…\n…\n…\n…\n…\n\n\n10\nCPR1\nstatus_dato1.10\n(missing, no record)\n(missing, no record)\n…\n\n\n11\nCPR2\nstatus_dato2.1\nnum.\nVar_dato2.1\n…\n\n\n12\nCPR2\nstatus_dato2.2\nnum.\nVar_dato2.2\n…\n\n\n…\n…\n…\n…\n…\n…\n\n\n30,806\nCPR10219\n(missing, not in DDDA)\n(missing, not in DDDA)\n(missing, not in DDDA)\n…\n\n\n\n\nVariables from previous versions\nIn the current DDDA data, some variables from the database were not delivered. It was decided that the best suitable solution was to include these variables from older versions of data (and thus missing for some new individuals).\n\nFrom the 2021 data: shared_care and Plasmakreatinin_operator\nFrom the 2018 data (also missing in the 2021 delivery): diag_dato, HbA1c_kode, HDLcholesterol, and HDLcholesterol_undersoegelse_kod. These variables are included with a “_2018” postfix.",
+    "objectID": "sites/data sources/dd2_questionnaire.html#dd2core.sas7bdat",
+    "href": "sites/data sources/dd2_questionnaire.html#dd2core.sas7bdat",
+    "title": "DD2 questionnaire",
+    "section": "DD2core.sas7bdat",
+    "text": "DD2core.sas7bdat\n Variable documentation \n\n\n\n\n\n\n\n\n\nFormat (var x obs)\nId variables\nUnique key\nImportant dates\n\n\n\n\nWide (52 x 12,098)\nCPR, ProjektID, ydernr\nCPR\nreg_dato\n\n\n\nData from the DD2 enrollment questionnaire and clinical examination are stored in the dd2core.sas7bdat dataset. (Note: The name “dd2core” is not ideal, as there is no definition of what is actually considered “core” data in DD2. Therefore, the data should be referred to as “enrollment data”. The dataset cannot easily be renamed as it is in its current form in the agreements with Danmarks Statistik/Statistics Denmark (DST) and Sundhedsdatastyrelsen/The Danish Health Data Authority (SDS).)\nData (November 2023) include enrollment information on all N=12,098 individuals enrolled in DD2 by November 2023. Data are on wide format, currently with 52 variables, and include one row per CPR number. A ProjektID is also included for individuals with a blood/urine sample in the biobank. The variable ydernr is also included as a identifier and is therefore encrypted by SDS and DST. Individuals are enrolled in DD2 on the enrollment date, reg_dato. Data can be updated (new procedure after 2025), and if so, more enrolled individuals are included (same variable set). We have usually received a full new dataset with the current DD2 population - this is to ensure we only have data on individuals we are allowed to have data on, and to ensure any manual corrections in the DD2 setup have been implemented in our data. Data were received as Excel or CSV files and underwent initial data cleaning before being saved in dd2core.sas7bdat.\n\nIllustration of the overall data structure. The dataset is in wide format (52 variables × 12,098 rows), with CPR as the unique key.\n\n\nRow\nCPR\nProjektID\nreg_dato\n…\n\n\n\n\n1\nCPR1\nProjektID1\nreg_dato1\n…\n\n\n2\nCPR2\nProjektID2\nreg_dato2\n…\n\n\n3\nCPR3\nProjektID3\nreg_dato3\n…\n\n\n…\n…\n…\n…\n…\n\n\n12,098\nCPR12098\nProjektID12098\nreg_dato12098\n…",
     "crumbs": [
-      "External DD2 data",
-      "DDDA"
+      "DD2 enrollment data",
+      "DD2 questionnaire"
     ]
   },
   {
-    "objectID": "sites/data sources/dd2_qol.html",
-    "href": "sites/data sources/dd2_qol.html",
-    "title": "Quality of life",
+    "objectID": "sites/data sources/dd2_idnc.html",
+    "href": "sites/data sources/dd2_idnc.html",
+    "title": "Neuropathy questionnaire (IDNC)",
     "section": "",
-    "text": "After enrollment, an e-mail with a questionnaire including questions about quality of life (QoL) is sent to the individual. A follow-up questionnaire is sent after 2 years, 4 years, and 6 years. Department of Clinical Epidemiology (DCE) does not have the QoL data."
-  },
-  {
-    "objectID": "sites/data sources/dd2_genetics.html",
-    "href": "sites/data sources/dd2_genetics.html",
-    "title": "Genetic variables",
-    "section": "",
-    "text": "Go to Data documentation\nWe received data on genetics/polygenic risk scores (PRS) in multiple rounds. In the following section we will go through the data files we received. Of note, we also received PRS data in October 2023 which was used for one of the birth weight studies (Hansen et al. (2023)), but these data have not been uploaded to the servers.\nOn Sundhedsdatastyrelsen/The Danish Health Data Authority (SDS) the first and second rounds of data were originally included in the IL6_TNF data, but this data source has now been split into Biomark including the 22 “pladebiomarkør” biomarkers and Genetik including the genetics data described here. The variables in Genetik were renamed, i.e., Assay = GeneMarker, Calc_Conc_Mean = Value, and CV_on_plate = data_round.",
+    "text": "Go to Data documentation\nInternational Diabetic Neuropathy Consortium (IDNC) is short for “International Diabetic Neuropathy Consortium”. Read more about it here: https://idnc.au.dk/about-idnc.\nA list of 7,011 CPR-numbers from all individuals enrolled in DD2 by February were sent to the CPR registry to get their addresses. The only criteria to be included in the questionnaire study were that individuals should be enrolled in DD2 (February 2016), be alive (24 May 2016), and have a valid Danish address (24 May 2016). A total of 6,726 questionnaires were sent out in June 2016 (07 June 2016), and a reminder was sent in September 2016 (12 September 2016) and again in October 2016 (10 October 2016) to those who had not provided a response. A total of 5,755 questionnaires were returned during the fall of 2016 and the inclusion ended in January 2017 (24 January 2017). The questionnaire included questions about height, weight, smoking and alcohol, and physical activity. These questions were intended to be follow-up questions similar to those from the baseline questionnaire. In addition, the questionnaire included questions about falls, quality of life, sleep, mental health, neuropathy (in hand and feet) and pain. The questionnaire thus included the Michigan Neuropathy Screening Instrument questionnaire (MNSIq) and the Douleur Neuropathique en 4 Questions (DN4).\nRead more about the questionnaire in Gylfadottir et al. (2020) and Christensen et al. (2020).\nThe questionnaire (in Danish) can be downloaded here:  Download \nAn English translation of the questionnaire is included in the supplement to Gylfadottir et al. (2020).\nThe questions and variable definitions for the original variables can be downloaded here:  Download",
     "crumbs": [
       "Additional DD2 data",
-      "Genetic variables"
+      "Neuropathy questionnaire (IDNC)"
     ]
   },
   {
-    "objectID": "sites/data sources/dd2_genetics.html#round-1-april-2024---gen1",
-    "href": "sites/data sources/dd2_genetics.html#round-1-april-2024---gen1",
-    "title": "Genetic variables",
-    "section": "Round 1 (April 2024 - Gen1)",
-    "text": "Round 1 (April 2024 - Gen1)\nData include 9,997 observations and 104 variables. Some individuals had missing ID (but potentially non-missing barcode) and some had duplicate barcodes. The n=215 individuals with missing ID were checked by JSN, and 85 of these were denoted “ok”. For around 500 individuals, information on all the PRS values were deleted in the genetic analysis (see README file for specific reasons). Data were restricted to n=9,856 individuals with valid, unique, and non-missing ID and barcode, and transformed to long format. The variables geno_id, rem, p_id (text), DD2_projectid, DD2_barcode were removed from data (to align with the format from the original biobank file, IL6_TNF). Before upload to SDS (IL6_TNF_240411), 69 individuals were excluded as they were not among the n=11,381 individuals in the DD2 cohort SDS April 2023). Data were marked with data_round=\"Gen1\".\nThe PRS oram_T1D has been replaced by oram_T1D_v2 in Round 2 as there was an error in the calculation from Round 1. The variable from Round 1 should therefore not be used.",
+    "objectID": "sites/data sources/dd2_idnc.html#idnc.sas7bdat",
+    "href": "sites/data sources/dd2_idnc.html#idnc.sas7bdat",
+    "title": "Neuropathy questionnaire (IDNC)",
+    "section": "IDNC.sas7bdat",
+    "text": "IDNC.sas7bdat\n Variable documentation \n\n\n\n\n\n\n\n\n\nFormat (var x obs)\nId variables\nUnique key\nImportant dates\n\n\n\n\nWide (162 x 5,658)\nCPR\nCPR\nreg_dato, IDNCData_date\n\n\n\nThe IDNCData_date takes the value 01JUN2016 for all individuals, as this is the date of the first IDNC data round. The local data also include the variable tid with the values T1, T2 and T3, indicating in which round the individual answered the questionnaire (based on whether or not a reminder was sent). This variable is not included in the datasets on the servers.\n\n\n\n\n\nIllustration of the overall data structure. The dataset is in wide format (162 x 5,658), with CPR as the unique key.\n\n\nRow\nCPR\nIDNCData_date\nreg_dato\n…\n\n\n\n\n1\nCPR1\n01JUN2016\nreg_dato1\n…\n\n\n2\nCPR2\n01JUN2016\nreg_dato2\n…\n\n\n3\nCPR3\n01JUN2016\nreg_dato3\n…\n\n\n…\n…\n…\n…\n…\n\n\n12,098\nCPR12098\n01JUN2016\nreg_dato12098\n…\n\n\n\nThe original data are stored locally at Department of Clinical Epidemiology (DCE) and a slightly modified version (IDNC.sas7bdat) has been uploaded to Danmarks Statistik/Statistics Denmark (DST) and Sundhedsdatastyrelsen/The Danish Health Data Authority (SDS). The changes are mainly due to similar definitions of variables, variable names and labels, and to comply with the SDS/DST regulations.\n\nVariables\nThe original questionnaire data included a total of around 109 variables (including some variables from the data cleaning process added by the working group). To ease working with data and to have some pre-defined variables/definitions, an additional 78 variables were created by the working group.\nThe SAS syntax for the definition of the additional variables is available here:  Download \n\nAnd the corresponding SAS formats for the additional variables are available here:  Download \n\n(SAS syntax files can be opened using notepad if SAS is not installed)",
     "crumbs": [
       "Additional DD2 data",
-      "Genetic variables"
-    ]
-  },
-  {
-    "objectID": "sites/data sources/dd2_genetics.html#round-2-july-2024---gen2",
-    "href": "sites/data sources/dd2_genetics.html#round-2-july-2024---gen2",
-    "title": "Genetic variables",
-    "section": "Round 2 (July 2024 - Gen2)",
-    "text": "Round 2 (July 2024 - Gen2)\nData include 9,997 observations and 28 variables. Using the same procedure as in Round 1, we end up with n=9,856 individuals with valid, unique, and non-missing ID and barcode. Again, data were transformed to long format, and the variables geno_id, rem, p_id (text), DD2_projectid, DD2_barcode were removed. Before upload to SDS (IL6_TNF_240711), 69 individuals were excluded as they were not among the n=11,381 individuals in the DD2 cohort SDS April 2023). Data were marked with data_round=\"Gen2\".",
-    "crumbs": [
-      "Additional DD2 data",
-      "Genetic variables"
-    ]
-  },
-  {
-    "objectID": "sites/data sources/dd2_genetics.html#round-3-december-2024---gen3",
-    "href": "sites/data sources/dd2_genetics.html#round-3-december-2024---gen3",
-    "title": "Genetic variables",
-    "section": "Round 3 (December 2024 - Gen3)",
-    "text": "Round 3 (December 2024 - Gen3)\nData include 9,997 observations and 65 variables. Using the same procedure as in Round 1 and Round 2, we end up with n=9,856 individuals with valid, unique, and non-missing ID and barcode. Data were marked with data_round=\"Gen3\".\nFor single SNPs, the original variable name corresponded to chr:position:allele1:allele2_effect-allele, however, SAS replaces : with _ and adds _ in the beginning of the variable name (as a variable name can’t start with a number), i.e., the variable name is currently _chr_position_allele1_allele2_effect-allele. Additionally, a document including the r2 values is available on the servers.\n\nRound 3, additional data for Tarun (Tar1)\nIn addition to the Round 3 genetics data, we received a data file including a broader list with around 1300 SNPs (Tarun Veer Singh Ahluwalia is lead on the project). The file thus included 9,997 observations and 1309 variables, and we again restricted to the n=9,856 individuals with valid, unique, and non-missing ID and barcode. Data were marked with data_round=\"Tar1\", and variable names correspond to _chr_position_allele1_allele2_effect-allele. A document including the r2 values is available on the servers.",
-    "crumbs": [
-      "Additional DD2 data",
-      "Genetic variables"
-    ]
-  },
-  {
-    "objectID": "sites/data sources/dd2_genetics.html#genetik.sas7bdat",
-    "href": "sites/data sources/dd2_genetics.html#genetik.sas7bdat",
-    "title": "Genetic variables",
-    "section": "genetik.sas7bdat",
-    "text": "genetik.sas7bdat\n Variable documentation \n\n\n\n\n\n\n\n\n\nFormat (var x obs)\nId variables\nUnique key\nImportant dates\n\n\n\n\nLong (8 x 14,572,843)\nCPR, ProjektID\nCPR*GeneMarker\n-\n\n\n\nThe genetik dataset includes analysis results from the three data rounds. There are no dates in the dataset, but all analyses are performed on the enrollment samples. Data can be stratified by round using the variable data_round with values Gen1, Gen2, Gen3, and Tar1. A total of 1,489 different gene markers (or PRS or whatever they are) are currently included in the data. Data include 9,787*1,489=14,572,843 rows.\n\nIllustration of the overall data structure. The dataset is in long format (8 x 14,572,843), with CPR*GeneMarker as the unique key.\n\n\nRow\nCPR\nProjektID\ndata_round\nGeneMarker\nValue\n…\n\n\n\n\n1\nCPR1\nProjektID1\nGen1\nACSL1_rs221\nnum.\n…\n\n\n2\nCPR1\nProjektID1\nGen1\nACSL1_rs624\nnum.\n…\n\n\n4\nCPR1\nProjektID1\nGen1\nACSL1_rs756\nnum.\n…\n\n\n…\n…\n…\n…\n…\n…\n…\n\n\n1,489\nCPR1\nProjektID1\nTar1\nwang_ST\nnum.\n…\n\n\n1,490\nCPR2\nProjektID2\nGen1\nACSL1_rs221\nnum.\n…\n\n\n1,491\nCPR2\nProjektID2\nGen1\nACSL1_rs624\nnum.\n…\n\n\n…\n…\n…\n…\n…\n…\n…\n\n\n\nAdditional documentation and README files (from Mette Andersen, KU) are available upon request. Among others, they include information about GeneMarker definition.",
-    "crumbs": [
-      "Additional DD2 data",
-      "Genetic variables"
+      "Neuropathy questionnaire (IDNC)"
     ]
   },
   {
@@ -230,7 +179,7 @@
     "href": "sites/data sources/dd2_biobank.html",
     "title": "DD2 biobank",
     "section": "",
-    "text": "Go to Data documentation\nWhen individuals are enrolled in the DD2 blood and urine samples are collected and stored in the biobank in Vejle. The samples themselves are considered “primary DD2 enrollment data”, and they are all collected at DD2 baseline. No automatic or standard analyses are conducted, but DD2 research projects can have the samples analyzed if (additional) analyses are needed - the timing for the analysis results will always be baseline DD2 because it is the time the blood/urine sample was collected. The results from analyses of the blood and urine samples are considered “Additional DD2 data”.\nFor further information about the initial idea about the biobank, please see Christensen et al.\nThe documentation for the biobank can be downloaded here (Danish): Download",
+    "text": "Go to Data documentation\nWhen individuals are enrolled in the DD2, blood and urine samples are collected and stored in the biobank in Vejle. The samples themselves are considered “primary DD2 enrollment data”, and they are all collected at DD2 baseline. No automatic or standard analyses are conducted, but DD2 research projects can have the samples analyzed if (additional) analyses are needed - the timing for the analysis results will always be baseline DD2, because it is the time the blood/urine sample was collected. The results from analyses of the blood and urine samples are considered “Additional DD2 data”.\nFor further information about the initial idea about the biobank, please see Christensen et al.\nThe documentation for the biobank can be downloaded here (Danish): Download",
     "crumbs": [
       "Additional DD2 data",
       "DD2 biobank"
@@ -241,7 +190,7 @@
     "href": "sites/data sources/dd2_biobank.html#first-biomarkers",
     "title": "DD2 biobank",
     "section": "First biomarkers",
-    "text": "First biomarkers\nIn the first phase of DD2 a lot of biomarkers were analysed for the first 1,053 individuals enrolled in DD2 (some individuals have later opted out). These individuals are marked by the variable BlodProve1053patients (based on the CPR numbers in data file First1053Patients (same as in UrinResultatermedRatio2013Nov)) and are predominantly enrolled in 2011-2012.\n\nFirst1053Patients.txt: The file appears to have been received in November 2012. It includes n=1,053 CPR numbers and these individuals are most likely everyone in the database at that time. The file includes results from the initial blood samples. The dataset lacks date information and also unit specifications for the variables hæmolyse, icteri, and lipæmi. The dataset includes the variables:\n\nCPR\nProjektID\nC-peptid (n=1,053, pmol/L)\nGAD (n=1,053, kU/l)\nGlucose (n=1,050, mmol/L)\nALAT (n=1,030, U/L)\nHæmolyse (n=1,030)\nIcteri (n=1,030)\nLipæmi (n=1,030)\nAMYLP (n=1,041, U/L)\nCRP (n=1,041, mg/L)\n\n\nWe have been told (e-mail from JSN 31.05.2018) not to use the c-peptide measurements from this file (old analysis kit).\nInformation about some of the variables can be found in Mor et al. (2014).\n\nUrinResultatermedRatio2013Nov.txt: We likely received the data file in December 2013. It includes n=1,053 CPR numbers (same as in First1053Patients) with results from the initial urine samples. The dataset includes the variables:\n\nCPR\nBarkode (ends with -19)\nALBu_mg_L_ (n=1,041, mg/L, dated November 19, 20, and 23, 2012)\nKREA_mmol_L_ (n=1,041, mmol/L, dated November 19, 20, and 23, 2012)\nUPROT_g_L_ (n=1,041, g/L, dated November 19, 20, and 23, 2012)\nAlbumin_Kreatinin_ratio (n=1,041)\nKommentar (n=473, &lt;5 with “PROT-U &gt; 2.5 g/l” and the rest with “ALB-U &lt;3 mg/L”)",
+    "text": "First biomarkers\nIn the first phase of DD2, a lot of biomarkers were analysed for the first 1,053 individuals enrolled in DD2 (some individuals have later opted out). These individuals are marked by the variable BlodProve1053patients (based on the CPR numbers in data file First1053Patients (same as in UrinResultatermedRatio2013Nov)) and are predominantly enrolled in 2011-2012.\n\nFirst1053Patients.txt: The file appears to have been received in November 2012. It includes n=1,053 CPR numbers and these individuals are most likely everyone in the database at that time. The file includes results from the initial blood samples. The dataset lacks date information and also unit specifications for the variables hæmolyse, icteri, and lipæmi. The dataset includes the variables:\n\nCPR\nProjektID\nC-peptid (n=1,053, pmol/L)\nGAD (n=1,053, kU/l)\nGlucose (n=1,050, mmol/L)\nALAT (n=1,030, U/L)\nHæmolyse (n=1,030)\nIcteri (n=1,030)\nLipæmi (n=1,030)\nAMYLP (n=1,041, U/L)\nCRP (n=1,041, mg/L)\n\n\nWe have been told (e-mail from JSN 31.05.2018) not to use the c-peptide measurements from this file (old analysis kit).\nInformation about some of the variables can be found in Mor et al. (2014).\n\nUrinResultatermedRatio2013Nov.txt: We likely received the data file in December 2013. It includes n=1,053 CPR numbers (same as in First1053Patients) with results from the initial urine samples. The dataset includes the variables:\n\nCPR\nBarkode (ends with -19)\nALBu_mg_L_ (n=1,041, mg/L, dated November 19, 20, and 23, 2012)\nKREA_mmol_L_ (n=1,041, mmol/L, dated November 19, 20, and 23, 2012)\nUPROT_g_L_ (n=1,041, g/L, dated November 19, 20, and 23, 2012)\nAlbumin_Kreatinin_ratio (n=1,041)\nKommentar (n=473, &lt;5 with “PROT-U &gt; 2.5 g/l” and the rest with “ALB-U &lt;3 mg/L”)",
     "crumbs": [
       "Additional DD2 data",
       "DD2 biobank"
@@ -325,84 +274,128 @@
     ]
   },
   {
-    "objectID": "sites/data sources/dd2_idnc.html",
-    "href": "sites/data sources/dd2_idnc.html",
-    "title": "Neuropathy questionnaire (IDNC)",
+    "objectID": "sites/data sources/dd2_genetics.html",
+    "href": "sites/data sources/dd2_genetics.html",
+    "title": "Genetic variables",
     "section": "",
-    "text": "Go to Data documentation\nIDNC is short for “International Diabetic Neuropathy Consortium”. Read more about it here: https://idnc.au.dk/about-idnc.\nA list of 7,011 CPR-numbers from all individuals enrolled in DD2 by February were sent to the CPR registry to get their addresses. The only criteria to be included in the questionnaire study were that individuals should be enrolled in DD2 (February 2016), be alive (24 May 2016), and have a valid Danish address (24 May 2016). A total of 6,726 questionnaires were sent out in June 2016 (07 June 2016), and a reminder was sent in September 2016 (12 September 2016) and again in October 2016 (10 October 2016) to those who had not provided a response. A total of 5,755 questionnaires were returned during the fall of 2016 and the inclusion ended in January 2017 (24 January 2017). The questionnaire included questions about height, weight, smoking and alcohol, and physical activity. These questions were intended to be follow-up questions similar to those from the baseline questionnaire. In addition, the questionnaire included questions about falls, quality of life, sleep, mental health, neuropathy (in hand and feet) and pain. The questionnaire thus included the Michigan Neuropathy Screening Instrument questionnaire (MNSIq) and the Douleur Neuropathique en 4 Questions (DN4).\nRead more about the questionnaire in Gylfadottir et al. (2020) and Christensen et al. (2020).\nThe questionnaire (in Danish) can be downloaded here:  Download \nAn English translation of the questionnaire is included in the supplement to Gylfadottir et al. (2020).\nThe questions and variable definitions for the original variables can be downloaded here:  Download",
+    "text": "Go to Data documentation\nWe received data on genetics/polygenic risk scores (PRS) in multiple rounds. In the following section we will go through the data files we received. Of note, we also received PRS data in October 2023 which was used for one of the birth weight studies (Hansen et al. (2023)), but these data have not been uploaded to the servers.\nOn Sundhedsdatastyrelsen/The Danish Health Data Authority (SDS), the first and second rounds of data were originally included in the IL6_TNF data, but this data source has now been split into Biomark including the 22 “pladebiomarkør” biomarkers and Genetik including the genetics data described here. The variables in Genetik were renamed, i.e., Assay = GeneMarker, Calc_Conc_Mean = Value, and CV_on_plate = data_round.",
     "crumbs": [
       "Additional DD2 data",
-      "Neuropathy questionnaire (IDNC)"
+      "Genetic variables"
     ]
   },
   {
-    "objectID": "sites/data sources/dd2_idnc.html#idnc.sas7bdat",
-    "href": "sites/data sources/dd2_idnc.html#idnc.sas7bdat",
-    "title": "Neuropathy questionnaire (IDNC)",
-    "section": "IDNC.sas7bdat",
-    "text": "IDNC.sas7bdat\n Variable documentation \n\n\n\n\n\n\n\n\n\nFormat (var x obs)\nId variables\nUnique key\nImportant dates\n\n\n\n\nWide (162 x 5,658)\nCPR\nCPR\nreg_dato, IDNCData_date\n\n\n\nThe IDNCData_date takes the value 01JUN2016 for all individuals, as this is the date of the first IDNC data round. The local data also include the variable tid with the values T1, T2 and T3, indicating in which round the individual answered the questionnaire (based on whether or not a reminder was sent). This variable is not included in the datasets on the servers.\n\n\n\n\n\nIllustration of the overall data structure. The dataset is in wide format (162 x 5,658), with CPR as the unique key.\n\n\nRow\nCPR\nIDNCData_date\nreg_dato\n…\n\n\n\n\n1\nCPR1\n01JUN2016\nreg_dato1\n…\n\n\n2\nCPR2\n01JUN2016\nreg_dato2\n…\n\n\n3\nCPR3\n01JUN2016\nreg_dato3\n…\n\n\n…\n…\n…\n…\n…\n\n\n12,098\nCPR12098\n01JUN2016\nreg_dato12098\n…\n\n\n\nThe original data are stored locally at Department of Clinical Epidemiology (DCE) and a slightly modified version (IDNC.sas7bdat) has been uploaded to Danmarks Statistik/Statistics Denmark (DST) and Sundhedsdatastyrelsen/The Danish Health Data Authority (SDS) The changes are mainly due to similar definitions of variables, variable names and labels, and to comply with the SDS/DST regulations.\n\nVariables\nThe original questionnaire data included a total of around 109 variables (including some variables from the data cleaning process added by the working group). To ease working with data and to have some pre-defined variables/definitions, an additional 78 variables were created by the working group.\nThe SAS syntax for the definition of the additional variables is available here:  Download \n\nAnd the corresponding SAS formats for the additional variables are available here:  Download \n\n(SAS syntax files can be opened using notepad if SAS is not installed)",
+    "objectID": "sites/data sources/dd2_genetics.html#round-1-april-2024---gen1",
+    "href": "sites/data sources/dd2_genetics.html#round-1-april-2024---gen1",
+    "title": "Genetic variables",
+    "section": "Round 1 (April 2024 - Gen1)",
+    "text": "Round 1 (April 2024 - Gen1)\nData include 9,997 observations and 104 variables. Some individuals had missing ID (but potentially non-missing barcode) and some had duplicate barcodes. The n=215 individuals with missing ID were checked by JSN, and 85 of these were denoted “ok”. For around 500 individuals, information on all the PRS values were deleted in the genetic analysis (see README file for specific reasons). Data were restricted to n=9,856 individuals with valid, unique, and non-missing ID and barcode, and transformed to long format. The variables geno_id, rem, p_id (text), DD2_projectid, DD2_barcode were removed from data (to align with the format from the original biobank file, IL6_TNF). Before upload to SDS (IL6_TNF_240411), 69 individuals were excluded as they were not among the n=11,381 individuals in the DD2 cohort (SDS, April 2023). Data were marked with data_round=\"Gen1\".\nThe PRS oram_T1D has been replaced by oram_T1D_v2 in Round 2 as there was an error in the calculation from Round 1. The variable from Round 1 should therefore not be used.",
     "crumbs": [
       "Additional DD2 data",
-      "Neuropathy questionnaire (IDNC)"
+      "Genetic variables"
     ]
   },
   {
-    "objectID": "sites/data sources/dd2_questionnaire.html",
-    "href": "sites/data sources/dd2_questionnaire.html",
-    "title": "DD2 questionnaire",
-    "section": "",
-    "text": "Go to Data documentation\nData from the DD2 questionnaire include the responses from the enrollment, information from the clinical examination along with general information about the individual. The DD2 questionnaire can be downloaded here:  Download\nAs of summer 2025, DD2 was migrated to a new server setup at Steno Diabetes Center Odense. Department of Clinical Epidemiology (DCE) retains data from the previous setup. Historically, data updates were received regularly, but from the end of 2025, DCE must submit a formal application to obtain new data.",
+    "objectID": "sites/data sources/dd2_genetics.html#round-2-july-2024---gen2",
+    "href": "sites/data sources/dd2_genetics.html#round-2-july-2024---gen2",
+    "title": "Genetic variables",
+    "section": "Round 2 (July 2024 - Gen2)",
+    "text": "Round 2 (July 2024 - Gen2)\nData include 9,997 observations and 28 variables. Using the same procedure as in Round 1, we end up with n=9,856 individuals with valid, unique, and non-missing ID and barcode. Again, data were transformed to long format, and the variables geno_id, rem, p_id (text), DD2_projectid, DD2_barcode were removed. Before upload to SDS (IL6_TNF_240711), 69 individuals were excluded as they were not among the n=11,381 individuals in the DD2 cohort (SDS, April 2023). Data were marked with data_round=\"Gen2\".",
     "crumbs": [
-      "DD2 enrollment data",
-      "DD2 questionnaire"
+      "Additional DD2 data",
+      "Genetic variables"
     ]
   },
   {
-    "objectID": "sites/data sources/dd2_questionnaire.html#dd2core.sas7bdat",
-    "href": "sites/data sources/dd2_questionnaire.html#dd2core.sas7bdat",
-    "title": "DD2 questionnaire",
-    "section": "DD2core.sas7bdat",
-    "text": "DD2core.sas7bdat\n Variable documentation \n\n\n\n\n\n\n\n\n\nFormat (var x obs)\nId variables\nUnique key\nImportant dates\n\n\n\n\nWide (52 x 12,098)\nCPR, ProjektID, ydernr\nCPR\nreg_dato\n\n\n\nData from the DD2 enrollment questionnaire and clinical examination are stored in the dd2core.sas7bdat dataset. (Note: The name “dd2core” is not ideal, as there is no definition of what is actually considered “core” data in DD2 Therefore, the data should be referred to as “enrollment data”. The dataset cannot easily be renamed as it is in its current form in the agreements with Danmarks Statistik/Statistics Denmark (DST) and Sundhedsdatastyrelsen/The Danish Health Data Authority (SDS)\nData (November 2023) include enrollment information on all N=12,098 individuals enrolled in DD2 by November 2023. Data are on wide format, currently with 52 variables, and include one row per CPR number. A ProjektID is also included for individuals with a blood/urine sample in the biobank. The variable ydernr is also included as a identifier and is therefore encrypted by SDS and DST Individuals are enrolled in DD2 on the enrollment date, reg_dato. Data can be updated (new procedure after 2025), and if so, more enrolled individuals are included (same variable set). We have usually received a full new dataset with the current DD2 population - this is to ensure we only have data on individuals we are allowed to have data on, and to ensure any manual corrections in the DD2 setup have been implemented in our data. Data were received as Excel or CSV files and underwent initial data cleaning before being saved in dd2core.sas7bdat.\n\nIllustration of the overall data structure. The dataset is in wide format (52 variables × 12,098 rows), with CPR as the unique key.\n\n\nRow\nCPR\nProjektID\nreg_dato\n…\n\n\n\n\n1\nCPR1\nProjektID1\nreg_dato1\n…\n\n\n2\nCPR2\nProjektID2\nreg_dato2\n…\n\n\n3\nCPR3\nProjektID3\nreg_dato3\n…\n\n\n…\n…\n…\n…\n…\n\n\n12,098\nCPR12098\nProjektID12098\nreg_dato12098\n…",
+    "objectID": "sites/data sources/dd2_genetics.html#round-3-december-2024---gen3",
+    "href": "sites/data sources/dd2_genetics.html#round-3-december-2024---gen3",
+    "title": "Genetic variables",
+    "section": "Round 3 (December 2024 - Gen3)",
+    "text": "Round 3 (December 2024 - Gen3)\nData include 9,997 observations and 65 variables. Using the same procedure as in Round 1 and Round 2, we end up with n=9,856 individuals with valid, unique, and non-missing ID and barcode. Data were marked with data_round=\"Gen3\".\nFor single SNPs, the original variable name corresponded to chr:position:allele1:allele2_effect-allele, however, SAS replaces : with _ and adds _ in the beginning of the variable name (as a variable name can’t start with a number), i.e., the variable name is currently _chr_position_allele1_allele2_effect-allele. Additionally, a document including the r2 values is available on the servers.\n\nRound 3, additional data for Tarun (Tar1)\nIn addition to the Round 3 genetics data, we received a data file including a broader list with around 1300 SNPs (Tarun Veer Singh Ahluwalia is lead on the project). The file thus included 9,997 observations and 1309 variables, and we again restricted to the n=9,856 individuals with valid, unique, and non-missing ID and barcode. Data were marked with data_round=\"Tar1\", and variable names correspond to _chr_position_allele1_allele2_effect-allele. A document including the r2 values is available on the servers.",
     "crumbs": [
-      "DD2 enrollment data",
-      "DD2 questionnaire"
+      "Additional DD2 data",
+      "Genetic variables"
     ]
   },
   {
-    "objectID": "sites/data sources/fodstatus.html",
-    "href": "sites/data sources/fodstatus.html",
-    "title": "Podiatrist data",
+    "objectID": "sites/data sources/dd2_genetics.html#genetik.sas7bdat",
+    "href": "sites/data sources/dd2_genetics.html#genetik.sas7bdat",
+    "title": "Genetic variables",
+    "section": "genetik.sas7bdat",
+    "text": "genetik.sas7bdat\n Variable documentation \n\n\n\n\n\n\n\n\n\nFormat (var x obs)\nId variables\nUnique key\nImportant dates\n\n\n\n\nLong (8 x 14,572,843)\nCPR, ProjektID\nCPR*GeneMarker\n-\n\n\n\nThe genetik dataset includes analysis results from the three data rounds. There are no dates in the dataset, but all analyses are performed on the enrollment samples. Data can be stratified by round using the variable data_round with values Gen1, Gen2, Gen3, and Tar1. A total of 1,489 different gene markers (or PRS or whatever they are) are currently included in the data. Data include 9,787*1,489=14,572,843 rows.\n\nIllustration of the overall data structure. The dataset is in long format (8 x 14,572,843), with CPR*GeneMarker as the unique key.\n\n\nRow\nCPR\nProjektID\ndata_round\nGeneMarker\nValue\n…\n\n\n\n\n1\nCPR1\nProjektID1\nGen1\nACSL1_rs221\nnum.\n…\n\n\n2\nCPR1\nProjektID1\nGen1\nACSL1_rs624\nnum.\n…\n\n\n4\nCPR1\nProjektID1\nGen1\nACSL1_rs756\nnum.\n…\n\n\n…\n…\n…\n…\n…\n…\n…\n\n\n1,489\nCPR1\nProjektID1\nTar1\nwang_ST\nnum.\n…\n\n\n1,490\nCPR2\nProjektID2\nGen1\nACSL1_rs221\nnum.\n…\n\n\n1,491\nCPR2\nProjektID2\nGen1\nACSL1_rs624\nnum.\n…\n\n\n…\n…\n…\n…\n…\n…\n…\n\n\n\nAdditional documentation and README files (from Mette Andersen, KU) are available upon request. Among others, they include information about GeneMarker definition.",
+    "crumbs": [
+      "Additional DD2 data",
+      "Genetic variables"
+    ]
+  },
+  {
+    "objectID": "sites/data sources/dd2_qol.html",
+    "href": "sites/data sources/dd2_qol.html",
+    "title": "Quality of life",
     "section": "",
-    "text": "Go to Data documentation\nThe DD2 cohort is linked to The Danish National Podiatrist Registry (the Podiatrist Database, fodstatusdatabasen). This database was established in 2011, and includes information on examinations performed by Danish podiatrists working under a collective agreement with the Danish Administrative Regions (Kristensen et al. (2024)). Records include symptoms of neuropathy and information from a clinical examination of the lower extremities (including circulatory and neuropathy status).\nIndividuals in DD2 enrolled between 2011 and 2022 are linked to the Podiatrist Database. Approximately 60% of the DD2 participants have at least one record in the database, and they have median 4 (IQR 2-6) records. DD2 participants without records may have had foot examinations by other healthcare professionals (e.g., diabetes outpatient clinics, general practitioners), a private podiatrist not working under the collective agreement or may not have been examined at all (Kristensen et al. (2024)).",
+    "text": "After enrollment, an e-mail with a questionnaire including questions about quality of life (quality of life (QoL)) is sent to the individual. A follow-up questionnaire is sent after 2 years, 4 years, and 6 years. Department of Clinical Epidemiology (DCE) does not have the QoL data."
+  },
+  {
+    "objectID": "sites/data sources/ddda.html",
+    "href": "sites/data sources/ddda.html",
+    "title": "DDDA",
+    "section": "",
+    "text": "Go to Data documentation\nDanish Diabetes Database for Adults (The Danish Diabetes Database for Adults (DDDA)) (also known as Dansk Voksen Diabetes Database (DVDD) or Det Nationale Indikatorprojekt (NIP) Diabetes) is a no longer active database from regionernes kliniske kvalitetsudviklingsprogram (Regionernes Kliniske Kvalitetsudviklingsprogram (RKKP)). It was closed by 30 June 2022. It has now been replaced by Dansk Diabetes Database (DDD/DDiD), which has been active since 1 July 2022. Dansk Diabetes Database (DDiD) currently mainly uses registry data, however, as additional data are still being recorded in the clinic, it is worth checking the database in the future, as additional variables might be included (e.g. smoking, blood pressure, BMI, etc.).\nExtracts from the online DDDA documentation (downloaded 07 September 2023) about the population and variables can be downloaded here:  Variables   Population\nAnd additional documents:  Datadefinitioner   Registreringsskema   Variabeloversigt   Questionnaire\nSee also Jørgensen et al. (2016) for further information about the database.",
     "crumbs": [
       "External DD2 data",
-      "Podiatrist data"
+      "DDDA"
     ]
   },
   {
-    "objectID": "sites/data sources/fodstatus.html#fodstatus.sas7bdat",
-    "href": "sites/data sources/fodstatus.html#fodstatus.sas7bdat",
-    "title": "Podiatrist data",
-    "section": "fodstatus.sas7bdat",
-    "text": "fodstatus.sas7bdat\n Variable documentation \n\n\n\n\n\n\n\n\n\nFormat (var x obs)\nId variables\nUnique key\nImportant dates\n\n\n\n\nWide (88 x 29,214)\nCPR\nCPR*statusdate\nstatusdate\n\n\n\nThe dataset include podiatrist data for a total of N=6,734 individuals. Data are uniquely identified via CPR*statusdate.\n\nIllustration of the overall data structure. The dataset is in wide format (88 variables x 29,214 observations), with CPR*statusdate as the unique key.\n\n\nRow\nCPR\nstatusdate\nVariable1\nVariable2\n…\n\n\n\n\n1\nCPR1\nstatusdate1.1\nnum.\nchar.\n…\n\n\n2\nCPR1\nstatusdate1.2\nnum.\nchar.\n…\n\n\n…\n…\n…\n…\n…\n…\n\n\n5\nCPR1\nstatusdate1.5\nnum.\nchar.\n…\n\n\n6\nCPR2\nstatusdate2.1\nnum.\nchar.\n…\n\n\n7\nCPR2\nstatusdate2.2\nnum.\nchar.\n…\n\n\n…\n…\n…\n…\n…\n…\n\n\n29,214\nCPR6734\nstatusdate6734.1\nnum.\nchar.\n…",
+    "objectID": "sites/data sources/ddda.html#ddda.sas7bdat",
+    "href": "sites/data sources/ddda.html#ddda.sas7bdat",
+    "title": "DDDA",
+    "section": "DDDA.sas7bdat",
+    "text": "DDDA.sas7bdat\n Variable documentation \n\n\n\n\n\n\n\n\n\nFormat (var x obs)\nId variables\nUnique key\nImportant dates\n\n\n\n\nWide (75 x 30,806)\nCPR\nCPR*status_dato\nstatus_dato, specific date variables\n\n\n\nN=8,512 distinct CPR numbers with non-missing data are included in the data, i.e., individuals with data in DDDA. A total of N=10,219 individuals are included (merged with DD2core). A record is unique based on CPR and status_dato, however, for many of the variables, it is worth also considering the corresponding var_dato.\n\nIllustration of the overall data structure. The dataset is in wide format (75 variables × 30,806 rows), with CPR*status_dato as the unique key.\n\n\n\n\n\n\n\n\n\n\nRow\nCPR\nstatus_dato\nVar\nVar_dato\n…\n\n\n\n\n1\nCPR1\nstatus_dato1.1\nnum.\nVar_dato1.1\n…\n\n\n2\nCPR1\nstatus_dato1.2\nnum.\nVar_dato1.2\n…\n\n\n3\nCPR1\nstatus_dato1.3\nnum.\nVar_dato1.2\n…\n\n\n…\n…\n…\n…\n…\n…\n\n\n10\nCPR1\nstatus_dato1.10\n(missing, no record)\n(missing, no record)\n…\n\n\n11\nCPR2\nstatus_dato2.1\nnum.\nVar_dato2.1\n…\n\n\n12\nCPR2\nstatus_dato2.2\nnum.\nVar_dato2.2\n…\n\n\n…\n…\n…\n…\n…\n…\n\n\n30,806\nCPR10219\n(missing, not in DDDA)\n(missing, not in DDDA)\n(missing, not in DDDA)\n…\n\n\n\n\nVariables from previous versions\nIn the current DDDA data, some variables from the database were not delivered. It was decided that the best suitable solution was to include these variables from older versions of data (and thus missing for some new individuals).\n\nFrom the 2021 data: shared_care and Plasmakreatinin_operator\nFrom the 2018 data (also missing in the 2021 delivery): diag_dato, HbA1c_kode, HDLcholesterol, and HDLcholesterol_undersoegelse_kod. These variables are included with a “_2018” postfix.",
     "crumbs": [
       "External DD2 data",
-      "Podiatrist data"
+      "DDDA"
     ]
   },
   {
-    "objectID": "sites/data sources/old/dd2_biobank_new_structure.html",
-    "href": "sites/data sources/old/dd2_biobank_new_structure.html",
-    "title": "New biobank structure",
+    "objectID": "sites/data sources/foedsel.html",
+    "href": "sites/data sources/foedsel.html",
+    "title": "Birth data",
     "section": "",
-    "text": "Important\n\n\n\nIndholdet og strukturen på det biobankdata afhænger af hvilke variable der er tilgængelige fra biobanken (vejle).\n\n\n\nNy struktur - data delt i to (måske tre)\nDENNE SIDE SKAL BESKRIVE\n\nDD2 BIOBANK: infodata om prøverne og kvaliteten af data (IKKE resultater)\n\ncpr/projectid (link mellem cpr og projectid)\nurinprøve, ja/nej\nblodprøve, ja/nej\nfaste ja/nej\nvejledato\nnye data fra biobanken/vejle: antal prøver, glas, osv.\n\nBiomarker: resultater fra de enkelte analyser (long format)\n\nprojectid\nbiomarker (e.g. c-pep, glucose, il6, …)\nresults (resultatet af analysen)\nunit\nstudy (hvorfor er målingen lavet?)\ndate (f.eks. ved c-pep er der forskel på om analysen er lavet på en ny eller gammel prøve, så det kan være relevant at kende datoen for analysen så man kan sammenligne den med datoen for blodprøven).\n\n\nDet kan evt. være relevant med et meta-data med henvisning til de enkelte studier.\nIdeelt set vil der for enhver biomarkør være en beskrivelse af markøren/data/pitfalls/beslutninger/overvejelser etc. Et slags opslagsværk, så man har samlet information om hver markør (e.g. c-pep så man ved hvilke beslutninger der er taget)."
+    "text": "Go to Data documentation\nData from Danish midwife journals have been collected for all individuals enrolled in DD2 per 22 February 2022, i.e., a total of n=9,549 individuals. Data include information on birth weight, birth length, born at term (yes/no, and if no then also the number of weeks), and twin (yes/no).\nThe afleverings-/afslutningsrapport from Rigsarkivet (the Danish National Archive) can be downloaded here (Danish): Download \nThere is similar description in English in the electronic supplemental material from Hansen et al. (2023): Download\nCPR-numbers for a total of n=9,549 individuals were sent to Rigsarkivet and n=8,896 fulfilled the criteria for potentially having available birth information (born in the period from ~1920 to 1988, born in Denmark, and identifiable through the biological mother’s name). During the retrieval, data were uniformized (e.g., to include birth weight in grams and not pounds) and proofread.\nData include n=9,549 CPR-numbers (one CPR-number is included twice), n=8,346 have non-missing birth weight, and a total of n=8,364 had a non-missing value in at least one of the five birth variables. A total of 8,869-8,364=532 were not included despite fulfilling the criteria (not registered1).",
+    "crumbs": [
+      "External DD2 data",
+      "Birth data"
+    ]
   },
   {
-    "objectID": "sites/data sources/old/diabase.html",
-    "href": "sites/data sources/old/diabase.html",
-    "title": "DiaBase",
+    "objectID": "sites/data sources/foedsel.html#foedselsdata.sas7bdat",
+    "href": "sites/data sources/foedsel.html#foedselsdata.sas7bdat",
+    "title": "Birth data",
+    "section": "foedselsdata.sas7bdat",
+    "text": "foedselsdata.sas7bdat\n Variable documentation \n\n\n\nFormat (var x obs)\nId variables\nUnique key\nImportant dates\n\n\n\n\nWide (9 x 9,544)\nCPR\nCPR\n-\n\n\n\nThe dataset include birth data for N=9,544 individuals identified via CPR. There are no dates in the dataset, however, information relates to birth date.\n\nIllustration of the overall data structure. The dataset is in wide format (9 variables x 9,544 observations), with CPR as the unique key.\n\n\n\n\n\n\n\n\n\n\n\nRow\nCPR\nfoedselsvaegt\nfoedselslaengde\nfuldbaarenhed\nuger_for_tidligt\ntvilllingefoedsel\n\n\n\n\n1\nCPR1\nnum.\nnum.\nJa\n\n0\n\n\n2\nCPR2\nnum.\nnum.\nNej\n2 til 3\n0\n\n\n3\nCPR3\nnum.\nnum.\nJa\n\n0\n\n\n…\n…\n…\n…\n…\n…\n…\n\n\n9,544\nCPR9544\nnum.\nnum.\nJa\n\n1",
+    "crumbs": [
+      "External DD2 data",
+      "Birth data"
+    ]
+  },
+  {
+    "objectID": "sites/data sources/foedsel.html#footnotes",
+    "href": "sites/data sources/foedsel.html#footnotes",
+    "title": "Birth data",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nIt is not marked in the data whether missing was due to not being eligible or due to other reasons↩︎\nThe current data permission includes only individuals in DD2 and therefore not the matched controls. As CPR-numbers are not available and controls ultimately cannot be linked to their respective DD2 individual there is no reason to upload data to the servers because all analyses can be performed locally.↩︎",
+    "crumbs": [
+      "External DD2 data",
+      "Birth data"
+    ]
+  },
+  {
+    "objectID": "sites/data sources/old/ddid.html",
+    "href": "sites/data sources/old/ddid.html",
+    "title": "DDiD",
     "section": "",
-    "text": "Dansk kvalitetsdatabase for diabetisk retinopati – DiaBase\nDENNE SIDE SKAL BESKRIVE\nØjendata - Diabase Regionernes Kliniske Kvalitetsudviklingsprogram (RKKP)"
+    "text": "Dansk Diabetes Database (DDD/DDiD), which has been active since 1/7 2022."
   },
   {
     "objectID": "sites/dd2_enrollment.html",
@@ -441,7 +434,7 @@
     "href": "sites/registry/SDS.html#population",
     "title": "SDS",
     "section": "Population",
-    "text": "Population\nThe DD2 data are uploaded to Sundhedsdatastyrelsen/The Danish Health Data Authority (SDS) and they check the validity of the CPR-numbers before encrypting them. The dataset DS_EXT_DD2_POP includes all individuals with a valid CPR-number. Individuals with a non-valid CPR-number are still included in the uploaded data, e.g. in DS_EXT_DD2CORE, but they will have a missing encrypted CPR-number (CPR_ENCRYPTED) and can thus not be linked across data sources. Previously (when we had local data), we would notify DD2 (Odense) about non-valid CPR-numbers, but this is no longer possible as we are not allowed to identify the individuals based on individual-level data on the servers.\nThe data files uploaded by us have the prefix DS_EXT_. Data are available in 2 versions; the initial upload version (without suffix) and the updated versions (with suffix _230601, _231026, etc., corresponding to the date of the update on SDS The registry data (views) will always be based on the newest population, i.e., individuals in the newest version of DS_EXT_DD2_POP.",
+    "text": "Population\nThe DD2 data are uploaded to Sundhedsdatastyrelsen/The Danish Health Data Authority (SDS), and they check the validity of the CPR-numbers before encrypting them. The dataset DS_EXT_DD2_POP includes all individuals with a valid CPR-number. Individuals with a non-valid CPR-number are still included in the uploaded data, e.g. in DS_EXT_DD2CORE, but they will have a missing encrypted CPR-number (CPR_ENCRYPTED) and can thus not be linked across data sources. Previously (when we had local data), we would notify DD2 (Odense) about non-valid CPR-numbers, but this is no longer possible as we are not allowed to identify the individuals based on individual-level data on the servers.\nThe data files uploaded by us have the prefix DS_EXT_. Data are available in 2 versions; the initial upload version (without suffix) and the updated versions (with suffix _230601, _231026, etc., corresponding to the date of the update on SDS). The registry data (views) will always be based on the newest population, i.e., individuals in the newest version of DS_EXT_DD2_POP.",
     "crumbs": [
       "Routine registry data",
       "SDS"
@@ -452,7 +445,7 @@
     "href": "sites/registry/SDS.html#rawdata-available-on-sds",
     "title": "SDS",
     "section": "Rawdata available on SDS",
-    "text": "Rawdata available on SDS\nData on SDS are based on data views, i.e., we have access to data updated (almost) on a day-to-day basis. The update file (SAS IN06014.OpdateringsOversigt) contains the time of the current update for each dataset in the library. The metadata file (SAS metadata.metadata_allcolumns) contains information about variables in the data. For research projects, in order to be able to reproduce results, remember to save a copy of the research data in a suitable project folder on SDS\n\n\n\n\n\n\n\nNote\n\n\n\nUsing SAS, if you extract data from views you will likely save a lot of time by writing code that is proper sql, rather than using SAS-specific syntax\n\n\n\nExample:\n1)\n\nproc sql;\n  create table x as\n  select *\n  from data.lab_lab_dm_forsker(where = (analysiscode in: ([list of npucodes])));\nquit; * takes ~40 minutes to run\n\n2)\nproc sql;\n  create table x as\n  select *\n  from data.lab_lab_dm_forsker\n  where analysiscode eqt [npucode1] or ... or analysiscode eqt [npucodeN];\nquit; * takes ~40 minutes to run\n\n\n3)\nproc sql;\n  create table x as\n  select *\n  from data.lab_lab_dm_forsker\n  where analysiscode like [npucode1%] or ... or analysiscode like [npucodeN%];\nquit; * takes ~10-20 seconds to run\n\nFurther documentation on the main data sources can be found here:\n\nCPR-registret (CPR): documentation\nReferences: Schmidt et al. (2014)\nLandspatientregistret (LPR2 and LPR3): documentation, LPR3, LPR3 vejledning\nReferences: Schmidt et al. (2015)\nLægemiddelstatistikregistret (LRS/LMS): documentation\nReferences: Kildemoes et al. (2011), Johannesdottir et al. (2012), Pottegård et al. (2017), Ehrenstein et al. (2010)\nLaboratoriedatabasen (LAB-F/RLRR): documentation\nReferences: Grann et al. (2011), Arendt et al. (2020)\n\n\nAccess to data\nAll DD2-researchers with access to FSEID-00006014 can (in principle) work with all the datasets. As these datasets are considered rawdata, they are cannot be edited/changed/moved/renamed/etc. To access data, please do the following:\n\nSAS: The data are already available in the libraries in06014 and metadata\nSTATA: Run the (relevant parts of the) DO file located at F:\\Projekter\\FSEID00006014\\DB Connections FSED00006014.do\nR: Run the (relevant parts of the) R file located at F:\\Projekter\\FSEID00006014\\DB Connections FSED00006014.R\n\nIn each research project, it is the individual researchers’ responsibility to ensure data usage is allowed.",
+    "text": "Rawdata available on SDS\nData on SDS are based on data views, i.e., we have access to data updated (almost) on a day-to-day basis. The update file (SAS IN06014.OpdateringsOversigt) contains the time of the current update for each dataset in the library. The metadata file (SAS metadata.metadata_allcolumns) contains information about variables in the data. For research projects, in order to be able to reproduce results, remember to save a copy of the research data in a suitable project folder on SDS.\n\n\n\n\n\n\n\nNote\n\n\n\nUsing SAS, if you extract data from views you will likely save a lot of time by writing code that is proper sql, rather than using SAS-specific syntax\n\n\n\nExample:\n1)\n\nproc sql;\n  create table x as\n  select *\n  from data.lab_lab_dm_forsker(where = (analysiscode in: ([list of npucodes])));\nquit; * takes ~40 minutes to run\n\n2)\nproc sql;\n  create table x as\n  select *\n  from data.lab_lab_dm_forsker\n  where analysiscode eqt [npucode1] or ... or analysiscode eqt [npucodeN];\nquit; * takes ~40 minutes to run\n\n\n3)\nproc sql;\n  create table x as\n  select *\n  from data.lab_lab_dm_forsker\n  where analysiscode like [npucode1%] or ... or analysiscode like [npucodeN%];\nquit; * takes ~10-20 seconds to run\n\nFurther documentation on the main data sources can be found here:\n\nCPR-registret (CPR): documentation\nReferences: Schmidt et al. (2014)\nLandspatientregistret (LPR2 and LPR3): documentation, LPR3, LPR3 vejledning\nReferences: Schmidt et al. (2015)\nLægemiddelstatistikregistret (LRS/LMS): documentation\nReferences: Kildemoes et al. (2011), Johannesdottir et al. (2012), Pottegård et al. (2017), Ehrenstein et al. (2010)\nLaboratoriedatabasen (LAB-F/RLRR): documentation\nReferences: Grann et al. (2011), Arendt et al. (2020)\n\n\nAccess to data\nAll DD2-researchers with access to FSEID-00006014 can (in principle) work with all the datasets. As these datasets are considered rawdata, they are cannot be edited/changed/moved/renamed/etc. To access data, please do the following:\n\nSAS: The data are already available in the libraries in06014 and metadata\nSTATA: Run the (relevant parts of the) DO file located at F:\\Projekter\\FSEID00006014\\DB Connections FSED00006014.do\nR: Run the (relevant parts of the) R file located at F:\\Projekter\\FSEID00006014\\DB Connections FSED00006014.R\n\nIn each research project, it is the individual researchers’ responsibility to ensure data usage is allowed.",
     "crumbs": [
       "Routine registry data",
       "SDS"

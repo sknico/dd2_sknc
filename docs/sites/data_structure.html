@@ -59,6 +59,9 @@ div.csl-indent {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-c0011d4058ed6ed9b854a8e2e0822f3c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -289,11 +292,11 @@ div.csl-indent {
 
 
 <p>The full <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> research data are based on data collected and linked from multiple sources (<span class="citation" data-cites="Kristensen_ClinEpi_2024">Kristensen et al. (<a href="#ref-Kristensen_ClinEpi_2024" role="doc-biblioref">2024</a>)</span>). This page gives an overview of the data structure, the data sources, and the definitions of data types. Detailed descriptions of each data source are provided on the following pages.</p>
-<p>Within the <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> data collection, the data sources include <strong>primary data</strong>, i.e., data unique to <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr>, including data and material collected from participants at enrollment, and additional data from research studies within the <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> cohort. The data also include <strong>secondary data</strong>, i.e., external data collected from other data sources and then linked to <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr>. Data from the <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> data collection are also linked to the nationwide routine registry data located in centralized databases on remote research servers (Sundhedsdatastyrelsen/The Danish Health Data Authority (<abbr class="abbr-first" title="Sundhedsdatastyrelsen/The Danish Health Data Authority">SDS</abbr>) and Danmarks Statistik/Statistics Denmark (<abbr class="abbr-first" title="Danmarks Statistik/Statistics Denmark">DST</abbr>)).</p>
+<p>Within the <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> data collection, the data sources include <strong>primary data</strong>, i.e., data unique to <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr>, including data and material collected from participants at enrollment, and additional data from research studies within the <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> cohort. The data also include <strong>secondary data</strong>, i.e., external data collected from other data sources and then linked to <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr>. Data from the <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> data collection are also linked to the nationwide routine registry data located in centralized databases on remote research servers.</p>
 <div class="page-columns page-full">
 <div class="quarto-figure quarto-figure-center page-columns page-full">
 <figure class="figure page-columns page-full">
-<p class="page-columns page-full"><img src="..\figures/Figure_1.png" class="img-fluid figure-img column-screen-inset-right" style="width:90.0%"></p>
+<p class="page-columns page-full"><a href="..\figures/Figure_1.png" class="lightbox page-columns page-full" data-gallery="quarto-lightbox-gallery-1" title="Overview of data sources in the DD2 cohort (@Kristensen_ClinEpi_2024).   Notes: *These data can be accessed through collaboration with DD2 research groups."><img src="..\figures/Figure_1.png" class="img-fluid figure-img column-screen-inset-right" style="width:90.0%" alt="Overview of data sources in the DD2 cohort (Kristensen et al. (2024)).   Notes: *These data can be accessed through collaboration with DD2 research groups."></a></p>
 <figcaption>Overview of data sources in the DD2 cohort (<span class="citation" data-cites="Kristensen_ClinEpi_2024">Kristensen et al. (<a href="#ref-Kristensen_ClinEpi_2024" role="doc-biblioref">2024</a>)</span>). <br> Notes: *These data can be accessed through collaboration with DD2 research groups.</figcaption>
 </figure>
 </div>
@@ -303,40 +306,41 @@ div.csl-indent {
 <p>Primary data can be split into two categories:</p>
 <section id="dd2-enrollment-material" class="level2">
 <h2 class="anchored" data-anchor-id="dd2-enrollment-material">1. DD2 enrollment material</h2>
-<p>Everything collected during the <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> enrollment (questionnaire responses, clinical measurements, and biological samples) constitutes the <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> enrollment material and forms the foundation of <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> as a distinct data source. This includes:</p>
+<p>Everything collected during the <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> enrollment constitutes the <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> enrollment material and forms the foundation of <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> as a distinct data source. This includes:</p>
 <ul>
 <li><p>DD2 interview data (questionnaire)</p></li>
 <li><p>Data from the clinical examination at enrollment</p></li>
 <li><p>Blood and urine samples collected for storage in the DD2 biobank in Vejle.</p></li>
 </ul>
-<p>Enrollment in <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> involves completing the <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> questionnaire, undergoing the clinical examination, and providing blood and urine samples. The <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> cohort is defined by individuals who completed the enrollment process. These materials are unique to <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> and are not available from other sources. All blood and urine samples are stored in the <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> biobank and may be used for future research, though analysis typically depends on funding from specific studies.</p>
+<p>Enrollment in <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> involves completing the <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> questionnaire, undergoing the clinical examination, and providing blood and urine samples. The <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> cohort is defined by individuals who completed the enrollment process. These materials are unique to <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> and are not available from other sources. All blood and urine samples are stored in the <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> biobank and may be used for future research, though analyses of the samples typically depend on funding from specific studies.</p>
 </section>
 <section id="additional-dd2-data" class="level2">
 <h2 class="anchored" data-anchor-id="additional-dd2-data">2. Additional DD2 data</h2>
 <p>Research studies in the <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> setup can generate new primary data. The completeness and availability of these primary data depend on when the studies are conducted and when results become available. The data are generated among individuals already enrolled in <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr>, and are likely not collected during the initial enrollment process. This could e.g., be data from studies collecting additional follow-up data (by a follow-up questionnaire or follow-up clinical examinations) or from intervention studies including individuals from the <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> cohort.<br>
 The biological samples (blood and urine) are collected at enrollment and thus considered enrollment material. However, they are stored in the biobank, and can be used for additional analyses in new research studies, e.g., biomarker analyses, genetic studies, or DNA sequencing. These analysis results add to the primary collected data by adding additional baseline information.</p>
-<p>Examples of currently available additional <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> data include</p>
+<p>Examples of currently available additional <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> data include: <!-- abbreviation ignoreres ved bullets  --></p>
 <ul>
-<li><p>IDNC questionnaire data, a follow-up questionnaire from 2016 including (follow-up) questions from the initial questionnaire along with multiple questions concerning diabetic neuropathy.</p></li>
-<li><p>IDA, DICTA, CsubT2D, etc., are examples of projects initiated within DD2. These projects generate their own additional data and analyses but data are still part of the overall DD2 setup.</p></li>
-<li><p>QoL data. After enrollment, an e-mail with a questionnaire about quality of life (QoL) is sent to the individual. Additional follow-up questionnaires are sent after 2 years, 4 years, and 6 years.</p></li>
+<li><p>IDNC questionnaire data, which is a follow-up questionnaire from 2016 including (follow-up) questions from the initial questionnaire along with multiple questions concerning diabetic neuropathy.</p></li>
+<li><p>IDA, DICTA, CsubT2D, etc., are examples of subprojects initiated by DD2 research groups. These research groups generate their own additional data, but the data are still part of the overall DD2 setup.</p></li>
+<li><p>QoL data. After enrollment, an e-mail with a questionnaire about quality of life is sent to the individual. Additional follow-up questionnaires are sent after 2 years, 4 years, and 6 years.</p></li>
 </ul>
-<p>These data sources will most likely not be routinely updated with new individuals or additional data, as they are primarily generated as part of specific research projects with closed cohorts. The data can be accessed through collaboration with <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> research groups.</p>
+<p>These data sources will most likely not be routinely updated with new individuals or additional information, as they are primarily generated as part of specific research projects with closed cohorts. The data can be accessed through collaboration with <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> research groups.</p>
 </section>
 </section>
 <section id="secondary-data" class="level1">
 <h1>Secondary data</h1>
-<p>Secondary data refer to data from external but non-centralized data sources. They were not initially generated with the intention to be included in <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr>. However, as they may be relevant to <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> research questions, data from these external data sources are linked to the <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr>. In practice, this means that data (or a subset of data) are transferred from the external data source to <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr>, providing information on the individuals (or a subset of individuals) in <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr>. Linkage to external data sources is crucial in <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr>, as it allows for information about variables that are resource-intensive to collect in clinical practice and unavailable in the Danish health registries. We currently have data from the following external data sources:</p>
+<p>Secondary data refer to data from external but non-centralized data sources. They were not initially generated with the intention to be included in <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr>. However, as they may be relevant to <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> research questions, data from these external data sources are linked to the <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr>. In practice, this means that data (or a subset of data) are transferred from the external data source to <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr>, providing information on the individuals (or a subset of individuals) in <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr>. Linkage to external data sources is crucial in <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr>, as it allows for information about variables that are resource-intensive to collect in clinical practice and unavailable in the Danish health registries. <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> currently have data from the following external data sources:</p>
+<!-- abbreviation ignoreres ved bullets  -->
 <ul>
 <li><p>The Danish Diabetes Database for Adults (DDDA, closed by June 2022)</p></li>
 <li><p>The Danish National Podiatrist Registry (fodstatusdatabasen)</p></li>
 <li><p>The Danish National Archive (Rigsarkivet), currently including birth data from midwife journals.</p></li>
 </ul>
-<p>In general, updates from these sources may be possible, for example by extending follow-up periods or including additional individuals. The secondary data can be accessed through collaboration with <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> research groups. Additional agreements may be established with Regionernes Kliniske Kvalitetsudviklingsprogram (Regionernes Kliniske Kvalitetsudviklingsprogram (<abbr class="abbr-first" title="Regionernes Kliniske Kvalitetsudviklingsprogram">RKKP</abbr>)) to enable access to clinical quality data, such as those from the Dansk Diabetes Database (DDiD) and the Dansk kvalitetsdatabase for diabetisk retinopati (DiaBase). Access depends on funding, data availability, and formal collaboration agreements.</p>
+<p>In general, updates from these sources may be possible, for example by extending follow-up periods or including additional individuals. The secondary data can be accessed through collaboration with <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> research groups. Additional agreements may be established with Regionernes Kliniske Kvalitetsudviklingsprogram (<abbr class="abbr-first" title="Regionernes Kliniske Kvalitetsudviklingsprogram">RKKP</abbr>) to enable access to clinical quality data, such as those from the Dansk Diabetes Database (<abbr class="abbr-first" title="Dansk Diabetes Database">DDiD</abbr>) and the Dansk kvalitetsdatabase for diabetisk retinopati (<abbr class="abbr-first" title="Dansk kvalitetsdatabase for diabetisk retinopati">DiaBase</abbr>). Access depends on funding, data availability, and formal collaboration agreements.</p>
 </section>
 <section id="routine-registry-data" class="level1">
 <h1>Routine Registry Data</h1>
-<p>The routine registry data are also secondary data, however, they are only available on remote research servers and not considered part of the <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> data collection. <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> research data is uploaded to the servers hosted at <abbr title="Danmarks Statistik/Statistics Denmark">DST</abbr> and <abbr title="Sundhedsdatastyrelsen/The Danish Health Data Authority">SDS</abbr>. On these servers, we have access to Danish medical and administrative registries, such as data from the CPR registry, hospital data from LPR, prescription data, laboratory data etc. Linkage to additional registries and databases is possible after approval of data permission applications sent to Statistics Denmark or the Danish Health Data Authority.</p>
+<p>The routine registry data are also secondary data, however, they are only available on remote research servers and not considered part of the <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> data collection. <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> research data is uploaded to the servers hosted at Danmarks Statistik/Statistics Denmark (<abbr class="abbr-first" title="Danmarks Statistik/Statistics Denmark">DST</abbr>) and Sundhedsdatastyrelsen/The Danish Health Data Authority (<abbr class="abbr-first" title="Sundhedsdatastyrelsen/The Danish Health Data Authority">SDS</abbr>). On these servers, access is provided to Danish medical and administrative registries, such as data from the CPR registry, hospital data from Danish National Patient Registry (<abbr class="abbr-first" title="Danish National Patient Registry">DNPR</abbr>), prescription data, laboratory data etc. Linkage to additional registries and databases is possible after approval of data permission applications sent to <abbr title="Danmarks Statistik/Statistics Denmark">DST</abbr> or <abbr title="Sundhedsdatastyrelsen/The Danish Health Data Authority">SDS</abbr>.</p>
 
 
 
@@ -791,6 +795,38 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

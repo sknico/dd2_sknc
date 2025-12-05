@@ -2,6 +2,7 @@
 title: "Neuropathy questionnaire (IDNC)"
 subtitle: "Primary data derived from DD2 research studies"
 ---
+<!-- https://dd2.dk/forskning/projektoversigt/projekter/prevalence-predictors-and-psychosocial-comorbidity-associated-with-type-2-diabetic-neuropathy-a-questionnaire-survey-of-the-dd2-cohort -->
 
 Go to [Data documentation](dd2_idnc.qmd#data-documentation)
 

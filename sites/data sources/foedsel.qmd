@@ -3,6 +3,8 @@ title: "Birth data"
 subtitle: "Secondary data from non-centralized data source"
 ---
 
+<!-- https://dd2.dk/forskning/projektoversigt/projekter/closing-in-on-sub-segmentation-in-type-2-diabetes-in-the-danish-nationwide-dd2-cohort-birth-weight -->
+
 Go to [Data documentation](foedsel.qmd#data-documentation)
 
 Data from Danish midwife journals have been collected for all individuals enrolled in DD2 per 22 February 2022, *i.e.,* a total of n=9,549 individuals. Data include information on birth weight, birth length, born at term (yes/no, and if no then also the number of weeks), and twin (yes/no).

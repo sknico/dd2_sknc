@@ -44,9 +44,11 @@ The biological samples (blood and urine) are collected at enrollment and thus co
 Examples of currently available additional DD2 data include:
 <!-- abbreviation ignoreres ved bullets  -->
 
--   IDNC questionnaire data. This is a follow-up questionnaire from 2016 including (follow-up) questions from the initial questionnaire along with multiple questions concerning diabetic neuropathy.
+-   [IDNC](/sites/data sources/dd2_idnc.qmd) questionnaire data. This is a follow-up questionnaire from 2016 including (follow-up) questions from the initial questionnaire along with multiple questions concerning diabetic neuropathy.
 
--   IDA, DICTA, CsubT2D, etc., are examples of subprojects initiated by DD2 research groups. These research groups generate their own additional data, but the data are still part of the overall DD2 setup. 
+-   [IDA](https://dd2.dk/forskning/projektoversigt/projekter/specialist-supervised-individualized-multifactorial-treatment-of-new-clinically-diagnosed-type-2-diabetes-in-general-practice-ida){target="_blank"}, [DICTA](https://dd2.dk/forskning/projektoversigt/projekter/digital-individualized-and-collaborative-treatment-of-t2d-in-general-practice-based-on-decision-aid-a-randomized-controlled-trial-dicta){target="_blank"}, CsubT2D ([registry](https://dd2.dk/forskning/projektoversigt/projekter/closing-in-on-sub-segmentation-in-type-2-diabetes-in-the-danish-nationwide-dd2-cohort-birth-weight){target="_blank"}, [genetics](https://dd2.dk/forskning/projektoversigt/projekter/closing-in-on-sub-segmentation-in-type-2-diabetes-in-the-danish-nationwide-dd2-cohort-genetics){target="_blank"}, [biomarker](https://dd2.dk/forskning/projektoversigt/projekter/closing-in-on-sub-segmentation-in-type-2-diabetes-in-the-danish-nationwide-dd2-cohort-circulating-biomarkers){target="_blank"}
+), etc., are examples of subprojects initiated by DD2 research groups. These research groups generate their own additional data, but the data are still part of the overall DD2 setup. 
+<!-- https://dd2.dk/forskning/projektoversigt/projekter/specialist-supervised-individualized-multifactorial-treatment-of-new-clinically-diagnosed-type-2-diabetes-in-general-practice-ida -->
 
 -   QoL data. After enrollment, an e-mail with a questionnaire about quality of life is sent to the individual. Additional follow-up questionnaires are sent after 2 years, 4 years, and 6 years. 
 

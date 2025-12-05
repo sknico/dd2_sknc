@@ -3,6 +3,8 @@ title: "Genetic variables"
 subtitle: "Primary data derived from DD2 research studies"
 ---
 
+<!-- https://dd2.dk/forskning/projektoversigt/projekter/closing-in-on-sub-segmentation-in-type-2-diabetes-in-the-danish-nationwide-dd2-cohort-genetics -->
+
 Go to [Data documentation](dd2_genetics.qmd#data-documentation)
 
 We received data on genetics/polygenic risk scores (PRS) in multiple rounds. In the following section we will go through the data files we received. Of note, we also received PRS data in October 2023 which was used for one of the birth weight studies (@Hansen_Diabetologia_2023), but these data have not been uploaded to the servers.

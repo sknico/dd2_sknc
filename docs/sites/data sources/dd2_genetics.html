@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Genetic variables – DD2</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../sites/data sources/dd2_idnc.html" rel="next">
+<link href="../../sites/data sources/dd2_biobank.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-c0011d4058ed6ed9b854a8e2e0822f3c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/downloadthis-1.9.1/downloadthis.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar docked">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../sites/data sources/dd2_biobank.html">Additional DD2 data</a></li><li class="breadcrumb-item"><a href="../../sites/data sources/dd2_genetics.html">Genetic variables</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">DD2</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sites/dd2_enrollment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DD2 enrollment</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sites/data_structure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data structure</span></a>
+  </div>
+</li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item">
+ <span class="menu-text">The DD2 data collection</span>
+  </li>
+        <li class="sidebar-item">
+ <span class="menu-text">Primary data</span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+ <span class="menu-text">DD2 enrollment data</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sites/data sources/dd2_questionnaire.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DD2 questionnaire</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Additional DD2 data</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sites/data sources/dd2_biobank.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DD2 biobank</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sites/data sources/dd2_genetics.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Genetic variables</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sites/data sources/dd2_idnc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Neuropathy questionnaire (IDNC)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+ <span class="menu-text">Secondary data</span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">External DD2 data</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sites/data sources/ddda.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DDDA</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sites/data sources/fodstatus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Podiatrist data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sites/data sources/foedsel.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Birth data</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+ <span class="menu-text">Routine registry data</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sites/registry/SDS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SDS</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../sites/registry/DST.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DST</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#round-1-april-2024---gen1" id="toc-round-1-april-2024---gen1" class="nav-link active" data-scroll-target="#round-1-april-2024---gen1">Round 1 (April 2024 - Gen1)</a></li>
+  <li><a href="#round-2-july-2024---gen2" id="toc-round-2-july-2024---gen2" class="nav-link" data-scroll-target="#round-2-july-2024---gen2">Round 2 (July 2024 - Gen2)</a></li>
+  <li><a href="#round-3-december-2024---gen3" id="toc-round-3-december-2024---gen3" class="nav-link" data-scroll-target="#round-3-december-2024---gen3">Round 3 (December 2024 - Gen3)</a>
+  <ul class="collapse">
+  <li><a href="#round-3-additional-data-for-tarun-tar1" id="toc-round-3-additional-data-for-tarun-tar1" class="nav-link" data-scroll-target="#round-3-additional-data-for-tarun-tar1">Round 3, additional data for Tarun (Tar1)</a></li>
+  </ul></li>
+  <li><a href="#data-documentation" id="toc-data-documentation" class="nav-link" data-scroll-target="#data-documentation">Data documentation</a>
+  <ul class="collapse">
+  <li><a href="#genetik.sas7bdat" id="toc-genetik.sas7bdat" class="nav-link" data-scroll-target="#genetik.sas7bdat">genetik.sas7bdat</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-body" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../sites/data sources/dd2_biobank.html">Additional DD2 data</a></li><li class="breadcrumb-item"><a href="../../sites/data sources/dd2_genetics.html">Genetic variables</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Genetic variables</h1>
+<p class="subtitle lead">Primary data derived from DD2 research studies</p>
+</div>
+
+
+
+<div class="quarto-title-meta column-body">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Go to <a href="../../sites/data sources/dd2_genetics.html#data-documentation">Data documentation</a></p>
+<p>We received data on genetics/polygenic risk scores (PRS) in multiple rounds. In the following section we will go through the data files we received. Of note, we also received PRS data in October 2023 which was used for one of the birth weight studies (<span class="citation" data-cites="Hansen_Diabetologia_2023">Hansen et al. (<a href="#ref-Hansen_Diabetologia_2023" role="doc-biblioref">2023</a>)</span>), but these data have not been uploaded to the servers.</p>
+<p>On Sundhedsdatastyrelsen/The Danish Health Data Authority (<abbr class="abbr-first" title="Sundhedsdatastyrelsen/The Danish Health Data Authority">SDS</abbr>), the first and second rounds of data were originally included in the <code>IL6_TNF</code> data, but this data source has now been split into <code>Biomark</code> including the 22 “pladebiomarkør” biomarkers and <code>Genetik</code> including the genetics data described here. The variables in <code>Genetik</code> were renamed, i.e., <code>Assay = GeneMarker</code>, <code>Calc_Conc_Mean = Value</code>, and <code>CV_on_plate = data_round</code>.</p>
+<section id="round-1-april-2024---gen1" class="level2">
+<h2 class="anchored" data-anchor-id="round-1-april-2024---gen1">Round 1 (April 2024 - Gen1)</h2>
+<p>Data include 9,997 observations and 104 variables. Some individuals had missing ID (but potentially non-missing barcode) and some had duplicate barcodes. The n=215 individuals with missing ID were checked by JSN, and 85 of these were denoted “ok”. For around 500 individuals, information on all the PRS values were deleted in the genetic analysis (see README file for specific reasons). Data were restricted to n=9,856 individuals with valid, unique, and non-missing ID and barcode, and transformed to long format. The variables geno_id, rem, p_id (text), DD2_projectid, DD2_barcode were removed from data (to align with the format from the original biobank file, <code>IL6_TNF</code>). Before upload to <abbr title="Sundhedsdatastyrelsen/The Danish Health Data Authority">SDS</abbr> (<code>IL6_TNF_240411</code>), 69 individuals were excluded as they were not among the n=11,381 individuals in the <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> cohort (<abbr title="Sundhedsdatastyrelsen/The Danish Health Data Authority">SDS</abbr>, April 2023). Data were marked with <code>data_round="Gen1"</code>.</p>
+<p>The PRS <code>oram_T1D</code> has been replaced by <code>oram_T1D_v2</code> in Round 2 as there was an error in the calculation from Round 1. The variable from Round 1 should therefore not be used.</p>
+</section>
+<section id="round-2-july-2024---gen2" class="level2">
+<h2 class="anchored" data-anchor-id="round-2-july-2024---gen2">Round 2 (July 2024 - Gen2)</h2>
+<p>Data include 9,997 observations and 28 variables. Using the same procedure as in Round 1, we end up with n=9,856 individuals with valid, unique, and non-missing ID and barcode. Again, data were transformed to long format, and the variables geno_id, rem, p_id (text), DD2_projectid, DD2_barcode were removed. Before upload to <abbr title="Sundhedsdatastyrelsen/The Danish Health Data Authority">SDS</abbr> (<code>IL6_TNF_240711</code>), 69 individuals were excluded as they were not among the n=11,381 individuals in the <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> cohort (<abbr title="Sundhedsdatastyrelsen/The Danish Health Data Authority">SDS</abbr>, April 2023). Data were marked with <code>data_round="Gen2"</code>.</p>
+</section>
+<section id="round-3-december-2024---gen3" class="level2">
+<h2 class="anchored" data-anchor-id="round-3-december-2024---gen3">Round 3 (December 2024 - Gen3)</h2>
+<p>Data include 9,997 observations and 65 variables. Using the same procedure as in Round 1 and Round 2, we end up with n=9,856 individuals with valid, unique, and non-missing ID and barcode. Data were marked with <code>data_round="Gen3"</code>.</p>
+<p>For single SNPs, the original variable name corresponded to <code>chr:position:allele1:allele2_effect-allele</code>, however, SAS replaces <code>:</code> with <code>_</code> and adds <code>_</code> in the beginning of the variable name (as a variable name can’t start with a number), i.e., the variable name is currently <code>_chr_position_allele1_allele2_effect-allele</code>. Additionally, a document including the r2 values is available on the servers.</p>
+<section id="round-3-additional-data-for-tarun-tar1" class="level3">
+<h3 class="anchored" data-anchor-id="round-3-additional-data-for-tarun-tar1">Round 3, additional data for Tarun (Tar1)</h3>
+<p>In addition to the Round 3 genetics data, we received a data file including a broader list with around 1300 SNPs (Tarun Veer Singh Ahluwalia is lead on the project). The file thus included 9,997 observations and 1309 variables, and we again restricted to the n=9,856 individuals with valid, unique, and non-missing ID and barcode. Data were marked with <code>data_round="Tar1"</code>, and variable names correspond to <code>_chr_position_allele1_allele2_effect-allele</code>. A document including the r2 values is available on the servers.</p>
+<hr>
+</section>
+</section>
+<section id="data-documentation" class="level1">
+<h1>Data documentation</h1>
+<section id="genetik.sas7bdat" class="level2">
+<h2 class="anchored" data-anchor-id="genetik.sas7bdat">genetik.sas7bdat</h2>
+<p><a href="#dnldts57088" onclick="fetch('data:application/vnd.ms-excel;base64,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').then(res => res.blob()).then(blob => {
+      const downloadURL = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      document.body.appendChild(a);
+      a.href = downloadURL;
+      a.download = 'genetik.xlsx'; a.click();
+      window.URL.revokeObjectURL(downloadURL);
+      document.body.removeChild(a);
+        });"><button class="btn btn-button downloadthis  btn btn-light" id="dnldts57088"><i class="bi bi-file-earmark-text"></i> Variable documentation </button></a></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 21%">
+<col style="width: 23%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Format (var x obs)</th>
+<th>Id variables</th>
+<th>Unique key</th>
+<th>Important dates</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Long (8 x 14,572,843)</td>
+<td>CPR, ProjektID</td>
+<td>CPR*GeneMarker</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p>The <code>genetik</code> dataset includes analysis results from the three data rounds. There are no dates in the dataset, but all analyses are performed on the enrollment samples. Data can be stratified by round using the variable <code>data_round</code> with values <code>Gen1</code>, <code>Gen2</code>, <code>Gen3</code>, and <code>Tar1</code>. A total of 1,489 different gene markers (or PRS or whatever they are) are currently included in the data. Data include 9,787*1,489=14,572,843 rows.</p>
+<table class="caption-top table">
+<caption>Illustration of the overall data structure. The dataset is in long format (8 x 14,572,843), with CPR*GeneMarker as the unique key.</caption>
+<thead>
+<tr class="header">
+<th>Row</th>
+<th>CPR</th>
+<th>ProjektID</th>
+<th>data_round</th>
+<th>GeneMarker</th>
+<th>Value</th>
+<th>…</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>CPR1</td>
+<td>ProjektID1</td>
+<td>Gen1</td>
+<td>ACSL1_rs221</td>
+<td>num.</td>
+<td>…</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>CPR1</td>
+<td>ProjektID1</td>
+<td>Gen1</td>
+<td>ACSL1_rs624</td>
+<td>num.</td>
+<td>…</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>CPR1</td>
+<td>ProjektID1</td>
+<td>Gen1</td>
+<td>ACSL1_rs756</td>
+<td>num.</td>
+<td>…</td>
+</tr>
+<tr class="even">
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr class="odd">
+<td>1,489</td>
+<td>CPR1</td>
+<td>ProjektID1</td>
+<td>Tar1</td>
+<td>wang_ST</td>
+<td>num.</td>
+<td>…</td>
+</tr>
+<tr class="even">
+<td>1,490</td>
+<td>CPR2</td>
+<td>ProjektID2</td>
+<td>Gen1</td>
+<td>ACSL1_rs221</td>
+<td>num.</td>
+<td>…</td>
+</tr>
+<tr class="odd">
+<td>1,491</td>
+<td>CPR2</td>
+<td>ProjektID2</td>
+<td>Gen1</td>
+<td>ACSL1_rs624</td>
+<td>num.</td>
+<td>…</td>
+</tr>
+<tr class="even">
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+</tbody>
+</table>
+<p>Additional documentation and README files (from Mette Andersen, KU) are available upon request. Among others, they include information about GeneMarker definition.</p>
+
+
+
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-Hansen_Diabetologia_2023" class="csl-entry" role="listitem">
+Hansen AL, Thomsen RW, Brøns C, Svane HML, Jensen RT, Andersen MK, et al. <a href="https://doi.org/10.1007/s00125-023-05936-1">Birthweight is associated with clinical characteristics in people with recently diagnosed type 2 diabetes</a>. Diabetologia. 2023;66(9):1680–92.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation column-body">
+  <div class="nav-page nav-page-previous">
+      <a href="../../sites/data sources/dd2_biobank.html" class="pagination-link" aria-label="DD2 biobank">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">DD2 biobank</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../sites/data sources/dd2_idnc.html" class="pagination-link" aria-label="Neuropathy questionnaire (IDNC)">
+        <span class="nav-page-text">Neuropathy questionnaire (IDNC)</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ SKNC
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

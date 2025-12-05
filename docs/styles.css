@@ -1,0 +1,39 @@
+/* css styles */
+
+/* Størrelsen på siden (i nyere versioner kan man gøre det i yml-filen) */
+/* css styles */
+
+
+/* Control main content width */
+#quarto-document-content {
+  width: 100%;
+}
+/* Adjust margin sidebar position */
+#quarto-margin-sidebar {
+  margin-right: -600px;
+  margin-left: 200px;
+}
+
+
+
+
+abbr {
+  color: #4682B4; /* Bootstrap link color */
+  text-decoration: none !important; /* Force remove underline */
+  text-decoration-skip-ink: none; /* Prevent ink skipping */
+  border-bottom: none; /* Remove any border-based underline */
+  cursor: help;
+}
+abbr:hover {
+  color: #0056b3; /* Darker on hover */
+  background-color: #f0f8ff; /* Light blue highlight */
+}
+/* First occurrence (where it is written in full text): look like normal text */
+abbr.abbr-first {
+  color: inherit;       /* Use normal text color */
+  font-weight: normal;  /* Remove bold */
+}
+
+
+
+

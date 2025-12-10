@@ -3,38 +3,36 @@ title: "Genetic variables"
 subtitle: "Primary data derived from DD2 research studies"
 ---
 
-<!-- https://dd2.dk/forskning/projektoversigt/projekter/closing-in-on-sub-segmentation-in-type-2-diabetes-in-the-danish-nationwide-dd2-cohort-genetics -->
-
 Go to [Data documentation](dd2_genetics.qmd#data-documentation)
 
-We received data on genetics and/or PRS in multiple rounds. In the following section we will go through the data files we received. Of note, we also received PRS data in October 2023 which was used for one of the birth weight studies (@Hansen_Diabetologia_2023), but these data have not been uploaded to the servers.
+DCE received data on genetics and PRS in multiple rounds. The following section is an overview of the data files DCE received, and the minor data management steps performed to include the data in the DD2 data collection.
 
-On SDS, the first and second rounds of data were originally included in the `IL6_TNF` data, but this data source has now been split into `Biomark` including the 22 "pladebiomarkør" biomarkers and `Genetik` including the genetics data described here. The variables in `Genetik` were renamed, i.e., `Assay = GeneMarker`, `Calc_Conc_Mean = Value`, and `CV_on_plate = data_round`.
+Locally at DCE, the raw data files and additional information about the genetic analyses are stored in the folder:<br>
+O:\\HE_KEA-DATA-RAW0050\\DD2 data\\Genetik
 
+Please see the DD2 project documentation about [genetic analyses](https://dd2.dk/forskning/projektoversigt/projekter/closing-in-on-sub-segmentation-in-type-2-diabetes-in-the-danish-nationwide-dd2-cohort-genetics){target="_blank"} for more information about the overall project.
 
 ## Round 1 (April 2024 - Gen1)
 
-Data include 9,997 observations and 104 variables. Some individuals had missing ID (but potentially non-missing barcode) and some had duplicate barcodes. The n=215 individuals with missing ID were checked by JSN, and 85 of these were denoted "ok". For around 500 individuals, information on all the PRS values were deleted in the genetic analysis (see README file for specific reasons). Data were restricted to n=9,856 individuals with valid, unique, and non-missing ID and barcode, and transformed to long format. The variables geno_id, rem, p_id (text), DD2_projectid, DD2_barcode were removed from data (to align with the format from the original biobank file, `IL6_TNF`). Before upload to SDS (`IL6_TNF_240411`), 69 individuals were excluded as they were not among the n=11,381 individuals in the DD2 cohort (SDS, April 2023). Data were marked with `data_round="Gen1"`.
+Data include 9,997 observations and 104 variables. Both ProjektID and barcode were included, however, some individuals had missing ProjektID and some had duplicate barcodes. The n=215 individuals with missing ProjektID were manually checked by DD2, and 85 were verified and included based on the barcode. For around 500 individuals, information on all the PRS values were deleted in the genetic analysis (see README file for specific reasons). Data were restricted to n=9,856 individuals with valid, unique, and non-missing ProjekID and barcode, and transformed to long format. The variables `geno_id`, `rem`, `p_id`, `DD2_projectid`, `DD2_barcode` were removed from data to align with the format from the original biobank file, `IL6_TNF`. Before upload to the servers at SDS, 69 individuals were excluded as they were not among the n=11,381 individuals in the DD2 cohort (SDS, April 2023). Data were marked with `data_round="Gen1"`.
 
-The PRS `oram_T1D` has been replaced by `oram_T1D_v2` in Round 2 as there was an error in the calculation from Round 1. The variable from Round 1 should therefore not be used.
+In the data from Round 1, there was an error in the calculation of the PRS `oram_T1D`. It has been replaced by `oram_T1D_v2` in Round 2, and the variable from Round 1 should therefore not be used.
 
 ## Round 2 (July 2024 - Gen2)
 
-Data include 9,997 observations and 28 variables. Using the same procedure as in Round 1, we end up with n=9,856 individuals with valid, unique, and non-missing ID and barcode. Again, data were transformed to long format, and the variables geno_id, rem, p_id (text), DD2_projectid, DD2_barcode were removed. Before upload to SDS (`IL6_TNF_240711`), 69 individuals were excluded as they were not among the n=11,381 individuals in the DD2 cohort (SDS, April 2023). Data were marked with `data_round="Gen2"`.
-
+Data include 9,997 observations and 28 variables. Using the same procedure as in Round 1, a total of n=9,856 individuals with valid, unique, and non-missing ProjektID and barcode were included. Again, data were transformed to long format, and the variables `geno_id`, `rem`, `p_id`, `DD2_projectid`, `DD2_barcode` were removed. Before upload to the servers at SDS, 69 individuals were excluded as they were not among the n=11,381 individuals in the DD2 cohort (SDS, April 2023). Data were marked with `data_round="Gen2"`.
 
 ## Round 3 (December 2024 - Gen3)
 
-Data include 9,997 observations and 65 variables. Using the same procedure as in Round 1 and Round 2, we end up with n=9,856 individuals with valid, unique, and non-missing ID and barcode. Data were marked with `data_round="Gen3"`.
+Data include 9,997 observations and 65 variables. Using the same procedure as in Round 1 and Round 2, n=9,787 individuals in the DD2 cohort (SDS, April 2023) with valid, unique, and non-missing ProjektID and barcode were included. Data were marked with `data_round="Gen3"`.
 
-For single SNPs, the original variable name corresponded to `chr:position:allele1:allele2_effect-allele`, however, SAS replaces `:` with `_` and adds `_` in the beginning of the variable name (as a variable name can't start with a number), i.e., the variable name is currently `_chr_position_allele1_allele2_effect-allele`. Additionally, a document including the r2 values is available on the servers.
+For single SNPs, the original variable name corresponded to `chr:position:allele1:allele2_effect-allele`, however, SAS replaces `:` with `_` and adds `_` in the beginning of the variable name (as a variable name can't start with a number), i.e., the variable name is currently `_chr_position_allele1_allele2_effect-allele`. For example, the SNP named `1:202940589:G:A_A` in the original data file, is denoted `_1_202940589_G_A_A` in the uploaded data. Additionally, a document including r2 values is available on the servers.
 
-### Round 3, additional data for Tarun (Tar1)
+### Round 3, additional data (Tar1)
 
-In addition to the Round 3 genetics data, we received a data file including a broader list with around 1300 SNPs (Tarun Veer Singh Ahluwalia is lead on the project). The file thus included 9,997 observations and 1309 variables, and we again restricted to the n=9,856 individuals with valid, unique, and non-missing ID and barcode. Data were marked with `data_round="Tar1"`, and variable names correspond to `_chr_position_allele1_allele2_effect-allele`. A document including the r2 values is available on the servers.
+In addition to the Round 3 genetics data, DCE received a data file including a broader list with around 1,300 SNPs The file included 9,997 observations and 1,309 variables, and was again restricted to the n=9,787 individuals in the DD2 cohort (SDS, April 2023) with valid, unique, and non-missing ProjektID and barcode. Data were marked with `data_round="Tar1"`, and variable names correspond to `_chr_position_allele1_allele2_effect-allele`. A document including r2 values is available on the servers.
 
-
-------------------------------------------------------------------------
+<!-- Tarun Veer Singh Ahluwalia is lead on the project. -->
 
 # Data documentation
 
@@ -46,20 +44,23 @@ In addition to the Round 3 genetics data, we received a data file including a br
 |-----------------------|----------------|-----------------|-----------------|
 | Long (8 x 14,572,843) | CPR, ProjektID | CPR\*GeneMarker | \-              |
 
-The `genetik` dataset includes analysis results from the three data rounds. There are no dates in the dataset, but all analyses are performed on the enrollment samples. Data can be stratified by round using the variable `data_round` with values `Gen1`, `Gen2`, `Gen3`, and `Tar1`. A total of 1,489 different gene markers (or PRS or whatever they are) are currently included in the data. Data include 9,787*1,489=14,572,843 rows. 
+The `genetik` dataset includes analysis results from the three data rounds. There are no dates in the dataset, but all analyses are performed on the enrollment samples. Data can be stratified by round using the variable `data_round` with values `Gen1`, `Gen2`, `Gen3`, and `Tar1`. A total of 1,489 different gene markers are currently included in the data. Data include 9,787\*1,489=14,572,843 rows.
 
+{{< downloadthis ../../files/genetik/genetik_overview.xlsx dname="genetik_overview" icon="file-earmark-text" label="GeneMarker overview" type="button" class="btn btn-light">}}
 
-| Row    | CPR  | ProjektID  | data_round | GeneMarker  | Value | ... |
-|--------|------|------------|------------|-------------|-------|-----|
-| 1      | CPR1 | ProjektID1 | Gen1       | ACSL1_rs221 | num.  | ... |
-| 2      | CPR1 | ProjektID1 | Gen1       | ACSL1_rs624 | num.  | ... |
-| 4      | CPR1 | ProjektID1 | Gen1       | ACSL1_rs756 | num.  | ... |
-| ...    | ...  | ...        | ...        | ...         | ...   | ... |
+| Row   | CPR  | ProjektID  | data_round | GeneMarker  | Value | ... |
+|-------|------|------------|------------|-------------|-------|-----|
+| 1     | CPR1 | ProjektID1 | Gen1       | ACSL1_rs221 | num.  | ... |
+| 2     | CPR1 | ProjektID1 | Gen1       | ACSL1_rs624 | num.  | ... |
+| 4     | CPR1 | ProjektID1 | Gen1       | ACSL1_rs756 | num.  | ... |
+| ...   | ...  | ...        | ...        | ...         | ...   | ... |
 | 1,489 | CPR1 | ProjektID1 | Tar1       | wang_ST     | num.  | ... |
 | 1,490 | CPR2 | ProjektID2 | Gen1       | ACSL1_rs221 | num.  | ... |
 | 1,491 | CPR2 | ProjektID2 | Gen1       | ACSL1_rs624 | num.  | ... |
-| ...    | ...  | ...        | ...        | ...         | ...   | ... |
+| ...   | ...  | ...        | ...        | ...         | ...   | ... |
 
-: Illustration of the overall data structure. The dataset is in long format (8 x 14,572,843), with CPR\*GeneMarker as the unique key.
+: Illustration of the overall data structure in genetik.sas7bdat. The dataset is in long format (8 x 14,572,843), with CPR\*GeneMarker as the unique key.
 
-Additional documentation and README files (from Mette Andersen, KU) are available upon request. Among others, they include information about GeneMarker definition. 
+Additional documentation and README files from the analyses are available upon request. Among others, they include information about GeneMarker definition. All files are also in the local DCE folder O:\\HE_KEA-DATA-RAW0050\\DD2 data\\Genetik <!-- (from Mette Andersen, KU)  -->
+
+On SDS, the first and second rounds of data were originally included in the `IL6_TNF` data, but this data source has now been split into `Biomark` including the 22 ["pladebiomarkør"](dd2_biobank.qmd#pladebiomarkor) biomarkers and `Genetik` including the genetics data described here. The variables in `Genetik` were renamed, i.e., `Assay = GeneMarker`, `Calc_Conc_Mean = Value`, and `CV_on_plate = data_round`, and the old versions of `IL6_TNF` can be disregarded. Of note, DCE also received PRS data in October 2023 which was used for one of the birth weight studies (@Hansen_Diabetologia_2023), but these data have not been uploaded to the servers.

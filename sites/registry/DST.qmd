@@ -3,21 +3,28 @@ title: "DST"
 subtitle: "Secondary data from centralized routine registry data available on remote research server"
 ---
 
+Go to [Data uploads](DST.qmd#data-uploads)
+
+
 ## Danmarks Statistik (DST)/Statistics Denmark
 
-DST Projektnr. 708637 (and FSEID-00006159 transfer from SDS). The project is placed under the "Projektdatabaseordning (705004)". The DD2 projects itself had the project number 708637 (via 705004), and the agreement with DST makes registry data available. Data from Det Psykiatriske Centrale Forskningsregister (PCR), Laboratoriedatabasens Forskertabel (LAB-F), Overvågningsdata - COVID-19-testsvar fra SSI (OVD_SSI), Det Danske Vaccinationsregister - COVID-19-vaccinationsdata fra SSI (DDV_SSI), and Cancerregisteret (CAR) are tranferred from SDS (FSEID-00006159). Data from Lægemiddelstatistikregisteret/Lægemiddeldatabasen (LSR/LMDB) is included via DDV (DST), but based on the agreement with SDS (FSEID-00006159).
+DST Projektnr. 708637 and transfer agreement FSEID-00006159 at SDS. <br>
+Locally at DCE, data are stored here: <br>
+O:\\HE_KEA-DATA-RAW0050\\Forskermaskiner\\DST - projektnr 708637 (SDS FSEID-00006159) <br>
+"Udtræksbeskrivelser" can be downloaded from DDV. 
 
-::: callout-important
-Tjek om aftale + bilag må ligge offentlig tilgængeligt.
-:::
 
-Download the general agreement including the agreement about medicinal data here:\
-Aftale (mail) {{< downloadthis documents/2023-02-15-Bilag_B.docx dname="Bilag_B" icon="file-earmark-text" label="Bilag B" type="button" class="btn btn-link">}}\
-Bilag LMDB {{< downloadthis documents/2023-02-15-Bilag_C.xlsx dname="Bilag_C" icon="file-earmark-text" label="Bilag C" type="button" class="btn btn-link">}}
+The project is placed under the "Projektdatabaseordning (705004)". The DD2 projects itself has the project number 708637 (via 705004), and the agreement with DST makes registry data available. Data from Det Psykiatriske Centrale Forskningsregister, Laboratoriedatabasens Forskertabel, Overvågningsdata - COVID-19-testsvar fra SSI, Det Danske Vaccinationsregister - COVID-19-vaccinationsdata fra SSI, and Cancerregisteret are tranferred from SDS (FSEID-00006159). Data from Lægemiddelstatistikregisteret are included via DDV, but based on the agreement with SDS (FSEID-00006159).
+
+
 
 ## Population
 
-The DD2 data are uploaded to DST, and the population include all individuals in DD2CORE (encrypted CPR). Registry data (Raw data -\> Grunddata) is linked, and based on the individuals in the dataset `pniveau`.
+The DD2 data are uploaded to DST, and the population include all individuals in `DD2CORE` (encrypted CPR). Linked registry data and based on the individuals in the dataset `pniveau`.
+Registry data are available in the DST folders (and subfolders): <br> 
+E:\\ProjektDB\\KEA\\Rawdata\\708637\\Grunddata <br>
+E:\\ProjektDB\\KEA\\Rawdata\\708637\\Eksterne data <br>
+
 
 ### Formats
 
@@ -27,19 +34,20 @@ On DST formats from DST and IDNC should be included manually. Here is an example
 libname fmt "E:\Formater\SAS formater i DAnmarks Statistik\FORMATKATALOG" access=readonly;
 options fmtsearch=(fmt.disced fmt.times_personstatistik fmt.dream fmt.statistikbank);
 
-libname idnc "path" access=readonly;
+libname idnc "E:\ProjektDB\KEA\Workdata\708637\Common\IDNC formats" access=readonly;
 options fmtsearch=(idnc.idnc_formats);
 ```
 
 ## Data uploads
 
-The first data were uploaded in 2022 when the server access was initially established. Since then, DST has changed their system to Danmarks Datavindue (DDV). In November 2024, we had to make a "genindtilling" via DDV and in principle make a new data agreement. We used this opportunity to make some changes in the data structure (e.g., from IL6_TNF to BIOMARK and GENETIK)
+The first data were uploaded in 2022 when the server access was initially established. Since then, DST has changed their system to DDV. In November 2024, we had to make a "genindstilling" via DDV and in principle make a new data agreement. We used this opportunity to make some changes in the data structure (e.g., from IL6_TNF to BIOMARK and GENETIK)
 
 | Short description | Detailed description | Date | Affected datasets |
 |------------------|------------------|:-----------------|-----------------:|
 | Original upload | Upload of datasets for the initial server access. Data from the original upload are located in the folder with "Eksterne data" under the rawdata folder (Rawdata \> 708637 \> Eksterne data). DD2 data are in the 20230104_FraSDS folder, whereas SDS data are in the folder 20221020_FraSDS. Registry data are in the Grunddata folder | Summer 2022 | DD2CORE, DD2_POP, BIOBANK, DDDA, FOEDSELSDATA, IDNC, IL6_TNF |
 | General update (DDV) | Population update (November 2023), updated biobank data (variables from April 2022), including the new data source FODSTATUS, and a general update of registry data. IL6_TNF was updated with all 22 "pladebiomarkører" and renamed to BIOMARK. The dataset GENETIK was also included. The dataset INFODATA including e.g., DICTA was also included. | November 2024/March 2025 (upload available in the folders 20250402_FraSDS and 03032025). We are still waiting for registry updates (mainly due to changes at SDS) | DD2CORE, BIOBANK, DDDA, FOEDSELSDATA, IDNC, FODSTATUS, BIOMARK, GENETIK, INFODATA. |
+| Registry update | Updated data from DST and SDS ("omlægning") | November 2025 | Updated registry data |
 
-NB: we try to distinguish between "update" and "upload". An "update" means that the population, and therefore also the registry data, has changed, and that the entire DD2 cohort should be seen as a new version. By "upload" we mean additional data uploaded to the current population. This could for example be adding analyses from the biobank or adding a new data source, i.e., something that doesn't affect the population itself. 
 
-Registry data on the forskermaskine is updated regularly. LPR-data for the previous calendar year (e.g. 2023) is available during October/November (2024), i.e., if we prepare for a new population update at the end of the year (2024), we will probably be able to get LPR-data for the full previous calendar year (2023), when we receive data in the beginning of the next year (2025). Other registries are updated at different time points (e.g., LMDB is updated quarterly).
+
+<!-- Registry data on the forskermaskine is updated regularly. LPR-data for the previous calendar year (e.g. 2023) is available during October/November (2024), i.e., if we prepare for a new population update at the end of the year (2024), we will probably be able to get LPR-data for the full previous calendar year (2023), when we receive data in the beginning of the next year (2025). Other registries are updated at different time points (e.g., LMDB is updated quarterly). -->

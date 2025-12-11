@@ -113,7 +113,7 @@
     "href": "sites/data sources/foedsel.html",
     "title": "Birth data",
     "section": "",
-    "text": "Go to Data documentation\nData from Danish midwife journals have been collected for all individuals enrolled in DD2 per 22 February 2022, i.e., a total of n=9,549 individuals. Data include information on birth weight, birth length, born at term (yes/no, and if no then also the number of weeks), and twin (yes/no).\nThe afleverings-/afslutningsrapport from Rigsarkivet (the Danish National Archive) can be downloaded here (Danish): Download \nThere is similar description in English in the electronic supplemental material from Hansen et al. (2023): Download\nCPR-numbers for a total of n=9,549 individuals were sent to Rigsarkivet and n=8,896 fulfilled the criteria for potentially having available birth information (born in the period from ~1920 to 1988, born in Denmark, and identifiable through the biological mother’s name). During the retrieval, data were uniformized (e.g., to include birth weight in grams and not pounds) and proofread.\nData include n=9,549 CPR-numbers (one CPR-number is included twice), n=8,346 have non-missing birth weight, and a total of n=8,364 had a non-missing value in at least one of the five birth variables. A total of 8,869-8,364=532 were not included despite fulfilling the criteria (not registered1).",
+    "text": "Go to Data documentation\nData from Danish midwife journals have been collected for all individuals enrolled in DD2 per 22 February 2022. Data include information on birth weight, birth length, born at term (yes/no, and if no then also the number of weeks), and twin (yes/no).\nThe “afleverings-/afslutningsrapport” from the Danish National Archive can be downloaded here (Danish): Download \nA similar description in English is included in the electronic supplemental material from Hansen et al. (2023): Download\nCPR numbers for a total of N=9,549 individuals were sent to the Danish National Archive and N=8,896 fulfilled the criteria for potentially having available birth information (born in Denmark in the period from ~1920 to 1988 and identifiable through the biological mother’s name), yet N=532 were not included despite fulfilling the criteria1. During the retrieval, data were uniformized (e.g., to include birth weight in grams and not pounds) and proofread.",
     "crumbs": [
       "External DD2 data",
       "Birth data"
@@ -124,7 +124,7 @@
     "href": "sites/data sources/foedsel.html#foedselsdata.sas7bdat",
     "title": "Birth data",
     "section": "foedselsdata.sas7bdat",
-    "text": "foedselsdata.sas7bdat\n Variable documentation \n\n\n\nFormat (var x obs)\nId variables\nUnique key\nImportant dates\n\n\n\n\nWide (9 x 9,544)\nCPR\nCPR\n-\n\n\n\nThe dataset include birth data for N=9,544 individuals identified via CPR. There are no dates in the dataset, however, information relates to birth date.\n\nIllustration of the overall data structure. The dataset is in wide format (9 variables x 9,544 observations), with CPR as the unique key.\n\n\n\n\n\n\n\n\n\n\n\nRow\nCPR\nfoedselsvaegt\nfoedselslaengde\nfuldbaarenhed\nuger_for_tidligt\ntvilllingefoedsel\n\n\n\n\n1\nCPR1\nnum.\nnum.\nJa\n\n0\n\n\n2\nCPR2\nnum.\nnum.\nNej\n2 til 3\n0\n\n\n3\nCPR3\nnum.\nnum.\nJa\n\n0\n\n\n…\n…\n…\n…\n…\n…\n…\n\n\n9,544\nCPR9544\nnum.\nnum.\nJa\n\n1",
+    "text": "foedselsdata.sas7bdat\n Variable documentation \n\n\n\nFormat (var x obs)\nId variables\nUnique key\nImportant dates\n\n\n\n\nWide (9 x 9,544)\nCPR\nCPR\n-\n\n\n\nThe dataset include birth data for N=9,544 individuals identified via CPR. There are no dates in the dataset, however, information relates to birth date. N=8,346 have non-missing birth weight, and a total of N=8,364 have a non-missing value in at least one of the five birth variables.\n\nIllustration of the overall data structure. The dataset is in wide format (9 variables x 9,544 observations), with CPR as the unique key.\n\n\n\n\n\n\n\n\n\n\n\nRow\nCPR\nfoedselsvaegt\nfoedselslaengde\nfuldbaarenhed\nuger_for_tidligt\ntvilllingefoedsel\n\n\n\n\n1\nCPR1\nnum.\nnum.\nJa\n\n0\n\n\n2\nCPR2\nnum.\nnum.\nNej\n2 til 3\n0\n\n\n3\nCPR3\nnum.\nnum.\nJa\n\n0\n\n\n…\n…\n…\n…\n…\n…\n…\n\n\n9,544\nCPR9544\nnum.\nnum.\nJa\n\n1",
     "crumbs": [
       "External DD2 data",
       "Birth data"
@@ -135,7 +135,7 @@
     "href": "sites/data sources/foedsel.html#footnotes",
     "title": "Birth data",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nIt is not marked in the data whether missing was due to not being eligible or due to other reasons↩︎\nThe current data permission includes only individuals in DD2 and therefore not the matched controls. As CPR-numbers are not available and controls ultimately cannot be linked to their respective DD2 individual there is no reason to upload data to the servers because all analyses can be performed locally.↩︎",
+    "text": "Footnotes\n\n\nIt is not marked in the data whether missing was due to not being eligible or due to other reasons↩︎",
     "crumbs": [
       "External DD2 data",
       "Birth data"
@@ -384,7 +384,7 @@
     "href": "sites/data sources/fodstatus.html#fodstatus.sas7bdat",
     "title": "Podiatrist data",
     "section": "fodstatus.sas7bdat",
-    "text": "fodstatus.sas7bdat\n Variable documentation \nA variable list from a pilot study can be downloaded here:  MSC_koder \n\n\n\n\n\n\n\n\n\nFormat (var x obs)\nId variables\nUnique key\nImportant dates\n\n\n\n\nWide (88 x 29,214)\nCPR\nCPR*statusdate\nstatusdate\n\n\n\nThe dataset include podiatrist data for a total of N=6,734 individuals. Data are uniquely identified via CPR*statusdate.\n\nIllustration of the overall data structure. The dataset is in wide format (88 variables x 29,214 observations), with CPR*statusdate as the unique key.\n\n\nRow\nCPR\nstatusdate\nVariable1\nVariable2\n…\n\n\n\n\n1\nCPR1\nstatusdate1.1\nnum.\nchar.\n…\n\n\n2\nCPR1\nstatusdate1.2\nnum.\nchar.\n…\n\n\n…\n…\n…\n…\n…\n…\n\n\n5\nCPR1\nstatusdate1.5\nnum.\nchar.\n…\n\n\n6\nCPR2\nstatusdate2.1\nnum.\nchar.\n…\n\n\n7\nCPR2\nstatusdate2.2\nnum.\nchar.\n…\n\n\n…\n…\n…\n…\n…\n…\n\n\n29,214\nCPR6734\nstatusdate6734.1\nnum.\nchar.\n…",
+    "text": "fodstatus.sas7bdat\nA variable list from a pilot study can be downloaded here:  MSC_koder \n\n\n\n\n\n\n\n\n\nFormat (var x obs)\nId variables\nUnique key\nImportant dates\n\n\n\n\nWide (88 x 29,214)\nCPR\nCPR*statusdate\nstatusdate\n\n\n\nThe dataset include podiatrist data for a total of N=6,734 individuals. Data are uniquely identified via CPR*statusdate.\n\nIllustration of the overall data structure. The dataset is in wide format (88 variables x 29,214 observations), with CPR*statusdate as the unique key.\n\n\nRow\nCPR\nstatusdate\nVariable1\nVariable2\n…\n\n\n\n\n1\nCPR1\nstatusdate1.1\nnum.\nchar.\n…\n\n\n2\nCPR1\nstatusdate1.2\nnum.\nchar.\n…\n\n\n…\n…\n…\n…\n…\n…\n\n\n5\nCPR1\nstatusdate1.5\nnum.\nchar.\n…\n\n\n6\nCPR2\nstatusdate2.1\nnum.\nchar.\n…\n\n\n7\nCPR2\nstatusdate2.2\nnum.\nchar.\n…\n\n\n…\n…\n…\n…\n…\n…\n\n\n29,214\nCPR6734\nstatusdate6734.1\nnum.\nchar.\n…",
     "crumbs": [
       "External DD2 data",
       "Podiatrist data"

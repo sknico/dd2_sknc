@@ -50,7 +50,7 @@ Examples of currently available additional DD2 data include:
 ), etc., are examples of subprojects initiated by DD2 research groups. These research groups generate their own additional data, but the data are still part of the overall DD2 setup. 
 <!-- https://dd2.dk/forskning/projektoversigt/projekter/specialist-supervised-individualized-multifactorial-treatment-of-new-clinically-diagnosed-type-2-diabetes-in-general-practice-ida -->
 
--   QoL data. After enrollment, an e-mail with a questionnaire about quality of life is sent to the individual. Additional follow-up questionnaires are sent after 2 years, 4 years, and 6 years. 
+-   QoL data. After enrollment, an e-mail with a questionnaire about quality of life (QoL) is sent to the individual. Additional follow-up questionnaires are sent after 2 years, 4 years, and 6 years. 
 
 These data sources will most likely not be routinely updated with new individuals or additional information, as they are primarily generated as part of specific research projects with closed cohorts. The data can be accessed through collaboration with DD2 research groups.
 

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.42">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -55,10 +55,10 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-c0011d4058ed6ed9b854a8e2e0822f3c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -322,7 +322,7 @@ The biological samples (blood and urine) are collected at enrollment and thus co
 <ul>
 <li><p><a href="../sites/data sources/dd2_idnc.html">IDNC</a> questionnaire data. This is a follow-up questionnaire from 2016 including (follow-up) questions from the initial questionnaire along with multiple questions concerning diabetic neuropathy.</p></li>
 <li><p><a href="https://dd2.dk/forskning/projektoversigt/projekter/specialist-supervised-individualized-multifactorial-treatment-of-new-clinically-diagnosed-type-2-diabetes-in-general-practice-ida" target="_blank">IDA</a>, <a href="https://dd2.dk/forskning/projektoversigt/projekter/digital-individualized-and-collaborative-treatment-of-t2d-in-general-practice-based-on-decision-aid-a-randomized-controlled-trial-dicta" target="_blank">DICTA</a>, CsubT2D (<a href="https://dd2.dk/forskning/projektoversigt/projekter/closing-in-on-sub-segmentation-in-type-2-diabetes-in-the-danish-nationwide-dd2-cohort-birth-weight" target="_blank">registry</a>, <a href="https://dd2.dk/forskning/projektoversigt/projekter/closing-in-on-sub-segmentation-in-type-2-diabetes-in-the-danish-nationwide-dd2-cohort-genetics" target="_blank">genetics</a>, <a href="https://dd2.dk/forskning/projektoversigt/projekter/closing-in-on-sub-segmentation-in-type-2-diabetes-in-the-danish-nationwide-dd2-cohort-circulating-biomarkers" target="_blank">biomarker</a> ), etc., are examples of subprojects initiated by DD2 research groups. These research groups generate their own additional data, but the data are still part of the overall DD2 setup. <!-- https://dd2.dk/forskning/projektoversigt/projekter/specialist-supervised-individualized-multifactorial-treatment-of-new-clinically-diagnosed-type-2-diabetes-in-general-practice-ida --></p></li>
-<li><p>QoL data. After enrollment, an e-mail with a questionnaire about quality of life is sent to the individual. Additional follow-up questionnaires are sent after 2 years, 4 years, and 6 years.</p></li>
+<li><p>QoL data. After enrollment, an e-mail with a questionnaire about quality of life (QoL) is sent to the individual. Additional follow-up questionnaires are sent after 2 years, 4 years, and 6 years.</p></li>
 </ul>
 <p>These data sources will most likely not be routinely updated with new individuals or additional information, as they are primarily generated as part of specific research projects with closed cohorts. The data can be accessed through collaboration with <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> research groups.</p>
 </section>
@@ -340,7 +340,7 @@ The biological samples (blood and urine) are collected at enrollment and thus co
 </section>
 <section id="routine-registry-data" class="level1">
 <h1>Routine Registry Data</h1>
-<p>The routine registry data are also secondary data, however, they are only available on remote research servers and not considered part of the <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> data collection. <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> research data is uploaded to the servers hosted at Danmarks Statistik/Statistics Denmark (<abbr class="abbr-first" title="Danmarks Statistik/Statistics Denmark">DST</abbr>) and Sundhedsdatastyrelsen/The Danish Health Data Authority (<abbr class="abbr-first" title="Sundhedsdatastyrelsen/The Danish Health Data Authority">SDS</abbr>). On these servers, access is provided to Danish medical and administrative registries, such as data from the CPR registry, hospital data from the Danish National Patient Registry (<abbr class="abbr-first" title="Danish National Patient Registry">DNPR</abbr>), prescription data, laboratory data etc. Linkage to additional registries and databases is possible after approval of data permission applications sent to <abbr title="Danmarks Statistik/Statistics Denmark">DST</abbr> or <abbr title="Sundhedsdatastyrelsen/The Danish Health Data Authority">SDS</abbr>.</p>
+<p>The routine registry data are also secondary data, however, they are only available on remote research servers and not considered part of the <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> data collection. <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> research data is uploaded to the servers hosted at Statistics Denmark (<abbr class="abbr-first" title="Statistics Denmark">DST</abbr>) and The Danish Health Data Authority (<abbr class="abbr-first" title="The Danish Health Data Authority">SDS</abbr>). On these servers, access is provided to Danish medical and administrative registries, such as data from the CPR registry, hospital data from the Danish National Patient Registry (<abbr class="abbr-first" title="Danish National Patient Registry">DNPR</abbr>), prescription data, laboratory data etc. Linkage to additional registries and databases is possible after approval of data permission applications sent to <abbr title="Statistics Denmark">DST</abbr> or <abbr title="The Danish Health Data Authority">SDS</abbr>.</p>
 
 
 
@@ -433,6 +433,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -543,6 +545,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -795,7 +798,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","openEffect":"zoom","descPosition":"bottom","selector":".lightbox","loop":false});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {

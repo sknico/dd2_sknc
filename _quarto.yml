@@ -13,12 +13,7 @@ website:
   page-footer:
     center: 
       - text: "SKNC"
-  #navbar:
-  #  left:
-  #    - href: index.qmd
-  #      text: Home
-  #    - about.qmd
-  #    - data sources.qmd
+  
   sidebar:
     style: "docked"
     search: true
@@ -30,7 +25,6 @@ website:
       #- section: "Data sources"
       #  contents:
       
-      #- sites/data_collection.qmd 
       - sites/dd2_enrollment.qmd 
       - sites/data_structure.qmd 
 
@@ -44,18 +38,14 @@ website:
       - section: "Additional DD2 data"
         contents: 
         - sites/data sources/dd2_biobank.qmd
-        #- sites/data sources/dd2_biobank_new_structure.qmd #jeg ved ikke om det nogensinde bliver til noget
         - sites/data sources/dd2_genetics.qmd
         - sites/data sources/dd2_idnc.qmd
-        #- sites/data sources/dd2_qol.qmd  # nu inkluderet som del af "additional DD2 data" under Data structure
-        
+
       - text: "Secondary data"
       - section: "External DD2 data"
         contents:         
 
         - sites/data sources/ddda.qmd
-       # - sites/data sources/ddid.qmd # det er mest registerdata, og der er derfor ingen grund til at søge om det
-       # - sites/data sources/diabase.qmd # der har været problemer med hvordan dataadgangen skal være, og vi har derfor i første omgang stoppet processen
         - sites/data sources/fodstatus.qmd
         - sites/data sources/foedsel.qmd
         
@@ -64,19 +54,8 @@ website:
         contents: 
         - sites/registry/SDS.qmd
         - sites/registry/DST.qmd
+  
         
-        
-      # - text: "---"
-      #   
-      # - section: "How to work"
-      #   contents: 
-      #   - sites/working/working.qmd
-      #   - sites/working/data_upload.qmd
-      #   - sites/working/macro_syntax.qmd
-      #   
-        
-        
-
 
 format:
   html:

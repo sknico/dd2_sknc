@@ -1,9 +1,0 @@
----
-title: "GLD_classification"
----
-
-
-A SAS macro to classify diabetes treatment regimens. The input is a data set (SAS, STATA, csv) including a column of CPR-numbers and a column of ATC-codes (glucose-lowering drugs, i.e. A10). The output is a data set (SAS, STATA, csv) where the treatment is classified into disjoint groups, e.g., insulin based monotherapy or non-insulin based monotherapy, based on all possible ATC-codes. The output also includes a pdf table with the results. 
-
-The macro is uploaded to DST and SDS. 
-

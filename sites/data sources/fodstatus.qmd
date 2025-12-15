@@ -9,7 +9,7 @@ The DD2 cohort is linked to The Danish National Podiatrist Registry (the Podiatr
 
 The data form for the registry can be downloaded here: {{< downloadthis ../../files/fodstatus/Fodstatus_skema.pdf dname="Fodstatus_skema" icon="file-earmark-pdf" label="Skema" type="button" class="btn btn-link">}}
 
-Individuals in DD2 enrolled between 2011 and 2022 are linked to the Podiatrist Database. Approximately 60% of the DD2 participants have at least one record in the database, and they have median 4 (IQR 2-6) records. DD2 participants without records may have had foot examinations by other healthcare professionals (e.g., diabetes outpatient clinics, general practitioners), a private podiatrist not working under the collective agreement or may not have been examined at all (@Kristensen_ClinEpi_2024).
+Individuals in DD2 enrolled between 2011 and 2022 are linked to the Podiatrist Database. DD2 participants without records may have had foot examinations by other healthcare professionals (e.g., in diabetes outpatient clinics or general practitioners), a private podiatrist not working under the collective agreement, or may not have been examined at all (@Kristensen_ClinEpi_2024).
 
 ------------------------------------------------------------------------
 
@@ -26,7 +26,7 @@ A variable list from a pilot study can be downloaded here: {{< downloadthis ../.
 |--------------------|--------------|------------|-----------------|
 | Wide (88 x 29,214)   | CPR          | CPR*statusdate        | statusdate            |
 
-The dataset include podiatrist data for a total of N=6,734 individuals. Data are uniquely identified via CPR\*statusdate.
+The dataset include podiatrist data for a total of N=6,734 individuals. Data are uniquely identified via CPR\*statusdate. Approximately 60% of the DD2 participants have at least one record in the database, and they have median 4 (IQR 2-6) records.
 
 
 | Row    | CPR     | statusdate       | Variable1 | Variable2 | ... |

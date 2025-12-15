@@ -28,7 +28,7 @@ E:\\ProjektDB\\KEA\\Rawdata\\708637\\Eksterne data <br>
 
 ### Formats
 
-On DST formats from DST and IDNC should be included manually. Here is an example of how it can be done in SAS
+On DST, formats from DST and IDNC should be included manually. Here is an example of how it can be done in SAS
 
 ```{r, eval = FALSE}
 libname fmt "E:\Formater\SAS formater i DAnmarks Statistik\FORMATKATALOG" access=readonly;
@@ -40,7 +40,7 @@ options fmtsearch=(idnc.idnc_formats);
 
 ## Data uploads
 
-The first data were uploaded in 2022 when the server access was initially established. Since then, DST has changed their system to DDV. In November 2024, we had to make a "genindstilling" via DDV and in principle make a new data agreement. We used this opportunity to make some changes in the data structure (e.g., from IL6_TNF to BIOMARK and GENETIK)
+The first data were uploaded in 2022 when the server access was initially established. Since then, DST has changed their system to DDV. In November 2024, a "genindstilling" was made via DDV and it was in principle a new data agreement. We used this opportunity to make some changes in the data structure (e.g., from IL6_TNF to BIOMARK and GENETIK)
 
 | Short description | Detailed description | Date | Affected datasets |
 |------------------|------------------|:-----------------|-----------------:|

@@ -9,19 +9,19 @@ Go to [Data uploads](SDS.qmd#data-uploads)
 ## Sundhedsdatastyrelsen (SDS)/The Danish Health Data Authority
 
 Sundhedsdatastyrelsen - FSEID-00006014.<br>
-Locally at DCE, data and "udtræksbeskrivelser" from emails are stored here: <br>
+Locally at DCE, data and "udtræksbeskrivelser" from e-mails are stored here: <br>
 O:\\HE_KEA-DATA-RAW0050\\Forskermaskiner\\SDS - FSEID-00006014
 
 
 ## Population
 
-The DD2 data are uploaded to servers at SDS, and the validity of the CPR numbers is checked before encryption. The dataset `DS_EXT_DD2_POP` includes all individuals with a valid CPR number. Individuals with a non-valid CPR number are still included in the uploaded data, e.g. in `DS_EXT_DD2CORE`, but they will have a missing encrypted CPR number (`CPR_ENCRYPTED`) and can thus not be linked across data sources. When we had local registry data, we would notify DD2 about non-valid CPR numbers, but this is no longer possible as we are not allowed to identify the individuals based on individual-level data on the servers.
+The DD2 data are uploaded to servers at SDS, and the validity of the CPR numbers is checked before encryption. The dataset `DS_EXT_DD2_POP` includes all individuals with a valid CPR number. Individuals with a non-valid CPR number are still included in the uploaded data, e.g. in `DS_EXT_DD2CORE`, but they will have a missing encrypted CPR number (`CPR_ENCRYPTED`) and can thus not be linked across data sources. When DCE had local registry data, DD2 would be notified about non-valid CPR numbers, but this is no longer possible as it is not allowed to identify the individuals based on individual-level data on the servers.
 
-The data files uploaded by us have the prefix `DS_EXT_`. Data are available in 2 versions; the initial upload version (without suffix) and the updated versions (with suffix \_230601, \_231026, etc., corresponding to the date of the update on SDS). The registry data (views) will always be based on the newest population, i.e., individuals in the newest version of `DS_EXT_DD2_POP`.
+The uploaded data files (egne data) have the prefix `DS_EXT_`. Data are available in 2 versions; the initial upload version (without suffix) and the updated versions (with suffix \_230601, \_231026, etc., corresponding to the date of the update on SDS). The registry data (views) will always be based on the newest population, i.e., individuals in the newest version of `DS_EXT_DD2_POP`.
 
 ## Rawdata available on SDS
 
-Data on SDS are based on data views, i.e., we have access to data updated (almost) on a day-to-day basis. The update file (SAS `metadata.OpdateringsOversigt`) contains the time of the current update for each dataset in the library. For research projects, in order to be able to reproduce results, remember to save a copy of the research data in a suitable project folder on SDS.
+Data on SDS are based on data views, i.e., DCE have access to data updated (almost) on a day-to-day basis. The update file (SAS `metadata.OpdateringsOversigt`) contains the time of the current update for each dataset in the library. For research projects, in order to be able to reproduce results, remember to save a copy of the research data in a suitable project folder on SDS.
 
 <!-- Teams-besked fra Uffe (redigeret) -->
 

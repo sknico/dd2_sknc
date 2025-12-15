@@ -31,9 +31,9 @@ Everything collected during the DD2 enrollment constitutes the DD2 enrollment ma
 
 -   Data from the clinical examination at enrollment
 
--   Blood and urine samples collected for storage in the DD2 biobank in Vejle.
+-   Blood and urine samples collected for storage in the DD2 biobank.
 
-Enrollment in DD2 involves completing the DD2 questionnaire, undergoing the clinical examination, and providing blood and urine samples. The DD2 cohort is defined by individuals who completed the enrollment process. These materials are unique to DD2 and are not available from other sources. All blood and urine samples are stored in the DD2 biobank and may be used for future research, though analyses of the samples typically depend on funding from specific studies.
+Enrollment in DD2 involves completing the DD2 questionnaire, undergoing the clinical examination, and providing blood and urine samples. The DD2 cohort is defined by individuals who completed the enrollment process. These materials are unique to DD2 and are not available from other sources. All blood and urine samples are stored in the DD2 biobank in Vejle and may be used for future research, though analyses of the samples typically depend on funding from specific studies.
 
 
 ## 2. Additional DD2 data
@@ -46,11 +46,10 @@ Examples of currently available additional DD2 data include:
 
 -   [IDNC](/sites/data sources/dd2_idnc.qmd) questionnaire data. This is a follow-up questionnaire from 2016 including (follow-up) questions from the initial questionnaire along with multiple questions concerning diabetic neuropathy.
 
--   [IDA](https://dd2.dk/forskning/projektoversigt/projekter/specialist-supervised-individualized-multifactorial-treatment-of-new-clinically-diagnosed-type-2-diabetes-in-general-practice-ida){target="_blank"}, [DICTA](https://dd2.dk/forskning/projektoversigt/projekter/digital-individualized-and-collaborative-treatment-of-t2d-in-general-practice-based-on-decision-aid-a-randomized-controlled-trial-dicta){target="_blank"}, CsubT2D ([registry](https://dd2.dk/forskning/projektoversigt/projekter/closing-in-on-sub-segmentation-in-type-2-diabetes-in-the-danish-nationwide-dd2-cohort-birth-weight){target="_blank"}, [genetics](https://dd2.dk/forskning/projektoversigt/projekter/closing-in-on-sub-segmentation-in-type-2-diabetes-in-the-danish-nationwide-dd2-cohort-genetics){target="_blank"}, [biomarker](https://dd2.dk/forskning/projektoversigt/projekter/closing-in-on-sub-segmentation-in-type-2-diabetes-in-the-danish-nationwide-dd2-cohort-circulating-biomarkers){target="_blank"}
-), etc., are examples of subprojects initiated by DD2 research groups. These research groups generate their own additional data, but the data are still part of the overall DD2 setup. 
+-   [IDA](https://dd2.dk/forskning/projektoversigt/projekter/specialist-supervised-individualized-multifactorial-treatment-of-new-clinically-diagnosed-type-2-diabetes-in-general-practice-ida){target="_blank"}, [DICTA](https://dd2.dk/forskning/projektoversigt/projekter/digital-individualized-and-collaborative-treatment-of-t2d-in-general-practice-based-on-decision-aid-a-randomized-controlled-trial-dicta){target="_blank"}, CsubT2D ([registry](https://dd2.dk/forskning/projektoversigt/projekter/closing-in-on-sub-segmentation-in-type-2-diabetes-in-the-danish-nationwide-dd2-cohort-birth-weight){target="_blank"}, [genetics](https://dd2.dk/forskning/projektoversigt/projekter/closing-in-on-sub-segmentation-in-type-2-diabetes-in-the-danish-nationwide-dd2-cohort-genetics){target="_blank"}, [biomarker](https://dd2.dk/forskning/projektoversigt/projekter/closing-in-on-sub-segmentation-in-type-2-diabetes-in-the-danish-nationwide-dd2-cohort-circulating-biomarkers){target="_blank"}), etc., are examples of subprojects initiated by DD2 research groups. These research groups generate their own additional data, but the data are still part of the overall DD2 data collection. 
 <!-- https://dd2.dk/forskning/projektoversigt/projekter/specialist-supervised-individualized-multifactorial-treatment-of-new-clinically-diagnosed-type-2-diabetes-in-general-practice-ida -->
 
--   QoL data. After enrollment, an e-mail with a questionnaire about quality of life (QoL) is sent to the individual. Additional follow-up questionnaires are sent after 2 years, 4 years, and 6 years. 
+-   Quality of life (QoL) data. After enrollment, an e-mail with a questionnaire about quality of life is sent to the individual. Additional follow-up questionnaires are sent after 2 years, 4 years, and 6 years. 
 
 These data sources will most likely not be routinely updated with new individuals or additional information, as they are primarily generated as part of specific research projects with closed cohorts. The data can be accessed through collaboration with DD2 research groups.
 
@@ -59,13 +58,13 @@ These data sources will most likely not be routinely updated with new individual
 Secondary data refer to data from external but non-centralized data sources. They were not initially generated with the intention to be included in DD2. However, as they may be relevant to DD2 research questions, data from these external data sources are linked to the DD2. In practice, this means that data (or a subset of data) are transferred from the external data source to DD2, providing information on the individuals (or a subset of individuals) in DD2. Linkage to external data sources is crucial in DD2, as it allows for information about variables that are resource-intensive to collect in clinical practice and unavailable in the Danish health registries. DD2 currently have data from the following external data sources:
 
 <!-- abbreviation ignoreres ved bullets  -->
--   The Danish Diabetes Database for Adults (DDDA, closed by June 2022)
+-   [The Danish Diabetes Database for Adults](/sites/data sources/ddda.qmd) (DDDA, closed by June 2022)
 
--   The Danish National Podiatrist Registry (fodstatusdatabasen)
+-   [The Danish National Podiatrist Registry](/sites/data sources/fodstatus.qmd) (fodstatusdatabasen)
 
--   The Danish National Archive (Rigsarkivet), currently including birth data from midwife journals.
+-   [The Danish National Archive](/sites/data sources/foedsel.qmd) (Rigsarkivet), currently including birth data from midwife journals.
 
-In general, updates from these sources may be possible, for example by extending follow-up periods or including additional individuals. The secondary data can be accessed through collaboration with DD2 research groups. Additional agreements may be established with RKKP to enable access to clinical quality data, such as those from the DDiD and the DiaBase. Access depends on funding, data availability, and formal collaboration agreements. 
+In general, updates from these data sources may be possible, for example by extending follow-up periods or including additional individuals. The secondary data can be accessed through collaboration with DD2 research groups. Additional agreements may be established with RKKP to enable access to clinical quality data, such as those from the DDiD and the DiaBase. Access depends on funding, data availability, and formal collaboration agreements. 
 
 
 # Routine Registry Data

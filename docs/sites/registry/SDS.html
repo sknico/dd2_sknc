@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -89,10 +89,10 @@ div.csl-indent {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-c0011d4058ed6ed9b854a8e2e0822f3c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -326,16 +326,16 @@ div.csl-indent {
 <p>Go to <a href="../../sites/registry/SDS.html#data-uploads">Data uploads</a></p>
 <section id="sundhedsdatastyrelsen-sdsthe-danish-health-data-authority" class="level2">
 <h2 class="anchored" data-anchor-id="sundhedsdatastyrelsen-sdsthe-danish-health-data-authority">Sundhedsdatastyrelsen (SDS)/The Danish Health Data Authority</h2>
-<p>Sundhedsdatastyrelsen - FSEID-00006014.<br> Locally at Department of Clinical Epidemiology (<abbr class="abbr-first" title="Department of Clinical Epidemiology">DCE</abbr>), data and “udtræksbeskrivelser” from emails are stored here: <br> O:\HE_KEA-DATA-RAW0050\Forskermaskiner\SDS - FSEID-00006014</p>
+<p>Sundhedsdatastyrelsen - FSEID-00006014.<br> Locally at Department of Clinical Epidemiology (<abbr class="abbr-first" title="Department of Clinical Epidemiology">DCE</abbr>), data and “udtræksbeskrivelser” from e-mails are stored here: <br> O:\HE_KEA-DATA-RAW0050\Forskermaskiner\SDS - FSEID-00006014</p>
 </section>
 <section id="population" class="level2">
 <h2 class="anchored" data-anchor-id="population">Population</h2>
-<p>The <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> data are uploaded to servers at The Danish Health Data Authority (<abbr class="abbr-first" title="The Danish Health Data Authority">SDS</abbr>), and the validity of the CPR numbers is checked before encryption. The dataset <code>DS_EXT_DD2_POP</code> includes all individuals with a valid CPR number. Individuals with a non-valid CPR number are still included in the uploaded data, e.g.&nbsp;in <code>DS_EXT_DD2CORE</code>, but they will have a missing encrypted CPR number (<code>CPR_ENCRYPTED</code>) and can thus not be linked across data sources. When we had local registry data, we would notify <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> about non-valid CPR numbers, but this is no longer possible as we are not allowed to identify the individuals based on individual-level data on the servers.</p>
-<p>The data files uploaded by us have the prefix <code>DS_EXT_</code>. Data are available in 2 versions; the initial upload version (without suffix) and the updated versions (with suffix _230601, _231026, etc., corresponding to the date of the update on <abbr title="The Danish Health Data Authority">SDS</abbr>). The registry data (views) will always be based on the newest population, i.e., individuals in the newest version of <code>DS_EXT_DD2_POP</code>.</p>
+<p>The <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> data are uploaded to servers at The Danish Health Data Authority (<abbr class="abbr-first" title="The Danish Health Data Authority">SDS</abbr>), and the validity of the CPR numbers is checked before encryption. The dataset <code>DS_EXT_DD2_POP</code> includes all individuals with a valid CPR number. Individuals with a non-valid CPR number are still included in the uploaded data, e.g.&nbsp;in <code>DS_EXT_DD2CORE</code>, but they will have a missing encrypted CPR number (<code>CPR_ENCRYPTED</code>) and can thus not be linked across data sources. When <abbr title="Department of Clinical Epidemiology">DCE</abbr> had local registry data, <abbr title="The Danish Center for Strategic Research in Type 2 Diabetes">DD2</abbr> would be notified about non-valid CPR numbers, but this is no longer possible as it is not allowed to identify the individuals based on individual-level data on the servers.</p>
+<p>The uploaded data files (egne data) have the prefix <code>DS_EXT_</code>. Data are available in 2 versions; the initial upload version (without suffix) and the updated versions (with suffix _230601, _231026, etc., corresponding to the date of the update on <abbr title="The Danish Health Data Authority">SDS</abbr>). The registry data (views) will always be based on the newest population, i.e., individuals in the newest version of <code>DS_EXT_DD2_POP</code>.</p>
 </section>
 <section id="rawdata-available-on-sds" class="level2">
 <h2 class="anchored" data-anchor-id="rawdata-available-on-sds">Rawdata available on SDS</h2>
-<p>Data on <abbr title="The Danish Health Data Authority">SDS</abbr> are based on data views, i.e., we have access to data updated (almost) on a day-to-day basis. The update file (SAS <code>metadata.OpdateringsOversigt</code>) contains the time of the current update for each dataset in the library. For research projects, in order to be able to reproduce results, remember to save a copy of the research data in a suitable project folder on <abbr title="The Danish Health Data Authority">SDS</abbr>.</p>
+<p>Data on <abbr title="The Danish Health Data Authority">SDS</abbr> are based on data views, i.e., <abbr title="Department of Clinical Epidemiology">DCE</abbr> have access to data updated (almost) on a day-to-day basis. The update file (SAS <code>metadata.OpdateringsOversigt</code>) contains the time of the current update for each dataset in the library. For research projects, in order to be able to reproduce results, remember to save a copy of the research data in a suitable project folder on <abbr title="The Danish Health Data Authority">SDS</abbr>.</p>
 <!-- Teams-besked fra Uffe (redigeret) -->
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -578,8 +578,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -690,7 +688,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

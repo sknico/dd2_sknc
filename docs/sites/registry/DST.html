@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.42">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -70,10 +70,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-c0011d4058ed6ed9b854a8e2e0822f3c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -352,14 +352,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tr class="even">
 <td>General update (DDV)</td>
 <td>Population update (November 2023), updated biobank data (variables from April 2022), including the new data source FODSTATUS, and a general update of registry data. IL6_TNF was updated with all 22 “pladebiomarkører” and renamed to BIOMARK. The dataset GENETIK was also included. The dataset INFODATA including e.g., DICTA was also included.</td>
-<td style="text-align: left;">November 2024/March 2025 (upload available in the folders 20250402_FraSDS and 03032025). We are still waiting for registry updates (mainly due to changes at SDS)</td>
+<td style="text-align: left;">November 2024/March 2025 (Initial upload available in the folders 20250402_FraSDS and 03032025. For some reason, DST then chose to include our data twice, so a copy of the data is also available in the folder 10032025). We are still waiting for registry updates (mainly due to changes at SDS)</td>
 <td style="text-align: right;">DD2CORE, BIOBANK, DDDA, FOEDSELSDATA, IDNC, FODSTATUS, BIOMARK, GENETIK, INFODATA.</td>
 </tr>
 <tr class="odd">
 <td>Registry update</td>
-<td>Updated data from DST and SDS (“omlægning”)</td>
-<td style="text-align: left;">November 2025</td>
-<td style="text-align: right;">Updated registry data</td>
+<td>Updated data from SDS (“omlægning”)</td>
+<td style="text-align: left;">December 2025 (data available in the folder 20251215_FraSDS)</td>
+<td style="text-align: right;">Updated registry data from SDS</td>
 </tr>
 </tbody>
 </table>
@@ -451,6 +451,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -561,6 +563,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
